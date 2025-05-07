@@ -199,7 +199,7 @@ scroll-behavior: smooth;
 .contact-icons {
 position: absolute;
 bottom: 15%; 
-left: 1.8rem;
+left: 1.5rem;
 display: flex;
 flex-direction: column;
 gap: clamp(0.6rem, 2vw, 0.1rem);
@@ -223,7 +223,7 @@ opacity: 0.8;
   width: 8%;
   height: auto;
   margin-right: 0.5rem;
-  max-width: 15%;
+  max-width: 25%;
 }
 
 .icon-text, .icon-text2, .icon-text3, .icon-text4 {
