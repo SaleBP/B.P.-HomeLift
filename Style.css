@@ -220,7 +220,7 @@ opacity: 0.8;
 }
 
 .imgicon1, .imgicon2, .imgicon3, .imgicon4 {
-  width: 8%;
+  width: 20%;
   height: auto;
   margin-right: 0.5rem;
   max-width: 25%;
@@ -451,11 +451,10 @@ font-size: clamp(0.5rem, 2vw, 1rem);
 opacity: 0.8;
 }
 
-.imgicon1, .imgicon2, .imgicon3, .imgicon4 {
-  width: 5%;
-  height: auto;
-  margin-right: 0.5rem;
-  max-width: 15%;
+  .imgicon1, .imgicon2, .imgicon3, .imgicon4 {
+    width: 10%;
+    max-width: 20%;
+  }
 }
 
 .icon-text, .icon-text2, .icon-text3, .icon-text4 {
@@ -470,4 +469,4 @@ opacity: 0.8;
   margin: 0;
  }
 
-}
+
