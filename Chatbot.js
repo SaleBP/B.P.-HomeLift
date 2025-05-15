@@ -4,6 +4,10 @@ document.getElementById("chat-icon").addEventListener("click", function () {
     chatWindow.style.display = (chatWindow.style.display === "none") ? "block" : "none";
   });
   
+  document.getElementById("chat-close").addEventListener("click", function () {
+    document.getElementById("chat-window").style.display = "none";
+  });
+  
   // ฟังก์ชันตอบสนองเมื่อคลิกปุ่มตัวเลือก
   function handleOption(option) {
     const chatWindow = document.getElementById("chat-window");
@@ -20,7 +24,7 @@ document.getElementById("chat-icon").addEventListener("click", function () {
     } else if (option === "ปรับแต่งลิฟต์") {
       botReply.textContent = "สามารถเลือกสี วัสดุ และขนาดลิฟต์ได้ตามต้องการเลยครับ";
     } else if (option === "ติดต่อ") {
-      botReply.textContent = "สามารถติดต่อเราได้ที่ 089-XXX-XXXX หรือ LINE: @bphomelift";
+      botReply.textContent = "สามารถติดต่อเราได้ที่ 038 387 141 หรือ LINE: @bphomelift";
     }
     chatWindow.appendChild(botReply);
   }
