@@ -428,6 +428,11 @@ section {
     max-width: 20%;
   }
 
+  .carousel-dots {
+    height: 5px;
+    width: 5px;
+}
+
 }
 
 
