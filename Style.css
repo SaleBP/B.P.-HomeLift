@@ -386,6 +386,26 @@ section {
   transform: scale(1.05);
 }
 
+.chat-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1001;
+  background-color: white;
+  color: #333;
+  border: none;
+  border-radius: 12px;
+  padding: 0.6rem 1rem;
+  font-size: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.chat-icon:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
 
 /*===============================*/
 /*         RESPONSIVE           */
