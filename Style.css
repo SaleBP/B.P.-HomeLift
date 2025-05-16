@@ -155,12 +155,18 @@ html {
   width: 100%;
 }
 
-.image-row::-webkit-scrollbar {
+.image-row {
   display: flex;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   margin-top: 3%;
+  overflow-x: scroll;
+  -ms-overflow-style: none;       /* IE/Edge */
+  scrollbar-width: none;          /* Firefox */
+}
+
+.image-row::-webkit-scrollbar {
   display: none;                  /* Chrome, Safari */
 }
 
