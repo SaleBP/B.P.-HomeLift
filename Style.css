@@ -149,42 +149,51 @@ html {
 /*===============================*/
 /*         IMAGE ROW            */
 /*===============================*/
-.image-row {
-  display: flex;
-  overflow-x: auto; /* ทำให้เลื่อนซ้ายขวาได้ */
-  scroll-snap-type: x mandatory; /* snap เป็นหน้าๆ */
-  -webkit-overflow-scrolling: touch; /* smooth scroll บน iOS */
-  gap: 1rem; /* ระยะห่างระหว่างรูป */
-  padding: 1rem;
-  scrollbar-width: none; /* ซ่อน scrollbar (Firefox) */
+.carousel-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
 }
 
-.image-row::-webkit-scrollbar {
-  display: none; /* ซ่อน scrollbar (Chrome) */
+.image-row {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }
 
 .image-box {
-  flex: 0 0 auto; /* ขนาดไม่หด */
-  width: 100%; /* แสดงภาพเต็มหน้าจอ */
-  scroll-snap-align: center; /* snap ที่ตรงกลาง */
+  flex: 0 0 100%;
+  scroll-snap-align: center;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .row-img {
-  width: 50%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-top: 2%;
-
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  display: block;
 }
 
-.caption {
-  margin-top: 0.5rem;
-  font-size: 2rem;
-  font-family: 'DB Adman X';
-  color: #585858;
-  margin-bottom: -20px;
+.carousel-dots {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.carousel-dots .dot {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  margin: 0 6px;
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.carousel-dots .dot.active {
+  background-color: #333;
 }
 
 

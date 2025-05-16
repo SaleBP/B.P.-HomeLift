@@ -4,22 +4,21 @@ document.addEventListener("DOMContentLoaded", function () {
     const closeChat = document.getElementById("close-chat");
     const chatMessages = document.getElementById("chat-messages");
   
-    // เปิด/ปิดกล่องแชท
     chatIcon.addEventListener("click", function () {
-      chatWindow.style.display = (chatWindow.style.display === "none" || chatWindow.style.display === "") ? "flex" : "none";
+      chatWindow.style.display =
+        chatWindow.style.display === "none" || chatWindow.style.display === ""
+          ? "flex"
+          : "none";
     });
   
-    // ปิดแชทเมื่อคลิกปุ่ม ×
     closeChat.addEventListener("click", function () {
       chatWindow.style.display = "none";
     });
   
-    // ฟังก์ชันให้ scroll ไปข้อความล่าสุด
     function scrollToLatestMessage() {
       chatMessages.scrollTop = chatMessages.scrollHeight;
     }
   
-    // ฟังก์ชันตอบสนองเมื่อคลิกปุ่มตัวเลือก
     window.handleOption = function (option) {
       const response = document.createElement("div");
       response.className = "chat-message user";
@@ -40,38 +39,46 @@ document.addEventListener("DOMContentLoaded", function () {
       chatMessages.appendChild(botReply);
       scrollToLatestMessage();
     };
-
-    <script>
-  const slider = document.querySelector('.image-row');
-  let isDown = false;
-  let startX;
-  let scrollLeft;
-
-  slider.addEventListener('mousedown', (e) => {
-    isDown = true;
-    slider.classList.add('active');
-    startX = e.pageX - slider.offsetLeft;
-    scrollLeft = slider.scrollLeft;
-  });
-  slider.addEventListener('mouseleave', () => {
-    isDown = false;
-    slider.classList.remove('active');
-  });
-  slider.addEventListener('mouseup', () => {
-    isDown = false;
-    slider.classList.remove('active');
-  });
-  slider.addEventListener('mousemove', (e) => {
-    if (!isDown) return;
-    e.preventDefault();
-    const x = e.pageX - slider.offsetLeft;
-    const walk = (x - startX) * 2; // ความเร็วในการลาก
-    slider.scrollLeft = scrollLeft - walk;
-  });
-
   
-</script>
-
-
+    // === Carousel Indicator & Looping ===
+    const imageRow = document.querySelector('.image-row');
+    const imageBoxes = document.querySelectorAll('.image-box');
+    const dotContainer = document.querySelector('.carousel-dots');
+    let currentIndex = 0;
+  
+    imageBoxes.forEach((_, i) => {
+      const dot = document.createElement('span');
+      dot.classList.add('dot');
+      if (i === 0) dot.classList.add('active');
+      dot.addEventListener('click', () => {
+        imageRow.scrollTo({
+          left: i * imageRow.clientWidth,
+          behavior: 'smooth',
+        });
+        updateDots(i);
+      });
+      dotContainer.appendChild(dot);
+    });
+  
+    function updateDots(index) {
+      const dots = dotContainer.querySelectorAll('.dot');
+      dots.forEach(dot => dot.classList.remove('active'));
+      dots[index].classList.add('active');
+    }
+  
+    imageRow.addEventListener('scroll', () => {
+      const newIndex = Math.round(imageRow.scrollLeft / imageRow.clientWidth);
+      if (newIndex !== currentIndex) {
+        currentIndex = newIndex % imageBoxes.length;
+        updateDots(currentIndex);
+      }
+    });
+  
+    imageRow.addEventListener('scrollend', () => {
+      if (imageRow.scrollLeft + imageRow.clientWidth >= imageRow.scrollWidth) {
+        imageRow.scrollTo({ left: 0, behavior: 'smooth' });
+        updateDots(0);
+      }
+    });
   });
   
