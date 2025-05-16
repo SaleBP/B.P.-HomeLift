@@ -124,7 +124,7 @@ html {
 
 .img1, .img4 {
   margin-top: 1rem;
-  border-radius: 20px;
+  border-radius: 15px;
   width: 90%;
 }
 
@@ -483,7 +483,7 @@ section {
   }
 
   .caption3 {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     text-align: left; /* เปลี่ยนเป็น center ได้ถ้าอยากให้อ่านง่ายบนมือถือ */
   }
 
