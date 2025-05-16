@@ -68,6 +68,41 @@ document.addEventListener("DOMContentLoaded", function () {
     const walk = (x - startX) * 2; // ความเร็วในการลาก
     slider.scrollLeft = scrollLeft - walk;
   });
+
+<script>
+  const track = document.querySelector('.carousel-track');
+  const images = document.querySelectorAll('.carousel-track .image-box');
+  const dotsContainer = document.querySelector('.carousel-dots');
+
+  let currentIndex = 0;
+
+  // สร้าง dots
+  images.forEach((_, index) => {
+    const dot = document.createElement('div');
+    dot.classList.add('dot');
+    if (index === 0) dot.classList.add('active');
+    dot.addEventListener('click', () => goToSlide(index));
+    dotsContainer.appendChild(dot);
+  });
+
+  function updateDots() {
+    document.querySelectorAll('.dot').forEach(dot => dot.classList.remove('active'));
+    dotsContainer.children[currentIndex].classList.add('active');
+  }
+
+  function goToSlide(index) {
+    currentIndex = index;
+    track.style.transform = `translateX(-${100 * currentIndex}%)`;
+    updateDots();
+  }
+
+  // วนกลับอัตโนมัติทุก 4 วินาที
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % images.length;
+    goToSlide(currentIndex);
+  }, 4000);
+</script>
+
 </script>
 
 
