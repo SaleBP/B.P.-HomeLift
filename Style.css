@@ -473,6 +473,14 @@ section {
     margin: 0 4px;
 }
 
+.chat-icon {
+    padding: 0.4rem 0.8rem;
+    font-size: 1.2rem;
+    bottom: 15px;
+    right: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  }
 }
 
 
