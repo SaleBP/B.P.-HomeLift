@@ -1,107 +1,110 @@
-<!-- HTML -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Style.css" />
     <title>BPHomelift</title>
-  </head>
-  <body>
-    <!-- Top Navigation Bar -->
-    <div class="top-bar">
-      <div id="logosoftcolor"></div>
-      <div class="displayFlex">
-        <a href="#caption2" id="t1" class="nav-link">เกี่ยวกับเรา</a>
-        <a href="#service" id="t2" class="nav-link">บริการ</a>
-        <a href="#custom" id="t3" class="nav-link">ปรับแต่งลิฟต์</a>
-        <a href="#contact" id="t4">ติดต่อเรา</a>
-      </div>
-      <div class="displayFlex2">
-        <div id="t5">EN</div>
-        <div id="t6">•</div>
-        <div id="t7">TH</div>
-      </div>
+  <link rel="stylesheet" href="style.css" />
+</head><body>
+  <div class="top-bar">
+    <div id="logosoftcolor"></div>
+
+    <div class="displayFlex">
+    <a href="#caption2" id="t1" class="nav-link">เกี่ยวกับเรา</a>
+    <a href="#service" id="t2" class="nav-link">บริการ</a>
+    <a href="#custom" id="t3" class="nav-link">ปรับแต่งลิฟต์</a>
+    <a href="#contact" id="t4">ติดต่อเรา</a>
+  </div>
+
+  <div class="displayFlex2">
+    <div id="t5">EN</div>
+    <div id="t6">•</div>
+    <div id="t7">TH</div>
+  </div>
+</div>
+
+  <div class="container">
+    <img src="Rose gold Tiles.png" alt="cover" class="img1" style="
+    margin-top: 2rem;">
+    <div class="Video-Liff">
+  <video autoplay muted loop playsinline class="video">
+    <source src="Lift animetion 3.mp4" type="video/mp4" />
+  </video>
+</div>
+
+<div class="Video-Liff">
+  <video autoplay muted loop playsinline class="video">
+    <source src="Liftopen2.mp4" type="video/mp4" />
+  </video>
+</div>
+
+<div class="image-row">
+  <div class="image-box">
+    <img src="Door Hand Bar.png" alt="ราวจับประตู" class="row-img" />
+    <p class="caption">ราวจับประตู</p>
+  </div>
+  <div class="image-box">
+    <img src="Hand bar.png" alt="ราวจับ" class="row-img" />
+    <p class="caption">ราวจับ</p>
+  </div>
+</div>
+
+<img src="Custom.jpg" id="custom" alt="custom" class="img4" />
+
+<p class="caption2" id="caption2" style="
+    margin-top: 12px;
+    margin-bottom: 12px;
+
+">B.P. POWER ENGINEERING GROUP</p>
+<img src="about-us.png" alt="เกี่ยวกับเรา" class="img5" />
+<img src="service.png" id="service" alt="บริการ" class="img7" />
+
+<div class="image-wrapper">
+  <img src="contact.png" id="contact" alt="Contact" class="img6" />
+
+  <div class="contact-icons">
+
+    <a href="https://line.me/ti/p/~@bpthai" target="_blank" class="icon-row">
+      <img src="Line.png" alt="Line" class="imgicon1" />
+      <span class="icon-text">@bpthai</span>
+    </a>
+   
+    <div class="icon-row">
+      <img src="Tel.png" alt="tel" class="imgicon2" />
+      <span class="icon-text2">(+66) 38 387 141</span>
     </div>
 
-    <!-- Main Content -->
-    <div class="container">
-      <img src="Rose gold Tiles.png" alt="cover" class="img1" style="margin-top: 2rem;" />
+    <a href="https://mail.google.com/mail/?view=cm&to=sales@bpthai.com" target="_blank" class="icon-row">
+      <img src="Email.png" alt="email" class="imgicon4" />
+      <span class="icon-text4">sales@bpthai.com</span>
+    </a>
 
-      <div class="Video-Liff">
-        <video autoplay muted loop playsinline class="video">
-          <source src="Lift animetion 3.mp4" type="video/mp4" />
-        </video>
-      </div>
+    <a href="https://www.facebook.com/bppowergroup/" target="_blank" class="icon-row">
+      <img src="Facebook.png" alt="facebook" class="imgicon3" />
+      <span class="icon-text3">BP Power Engineering Group Co.,Ltd.</span>
+    </a>
 
-      <div class="Video-Liff">
-        <video autoplay muted loop playsinline class="video">
-          <source src="Liftopen2.mp4" type="video/mp4" />
-        </video>
-      </div>
+<!-- ปุ่มเปิดแชท -->
+<button id="chat-icon" style="position: fixed; bottom: 20px; right: 20px; z-index: 1001;">💬</button>
 
-      <div class="image-row">
-        <div class="image-box">
-          <img src="Door Hand Bar.png" alt="ราวจับประตู" class="row-img" />
-          <p class="caption">ราวจับประตู</p>
-        </div>
-        <div class="image-box">
-          <img src="Hand bar.png" alt="ราวจับ" class="row-img" />
-          <p class="caption">ราวจับ</p>
-        </div>
-      </div>
+<!-- กล่องแชท -->
+<div id="chat-window" class="chat-window" style="display: none;">
+  <div class="chat-header">
+    B.P. Homelift Chatbot
+    <button id="close-chat" style="background: none; border: none; font-size: 1.2rem; cursor: pointer;">×</button>
+  </div>
 
-      <img src="Custom.jpg" id="custom" alt="custom" class="img4" />
+  <div id="chat-messages" class="chat-messages">
+    <div class="chat-message bot">สวัสดี! ต้องการสอบถามเรื่องใด?</div>
+  </div>
 
-      <p class="caption2" id="caption2" style="margin-top: 12px; margin-bottom: 12px;">
-        B.P. POWER ENGINEERING GROUP
-      </p>
-
-      <img src="about-us.png" alt="เกี่ยวกับเรา" class="img5" />
-      <img src="service.png" id="service" alt="บริการ" class="img7" />
-
-      <!-- Contact Section -->
-      <div class="image-wrapper">
-        <img src="contact.png" id="contact" alt="Contact" class="img6" />
-
-        <div class="contact-icons">
-          <a href="https://line.me/ti/p/~@bpthai" target="_blank" class="icon-row">
-            <img src="Line.png" alt="Line" class="imgicon1" />
-            <span class="icon-text">@bpthai</span>
-          </a>
-          <div class="icon-row">
-            <img src="Tel.png" alt="tel" class="imgicon2" />
-            <span class="icon-text2">(+66) 38 387 141</span>
-          </div>
-          <a href="https://mail.google.com/mail/?view=cm&to=sales@bpthai.com" target="_blank" class="icon-row">
-            <img src="Email.png" alt="email" class="imgicon4" />
-            <span class="icon-text4">sales@bpthai.com</span>
-          </a>
-          <a href="https://www.facebook.com/bppowergroup/" target="_blank" class="icon-row">
-            <img src="Facebook.png" alt="facebook" class="imgicon3" />
-            <span class="icon-text3">BP Power Engineering Group Co.,Ltd.</span>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Chatbot Section -->
-    <button id="chat-icon" style="position: fixed; bottom: 20px; right: 20px; z-index: 1001;">💬</button>
-    <div id="chat-window" class="chat-window" style="display: none;">
-      <div class="chat-header">
-        B.P. Homelift Chatbot
-        <button id="close-chat" style="background: none; border: none; font-size: 1.2rem; cursor: pointer;">&times;</button>
-      </div>
-      <div id="chat-messages" class="chat-messages">
-        <div class="chat-message bot">สวัสดี! ต้องการสอบถามเรื่องใด?</div>
-      </div>
-      <div class="options">
-        <button onclick="handleOption('บริการ')">บริการ</button>
-        <button onclick="handleOption('ปรับแต่งลิฟต์')">ปรับแต่งลิฟต์</button>
-        <button onclick="handleOption('ติดต่อ')">ติดต่อ</button>
-      </div>
-    </div>
-
-    <script src="Chatbot.js" defer></script>
-  </body>
+  <div class="options">
+    <button onclick="handleOption('บริการ')">บริการ</button>
+    <button onclick="handleOption('ปรับแต่งลิฟต์')">ปรับแต่งลิฟต์</button>
+    <button onclick="handleOption('ติดต่อ')">ติดต่อ</button>
+  </div>
+</div>
+<script src="Chatbot.js" defer></script>
+</body>
 </html>
