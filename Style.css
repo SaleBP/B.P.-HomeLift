@@ -168,6 +168,8 @@ html {
   scroll-snap-align: center;
   text-align: center;
   box-sizing: border-box;
+  font-family: 'DB Adman X';
+  font-size: 140%;
 }
 
 .row-img {
