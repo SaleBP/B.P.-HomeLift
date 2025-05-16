@@ -160,7 +160,7 @@ html {
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
+  margin-top: 5%;
 }
 
 .image-box {
@@ -179,7 +179,7 @@ html {
 
 .carousel-dots {
   text-align: center;
-  margin-top: 1rem;
+
 }
 
 .carousel-dots .dot {
@@ -383,12 +383,15 @@ section {
   }
 
   .row-img {
-    width: 75%;
+    width: 60%;
     border-radius: 10px;
   }
 
   .caption {
     font-size: 1rem;
+    font-family: 'DB Adman X';
+    margin-top: 2%;
+    margin-bottom: -0.7%;
   }
 
   .contact-icons {
