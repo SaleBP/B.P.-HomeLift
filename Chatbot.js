@@ -72,6 +72,36 @@ document.addEventListener("DOMContentLoaded", function () {
         currentIndex = newIndex % imageBoxes.length;
         updateDots(currentIndex);
       }
+
+      // === Drag-to-Scroll (Desktop) ===
+let isDown = false;
+let startX;
+let scrollLeft;
+
+imageRow.addEventListener('mousedown', (e) => {
+  isDown = true;
+  imageRow.classList.add('dragging');
+  startX = e.pageX - imageRow.offsetLeft;
+  scrollLeft = imageRow.scrollLeft;
+});
+
+imageRow.addEventListener('mouseleave', () => {
+  isDown = false;
+  imageRow.classList.remove('dragging');
+});
+
+imageRow.addEventListener('mouseup', () => {
+  isDown = false;
+  imageRow.classList.remove('dragging');
+});
+
+imageRow.addEventListener('mousemove', (e) => {
+  if (!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - imageRow.offsetLeft;
+  const walk = (x - startX) * 1.5; // multiplier = ความไว
+  imageRow.scrollLeft = scrollLeft - walk;
+});
     });
   });
   

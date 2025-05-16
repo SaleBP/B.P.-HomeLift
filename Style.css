@@ -222,6 +222,11 @@ html {
     color: #585858;
 }
 
+.image-row.dragging {
+  cursor: grabbing;
+  user-select: none;
+}
+
 /*===============================*/
 /*           SECTION            */
 /*===============================*/
