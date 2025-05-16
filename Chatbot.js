@@ -1,7 +1,8 @@
-document.getElementById("chat-icon").addEventListener("click", function () {
+document.getElementById("close-chat").addEventListener("click", function () {
     const chatWindow = document.getElementById("chat-window");
-    chatWindow.style.display = (chatWindow.style.display === "none" || chatWindow.style.display === "") ? "flex" : "none";
+    chatWindow.style.display = "none";
   });
+  
   
   // ฟังก์ชันให้ scroll ไปข้อความล่าสุด
   function scrollToLatestMessage() {
@@ -9,7 +10,25 @@ document.getElementById("chat-icon").addEventListener("click", function () {
     chatMessages.scrollTop = chatMessages.scrollHeight;
   }
   
-  // ฟังก์ชันตอบสนองเมื่อคลิกปุ่มตัวเลือก
+  document.addEventListener("DOMContentLoaded", function () {
+    const chatWindow = document.getElementById("chat-window");
+    const chatIcon = document.getElementById("chat-icon");
+    const closeChat = document.getElementById("close-chat");
+  
+    chatIcon.addEventListener("click", function () {
+      chatWindow.style.display = (chatWindow.style.display === "none" || chatWindow.style.display === "") ? "flex" : "none";
+    });
+  
+    closeChat.addEventListener("click", function () {
+      chatWindow.style.display = "none";
+    });
+  });
+  
+  function scrollToLatestMessage() {
+    const chatMessages = document.getElementById("chat-messages");
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+  }
+  
   function handleOption(option) {
     const chatMessages = document.getElementById("chat-messages");
   
@@ -32,4 +51,3 @@ document.getElementById("chat-icon").addEventListener("click", function () {
     chatMessages.appendChild(botReply);
     scrollToLatestMessage();
   }
-  
