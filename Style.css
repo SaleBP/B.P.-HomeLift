@@ -481,6 +481,12 @@ section {
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
   }
+
+  .caption3 {
+    font-size: 0.8rem;
+    text-align: left; /* เปลี่ยนเป็น center ได้ถ้าอยากให้อ่านง่ายบนมือถือ */
+  }
+
 }
 
 
