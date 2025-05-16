@@ -319,7 +319,6 @@ section {
 
 .chat-message {
   max-width: 80%;
-  overflow-y: auto;     /* ✅ เปิด scroll เฉพาะแนวตั้ง */
   overflow-x: hidden;   /* ❌ ซ่อน scroll แนวนอน */
   padding: 10px 15px;
   border-radius: 20px;
