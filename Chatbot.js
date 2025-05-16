@@ -118,7 +118,16 @@ imageRow.addEventListener('mousemove', (e) => {
   e.preventDefault();
   const x = e.pageX - imageRow.offsetLeft;
   const walk = (x - startX) * 1.5; // multiplier = ความไว
-  imageRow.scrollLeft = scrollLeft - walk;
+  imageRow.scrollLeft = scrollLeft - walk;const topBar = document.querySelector('.top-bar');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 10) {
+    topBar.classList.add('transparent');
+  } else {
+    topBar.classList.remove('transparent');
+  }
+  
+});
 });
     });
   });
