@@ -1,24 +1,37 @@
+/*===============================*/
+/*           FONT FACES         */
+/*===============================*/
 @font-face {
   font-family: 'DB adman X';
   src: url('DB-Adman=X.ttf') format('truetype');
 }
+
 @font-face {
   font-family: 'Gilroy';
   src: url('Gilroy-Regular.ttf') format('truetype');
 }
 
+/*===============================*/
+/*           BASE STYLES        */
+/*===============================*/
 body {
   margin: 0;
   padding: 0;
   background: #f0f0f0;
   overflow-x: hidden;
   height: auto;
+  font-size: 1rem;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
+/*===============================*/
+/*           TOP BAR            */
+/*===============================*/
 .top-bar {
   width: 100%;
-  max-width: 100%;
   height: 5rem;
   min-height: 60px;
   background: white;
@@ -31,14 +44,13 @@ body {
   z-index: 100;
 }
 
-.top-bar a{
+.top-bar a {
   color: white;
   text-decoration: none;
   font-size: 1.1rem;
   transition: color 0.3s;
 }
 
-/* Topbar Texts */
 #logosoftcolor {
   position: absolute;
   top: 0.9rem;
@@ -49,42 +61,46 @@ body {
   background-size: contain;
 }
 
+/*===============================*/
+/*         NAVIGATION TEXTS     */
+/*===============================*/
 #t1, #t2, #t3, #t4, #t5, #t6, #t7 {
   font-family: 'DB Adman X';
-  font-size: clamp(1rem,5vw,1.8rem);
+  font-size: clamp(1rem, 5vw, 1.8rem);
   color: #585858;
   white-space: nowrap;
 }
 
+#t5, #t6, #t7 {
+  font-size: 1.3rem;
+  font-family: 'Gilroy';
+}
+
 .displayFlex {
-display: flex;
-gap: 1.5rem;
-margin-left: 10%;
+  display: flex;
+  gap: 1.5rem;
+  margin-left: 10%;
 }
 
 .displayFlex2 {
   display: flex;
   gap: 0.6rem;
   margin-left: 62%;
-  }
-
-#t5, #t6 ,#t7 {
-  font-size: 1.3rem;
-  font-family: 'Gilroy'; 
 }
 
-
-.nav-link{
- text-decoration: none;
- color: #585858;
- transition: opacity 0.5s ease; 
+.nav-link {
+  text-decoration: none;
+  color: #585858;
+  transition: opacity 0.5s ease;
 }
 
 .nav-link:hover {
   opacity: 0.6;
 }
 
-/* Content */
+/*===============================*/
+/*           CONTAINER          */
+/*===============================*/
 .container {
   max-width: 1920px;
   margin: 0 auto;
@@ -92,35 +108,13 @@ margin-left: 10%;
   padding-top: 6%;
 }
 
-.img5, .img6 {
+/*===============================*/
+/*           IMAGES             */
+/*===============================*/
+.img1, .img4, .img5, .img6, .img7 {
   display: flex;
   margin: 0 auto;
   width: 100%;
-  max-width: 1920px;
-  height: auto;
-}
-
-.img6 {
-  display: flex;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1920px;
-  height: auto;
-  position: relative;
-}
-
-.img1, .img4, .img5 {
-  display: flex;
-  margin: 0 auto;
-  width: 90%;
-  max-width: 1920px;
-  height: auto;
-}
-
-.img5, .img7 {
-  display: flex;
-  margin: 0 auto;
-  width: 70%;
   max-width: 1920px;
   height: auto;
 }
@@ -128,32 +122,36 @@ margin-left: 10%;
 .img1, .img4 {
   margin-top: 1rem;
   border-radius: 20px;
+  width: 90%;
 }
 
-.Video-Liff {
+.img5, .img7 {
+  width: 70%;
+}
+
+/*===============================*/
+/*         VIDEO SECTION        */
+/*===============================*/
+.Video-Liff, .video {
   position: relative;
   width: 100%;
   max-width: 1920px;
   margin: 0;
   height: auto;
   border: none;
-}
-
-.video {
-  width: 100%;
-  margin: 0;
-  height: auto;
   display: block;
   padding: 0;
 }
 
-/* Image Row */
+/*===============================*/
+/*         IMAGE ROW            */
+/*===============================*/
 .image-row {
   display: flex;
   justify-content: center;
-  gap: 0px;
+  gap: 0;
   max-width: 1920px;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .image-box {
@@ -179,32 +177,32 @@ margin-left: 10%;
 
 .caption2 {
   padding: 0.5rem;
-  font-size: clamp(1rem,4vw,2rem);
+  font-size: clamp(1rem, 4vw, 2rem);
   font-family: 'Gilroy';
   text-align: center;
   color: #585858;
 }
 
-
+/*===============================*/
+/*           SECTION            */
+/*===============================*/
 section {
   padding: 100px 20px;
   height: 600px;
 }
 
-
-html {
-scroll-behavior: smooth;  
-}
-
+/*===============================*/
+/*        CONTACT ICONS         */
+/*===============================*/
 .contact-icons {
-position: absolute;
-bottom: 18%; 
-left: 3%;
-display: flex;
-flex-direction: column;
-gap: clamp(0.6rem, 2vw, 0.1rem);
-z-index: 10;
-font-size: clamp(1rem, 2vw, 1rem);
+  position: absolute;
+  bottom: 18%;
+  left: 3%;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.6rem, 2vw, 0.1rem);
+  z-index: 10;
+  font-size: clamp(1rem, 2vw, 1rem);
 }
 
 .icon-row {
@@ -212,23 +210,22 @@ font-size: clamp(1rem, 2vw, 1rem);
   align-items: center;
   text-decoration: none;
   transition: opacity 0.5s ease;
-
 }
 
 .icon-row:hover {
-opacity: 0.8;
+  opacity: 0.8;
 }
 
 .imgicon1, .imgicon2, .imgicon3, .imgicon4 {
   width: 13%;
+  max-width: 25%;
   height: auto;
   margin-right: 0.5rem;
-  max-width: 25%;
 }
 
 .icon-text, .icon-text2, .icon-text3, .icon-text4 {
   color: #585858;
- font-family: Gilroy;
+  font-family: Gilroy;
 }
 
 .image-wrapper {
@@ -238,242 +235,9 @@ opacity: 0.8;
   margin: 0;
 }
 
-
-
-/* MEDIA MEDIA  MEDIA MEDIA  MEDIA MEDIA  MEDIA MEDIA  MEDIA MEDIA  MEDIA MEDIA  MEDIA MEDIA */
-/* MEDIA MEDIA  MEDIA MEDIA  MEDIA MEDIA  MEDIA MEDIA  MEDIA MEDIA  MEDIA MEDIA  MEDIA MEDIA */
-/* MEDIA MEDIA  MEDIA MEDIA  MEDIA MEDIA  MEDIA MEDIA  MEDIA MEDIA  MEDIA MEDIA  MEDIA MEDIA */
-/* MEDIA MEDIA  MEDIA MEDIA  MEDIA MEDIA  MEDIA MEDIA  MEDIA MEDIA  MEDIA MEDIA  MEDIA MEDIA */
-
-
-@media (max-width: 375px){
-  body {
-  font-size: 0.5rem;
-  padding: 0;
-  }
-  
-.top-bar {
-  width: 100%;
-  max-width: 1920px;
-  height: 0rem;
-  min-height: 40px;
-  background: white;
-  box-shadow: 0px 0.3rem 0.5rem rgba(0, 0, 0, 0.2);
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  z-index: 100;
-}
-
-.top-bar a{
-  color: white;
-  text-decoration: none;
-  font-size: 1.1rem;
-  transition: color 0.3s;
-}
-
-/* Topbar Texts */
-#logosoftcolor {
-  position: absolute;
-  top: 0.5rem;
-  left: 0.5rem;
-  width: 2rem;
-  height: 4rem;
-  background: url('Logo soft color.png') no-repeat;
-  background-size: contain;
-}
-
-#t1, #t2, #t3, #t4, #t5, #t6, #t7 {
-  font-family: 'DB Adman X';
-  font-size: clamp(1rem,5vw,1rem);
-  color: #585858;
-  white-space: nowrap;
-}
-
-.displayFlex {
-display: flex;
-gap: 1rem;
-margin-left: 15%;
-}
-
-.displayFlex2 {
-  display: flex;
-  gap: 0.6rem;
-  margin-left: 62%;
-  }
-
-#t5, #t6 ,#t7 {
-  font-size: 1.3rem;
-  font-family: 'Gilroy'; 
-}
-
-
-.nav-link{
- text-decoration: none;
- color: #585858;
- transition: opacity 0.5s ease; 
-}
-
-.nav-link:hover {
-  opacity: 0.6;
-}
-
-/* Content */
-.container {
-  max-width: 1920px;
-  margin: 0 auto;
-  background: white;
-  padding-top: 6%;
-}
-
-.img5, .img6 {
-  display: flex;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1920px;
-  height: auto;
-}
-
-.img6 {
-  display: flex;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1920px;
-  height: auto;
-  position: relative;
-}
-
-.img1, .img4, .img5 {
-  display: flex;
-  margin: 0 auto;
-  width: 90%;
-  max-width: 1920px;
-  height: auto;
-}
-
-.img5, .img7 {
-  display: flex;
-  margin: 0 auto;
-  width: 70%;
-  max-width: 1920px;
-  height: auto;
-}
-
-
-.Video-Liff {
-  position: relative;
-  width: 100%;
-  max-width: 1920px;
-  margin: 0;
-  height: auto;
-  border: none;
-}
-
-.video {
-  width: 100%;
-  margin: 0;
-  height: auto;
-  display: block;
-  padding: 0;
-  max-width: 100%;
-  height: auto;
-}
-
-/* Image Row */
-.image-row {
-  display: flex;
-  justify-content: center;
-  gap: 0px;
-  max-width: 1920px;
-  margin: 0;
-}
-
-.image-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.row-img {
-  margin-top: 1rem;
-  width: 75%;
-  height: auto;
-  border-radius: 10px;
-  max-width: 75%;
-}
-
-.caption {
-  margin-top: 0.5rem;
-  font-size: 1rem;
-  font-family: 'DB Adman X';
-  color: #585858;
-}
-
-.caption2 {
-  padding: 0.5rem;
-  font-size: clamp(1rem,4vw,2rem);
-  font-family: 'Gilroy';
-  text-align: center;
-  color: #585858;
-}
-
-
-section {
-  padding: 100px 20px;
-  height: 600px;
-}
-
-
-html {
-scroll-behavior: smooth;  
-}
-
-.contact-icons {
-position: absolute;
-bottom: 18.5%; 
-left: 0.7rem;
-display: flex;
-flex-direction: column;
-gap: clamp(0.2rem, 1vw, 0.1rem);
-z-index: 10;
-font-size: clamp(0.5rem, 2vw, 1rem);
-}
-
-.icon-row {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  transition: opacity 0.5s ease;
-}
-
-.icon-row:hover {
-opacity: 0.8;
-}
-
-  .imgicon1, .imgicon2, .imgicon3, .imgicon4 {
-    width: 10%;
-    max-width: 20%;
-  }
-}
-
-.icon-text, .icon-text2, .icon-text3, .icon-text4 {
-  color: #585858;
- font-family: Gilroy;
-}
-
-.image-wrapper {
-  position: relative;
-  width: 100%;
-  max-width: 1920px;
-  margin: 0;
- }
-/*  Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot */
-/*  Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot */
-/*  Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot */
-
+/*===============================*/
+/*           CHAT BOT           */
+/*===============================*/
 .chat-window {
   position: fixed;
   bottom: 80px;
@@ -483,7 +247,6 @@ opacity: 0.8;
   background: #fff;
   border: 1px solid #ccc;
   border-radius: 10px;
-  display: none;
   z-index: 1000;
   display: flex;
   flex-direction: column;
@@ -520,7 +283,6 @@ opacity: 0.8;
   line-height: 1.4;
 }
 
-/* Bot message bubble */
 .bot {
   align-self: flex-start;
   background-color: #f0f0f0;
@@ -537,7 +299,6 @@ opacity: 0.8;
   border-color: transparent #f0f0f0 transparent transparent;
 }
 
-/* User message bubble */
 .user {
   align-self: flex-end;
   background-color: #0084ff;
@@ -575,7 +336,48 @@ opacity: 0.8;
   transform: scale(1.05);
 }
 
+/*===============================*/
+/*         RESPONSIVE           */
+/*===============================*/
+@media (max-width: 768px) {
+  .top-bar {
+    height: 4rem;
+    min-height: 40px;
+  }
 
-/*  Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot */
-/*  Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot */
-/*  Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot */
+  #logosoftcolor {
+    top: 0.5rem;
+    left: 0.5rem;
+    width: 3rem;
+  }
+
+  #t1, #t2, #t3, #t4, #t5, #t6, #t7 {
+    font-size: 1rem;
+  }
+
+  .displayFlex {
+    gap: 1rem;
+    margin-left: 10%;
+  }
+
+  .row-img {
+    width: 75%;
+    border-radius: 10px;
+  }
+
+  .caption {
+    font-size: 1rem;
+  }
+
+  .contact-icons {
+    bottom: 18.5%;
+    left: 0.7rem;
+    gap: 0.3rem;
+    font-size: 0.8rem;
+  }
+
+  .imgicon1, .imgicon2, .imgicon3, .imgicon4 {
+    width: 10%;
+    max-width: 20%;
+  }
+}
