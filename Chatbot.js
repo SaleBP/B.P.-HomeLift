@@ -73,6 +73,39 @@ document.addEventListener("DOMContentLoaded", function () {
         updateDots(currentIndex);
       }
 
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px); /* เลื่อนลงก่อน */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  will-change: opacity, transform;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+const faders = document.querySelectorAll('.fade-in');
+
+const appearOptions = {
+  threshold: 0.1,
+  rootMargin: '0px 0px -50px 0px'
+};
+
+const appearOnScroll = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+    entry.target.classList.add('visible');
+    observer.unobserve(entry.target);
+  });
+}, appearOptions);
+
+faders.forEach(el => {
+  appearOnScroll.observe(el);
+});
+
+
       // === Drag-to-Scroll (Desktop) ===
 let isDown = false;
 let startX;
