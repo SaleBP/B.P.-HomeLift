@@ -198,21 +198,31 @@ section {
 /*        CONTACT ICONS         */
 /*===============================*/
 .contact-icons {
-  position: absolute;
-  bottom: 18%;
-  left: 3%;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
   display: flex;
   flex-direction: column;
-  gap: clamp(0.6rem, 2vw, 0.1rem);
+  gap: 0.5rem;
   z-index: 10;
-  font-size: clamp(1rem, 2vw, 1rem);
+  font-size: clamp(0.8rem, 2.5vw, 1.1rem);
+  max-width: 90vw;
 }
 
 .icon-row {
   display: flex;
   align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   text-decoration: none;
-  transition: opacity 0.5s ease;
+  color: #585858;
+}
+
+.icon-row img {
+  width: 1em;
+  height: auto;
 }
 
 .icon-row:hover {
