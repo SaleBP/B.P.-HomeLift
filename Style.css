@@ -381,7 +381,6 @@ section {
   .contact-icons .icon-text4 {
     font-size: 0.5rem; /* ปรับตามขนาดที่ต้องการ */
     white-space: nowrap;       /* ห้ามขึ้นบรรทัดใหม่ */
-    font-size: 0.8rem;         /* หรือปรับเล็กลงถ้ายังล้น */
     overflow: hidden;
     text-overflow: ellipsis;   /* ถ้าเกินให้เป็น ... */
   }
