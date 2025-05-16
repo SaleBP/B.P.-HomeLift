@@ -165,7 +165,7 @@ html {
 
 .image-box {
   flex: 0 0 auto; /* ขนาดไม่หด */
-  width: 100%; /* แสดงภาพเต็มหน้าจอ */
+  width: 50%; /* แสดงภาพเต็มหน้าจอ */
   scroll-snap-align: center; /* snap ที่ตรงกลาง */
   text-align: center;
 }
