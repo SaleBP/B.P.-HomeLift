@@ -474,7 +474,7 @@ opacity: 0.8;
 /*  Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot */
 /*  Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot */
 
-.chatbot {
+.chat-window {
   position: fixed;
   bottom: 80px;
   right: 20px;
