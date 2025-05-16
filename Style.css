@@ -4,7 +4,7 @@
 @font-face {
   font-family: 'DB adman X';
   src: url('DB-Adman=X.ttf') format('truetype');
-  font-weight: normal;
+    font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
@@ -198,31 +198,21 @@ section {
 /*        CONTACT ICONS         */
 /*===============================*/
 .contact-icons {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
+  position: absolute;
+  bottom: 18%;
+  left: 3%;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: clamp(0.6rem, 2vw, 0.1rem);
   z-index: 10;
-  font-size: clamp(0.8rem, 2.5vw, 1.1rem);
-  max-width: 90vw;
+  font-size: clamp(1rem, 2vw, 1rem);
 }
 
 .icon-row {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
   text-decoration: none;
-  color: #585858;
-}
-
-.icon-row img {
-  width: 1em;
-  height: auto;
+  transition: opacity 0.5s ease;
 }
 
 .icon-row:hover {
