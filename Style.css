@@ -341,12 +341,12 @@ section {
 /*===============================*/
 @media (max-width: 768px) {
   .top-bar {
-    height: 4rem;
+    height: 1rem;
     min-height: 40px;
   }
 
   #logosoftcolor {
-    top: 0.5rem;
+    top: 0.4rem;
     left: 0.5rem;
     width: 3rem;
   }
@@ -357,7 +357,7 @@ section {
 
   .displayFlex {
     gap: 1rem;
-    margin-left: 10%;
+    margin-left: 20%;
   }
 
   .row-img {
@@ -370,11 +370,18 @@ section {
   }
 
   .contact-icons {
-    bottom: 18.5%;
+    bottom: 16%;
     left: 0.7rem;
     gap: 0.3rem;
-    font-size: 0.8rem;
   }
+
+  .contact-icons .icon-text,
+  .contact-icons .icon-text2,
+  .contact-icons .icon-text3,
+  .contact-icons .icon-text4 {
+    font-size: 0.5rem; /* ปรับตามขนาดที่ต้องการ */
+  }
+  
 
   .imgicon1, .imgicon2, .imgicon3, .imgicon4 {
     width: 10%;
