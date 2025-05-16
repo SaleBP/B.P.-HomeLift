@@ -149,40 +149,39 @@ html {
 /*===============================*/
 /*         IMAGE ROW            */
 /*===============================*/
+
 .image-row {
   display: flex;
-  justify-content: center;
-  gap: 0;
-  max-width: 1920px;
-  margin: 0 auto;
+  overflow-x: auto; /* ทำให้เลื่อนซ้ายขวาได้ */
+  scroll-snap-type: x mandatory; /* snap เป็นหน้าๆ */
+  -webkit-overflow-scrolling: touch; /* smooth scroll บน iOS */
+  gap: 1rem; /* ระยะห่างระหว่างรูป */
+  padding: 1rem;
+  scrollbar-width: none; /* ซ่อน scrollbar (Firefox) */
+}
+
+.image-row::-webkit-scrollbar {
+  display: none; /* ซ่อน scrollbar (Chrome) */
 }
 
 .image-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex: 0 0 auto; /* ขนาดไม่หด */
+  width: 100%; /* แสดงภาพเต็มหน้าจอ */
+  scroll-snap-align: center; /* snap ที่ตรงกลาง */
   text-align: center;
 }
 
 .row-img {
-  margin-top: 3rem;
-  width: 67%;
+  width: 100%;
   height: auto;
-  border-radius: 20px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .caption {
   margin-top: 0.5rem;
-  font-size: 2.5rem;
+  font-size: 1rem;
   font-family: 'DB Adman X';
-  color: #585858;
-}
-
-.caption2 {
-  padding: 0.5rem;
-  font-size: clamp(1rem, 4vw, 2rem);
-  font-family: 'Gilroy';
-  text-align: center;
   color: #585858;
 }
 
