@@ -171,17 +171,20 @@ html {
 }
 
 .row-img {
-  width: 100%;
+  width: 50%;
   height: auto;
   object-fit: cover;
   border-radius: 10px;
+  margin-top: 2%;
+
 }
 
 .caption {
   margin-top: 0.5rem;
-  font-size: 1rem;
+  font-size: 2rem;
   font-family: 'DB Adman X';
   color: #585858;
+  margin-bottom: -20px;
 }
 
 
