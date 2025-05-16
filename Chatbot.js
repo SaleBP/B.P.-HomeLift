@@ -19,26 +19,30 @@ document.addEventListener("DOMContentLoaded", function () {
       chatMessages.scrollTop = chatMessages.scrollHeight;
     }
   
-    // ฟังก์ชันตอบสนองเมื่อคลิกปุ่มตัวเลือก
     window.handleOption = function (option) {
-      const response = document.createElement("div");
-      response.className = "chat-message user";
-      response.textContent = "คุณเลือก: " + option;
-      chatMessages.appendChild(response);
-  
-      const botReply = document.createElement("div");
-      botReply.className = "chat-message bot";
-  
-      if (option === "บริการ") {
-        botReply.textContent = "เรามีบริการติดตั้งและบำรุงรักษาลิฟต์บ้านครบวงจรครับ";
-      } else if (option === "ปรับแต่งลิฟต์") {
-        botReply.textContent = "สามารถเลือกสี วัสดุ และขนาดลิฟต์ได้ตามต้องการเลยครับ";
-      } else if (option === "ติดต่อ") {
-        botReply.textContent = "สามารถติดต่อเราได้ที่ 038 387 141 หรือ LINE: @bphomelift";
-      }
-  
-      chatMessages.appendChild(botReply);
-      scrollToLatestMessage();
-    };
-  });
+        const response = document.createElement("div");
+        response.className = "chat-message user";
+        response.textContent = "คุณเลือก: " + option;
+        chatMessages.appendChild(response);
+      
+        const botReply = document.createElement("div");
+        botReply.className = "chat-message bot";
+      
+        if (option === "บริการ") {
+          botReply.textContent = "เรามีบริการติดตั้งและบำรุงรักษาลิฟต์บ้านครบวงจรครับ";
+        } else if (option === "ปรับแต่งลิฟต์") {
+          botReply.textContent = "เรากำลังพาคุณไปแต่งลิฟต์กัน";
+          setTimeout(() => {
+            const target = document.getElementById("custom");
+            if (target) {
+              target.scrollIntoView({ behavior: "smooth" });
+            }
+          }, 800); // รอให้ข้อความแสดงก่อนเลื่อน
+        } else if (option === "ติดต่อ") {
+          botReply.textContent = "สามารถติดต่อเราได้ที่ 038 387 141 หรือ LINE: @bphomelift";
+        }
+      
+        chatMessages.appendChild(botReply);
+        scrollToLatestMessage();
+      };
   
