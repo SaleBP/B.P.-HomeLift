@@ -40,12 +40,12 @@ document.addEventListener("DOMContentLoaded", function () {
       scrollToLatestMessage();
     };
   
-    // === Carousel Indicator & Looping ===
     const imageRow = document.querySelector('.image-row');
     const imageBoxes = document.querySelectorAll('.image-box');
     const dotContainer = document.querySelector('.carousel-dots');
     let currentIndex = 0;
-  
+    
+    // สร้าง dot ตามจำนวนรูป
     imageBoxes.forEach((_, i) => {
       const dot = document.createElement('span');
       dot.classList.add('dot');
@@ -56,29 +56,22 @@ document.addEventListener("DOMContentLoaded", function () {
           behavior: 'smooth',
         });
         updateDots(i);
+        currentIndex = i; // อัปเดต currentIndex ด้วย
       });
       dotContainer.appendChild(dot);
     });
-  
+    
     function updateDots(index) {
       const dots = dotContainer.querySelectorAll('.dot');
       dots.forEach(dot => dot.classList.remove('active'));
       dots[index].classList.add('active');
     }
-  
+    
     imageRow.addEventListener('scroll', () => {
       const newIndex = Math.round(imageRow.scrollLeft / imageRow.clientWidth);
       if (newIndex !== currentIndex) {
-        currentIndex = newIndex % imageBoxes.length;
+        currentIndex = newIndex;
         updateDots(currentIndex);
       }
     });
-  
-    imageRow.addEventListener('scrollend', () => {
-      if (imageRow.scrollLeft + imageRow.clientWidth >= imageRow.scrollWidth) {
-        imageRow.scrollTo({ left: 0, behavior: 'smooth' });
-        updateDots(0);
-      }
-    });
-  });
-  
+}
