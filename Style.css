@@ -490,14 +490,6 @@ opacity: 0.8;
   z-index: 1000;
 }
 
-.chat-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
 .chat-window {
   display: flex;
   flex-direction: column;
@@ -531,6 +523,15 @@ opacity: 0.8;
   cursor: pointer;
   font-family: 'DB Adman X';
 }
+
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
 /*  Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot */
 /*  Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot */
 /*  Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot */
