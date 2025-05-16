@@ -86,31 +86,34 @@
     </a>
 
     <div class="chatbot">
-      <div id="chat-window" class="chat-window">
-        <button id="toggle-chat" style="position: fixed; bottom: 20px; right: 20px; z-index: 1001;">
-          แชทบอท
-        </button>
-        
-        <div class="chat-window" id="chatWindow">
-          <div class="chat-header">
-            แชทบอท
-            <button id="close-chat" style="background: none; border: none; cursor: pointer;">✖</button>
-          </div>
-          <div class="chat-messages" id="chatMessages">
-            <!-- ข้อความต่างๆ -->
-          </div>
-        </div>
-        <div class="chat-message bot">สวัสดี! ต้องการสอบถามเรื่องใด?</div>
-        <div class="options">
-          <button onclick="handleOption('บริการ')">บริการ</button>
-          <button onclick="handleOption('ปรับแต่งลิฟต์')">ปรับแต่งลิฟต์</button>
-          <button onclick="handleOption('ติดต่อ')">ติดต่อ</button>
-        </div>
-        
+      <!-- ปุ่มเปิดแชท -->
+<button id="chat-icon" style="position: fixed; bottom: 20px; right: 20px; z-index: 1001;">
+  💬
+</button>
+
+<div class="chatbot">
+  <div id="chat-window" class="chat-window">
+    <div class="chat-header">
+      แชทบอท
+    </div>
+    <div id="chat-messages" class="chat-messages">
+      <div class="chat-message bot">สวัสดี! ต้องการสอบถามเรื่องใด?</div>
+    </div>
+    <div class="options">
+      <button onclick="handleOption('บริการ')">บริการ</button>
+      <button onclick="handleOption('ปรับแต่งลิฟต์')">ปรับแต่งลิฟต์</button>
+      <button onclick="handleOption('ติดต่อ')">ติดต่อ</button>
+    </div>
   </div>
 </div>
 
   </div>
   <script src="Chatbot.js"></script>
+  
+  <!-- ปุ่มเปิดแชท -->
+<button id="chat-icon" style="position: fixed; bottom: 20px; right: 20px; z-index: 1001;">
+  💬
+</button>
+
 </body>
 </html>

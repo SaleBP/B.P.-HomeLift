@@ -1,34 +1,26 @@
-// เปิด/ปิดหน้าต่างแชท
 document.getElementById("chat-icon").addEventListener("click", function () {
     const chatWindow = document.getElementById("chat-window");
-    chatWindow.style.display = (chatWindow.style.display === "none") ? "block" : "none";
+    chatWindow.style.display = (chatWindow.style.display === "none" || chatWindow.style.display === "") ? "flex" : "none";
   });
   
-  // เปิด/ปิด chat window
-  toggleBtn.addEventListener('click', () => {
-    chatWindow.style.display = chatWindow.style.display === 'none' ? 'flex' : 'none';
-  });
-
-  closeBtn.addEventListener('click', () => {
-    chatWindow.style.display = 'none';
-  });
-
-    // ฟังก์ชันให้ scroll ไปข้อความล่าสุด
-    function scrollToLatestMessage() {
-        chatMessages.scrollTop = chatMessages.scrollHeight;
-      }
+  // ฟังก์ชันให้ scroll ไปข้อความล่าสุด
+  function scrollToLatestMessage() {
+    const chatMessages = document.getElementById("chat-messages");
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+  }
   
   // ฟังก์ชันตอบสนองเมื่อคลิกปุ่มตัวเลือก
   function handleOption(option) {
-    const chatWindow = document.getElementById("chat-window");
+    const chatMessages = document.getElementById("chat-messages");
+  
     const response = document.createElement("div");
     response.className = "chat-message user";
     response.textContent = "คุณเลือก: " + option;
-    chatWindow.appendChild(response);
+    chatMessages.appendChild(response);
   
-    // เพิ่มคำตอบของบอทแบบง่าย ๆ
     const botReply = document.createElement("div");
     botReply.className = "chat-message bot";
+  
     if (option === "บริการ") {
       botReply.textContent = "เรามีบริการติดตั้งและบำรุงรักษาลิฟต์บ้านครบวงจรครับ";
     } else if (option === "ปรับแต่งลิฟต์") {
@@ -36,5 +28,8 @@ document.getElementById("chat-icon").addEventListener("click", function () {
     } else if (option === "ติดต่อ") {
       botReply.textContent = "สามารถติดต่อเราได้ที่ 038 387 141 หรือ LINE: @bphomelift";
     }
-    chatWindow.appendChild(botReply);
+  
+    chatMessages.appendChild(botReply);
+    scrollToLatestMessage();
   }
+  

@@ -507,14 +507,13 @@ opacity: 0.8;
   gap: 1rem;
 }
 
-.chat-message {
-  padding: 0.5rem 1rem;
-  border-radius: 1rem;
-  max-width: 80%;
-  font-family: 'DB Adman X';
+.chat-messages {
   flex: 1;
   overflow-y: auto;
+  max-height: 250px;
+  font-family: 'DB Adman X';
 }
+
 
 .bot {
   background-color: #e0e0e0;
@@ -541,7 +540,6 @@ opacity: 0.8;
   background-color: #cf530a;
   transform: scale(1.05);
 }
-
 transition: background-color 0.3s ease, transform 0.2s ease;
 
 /*  Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot Chat Bot */
