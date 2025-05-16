@@ -319,6 +319,8 @@ section {
 
 .chat-message {
   max-width: 80%;
+  overflow-y: auto;     /* ✅ เปิด scroll เฉพาะแนวตั้ง */
+  overflow-x: hidden;   /* ❌ ซ่อน scroll แนวนอน */
   padding: 10px 15px;
   border-radius: 20px;
   position: relative;
@@ -379,6 +381,7 @@ section {
   background-color: #cf530a;
   transform: scale(1.05);
 }
+
 
 /*===============================*/
 /*         RESPONSIVE           */
