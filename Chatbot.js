@@ -4,6 +4,19 @@ document.getElementById("chat-icon").addEventListener("click", function () {
     chatWindow.style.display = (chatWindow.style.display === "none") ? "block" : "none";
   });
   
+  // เปิด/ปิด chat window
+  toggleBtn.addEventListener('click', () => {
+    chatWindow.style.display = chatWindow.style.display === 'none' ? 'flex' : 'none';
+  });
+
+  closeBtn.addEventListener('click', () => {
+    chatWindow.style.display = 'none';
+  });
+
+    // ฟังก์ชันให้ scroll ไปข้อความล่าสุด
+    function scrollToLatestMessage() {
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+      }
   
   // ฟังก์ชันตอบสนองเมื่อคลิกปุ่มตัวเลือก
   function handleOption(option) {

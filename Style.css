@@ -512,6 +512,8 @@ opacity: 0.8;
   border-radius: 1rem;
   max-width: 80%;
   font-family: 'DB Adman X';
+  flex: 1;
+  overflow-y: auto;
 }
 
 .bot {
