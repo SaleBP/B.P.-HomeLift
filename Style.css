@@ -346,9 +346,9 @@ section {
   }
 
   #logosoftcolor {
-    top: 0.4rem;
+    top: 0.6rem;
     left: 0.5rem;
-    width: 3rem;
+    width: 2rem;
   }
 
   #t1, #t2, #t3, #t4, #t5, #t6, #t7 {
@@ -380,6 +380,10 @@ section {
   .contact-icons .icon-text3,
   .contact-icons .icon-text4 {
     font-size: 0.5rem; /* ปรับตามขนาดที่ต้องการ */
+    white-space: nowrap;       /* ห้ามขึ้นบรรทัดใหม่ */
+    font-size: 0.8rem;         /* หรือปรับเล็กลงถ้ายังล้น */
+    overflow: hidden;
+    text-overflow: ellipsis;   /* ถ้าเกินให้เป็น ... */
   }
   
 
