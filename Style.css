@@ -84,7 +84,7 @@ html {
 #t1, #t2, #t3, #t4, #t5, #t6, #t7 {
   font-family: 'DB Adman X';
   font-size: clamp(1rem, 5vw, 1.2rem);
-  color: #585858;
+  color: #ff0000;
   white-space: nowrap;
 }
 
