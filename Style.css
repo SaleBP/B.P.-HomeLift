@@ -181,6 +181,8 @@ html {
   border: none;
   display: block;
   padding: 0;
+  background-color: white;
+  mix-blend-mode: lighten; /* หรือ screen */
 }
 
 /*===============================*/
