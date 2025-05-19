@@ -126,7 +126,12 @@ html {
   height: auto;
 }
 
-.img1, .img4 {
+.img1 {
+  border-radius: 15px;
+  width: 90%;
+}
+
+.img4 {
   margin-top: 1rem;
   border-radius: 15px;
   width: 90%;
