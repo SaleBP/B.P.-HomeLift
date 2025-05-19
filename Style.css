@@ -77,8 +77,8 @@ html {
 
 .displayFlex {
   display: flex;
-  gap: 1.5rem;
-  margin-left: 26%;
+    gap: 3rem;
+    margin-left: 28%;
 }
 
 .displayFlex2 {
