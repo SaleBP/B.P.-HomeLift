@@ -35,12 +35,11 @@ html {
 /*===============================*/
 .top-bar {
   position: fixed;
-  top: 20px;
+  top: 10px;
   left: 50%;
   transform: translateX(-50%);
   width: 90%;
-  max-width: 1000px;
-  padding: 0.6rem 1.5rem;
+  max-width: 1150px;
   background-color: white;
   border-radius: 50px;
   display: flex;
@@ -73,7 +72,7 @@ html {
 
 #logosoftcolor {
   width: 3rem;
-  height: 3.5rem;
+  height: 2rem;
   background: url('Logo soft color.png') no-repeat;
   background-size: contain;
   margin-right: 1rem;
@@ -97,7 +96,7 @@ html {
 .displayFlex {
   display: flex;
   gap: 1.5rem;
-  margin-left: 35%;
+  margin-left: 25%;
 }
 
 .displayFlex2 {
