@@ -459,8 +459,10 @@ section {
   }
 
 .intro {
-    width: 80%;
-    margin: 10px;
+width: 80%;
+margin-top: 25px;
+display: flex
+;
 }
 
 .img1 {
