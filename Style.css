@@ -96,7 +96,7 @@ html {
 .displayFlex {
   display: flex;
   gap: 1.5rem;
-  margin-left: 15%;
+  margin-left: 25%;
 }
 
 .displayFlex2 {
@@ -139,6 +139,7 @@ html {
 .intro {
     width: 80%;
     margin: 40px;
+    margin: 0 auto;
 }
 
 .img1 {
