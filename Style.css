@@ -81,6 +81,30 @@ html {
 /*===============================*/
 /*         NAVIGATION TEXTS     */
 /*===============================*/
+#t1, #t2, #t3, #t4, #t5, #t6, #t7 {
+  font-family: 'DB Adman X';
+  font-size: clamp(1rem, 5vw, 1.2rem);
+  color: #585858;
+  white-space: nowrap;
+}
+
+#t5, #t6, #t7 {
+  font-size: 1.3rem;
+  font-family: 'Gilroy';
+}
+
+.displayFlex {
+  display: flex;
+  gap: 1.5rem;
+  margin-left: 26%;
+}
+
+.displayFlex2 {
+  display: flex;
+  gap: 0.6rem;
+  margin-left: 62%;
+}
+
 .nav-link {
   position: relative;
   display: inline-block;
@@ -102,29 +126,6 @@ html {
   width: 100%;
   transition: transform 0.4s ease, opacity 0.4s ease;
   transform: translateY(0);
-  opacity: 1;
-}
-
-/* ข้อความใหม่ที่เลื่อนขึ้นมา */
-.nav-link::after {
-  content: attr(data-text);
-  position: absolute;
-  top: 100%;
-  left: 0;
-  color: #585858;
-  width: 100%;
-  transition: transform 0.4s ease, opacity 0.4s ease;
-  transform: translateY(0);
-  opacity: 0;
-}
-
-.nav-link:hover::before {
-  transform: translateY(-100%);
-  opacity: 0;
-}
-
-.nav-link:hover::after {
-  transform: translateY(-100%);
   opacity: 1;
 }
 
