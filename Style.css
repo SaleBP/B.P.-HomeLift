@@ -62,7 +62,7 @@ html {
 #logosoftcolor {
   position: absolute;
   top: 0.9rem;
-  left: 1.7rem;
+  left: 5%;
   width: 5.1rem;
   height: 4rem;
   background: url('Logo soft color.png') no-repeat;
@@ -87,7 +87,7 @@ html {
 .displayFlex {
   display: flex;
   gap: 1.5rem;
-  margin-left: 10%;
+  margin-left: 35%;
 }
 
 .displayFlex2 {
@@ -435,7 +435,6 @@ section {
 
   #logosoftcolor {
     top: 0.6rem;
-    left: 0.5rem;
     width: 2rem;
   }
 
@@ -445,7 +444,7 @@ section {
 
   .displayFlex {
     gap: 1rem;
-    margin-left: 18%;
+    margin-left: 25%;
   }
 
   .row-img {
