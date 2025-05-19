@@ -84,7 +84,7 @@ html {
 #t1, #t2, #t3, #t4, #t5, #t6, #t7 {
   font-family: 'DB Adman X';
   font-size: clamp(1rem, 5vw, 1.2rem);
-  color: #ff0000;
+  color: #585858;
   white-space: nowrap;
 }
 
@@ -103,6 +103,16 @@ html {
   display: flex;
   gap: 0.6rem;
   margin-left: 62%;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #585858;
+  transition: opacity 0.5s ease;
+}
+
+.nav-link:hover {
+  opacity: 0.6;
 }
 
 /*===============================*/
