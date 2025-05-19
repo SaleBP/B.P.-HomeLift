@@ -34,16 +34,22 @@ html {
 /*           TOP BAR            */
 /*===============================*/
 .top-bar {
-  width: 100%;
-  min-height: 45px;
-  background-color: white;
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 1000px;
+  padding: 0.6rem 1.5rem;
+  background-color: white;
+  border-radius: 50px;
   display: flex;
   align-items: center;
-  z-index: 100;
-  transition: background-color 0.3s ease, opacity 0.3s ease;
+  justify-content: space-between;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05), 
+              0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: background-color 0.3s ease, opacity 0.3s ease, top 0.3s ease;
 }
 
 .top-bar.transparent {
@@ -54,18 +60,23 @@ html {
 .top-bar a {
   color: #585858;
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
+  font-family: 'DB Adman X', sans-serif;
   transition: color 0.3s;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+}
+
+.top-bar a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 #logosoftcolor {
-  position: absolute;
-  top: 0.5rem;
-  left: 5%;
   width: 3rem;
-  height: 4rem;
+  height: 3.5rem;
   background: url('Logo soft color.png') no-repeat;
   background-size: contain;
+  margin-right: 1rem;
 }
 
 /*===============================*/
