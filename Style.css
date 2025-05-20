@@ -83,14 +83,15 @@ html {
 
 .displayFlex {
   display: flex;
-    gap: 3rem;
-    margin-left: 28%;
+  gap: 1.5rem;
+  justify-content: center;
+  flex: 1;
 }
 
 .displayFlex2 {
   display: flex;
   gap: 0.6rem;
-  margin-left: 62%;
+  justify-content: flex-end;
 }
 
 .nav-link {
