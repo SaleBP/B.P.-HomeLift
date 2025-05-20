@@ -13,7 +13,6 @@ window.onload = function () {
   }
 
   // ... ส่วนอื่นๆ ของคุณ ...
-};
   // ========== แชทบอท ==========
   const chatIcon = document.getElementById("chat-icon");
   const chatWindow = document.getElementById("chat-window");
