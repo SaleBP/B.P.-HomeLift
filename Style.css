@@ -184,6 +184,62 @@ font-size: 2rem;
 }
 
 /*===============================*/
+/*         nav-wrapper           */
+/*===============================*/
+
+/* กล่องครอบ */
+.nav-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+/* ลิงก์ */
+.flip-hover {
+  display: inline-block;
+  font-family: 'DB Adman X';
+  color: #eb660e;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  transform-origin: center;
+  perspective: 1000px;
+}
+
+/* เอฟเฟกต์พลิก */
+.flip-hover:hover {
+  transform: rotateY(180deg);
+}
+
+/* กล่อง hover ที่แสดงข้อความ */
+.hover-box {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #eee;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 0.75rem 1rem;
+  font-size: 0.9rem;
+  font-family: 'Gilroy', sans-serif;
+  color: #333;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* แสดงกล่องเมื่อ hover ที่ลิงก์ */
+.nav-wrapper:hover .hover-box {
+  opacity: 1;
+  transform: translateY(5px);
+  pointer-events: auto;
+}
+
+
+/*===============================*/
 /*         NAVIGATION TEXTS     */
 /*===============================*/
 #t1, #t2, #t3, #t4, #t5, #t6, #t7 {
