@@ -577,9 +577,8 @@ display: flex
 
     .top-right displayFlex2 {
         font-family: 'Gilroy';
-        gap: 5%;
-        font-size: .6rem;
-        margin-right: 4%;
+        gap: 0.3rem;
+        font-size: 0.8rem;
     }
 
   .row-img {
