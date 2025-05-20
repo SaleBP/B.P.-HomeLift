@@ -570,10 +570,9 @@ display: flex
 
 .displayFlex {
     font-family: 'DB Adman X';
-    display: flex
-;
-    gap: 2.5rem;
-    font-size: clamp(1rem, 5vw 22.25px, 0.9rem);
+    gap: 1rem;
+    margin-left: 5%;
+    font-size: clamp(1rem, 5vw, 0.8rem);
 }
 
   .row-img {
