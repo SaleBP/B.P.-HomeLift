@@ -575,7 +575,11 @@ display: flex
     font-size: clamp(1rem, 5vw, 0.8rem);
 }
 
-
+    .top-rightdisplayFlex2 {
+        font-family: 'Gilroy';
+        gap: 0.3rem;
+        font-size: 0.8rem;
+    }
 
   .row-img {
     width: 60%;
