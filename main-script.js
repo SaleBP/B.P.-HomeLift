@@ -6,7 +6,7 @@ window.onload = function () {
     preloader.classList.add('fade-out');
     setTimeout(() => {
       preloader.style.display = 'none';
-    }, 800);
+    }, 4000);
   }
 
   // ========== แชทบอท ==========
