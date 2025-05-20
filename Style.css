@@ -178,7 +178,7 @@ html {
 }
 
 /* displayFlex2 สามารถใช้ได้ต่อ */
-.displayFlex2 {
+.top-right displayFlex2 {
 font-family: 'Gilroy';
 font-size: 2rem;
 }
@@ -575,7 +575,7 @@ display: flex
     font-size: clamp(1rem, 5vw, 0.8rem);
 }
 
-    .displayFlex2 {
+    .top-right displayFlex2 {
         font-family: 'Gilroy';
         gap: 5%;
         font-size: .6rem;
