@@ -568,10 +568,13 @@ display: flex
     font-size: 1rem;
   }
 
-  .displayFlex {
-  gap: 0.3rem;
-  margin-left: 5%;
-  }
+.displayFlex {
+    font-family: 'DB Adman X';
+    display: flex
+;
+    gap: 2.5rem;
+    font-size: clamp(1rem, 5vw 22.25px, 0.9rem);
+}
 
   .row-img {
     width: 60%;
