@@ -40,7 +40,7 @@ html {
   transform: translateX(-50%);
   width: 90%;
   max-width: 1150px;
-  background-color: rgb(255, 180, 180);
+  background-color: rgb(255, 255, 255);
   border-radius: 50px;
   display: flex;
   align-items: center;
