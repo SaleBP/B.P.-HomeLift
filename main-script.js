@@ -1,4 +1,4 @@
-
+document.addEventListener("DOMContentLoaded", function () {
 window.onload = function () {
   let progress = 0;
   const sliderBall = document.getElementById("slider-ball");
