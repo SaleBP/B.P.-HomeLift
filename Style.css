@@ -180,7 +180,7 @@ html {
 /* displayFlex2 สามารถใช้ได้ต่อ */
 .displayFlex2 {
 font-family: 'Gilroy';
-font-size: clamp(0.8rem, 5vw, 0.2rem);
+font-size: 2rem;
 }
 
 /*===============================*/
