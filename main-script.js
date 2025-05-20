@@ -1,13 +1,16 @@
 
-window.addEventListener("load", () => {
-  const preloader = document.getElementById("preloader");
-  const mainContent = document.getElementById("main-content");
-
-  setTimeout(() => {
-    preloader.classList.add("fade-out");
-    mainContent.style.opacity = "1";
-  }, 1500); // 1.5 วิ = ระยะเวลา loader โชว์ก่อน fade
-});
+// ========== หน้าโหลด (Preloader) ==========
+window.onload = function () {
+  const preloader = document.getElementById('preloader');
+  if (preloader) {
+    // ✅ รอ 1.5 วินาทีเสมอ ไม่ว่าโหลดจริงหรือจาก cache
+    setTimeout(() => {
+      preloader.classList.add('fade-out');
+      setTimeout(() => {
+        preloader.style.display = 'none';
+      }, 800); // รอให้ fade-out เสร็จก่อนซ่อนจริง
+    }, 2500); // เวลาแสดง preloader ก่อนเริ่ม fade
+  }
 
   // ... ส่วนอื่นๆ ของคุณ ...
   // ========== แชทบอท ==========
