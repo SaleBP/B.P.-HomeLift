@@ -183,6 +183,7 @@ html {
     font-size: 0.8rem;
     display: flex;
     margin-right: 2%;
+    gap: 1rem;
 }
 
 /*===============================*/
