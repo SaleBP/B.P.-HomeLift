@@ -10,7 +10,7 @@ window.onload = function () {
   const maxSlide = 205; // = 250 (slide-bar width) - 40 (ball) - padding
 
   const interval = setInterval(() => {
-    progress += Math.random() * 3;
+    progress += Math.random() * 2.5;
     if (progress >= 100) {
       progress = 100;
       clearInterval(interval);
@@ -28,7 +28,7 @@ window.onload = function () {
     percentText.textContent = Math.floor(progress) + "%";
     sliderBall.style.left = (progress / 100) * maxSlide + "px";
     fill.style.width = progress + "%";
-  }, 30);
+  }, 16);
 };
 
 
