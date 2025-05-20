@@ -31,13 +31,6 @@ window.onload = function () {
   }, 16);
 };
 
-function exitPreloader() {
-  const preloader = document.getElementById("preloader");
-  const mainContent = document.getElementById("main-content");
-  preloader.classList.add("fade-out");
-  mainContent.style.opacity = 1;
-}
-
   // ... ส่วนอื่นๆ ของคุณ ...
   // ========== แชทบอท ==========
   const chatIcon = document.getElementById("chat-icon");
