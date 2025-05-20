@@ -575,8 +575,6 @@ display: flex
     font-size: clamp(1rem, 5vw, 0.8rem);
 }
 
-
-
   .row-img {
     width: 60%;
     border-radius: 10px;
