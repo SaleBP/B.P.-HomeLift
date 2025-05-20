@@ -1,17 +1,16 @@
+# รันใหม่หลังจากรีเซ็ต เพื่อสร้างไฟล์ JavaScript อีกครั้ง
+combined_js_code = """
+// ========== หน้าโหลด (Preloader) ==========
 window.onload = function () {
-  // ✅ ปิดหน้าโหลด
   const preloader = document.getElementById('preloader');
   if (preloader) {
     preloader.classList.add('fade-out');
     setTimeout(() => {
       preloader.style.display = 'none';
-    }, 800); // ซ่อนจริงหลัง fade-out เสร็จ
+    }, 800);
   }
 
-  // === จากตรงนี้ไปคือโค้ดอื่นของคุณ ===
-
-window.onload = function () 
-  // === เปิด/ปิดแชทบอท ===
+  // ========== แชทบอท ==========
   const chatIcon = document.getElementById("chat-icon");
   const chatWindow = document.getElementById("chat-window");
   const closeChat = document.getElementById("close-chat");
@@ -32,7 +31,28 @@ window.onload = function ()
     chatMessages.scrollTop = chatMessages.scrollHeight;
   }
 
-  // === Fade-in Animation on Scroll ===
+  window.handleOption = function (option) {
+    const response = document.createElement("div");
+    response.className = "chat-message user";
+    response.textContent = "คุณเลือก: " + option;
+    chatMessages.appendChild(response);
+
+    const botReply = document.createElement("div");
+    botReply.className = "chat-message bot";
+
+    if (option === "บริการ") {
+      botReply.textContent = "เรามีบริการติดตั้งและบำรุงรักษาลิฟต์บ้านครบวงจรครับ";
+    } else if (option === "ปรับแต่งลิฟต์") {
+      botReply.textContent = "สามารถเลือกสี วัสดุ และขนาดลิฟต์ได้ตามต้องการเลยครับ";
+    } else if (option === "ติดต่อ") {
+      botReply.textContent = "สามารถติดต่อเราได้ที่ 038 387 141 หรือ LINE: @bphomelift";
+    }
+
+    chatMessages.appendChild(botReply);
+    scrollToLatestMessage();
+  };
+
+  // ========== Fade-in Animation ==========
   const faders = document.querySelectorAll('.fade-in:not(.fade-late)');
   const delayedFaders = document.querySelectorAll('.fade-in.fade-late');
 
@@ -61,29 +81,7 @@ window.onload = function ()
   faders.forEach(el => appearOnScroll.observe(el));
   delayedFaders.forEach(el => delayedObserver.observe(el));
 
-  // === ฟังก์ชันตอบสนองของแชทบอท ===
-  window.handleOption = function (option) {
-    const response = document.createElement("div");
-    response.className = "chat-message user";
-    response.textContent = "คุณเลือก: " + option;
-    chatMessages.appendChild(response);
-
-    const botReply = document.createElement("div");
-    botReply.className = "chat-message bot";
-
-    if (option === "บริการ") {
-      botReply.textContent = "เรามีบริการติดตั้งและบำรุงรักษาลิฟต์บ้านครบวงจรครับ";
-    } else if (option === "ปรับแต่งลิฟต์") {
-      botReply.textContent = "สามารถเลือกสี วัสดุ และขนาดลิฟต์ได้ตามต้องการเลยครับ";
-    } else if (option === "ติดต่อ") {
-      botReply.textContent = "สามารถติดต่อเราได้ที่ 038 387 141 หรือ LINE: @bphomelift";
-    }
-
-    chatMessages.appendChild(botReply);
-    scrollToLatestMessage();
-  };
-
-  // === Carousel Indicators (จุดเลื่อนภาพ) ===
+  // ========== Carousel Indicators ==========
   const imageRow = document.querySelector('.image-row');
   const imageBoxes = document.querySelectorAll('.image-box');
   const dotContainer = document.querySelector('.carousel-dots');
@@ -117,7 +115,7 @@ window.onload = function ()
     }
   });
 
-  // === Drag-to-Scroll (ลากรูปภาพด้วยเมาส์) ===
+  // ========== Drag-to-Scroll (Desktop) ==========
   let isDown = false;
   let startX;
   let scrollLeft;
@@ -147,7 +145,7 @@ window.onload = function ()
     imageRow.scrollLeft = scrollLeft - walk;
   });
 
-  // === Top Bar Transparency on Scroll ===
+  // ========== Top Bar Transparency on Scroll ==========
   const topBar = document.querySelector('.top-bar');
   window.addEventListener('scroll', () => {
     if (window.scrollY > 10) {
@@ -157,3 +155,11 @@ window.onload = function ()
     }
   });
 };
+"""
+
+# เขียนไฟล์ใหม่
+output_path = "/mnt/data/main-script.js"
+with open(output_path, "w", encoding="utf-8") as f:
+    f.write(combined_js_code)
+
+output_path
