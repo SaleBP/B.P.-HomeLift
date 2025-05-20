@@ -18,51 +18,59 @@
 /*           PRELOADER    */
 /*===============================*/
 
-#preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-  transition: opacity 0.5s ease, visibility 0.5s ease;
-}
+  #preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+  }
 
-.wave-dots {
-  display: flex;
-  gap: 0.6rem;
-  margin-bottom: 1rem;
-}
+  #preloader.fade-out {
+    opacity: 0;
+    pointer-events: none;
+  }
 
-.wave-dots .dot {
-  width: 12px;
-  height: 12px;
-  background-color: #eb660e;
-  border-radius: 50%;
-  animation: wave 1.2s infinite ease-in-out;
-}
+  .slide-bar {
+    width: 250px;
+    height: 50px;
+    background: #fff;
+    border-radius: 50px;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+  }
 
-.wave-dots .dot:nth-child(2) { animation-delay: 0.1s; }
-.wave-dots .dot:nth-child(3) { animation-delay: 0.2s; }
-.wave-dots .dot:nth-child(4) { animation-delay: 0.3s; }
-.wave-dots .dot:nth-child(5) { animation-delay: 0.4s; }
+  .slide-bar::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #ffe2cc; /* สีส้มอ่อน */
+    transition: width 2s ease;
+    border-radius: 50px;
+    z-index: 0;
+  }
 
-@keyframes wave {
-  0%, 100% { transform: translateY(0); opacity: 0.6; }
-  50% { transform: translateY(-10px); opacity: 1; }
-}
-
-.loader-text {
-  font-family: 'Gilroy';
-  font-size: 1.4rem;
-  color: #eb660e;
-}
-
+  .slider-ball {
+    width: 40px;
+    height: 40px;
+    background-color: #eb660e;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+    transition: left 2s ease;
+  }
 
 /*===============================*/
 /*           BASE STYLES        */

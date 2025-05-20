@@ -1,17 +1,28 @@
 
 // ========== หน้าโหลด (Preloader) ==========
-window.onload = function () {
-  const preloader = document.getElementById('preloader');
-  if (preloader) {
-    // ✅ รอ 1.5 วินาทีเสมอ ไม่ว่าโหลดจริงหรือจาก cache
-    setTimeout(() => {
-      preloader.classList.add('fade-out');
-      setTimeout(() => {
-        preloader.style.display = 'none';
-      }, 800); // รอให้ fade-out เสร็จก่อนซ่อนจริง
-    }, 2500); // เวลาแสดง preloader ก่อนเริ่ม fade
-  }
+  window.onload = function () {
+    const preloader = document.getElementById("preloader");
+    const ball = document.getElementById("slider-ball");
+    const bar = document.querySelector(".slide-bar::after");
+    const slideBar = document.querySelector(".slide-bar");
 
+    // สไลด์ลูกบอล
+    setTimeout(() => {
+      ball.style.left = "205px"; // ขยับไปทางขวาสุด (250px - ball width - padding)
+      slideBar.style.setProperty("--fill-width", "100%");
+      slideBar.classList.add("fill");
+    }, 500);
+
+    // เพิ่มสีพื้นหลังและจางออก
+    setTimeout(() => {
+      document.querySelector(".slide-bar::after").style.width = "100%";
+    }, 600);
+
+    // จางออก preloader
+    setTimeout(() => {
+      preloader.classList.add("fade-out");
+    }, 2500);
+  };
   // ... ส่วนอื่นๆ ของคุณ ...
   // ========== แชทบอท ==========
   const chatIcon = document.getElementById("chat-icon");
