@@ -97,49 +97,6 @@ html {
   opacity: 0.6;
 }
 
-.contact-hover {
-  position: relative;
-}
-
-.contact-popup {
-  position: absolute;
-  top: 120%;
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgba(255, 255, 255, 0.75);
-  backdrop-filter: blur(12px);
-  border-radius: 16px;
-  padding: 1rem 1.5rem;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  white-space: nowrap;
-  display: none;
-  flex-direction: column;
-  gap: 0.5rem;
-  z-index: 999;
-  opacity: 0;
-  transition: opacity 0.4s ease, transform 0.4s ease;
-  pointer-events: none;
-}
-
-.contact-hover:hover .contact-popup {
-  display: flex;
-  opacity: 1;
-  transform: translateX(-50%) translateY(0);
-  pointer-events: auto;
-}
-
-/* ลิงก์ภายใน popup */
-.popup-link {
-  font-family: 'Gilroy', sans-serif;
-  font-size: 1rem;
-  color: #333;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.popup-link:hover {
-  color: #eb660e;
-}
 
 /*===============================*/
 /*           CONTAINER          */
