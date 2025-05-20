@@ -578,7 +578,7 @@ display: flex
 .displayFlex2 {
     font-family: 'Gilroy';
     gap: 1rem;
-    font-size: clamp(1rem, 5vw, 0.8rem);
+    font-size: clamp(0.2rem, 5vw, 0.6rem);
 }
 
   .row-img {
