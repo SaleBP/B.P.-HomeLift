@@ -78,10 +78,11 @@ html {
 }
 
 .top-right {
-  flex: 0 0 auto;
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    margin-right: 2%;
 }
 
 /* displayFlex คงไว้ */
@@ -94,8 +95,8 @@ html {
 
 /* displayFlex2 สามารถใช้ได้ต่อ */
 .displayFlex2 {
-  font-family: 'Gilroy';
-  font-size: clamp(1rem, 5vw, 1.2rem);
+font-family: 'Gilroy';
+font-size: clamp(0.8rem, 5vw, 0.2rem);
 }
 
 /*===============================*/
