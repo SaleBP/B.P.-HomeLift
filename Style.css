@@ -179,10 +179,10 @@ html {
 
 /* displayFlex2 สามารถใช้ได้ต่อ */
 .top-rightdisplayFlex2 {
-font-family: 'Gilroy';
-font-size: 2rem;
-display: flex
-;
+    font-family: 'Gilroy';
+    font-size: 0.8rem;
+    display: flex;
+    margin-right: 2%;
 }
 
 /*===============================*/
@@ -577,14 +577,9 @@ display: flex
     font-size: clamp(1rem, 5vw, 0.8rem);
 }
 
-    .top-rightdisplayFlex2 {
-        font-family: 'Gilroy';
-        gap: 5%;
-        font-size: .6rem;
-        margin-right: 4%;
-        display: flex
-;
-    }
+.top-rightdisplayFlex2 {
+    display: flex;
+}   
 
   .row-img {
     width: 60%;
