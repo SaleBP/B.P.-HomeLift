@@ -3,12 +3,17 @@
 window.onload = function () {
   const preloader = document.getElementById('preloader');
   if (preloader) {
-    preloader.classList.add('fade-out');
+    // ✅ รอ 1.5 วินาทีเสมอ ไม่ว่าโหลดจริงหรือจาก cache
     setTimeout(() => {
-      preloader.style.display = 'none';
-    }, 4000);
+      preloader.classList.add('fade-out');
+      setTimeout(() => {
+        preloader.style.display = 'none';
+      }, 800); // รอให้ fade-out เสร็จก่อนซ่อนจริง
+    }, 2500); // เวลาแสดง preloader ก่อนเริ่ม fade
   }
 
+  // ... ส่วนอื่นๆ ของคุณ ...
+};
   // ========== แชทบอท ==========
   const chatIcon = document.getElementById("chat-icon");
   const chatWindow = document.getElementById("chat-window");
