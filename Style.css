@@ -86,6 +86,7 @@ html {
 
 /* displayFlex คงไว้ */
 .displayFlex {
+  font-family: 'DB Adman X';
   display: flex;
   gap: 1.5rem;
 }
@@ -110,18 +111,6 @@ html {
   font-family: 'Gilroy';
 }
 
-.displayFlex {
-  display: flex;
-  gap: 1.5rem;
-  justify-content: center;
-  flex: 1;
-}
-
-.displayFlex2 {
-  display: flex;
-  gap: 0.6rem;
-  justify-content: flex-end;
-}
 
 .nav-link {
   text-decoration: none;
