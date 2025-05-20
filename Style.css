@@ -44,17 +44,6 @@
   
 }
 
-.slider-fill {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 0%;
-  background-color: #ffe2cc;
-  border-radius: 50px;
-  transition: width 0.3s ease;
-  z-index: 1;
-}
 
 .slider-ball {
   width: 40px;
