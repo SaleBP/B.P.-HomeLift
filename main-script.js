@@ -1,22 +1,24 @@
 
-// ========== หน้าโหลด (Preloader) ==========
 window.onload = function () {
   let progress = 0;
   const progressBar = document.getElementById("progress-bar");
   const percentText = document.getElementById("loader-percent");
 
   const interval = setInterval(() => {
-    progress += Math.random() * 3; // โหลดเร็วขึ้นเล็กน้อย
+    progress += Math.random() * 3;
     if (progress >= 100) {
       progress = 100;
       clearInterval(interval);
       setTimeout(() => {
-        document.getElementById("preloader").classList.add("hidden");
+        const preloader = document.getElementById("preloader");
+        preloader.classList.add("hidden");
+        preloader.style.display = "none"; // ซ่อนออกจริง ๆ
       }, 300);
     }
     progressBar.style.width = progress + "%";
     percentText.textContent = Math.floor(progress) + "%";
   }, 50);
+};
   // ... ส่วนอื่นๆ ของคุณ ...
   // ========== แชทบอท ==========
   const chatIcon = document.getElementById("chat-icon");
