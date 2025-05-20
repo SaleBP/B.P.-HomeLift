@@ -177,4 +177,4 @@ window.onload = function () {
       topBar.classList.remove('transparent');
     }
   });
-};
+;
