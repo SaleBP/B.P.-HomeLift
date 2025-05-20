@@ -54,8 +54,8 @@ html {
 /* เมื่อ scroll ลงมา */
 .top-bar.transparent {
   background-color: rgba(255, 255, 255, 0.6); /* โปร่งใส */
-  backdrop-filter: blur(10px); /* เบลอ */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* เพิ่มความลึก */
+  backdrop-filter: blur(5px); /* เบลอ */
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15); /* เพิ่มความลึก */
 }
 
 #logosoftcolor {
