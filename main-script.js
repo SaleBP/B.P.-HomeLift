@@ -7,27 +7,31 @@ window.onload = function () {
   const preloader = document.getElementById("preloader");
   const mainContent = document.getElementById("main-content");
 
-  const maxSlide = 205; // 250px width - 40px ball - 5px padding
+  const maxSlide = 205; // ความยาวเลื่อนลูกกลม
 
   const interval = setInterval(() => {
     progress += Math.random() * 4;
+
     if (progress >= 100) {
       progress = 100;
+      clearInterval(interval);
 
-      // เคลื่อน ball และเติมสี
+      // ปรับตำแหน่งลูกกลม และแถบพื้นหลังให้เต็ม
       sliderBall.style.left = maxSlide + "px";
       fill.style.width = "100%";
+      percentText.textContent = "100%";
 
-      clearInterval(interval);
+      // ซ่อน preloader และแสดงหน้าเว็บ
       setTimeout(() => {
         preloader.classList.add("fade-out");
         mainContent.style.opacity = 1;
       }, 500);
+    } else {
+      // ขณะโหลด ยังไม่ครบ 100%
+      percentText.textContent = Math.floor(progress) + "%";
+      sliderBall.style.left = (progress / 100) * maxSlide + "px";
+      fill.style.width = progress + "%";
     }
-
-    percentText.textContent = Math.floor(progress) + "%";
-    sliderBall.style.left = (progress / 100) * maxSlide + "px";
-    fill.style.width = progress + "%";
   }, 30);
 };
 
