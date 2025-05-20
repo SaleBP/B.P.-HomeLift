@@ -1,4 +1,16 @@
 window.onload = function () {
+  // ✅ ปิดหน้าโหลด
+  const preloader = document.getElementById('preloader');
+  if (preloader) {
+    preloader.classList.add('fade-out');
+    setTimeout(() => {
+      preloader.style.display = 'none';
+    }, 800); // ซ่อนจริงหลัง fade-out เสร็จ
+  }
+
+  // === จากตรงนี้ไปคือโค้ดอื่นของคุณ ===
+
+window.onload = function () 
   // === เปิด/ปิดแชทบอท ===
   const chatIcon = document.getElementById("chat-icon");
   const chatWindow = document.getElementById("chat-window");
