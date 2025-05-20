@@ -66,6 +66,35 @@ html {
   flex-shrink: 0;
   margin-left: 1.7rem;
 }
+
+.top-left {
+  flex: 0 0 auto;
+}
+
+.top-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.top-right {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+/* displayFlex คงไว้ */
+.displayFlex {
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* displayFlex2 สามารถใช้ได้ต่อ */
+.displayFlex2 {
+  font-family: 'Gilroy';
+}
+
 /*===============================*/
 /*         NAVIGATION TEXTS     */
 /*===============================*/
