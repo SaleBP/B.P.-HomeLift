@@ -181,6 +181,8 @@ html {
 .top-rightdisplayFlex2 {
 font-family: 'Gilroy';
 font-size: 2rem;
+display: flex
+;
 }
 
 /*===============================*/
@@ -580,6 +582,8 @@ display: flex
         gap: 5%;
         font-size: .6rem;
         margin-right: 4%;
+        display: flex
+;
     }
 
   .row-img {
