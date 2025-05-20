@@ -1,17 +1,22 @@
 
 // ========== หน้าโหลด (Preloader) ==========
 window.onload = function () {
-  const preloader = document.getElementById('preloader');
-  if (preloader) {
-    // ✅ รอ 1.5 วินาทีเสมอ ไม่ว่าโหลดจริงหรือจาก cache
-    setTimeout(() => {
-      preloader.classList.add('fade-out');
-      setTimeout(() => {
-        preloader.style.display = 'none';
-      }, 800); // รอให้ fade-out เสร็จก่อนซ่อนจริง
-    }, 2500); // เวลาแสดง preloader ก่อนเริ่ม fade
-  }
+  let progress = 0;
+  const progressBar = document.getElementById("progress-bar");
+  const percentText = document.getElementById("loader-percent");
 
+  const interval = setInterval(() => {
+    progress += Math.random() * 3; // โหลดเร็วขึ้นเล็กน้อย
+    if (progress >= 100) {
+      progress = 100;
+      clearInterval(interval);
+      setTimeout(() => {
+        document.getElementById("preloader").classList.add("hidden");
+      }, 300);
+    }
+    progressBar.style.width = progress + "%";
+    percentText.textContent = Math.floor(progress) + "%";
+  }, 50);
   // ... ส่วนอื่นๆ ของคุณ ...
   // ========== แชทบอท ==========
   const chatIcon = document.getElementById("chat-icon");

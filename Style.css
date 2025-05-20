@@ -75,11 +75,10 @@
     color: #333;
   }
 
-#preloader.hidden {
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.5s ease;
-}
+  #preloader.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
 /*===============================*/
 /*           BASE STYLES        */
 /*===============================*/
