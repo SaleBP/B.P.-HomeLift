@@ -1,28 +1,33 @@
 
-// ========== หน้าโหลด (Preloader) ==========
-  window.onload = function () {
-    const preloader = document.getElementById("preloader");
-    const ball = document.getElementById("slider-ball");
-    const bar = document.querySelector(".slide-bar::after");
-    const slideBar = document.querySelector(".slide-bar");
+window.onload = function () {
+  let progress = 0;
+  const progressBar = document.querySelector(".slide-bar::after");
+  const sliderBall = document.getElementById("slider-ball");
+  const percentText = document.getElementById("loader-percent");
+  const preloader = document.getElementById("preloader");
 
-    // สไลด์ลูกบอล
-    setTimeout(() => {
-      ball.style.left = "205px"; // ขยับไปทางขวาสุด (250px - ball width - padding)
-      slideBar.style.setProperty("--fill-width", "100%");
-      slideBar.classList.add("fill");
-    }, 500);
+  const barWidth = 250 - 40 - 10; // bar - ball width - margin
 
-    // เพิ่มสีพื้นหลังและจางออก
-    setTimeout(() => {
+  const interval = setInterval(() => {
+    progress += Math.random() * 4;
+    if (progress >= 100) {
+      progress = 100;
+
+      // เคลื่อน ball และย้อมสีหลอด
+      sliderBall.style.left = barWidth + "px";
       document.querySelector(".slide-bar::after").style.width = "100%";
-    }, 600);
 
-    // จางออก preloader
-    setTimeout(() => {
-      preloader.classList.add("fade-out");
-    }, 2500);
-  };
+      clearInterval(interval);
+      setTimeout(() => {
+        preloader.classList.add("fade-out");
+      }, 500);
+    }
+
+    percentText.textContent = Math.floor(progress) + "%";
+    sliderBall.style.left = (progress / 100) * barWidth + "px";
+    document.querySelector(".slide-bar").style.setProperty("--bar-fill", progress + "%");
+  }, 30);
+};
   // ... ส่วนอื่นๆ ของคุณ ...
   // ========== แชทบอท ==========
   const chatIcon = document.getElementById("chat-icon");
