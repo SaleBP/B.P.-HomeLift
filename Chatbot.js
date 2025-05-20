@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+window.onload = function () {
   // === เปิด/ปิดแชทบอท ===
   const chatIcon = document.getElementById("chat-icon");
   const chatWindow = document.getElementById("chat-window");
@@ -21,11 +21,8 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // === Fade-in Animation on Scroll ===
-  const faders = document.querySelectorAll('.fade-in');
-  const appearOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-  };
+  const faders = document.querySelectorAll('.fade-in:not(.fade-late)');
+  const delayedFaders = document.querySelectorAll('.fade-in.fade-late');
 
   const appearOnScroll = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
@@ -33,11 +30,24 @@ document.addEventListener("DOMContentLoaded", function () {
       entry.target.classList.add('visible');
       observer.unobserve(entry.target);
     });
-  }, appearOptions);
-
-  faders.forEach(el => {
-    appearOnScroll.observe(el);
+  }, {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
   });
+
+  const delayedObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    });
+  }, {
+    threshold: 0.1,
+    rootMargin: '0px 0px -200px 0px'
+  });
+
+  faders.forEach(el => appearOnScroll.observe(el));
+  delayedFaders.forEach(el => delayedObserver.observe(el));
 
   // === ฟังก์ชันตอบสนองของแชทบอท ===
   window.handleOption = function (option) {
@@ -133,37 +143,5 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       topBar.classList.remove('transparent');
     }
-
-    document.addEventListener("DOMContentLoaded", function () {
-  // ปกติ
-  const faders = document.querySelectorAll('.fade-in:not(.fade-late)');
-  const delayedFaders = document.querySelectorAll('.fade-in.fade-late');
-
-  const appearOnScroll = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (!entry.isIntersecting) return;
-      entry.target.classList.add('visible');
-      observer.unobserve(entry.target);
-    });
-  }, {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px' // 👈 ปกติ
   });
-
-  const delayedObserver = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (!entry.isIntersecting) return;
-      entry.target.classList.add('visible');
-      observer.unobserve(entry.target);
-    });
-  }, {
-    threshold: 0.1,
-    rootMargin: '0px 0px -200px 0px' // 👈 แสดงช้ากว่า
-  });
-
-  faders.forEach(el => appearOnScroll.observe(el));
-  delayedFaders.forEach(el => delayedObserver.observe(el));
-});
-
-  });
-});
+};
