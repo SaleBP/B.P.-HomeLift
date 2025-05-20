@@ -7,7 +7,7 @@ window.onload = function () {
   const preloader = document.getElementById("preloader");
   const mainContent = document.getElementById("main-content");
 
-  const maxSlide = 1500; // = 250 (slide-bar width) - 40 (ball) - padding
+  const maxSlide = 205; // = 250 (slide-bar width) - 40 (ball) - padding
 
   const interval = setInterval(() => {
     progress += Math.random() * 2.5;
