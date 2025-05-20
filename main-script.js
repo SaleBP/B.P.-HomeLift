@@ -1,35 +1,16 @@
 
+// ========== หน้าโหลด (Preloader) ==========
 window.onload = function () {
-  let progress = 0;
-  const sliderBall = document.getElementById("slider-ball");
-  const fill = document.getElementById("slide-fill");
-  const percentText = document.getElementById("loader-percent");
-  const preloader = document.getElementById("preloader");
-  const mainContent = document.getElementById("main-content");
-
-  const maxSlide = 205; // 250px width - 40px ball - 5px padding
-
-  const interval = setInterval(() => {
-    progress += Math.random() * 4;
-    if (progress >= 100) {
-      progress = 100;
-
-      // เคลื่อน ball และเติมสี
-      sliderBall.style.left = maxSlide + "px";
-      fill.style.width = "100%";
-
-      clearInterval(interval);
+  const preloader = document.getElementById('preloader');
+  if (preloader) {
+    // ✅ รอ 1.5 วินาทีเสมอ ไม่ว่าโหลดจริงหรือจาก cache
+    setTimeout(() => {
+      preloader.classList.add('fade-out');
       setTimeout(() => {
-        preloader.classList.add("fade-out");
-        mainContent.style.opacity = 1;
-      }, 500);
-    }
-
-    percentText.textContent = Math.floor(progress) + "%";
-    sliderBall.style.left = (progress / 100) * maxSlide + "px";
-    fill.style.width = progress + "%";
-  }, 30);
-};
+        preloader.style.display = 'none';
+      }, 800); // รอให้ fade-out เสร็จก่อนซ่อนจริง
+    }, 2500); // เวลาแสดง preloader ก่อนเริ่ม fade
+  }
 
   // ... ส่วนอื่นๆ ของคุณ ...
   // ========== แชทบอท ==========
