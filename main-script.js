@@ -1,33 +1,36 @@
 
 window.onload = function () {
   let progress = 0;
-  const progressBar = document.querySelector(".slide-bar::after");
   const sliderBall = document.getElementById("slider-ball");
+  const fill = document.getElementById("slide-fill");
   const percentText = document.getElementById("loader-percent");
   const preloader = document.getElementById("preloader");
+  const mainContent = document.getElementById("main-content");
 
-  const barWidth = 250 - 40 - 10; // bar - ball width - margin
+  const maxSlide = 205; // 250px width - 40px ball - 5px padding
 
   const interval = setInterval(() => {
     progress += Math.random() * 4;
     if (progress >= 100) {
       progress = 100;
 
-      // เคลื่อน ball และย้อมสีหลอด
-      sliderBall.style.left = barWidth + "px";
-      document.querySelector(".slide-bar::after").style.width = "100%";
+      // เคลื่อน ball และเติมสี
+      sliderBall.style.left = maxSlide + "px";
+      fill.style.width = "100%";
 
       clearInterval(interval);
       setTimeout(() => {
         preloader.classList.add("fade-out");
+        mainContent.style.opacity = 1;
       }, 500);
     }
 
     percentText.textContent = Math.floor(progress) + "%";
-    sliderBall.style.left = (progress / 100) * barWidth + "px";
-    document.querySelector(".slide-bar").style.setProperty("--bar-fill", progress + "%");
+    sliderBall.style.left = (progress / 100) * maxSlide + "px";
+    fill.style.width = progress + "%";
   }, 30);
 };
+
   // ... ส่วนอื่นๆ ของคุณ ...
   // ========== แชทบอท ==========
   const chatIcon = document.getElementById("chat-icon");
