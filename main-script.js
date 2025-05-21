@@ -184,16 +184,7 @@ window.onload = function () {
     imageRow.scrollLeft = scrollLeft - walk;
   });
 
-  // ========== Top Bar Transparency on Scroll ==========
-  const topBar = document.querySelector('.top-bar');
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 10) {
-      topBar.classList.add('transparent');
-    } else {
-      topBar.classList.remove('transparent');
-    }
-
-    document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
   const ball = document.createElement("div");
   ball.classList.add("cursor-ball");
   document.body.appendChild(ball);
@@ -202,6 +193,3 @@ window.onload = function () {
     ball.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
   });
 });
-
-  });
-;
