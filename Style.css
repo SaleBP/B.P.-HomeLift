@@ -596,7 +596,7 @@ section {
 .textmap a {
 font-family: 'DB Adman X', sans-serif;
     color: #666;
-    font-size: 1.3rem;
+    font-size: 2rem;
     text-decoration: none;
     transition: all 0.3s ease;
     white-space: nowrap;
@@ -709,7 +709,7 @@ display: flex
   }
 
   .textmap a {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     max-width: 90vw;
     overflow-x: auto;
     display: inline-block;
