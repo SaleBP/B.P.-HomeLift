@@ -659,7 +659,6 @@ display: flex
 
 .displayFlex {
     font-family: 'DB Adman X';
-    font-family: 'DB Adman X';
     gap: 1.5rem;
     font-size: clamp(0.6rem, 5vw, 0.8rem);
 }
@@ -729,7 +728,7 @@ display: flex
     text-align: left; /* เปลี่ยนเป็น center ได้ถ้าอยากให้อ่านง่ายบนมือถือ */
   }
 
-  .textmap a {
+  .textmap {
     font-size: 0.7rem;
     max-width: 90vw;
     overflow-x: auto;
