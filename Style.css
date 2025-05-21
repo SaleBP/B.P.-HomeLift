@@ -187,10 +187,6 @@ html {
     gap: 0.3rem;
 }
 
-#contact {
-  scroll-margin-top: 100px; /* ปรับให้พอดีกับความสูงของ top-bar */
-}
-
 /*------------------------------------*/
 /* CONTACT HOVER EFFECT + DROPDOWN */
 /*------------------------------------*/
