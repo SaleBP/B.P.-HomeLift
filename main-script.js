@@ -31,6 +31,24 @@ window.onload = function () {
   }, 16);
 };
 
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const wrapper = document.querySelector(".nav-contact-wrapper");
+    let timeout;
+
+    wrapper.addEventListener("mouseenter", () => {
+      clearTimeout(timeout); // ป้องกันการหายระหว่าง hover
+      wrapper.classList.add("show");
+    });
+
+    wrapper.addEventListener("mouseleave", () => {
+      timeout = setTimeout(() => {
+        wrapper.classList.remove("show");
+      }, 1000); // ✅ หน่วง 1 วินาทีก่อนหาย
+    });
+  });
+</script>
+
   // ... ส่วนอื่นๆ ของคุณ ...
   // ========== แชทบอท ==========
   const chatIcon = document.getElementById("chat-icon");

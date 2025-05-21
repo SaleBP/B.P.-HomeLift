@@ -221,6 +221,7 @@ html {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  min-width: 100px; /* ✅ เพิ่มความกว้าง */
   transition: opacity 1s ease, visibility 1s ease, transform 1s ease;
   z-index: 1000;
 }
@@ -244,6 +245,14 @@ html {
   visibility: visible;
   pointer-events: auto;
   transform: translateX(-50%) translateY(5px);
+}
+
+.nav-contact-wrapper:hover .contact-dropdown,
+.nav-contact-wrapper.show .contact-dropdown {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
 }
 
 /*===============================*/
