@@ -185,11 +185,53 @@ html {
     margin-right: 2%;
     gap: 0.3rem;
 }
-/*===============================*/
-/*       nav-contact-wrapper     */
-/*===============================*/
 
 
+/*------------------------------------*/
+/* CONTACT HOVER EFFECT + DROPDOWN */
+/*------------------------------------*/
+
+.nav-contact-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.contact-link {
+  display: inline-block;
+  transition: transform 0.4s ease;
+  transform-origin: center;
+}
+
+.nav-contact-wrapper:hover .contact-link {
+  transform: rotateY(360deg);
+}
+
+.contact-dropdown {
+  position: absolute;
+  top: 140%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-10px);
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  padding: 1rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Gilroy', sans-serif;
+  font-size: 0.9rem;
+  color: #333;
+  display: none;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-width: 220px;
+  z-index: 999;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 0;
+}
+
+.nav-contact-wrapper:hover .contact-dropdown {
+  display: flex;
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
 
 
 /*===============================*/
