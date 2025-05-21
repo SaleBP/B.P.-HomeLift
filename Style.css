@@ -615,17 +615,16 @@ font-family: 'DB Adman X', sans-serif;
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: white;
-  pointer-events: none; /* ไม่ให้รบกวนการคลิก */
+  background-color: #999; /* ← สีปกติ */
+  pointer-events: none;
   z-index: 9999;
   transform: translate(-50%, -50%);
-  transition: transform 0.1s ease;
-  mix-blend-mode: difference; /* ให้ลูกบอลโดดเด่นกับพื้นหลัง */
+  transition: transform 0.15s ease, background-color 0.15s ease;
+  
 }
 
 .cursor-ball.hovering {
-  transform: scale(1.8);
-  background-color: #eb660e;
+  background-color: #eb660e; /* ← สีตอน hover */
 }
 
 /*===============================*/
