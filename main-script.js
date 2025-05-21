@@ -196,18 +196,6 @@ document.addEventListener("DOMContentLoaded", () => {
     ball.style.transform = `translate(${e.clientX}px, ${e.clientY}px) scale(${scale})`;
   });
 
-document.addEventListener("DOMContentLoaded", () => {
-  const ball = document.createElement("div");
-  ball.classList.add("cursor-ball");
-  document.body.appendChild(ball);
-
-  let hovering = false;
-
-  document.addEventListener("mousemove", (e) => {
-    const scale = hovering ? 1.8 : 1;
-    ball.style.transform = `translate(${e.clientX}px, ${e.clientY}px) scale(${scale})`;
-  });
-
   const hoverTargets = document.querySelectorAll("a, button, .clickable");
   hoverTargets.forEach((el) => {
     el.addEventListener("mouseenter", () => {
