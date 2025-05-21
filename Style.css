@@ -606,6 +606,32 @@ font-family: 'DB Adman X', sans-serif;
   background-color: rgba(255, 255, 255, 0.85);
   transform: scale(1.05);
 }
+
+/* ===== Cursor Ball ===== */
+.cursor-ball {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  pointer-events: none; /* ไม่ให้รบกวนการคลิก */
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease;
+  mix-blend-mode: difference; /* ให้ลูกบอลโดดเด่นกับพื้นหลัง */
+}
+
+a:hover ~ .cursor-ball,
+button:hover ~ .cursor-ball {
+  transform: scale(1.5);
+}
+
+.cursor-ball.hovering {
+  background-color: #eb660e;
+}
+
 /*===============================*/
 /*         RESPONSIVE           */
 /*===============================*/

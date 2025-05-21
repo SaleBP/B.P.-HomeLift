@@ -192,5 +192,16 @@ window.onload = function () {
     } else {
       topBar.classList.remove('transparent');
     }
+
+    document.addEventListener("DOMContentLoaded", () => {
+  const ball = document.createElement("div");
+  ball.classList.add("cursor-ball");
+  document.body.appendChild(ball);
+
+  document.addEventListener("mousemove", (e) => {
+    ball.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+  });
+});
+
   });
 ;
