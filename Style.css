@@ -208,14 +208,14 @@ html {
 /* Contact dropdown styles */
 .contact-dropdown {
   position: absolute;
-  top: 120%;
+  top: 150%;
   left: 50%;
   transform: translate(-50%, -10px);
   background-color: rgba(255, 255, 255, 0.96);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
   padding: 1rem;
-  font-family: 'DB Adman X', sans-serif;
+  font-family: 'Gilroy';
   font-size: 1rem;
   color: #585858;
   opacity: 0;
@@ -232,7 +232,7 @@ html {
 .contact-dropdown a,
 .contact-dropdown div {
   display: block;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   color: #585858;
   text-decoration: none;
   transition: color 0.3s ease;
