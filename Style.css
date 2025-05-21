@@ -191,7 +191,6 @@ html {
 /* CONTACT HOVER EFFECT + DROPDOWN */
 /*------------------------------------*/
 
-/* Container ครอบลิงก์ */
 .nav-contact-wrapper {
   position: relative;
 }
@@ -205,35 +204,46 @@ html {
   transform: rotateY(360deg);
 }
 
-/* กล่อง dropdown */
+/* Contact dropdown styles */
 .contact-dropdown {
   position: absolute;
   top: 120%;
   left: 50%;
   transform: translateX(-50%);
-  min-width: 220px;
-  background-color: rgba(255, 255, 255, 0.95);
-  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  background-color: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
   padding: 1rem;
-  font-family: 'DB Adman X';
+  font-family: 'DB Adman X', sans-serif;
   font-size: 1rem;
   color: #585858;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity 1s ease, visibility 1s ease;
-  z-index: 999;
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
 }
 
-/* แสดง dropdown เมื่อ hover ทั้ง .nav-contact-wrapper และ dropdown เอง */
+.contact-dropdown a,
+.contact-dropdown div {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #585858;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-dropdown a:hover {
+  color: #eb660e;
+}
+
 .nav-contact-wrapper:hover .contact-dropdown,
-.contact-dropdown:hover {
+.nav-contact-wrapper:focus-within .contact-dropdown {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+  transform: translateX(-50%) translateY(5px);
 }
-
 
 /*===============================*/
 /*         NAVIGATION TEXTS     */
