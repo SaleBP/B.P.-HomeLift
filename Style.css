@@ -442,49 +442,6 @@ section {
   height: 600px;
 }
 
-/*===============================*/
-/*        CONTACT ICONS         */
-/*===============================*/
-.contact-icons {
-  position: absolute;
-  bottom: 18%;
-  left: 3%;
-  display: flex;
-  flex-direction: column;
-  gap: clamp(0.6rem, 2vw, 0.1rem);
-  z-index: 10;
-  font-size: clamp(1rem, 2vw, 1rem);
-}
-
-.icon-row {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  transition: opacity 0.5s ease;
-}
-
-.icon-row:hover {
-  opacity: 0.8;
-}
-
-.imgicon1, .imgicon2, .imgicon3, .imgicon4 {
-  width: 7%;
-  max-width: 25%;
-  height: auto;
-  margin-right: 0.5rem;
-}
-
-.icon-text, .icon-text2, .icon-text3, .icon-text4 {
-  color: #585858;
-  font-family: Gilroy;
-}
-
-.image-wrapper {
-  position: relative;
-  width: 100%;
-  max-width: 1920px;
-  margin: 0;
-}
 
 /*===============================*/
 /*           CHAT BOT           */
