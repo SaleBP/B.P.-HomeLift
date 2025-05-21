@@ -189,17 +189,21 @@ document.addEventListener("DOMContentLoaded", () => {
   ball.classList.add("cursor-ball");
   document.body.appendChild(ball);
 
+  let hovering = false;
+
   document.addEventListener("mousemove", (e) => {
-    ball.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+    const scale = hovering ? 1.8 : 1;
+    ball.style.transform = `translate(${e.clientX}px, ${e.clientY}px) scale(${scale})`;
   });
 
-  // ตรวจจับ hover บนสิ่งที่คลิกได้
   const hoverTargets = document.querySelectorAll("a, button, .clickable");
   hoverTargets.forEach((el) => {
     el.addEventListener("mouseenter", () => {
+      hovering = true;
       ball.classList.add("hovering");
     });
     el.addEventListener("mouseleave", () => {
+      hovering = false;
       ball.classList.remove("hovering");
     });
   });
