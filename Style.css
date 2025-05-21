@@ -573,9 +573,9 @@ display: flex
 
 .displayFlex {
     font-family: 'DB Adman X';
-    gap: 1rem;
-    margin-left: 5%;
-    font-size: clamp(1rem, 5vw, 0.8rem);
+    font-family: 'DB Adman X';
+    gap: 1.5rem;
+    font-size: clamp(0.6rem, 5vw, 0.8rem);
 }
 
 .top-rightdisplayFlex2 {
