@@ -571,6 +571,17 @@ section {
   transform: scale(1.05);
 }
 
+.textmap
+{
+  font-family: 'DB Adman X';
+  font-size: 1.2rem;
+  color: #585858;
+  text-align: center;
+  margin-top: 2%;
+}
+
+
+
 /*===============================*/
 /*         RESPONSIVE           */
 /*===============================*/
