@@ -252,7 +252,7 @@ html {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-  transform: translateY(0);
+  transform: translate(-50%, 0); /* ✅ กลับมาตรงกลางด้านล่าง */
 }
 
 /*===============================*/
