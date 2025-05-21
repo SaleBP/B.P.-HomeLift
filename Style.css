@@ -593,11 +593,12 @@ section {
 }
 
 .textmap a {
-font-family: 'Gilroy', sans-serif;
+font-family: 'DB Adman X', sans-serif;
     color: #666;
     font-size: 1rem;
     text-decoration: none;
     transition: all 0.3s ease;
+    white-space: nowrap;
 }
 
 .textmap a:hover {
