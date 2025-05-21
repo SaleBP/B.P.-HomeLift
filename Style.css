@@ -210,7 +210,7 @@ html {
   position: absolute;
   top: 120%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -10px);
   background-color: rgba(255, 255, 255, 0.96);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
@@ -222,7 +222,10 @@ html {
   visibility: hidden;
   pointer-events: none;
   min-width: 100px; /* ✅ เพิ่มความกว้าง */
-  transition: opacity 1s ease, visibility 1s ease, transform 1s ease;
+  transition:
+    opacity 0.4s ease,
+    visibility 0.4s ease,
+    transform 0.4s ease;
   z-index: 1000;
 }
 
