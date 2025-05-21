@@ -173,7 +173,7 @@ html {
 .displayFlex {
   font-family: 'DB Adman X';
   display: flex;
-  gap: 2.5rem;
+  gap: 3.5rem;
   font-size: clamp(1rem, 5vw, 1.5rem);
 }
 
@@ -580,6 +580,8 @@ display: flex
 
 .top-rightdisplayFlex2 {
     display: flex;
+    font-size: 0.6rem;
+    gap: 0.2rem;
 }   
 
   .row-img {
