@@ -31,7 +31,7 @@ window.onload = function () {
   }, 16);
 };
 
-<script>
+
   document.addEventListener("DOMContentLoaded", () => {
     const wrapper = document.querySelector(".nav-contact-wrapper");
     let timeout;
@@ -47,7 +47,6 @@ window.onload = function () {
       }, 1000); // ✅ หน่วง 1 วินาทีก่อนหาย
     });
   });
-</script>
 
   // ... ส่วนอื่นๆ ของคุณ ...
   // ========== แชทบอท ==========
