@@ -189,8 +189,51 @@ html {
 /*       nav-contact-wrapper     */
 /*===============================*/
 
+/* ครอบกล่องติดต่อ */
+.nav-contact-wrapper {
+  position: relative;
+  display: inline-block;
+}
 
+/* flip 360° แบบ smooth */
+.contact-link {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
 
+.nav-contact-wrapper:hover .contact-link {
+  transform: rotateY(360deg);
+}
+
+/* กล่องข้อความแบบ drop-down */
+.contact-dropdown {
+  position: absolute;
+  top: 130%; /* ขยับให้ห่างจากลิงก์ */
+  left: 50%;
+  transform: translateX(-50%) translateY(-10px);
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  font-family: 'Gilroy', sans-serif;
+  font-size: 0.9rem;
+  color: #333;
+  display: none;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-width: 220px;
+  z-index: 999;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 0;
+}
+
+/* แสดงเมื่อ hover */
+.nav-contact-wrapper:hover .contact-dropdown {
+  display: flex;
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
 
 /*===============================*/
 /*         NAVIGATION TEXTS     */
