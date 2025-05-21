@@ -623,9 +623,9 @@ font-family: 'DB Adman X', sans-serif;
   mix-blend-mode: difference; /* ให้ลูกบอลโดดเด่นกับพื้นหลัง */
 }
 
-a:hover ~ .cursor-ball,
-button:hover ~ .cursor-ball {
-  transform: scale(1.5);
+.cursor-ball.hovering {
+  transform: scale(1.8);
+  background-color: #eb660e;
 }
 
 .cursor-ball.hovering {

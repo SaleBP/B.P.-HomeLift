@@ -192,4 +192,15 @@ document.addEventListener("DOMContentLoaded", () => {
   document.addEventListener("mousemove", (e) => {
     ball.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
   });
+
+  // ตรวจจับ hover บนสิ่งที่คลิกได้
+  const hoverTargets = document.querySelectorAll("a, button, .clickable");
+  hoverTargets.forEach((el) => {
+    el.addEventListener("mouseenter", () => {
+      ball.classList.add("hovering");
+    });
+    el.addEventListener("mouseleave", () => {
+      ball.classList.remove("hovering");
+    });
+  });
 });
