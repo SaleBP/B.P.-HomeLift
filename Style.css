@@ -306,10 +306,13 @@ html {
 }
 
 .homelift {
-  text-align: center;      /* จัดรูปกึ่งกลางแนวนอน */
-  padding: 20px 0;         /* เว้นขอบบนและล่าง 20px */
-  width: 40%;              /* ขนาดรูป 40% ของ container */
-  height: auto;            /* รักษาสัดส่วนของรูป */
+  text-align: center;   /* จัดแนวรูปใน container */
+  padding: 20px 0;      /* เว้นขอบบนล่าง */
+}
+
+.lift-img {
+  width: 40%;           /* ขนาดรูป 40% */
+  height: auto;         /* รักษาสัดส่วน */
 }
 
 .img1 {
