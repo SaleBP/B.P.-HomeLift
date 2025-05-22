@@ -306,11 +306,15 @@ html {
 }
 
 .homelift {
-    width: 50%;
-    max-width: 50%;
-    margin-top: 6%;
-    margin-bottom: 6%;
+  text-align: center;      /* จัดรูปกึ่งกลางแนวนอน */
+  padding: 20px 0;         /* เว้นขอบบนและล่าง 20px */
 }
+
+.homelift img {
+  width: 40%;              /* ขนาดรูป 40% ของ container */
+  height: auto;            /* รักษาสัดส่วนของรูป */
+}
+
 
 .img1 {
   border-radius: 15px;
