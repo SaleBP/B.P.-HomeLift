@@ -305,10 +305,11 @@ html {
   height: auto;
 }
 
-.intro {
-    width: 80%;
-    margin: 40px;
-    margin: 0 auto;
+.homelift {
+    width: 50%;
+    max-width: 50%;
+    margin-top: 6%;
+    margin-bottom: 6%;
 }
 
 .img1 {
