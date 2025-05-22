@@ -291,7 +291,7 @@ html {
   max-width: 1920px;
   margin: 0 auto;
   background: white;
-  padding-top: 6%;
+  padding-top: 5%;
 }
 
 /*===============================*/
@@ -308,6 +308,7 @@ html {
 .homelift {
   text-align: center;   /* จัดแนวรูปใน container */
   padding: 20px 0;      /* เว้นขอบบนล่าง */
+  margin-top: 6%;
 }
 
 .lift-img {
