@@ -467,12 +467,11 @@ section {
 }
 
 .chat-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-weight: bold;
-  margin-bottom: 10px;
-  font-family: 'DB Adman X', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-family: 'Gilroy';
 }
 
 .chat-messages {
