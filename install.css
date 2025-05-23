@@ -36,26 +36,26 @@
 .blur-overlay {
   position: absolute;
   top: 0;
-  width: 400px;
+  width: 640px;
   height: 100%;
   z-index: 10;
   pointer-events: none;
-  backdrop-filter: blur(10px);
-  background: rgba(255, 255, 255, 0.2);
-
-  /* ✅ Feather effect */
-  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent 100%);
-  mask-image: linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent 100%);
+  backdrop-filter: blur(10px); /* คุณสามารถปรับค่า blur ได้ */
+  background: rgba(255, 255, 255, 0.1); /* เลือกความขุ่นนิดหน่อย */
 }
 
 .blur-overlay.left {
   left: 0;
-  -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, black 80%);
-  mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, black 80%);
+
+  /* 🔥 ไล่เบลอ: ซ้ายเบลอมาก → ขวาเบลอน้อย */
+  -webkit-mask-image: linear-gradient(to right, black 0%, transparent 80%);
+  mask-image: linear-gradient(to right, black 0%, transparent 100%);
 }
 
 .blur-overlay.right {
   right: 0;
-  -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,0) 0%, black 80%);
-  mask-image: linear-gradient(to left, rgba(0,0,0,0) 0%, black 80%);
+
+  /* 🔥 ไล่เบลอ: ซ้ายเบลอน้อย → ขวาเบลอมาก */
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 100%);
+  mask-image: linear-gradient(to right, transparent 0%, black 100%);
 }
