@@ -1,3 +1,21 @@
+/*===============================*/
+/*           FONT FACES         */
+/*===============================*/
+@font-face {
+  font-family: 'DB adman X';
+  src: url('DB-Adman-X.ttf') format('woff2');
+    font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('Gilroy-Regular.ttf') format('truetype');
+}
+
+
+
 .carousel-wrapper1 {
   position: relative;
   width: 100%;
@@ -58,4 +76,33 @@
   /* 🔥 ไล่เบลอ: ซ้ายเบลอน้อย → ขวาเบลอมาก */
   -webkit-mask-image: linear-gradient(to right, transparent 0%, black 100%);
   mask-image: linear-gradient(to right, transparent 0%, black 100%);
+}
+
+@media (max-width: 768px) {
+  .carousel-wrapper1 {
+    height: 60vh; /* ลดความสูงลงให้พอดีกับหน้าจอเล็ก */
+  }
+
+  .scroll-track {
+    gap: 20px; /* ลดช่องว่างระหว่างรูปภาพ */
+  }
+
+  .scroll-track img {
+    height: 280px; /* ลดขนาดภาพให้เหมาะกับหน้าจอ */
+  }
+
+  .blur-overlay {
+    width: 120px; /* ลดความกว้างของกรอบเบลอลง */
+    backdrop-filter: blur(6px); /* เบลอเบาลงเล็กน้อยในจอเล็ก */
+  }
+
+  .blur-overlay.left {
+    -webkit-mask-image: linear-gradient(to right, black 0%, transparent 70%);
+    mask-image: linear-gradient(to right, black 0%, transparent 70%);
+  }
+
+  .blur-overlay.right {
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 100%);
+    mask-image: linear-gradient(to right, transparent 0%, black 100%);
+  }
 }
