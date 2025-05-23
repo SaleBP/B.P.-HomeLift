@@ -6,19 +6,16 @@
   margin: 0 auto;
   position: relative;
   cursor: grab;
-  border: 2px solid red; /* <-- ชั่วคราวเพื่อทดสอบ */
 }
 
 .scroll-track {
   display: flex;
   width: max-content;
   transition: transform 0.3s ease;
-  border: 2px dashed blue; /* <-- ชั่วคราวเพื่อทดสอบ */
 }
 
 .scroll-track img {
   user-select: none;
   pointer-events: none;
   height: auto;
-  max-width: unset;
 }
