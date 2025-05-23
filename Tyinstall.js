@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const distance = Math.abs(center - imgCenter);
       const maxDistance = container.offsetWidth / 2;
 
-      const scale = 1.2 + (1 - distance / maxDistance) * 0.2;
+      const scale = 1 + (1 - distance / maxDistance) * 0.2;
       const blur = Math.min(5, (distance / maxDistance) * 5);
       const opacity = 1 - (distance / maxDistance) * 0.4;
 
