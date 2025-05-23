@@ -1,46 +1,31 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const track = document.getElementById('scroll-track');
-  if (!track) {
-    console.error("ไม่เจอ scroll-track");
-    return;
-  }
+function updateImageStyles() {
+  const container = document.querySelector('.scroll-container');
+  const images = container.querySelectorAll('img');
 
-  const container = track.parentElement;
-  let isDragging = false;
-  let startX = 0;
-  let scrollLeft = 0;
+  const center = container.scrollLeft + container.offsetWidth / 2;
 
-  container.scrollLeft = track.scrollWidth / 2; // เริ่มตรงกลางเพื่อ loop
+  images.forEach(img => {
+    const imgCenter = img.offsetLeft + img.offsetWidth / 2;
+    const distance = Math.abs(center - imgCenter);
 
-  container.addEventListener('mousedown', (e) => {
-    isDragging = true;
-    startX = e.pageX - container.offsetLeft;
-    scrollLeft = container.scrollLeft;
-    container.style.cursor = 'grabbing';
+    const maxBlur = 6; // ปรับความเบลอสูงสุดได้
+    const maxScale = 1.2;
+
+    // ค่านี้จะให้ภาพใกล้ตรงกลางใหญ่ขึ้น เบลอน้อยลง
+    const ratio = Math.max(30, 1 - distance / container.offsetWidth);
+
+    img.style.transform = `scale(${1 + ratio * 0.2})`;
+    img.style.filter = `blur(${(1 - ratio) * maxBlur}px)`;
+    img.style.opacity = `${0.6 + ratio * 0.4}`;
   });
+}
 
-  container.addEventListener('mouseleave', () => {
-    isDragging = false;
-    container.style.cursor = 'grab';
-  });
+document.addEventListener('DOMContentLoaded', () => {
+  const container = document.querySelector('.scroll-container');
 
-  container.addEventListener('mouseup', () => {
-    isDragging = false;
-    container.style.cursor = 'grab';
-  });
+  container.addEventListener('scroll', updateImageStyles);
+  window.addEventListener('resize', updateImageStyles);
 
-  container.addEventListener('mousemove', (e) => {
-    if (!isDragging) return;
-    e.preventDefault();
-    const x = e.pageX - container.offsetLeft;
-    const walk = (x - startX) * 1.5;
-    container.scrollLeft = scrollLeft - walk;
-
-    const maxScroll = track.scrollWidth / 2;
-    if (container.scrollLeft <= 0) {
-      container.scrollLeft = maxScroll;
-    } else if (container.scrollLeft >= maxScroll * 2) {
-      container.scrollLeft = maxScroll;
-    }
-  });
+  // โหลดแรกให้ภาพปรับตาม
+  setTimeout(updateImageStyles, 100);
 });
