@@ -1,58 +1,29 @@
 <script>
-  const items = document.querySelectorAll('.carousel-item');
-  const btnLeft = document.querySelector('.nav-btn.left');
-  const btnRight = document.querySelector('.nav-btn.right');
-  let currentIndex = 0;
+let index = 0;
+const items = document.querySelectorAll('.carousel-item');
 
-  function updateCarousel() {
-    items.forEach((item, i) => {
-      item.classList.remove('active');
-      if (i === currentIndex) item.classList.add('active');
-    });
-  }
+function updateCarousel() {
+  items.forEach((item, i) => {
+    item.classList.remove('active', 'prev', 'next', 'prev-2', 'next-2');
+    let offset = (i - index + items.length) % items.length;
 
-  btnLeft.addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + items.length) % items.length;
-    updateCarousel();
+    if (offset === 0) item.classList.add('active');
+    else if (offset === 1) item.classList.add('next');
+    else if (offset === 2) item.classList.add('next-2');
+    else if (offset === items.length - 1) item.classList.add('prev');
+    else if (offset === items.length - 2) item.classList.add('prev-2');
   });
+}
 
-  btnRight.addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % items.length;
-    updateCarousel();
-  });
-
+function moveLeft() {
+  index = (index - 1 + items.length) % items.length;
   updateCarousel();
+}
+
+function moveRight() {
+  index = (index + 1) % items.length;
+  updateCarousel();
+}
+
+updateCarousel();
 </script>
-
-.image-stack {
-  position: relative;
-  width: 100%;
-  height: 300px;
-}
-
-.piece {
-  position: absolute;
-  width: 80%;
-  left: 10%;
-  top: 0;
-  opacity: 0;
-  transform: translateY(100px);
-  transition: transform 0.6s ease, opacity 0.4s ease;
-}
-
-/* เมื่อ active */
-.carousel-item.active .piece-1 {
-  transition-delay: 0.1s;
-  transform: translateY(0);
-  opacity: 1;
-}
-.carousel-item.active .piece-2 {
-  transition-delay: 0.3s;
-  transform: translateY(0);
-  opacity: 1;
-}
-.carousel-item.active .piece-3 {
-  transition-delay: 0.5s;
-  transform: translateY(0);
-  opacity: 1;
-}
