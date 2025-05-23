@@ -1,31 +1,34 @@
-function updateImageStyles() {
+document.addEventListener("DOMContentLoaded", () => {
   const container = document.querySelector('.scroll-container');
-  const images = container.querySelectorAll('img');
+  const track = container.querySelector('.scroll-track');
+  const images = track.querySelectorAll('img');
 
-  const center = container.scrollLeft + container.offsetWidth / 2;
-
-  images.forEach(img => {
-    const imgCenter = img.offsetLeft + img.offsetWidth / 2;
-    const distance = Math.abs(center - imgCenter);
-
-    const maxBlur = 6; // ปรับความเบลอสูงสุดได้
-    const maxScale = 1.2;
-
-    // ค่านี้จะให้ภาพใกล้ตรงกลางใหญ่ขึ้น เบลอน้อยลง
-    const ratio = Math.max(0, 1 - distance / container.offsetWidth);
-
-    img.style.transform = `scale(${1 + ratio * 0.2})`;
-    img.style.filter = `blur(${(1 - ratio) * maxBlur}px)`;
-    img.style.opacity = `${0.6 + ratio * 0.4}`;
+  // 📌 เลื่อนด้วย scroll wheel แนวนอน
+  container.addEventListener('wheel', (e) => {
+    e.preventDefault();
+    container.scrollLeft += e.deltaY;
   });
-}
 
-document.addEventListener('DOMContentLoaded', () => {
-  const container = document.querySelector('.scroll-container');
+  // 📌 ปรับ blur / scale ตามตำแหน่ง scroll
+  const updateImageStyles = () => {
+    const center = container.scrollLeft + container.offsetWidth / 2;
+
+    images.forEach((img) => {
+      const imgCenter = img.offsetLeft + img.offsetWidth / 2;
+      const distance = Math.abs(center - imgCenter);
+      const maxDistance = container.offsetWidth / 2;
+
+      const scale = 1.2 + (1 - distance / maxDistance) * 0.2;
+      const blur = Math.min(5, (distance / maxDistance) * 5);
+      const opacity = 1 - (distance / maxDistance) * 0.4;
+
+      img.style.transform = `scale(${scale})`;
+      img.style.filter = `blur(${blur}px)`;
+      img.style.opacity = opacity.toFixed(2);
+    });
+  };
 
   container.addEventListener('scroll', updateImageStyles);
   window.addEventListener('resize', updateImageStyles);
-
-  // โหลดแรกให้ภาพปรับตาม
-  setTimeout(updateImageStyles, 100);
+  updateImageStyles(); // เรียกตอนโหลดเสร็จ
 });
