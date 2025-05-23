@@ -1,0 +1,21 @@
+.scroll-container {
+  width: 100%;
+  max-width: 1920px;
+  overflow: hidden;
+  margin: 0 auto;
+  cursor: grab;
+}
+
+.scroll-track {
+  display: flex;
+  width: max-content;
+  user-select: none;
+  transition: transform 0.1s ease-out;
+}
+
+.scroll-track img {
+  height: auto;
+  width: auto;
+  max-height: 100%;
+  pointer-events: none;
+}
