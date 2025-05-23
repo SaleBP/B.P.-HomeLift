@@ -443,6 +443,12 @@ section {
   color: white;
 }
 
+.caption2 {
+    font-size: 2rem;
+    font-family: 'Gilroy';
+    
+  }
+
 .user::before {
   content: "";
   position: absolute;
