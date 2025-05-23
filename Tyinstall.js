@@ -1,38 +1,37 @@
-const container = document.querySelector('.scroll-container');
-const track = document.querySelector('.scroll-track');
+const track = document.getElementById('scroll-track');
+let isDragging = false;
+let startX = 0;
+let scrollLeft = 0;
 
-let isDown = false;
-let startX;
-let scrollLeft;
-
-container.addEventListener('mousedown', (e) => {
-  isDown = true;
-  container.classList.add('dragging');
-  startX = e.pageX - container.offsetLeft;
-  scrollLeft = container.scrollLeft;
+track.parentElement.addEventListener('mousedown', (e) => {
+  isDragging = true;
+  startX = e.pageX - track.offsetLeft;
+  scrollLeft = track.scrollLeft;
+  track.parentElement.style.cursor = 'grabbing';
 });
 
-container.addEventListener('mouseleave', () => {
-  isDown = false;
-  container.classList.remove('dragging');
+track.parentElement.addEventListener('mouseleave', () => {
+  isDragging = false;
+  track.parentElement.style.cursor = 'grab';
 });
 
-container.addEventListener('mouseup', () => {
-  isDown = false;
-  container.classList.remove('dragging');
+track.parentElement.addEventListener('mouseup', () => {
+  isDragging = false;
+  track.parentElement.style.cursor = 'grab';
 });
 
-container.addEventListener('mousemove', (e) => {
-  if (!isDown) return;
+track.parentElement.addEventListener('mousemove', (e) => {
+  if (!isDragging) return;
   e.preventDefault();
-  const x = e.pageX - container.offsetLeft;
-  const walk = (x - startX); // scroll-fastness
-  container.scrollLeft = scrollLeft - walk;
+  const x = e.pageX - track.offsetLeft;
+  const walk = (x - startX) * 1.5;
+  track.scrollLeft = scrollLeft - walk;
 
-  // loop effect (check if scroll reaches clone end, then jump)
-  if (container.scrollLeft >= track.scrollWidth / 2) {
-    container.scrollLeft = 0;
-  } else if (container.scrollLeft <= 0) {
-    container.scrollLeft = track.scrollWidth / 2;
+  // Looping effect
+  const maxScroll = track.scrollWidth / 2;
+  if (track.scrollLeft <= 0) {
+    track.scrollLeft = maxScroll;
+  } else if (track.scrollLeft >= maxScroll * 2) {
+    track.scrollLeft = maxScroll;
   }
 });

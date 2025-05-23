@@ -3,19 +3,16 @@
   max-width: 1920px;
   overflow: hidden;
   margin: 0 auto;
+  position: relative;
   cursor: grab;
 }
 
 .scroll-track {
   display: flex;
-  width: max-content;
-  user-select: none;
-  transition: transform 0.1s ease-out;
+  width: fit-content;
+  transition: transform 0.3s ease;
 }
-
 .scroll-track img {
-  height: auto;
-  width: auto;
-  max-height: 100%;
+  user-select: none;
   pointer-events: none;
 }
