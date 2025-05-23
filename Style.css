@@ -357,86 +357,7 @@ html {
   padding: 0;
 }
 
-/*===============================*/
-/*         IMAGE ROW            */
-/*===============================*/
-.carousel-wrapper {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-}
 
-.image-row {
-  display: flex;
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  margin-top: 3%;
-  overflow-x: scroll;
-  -ms-overflow-style: none;       /* IE/Edge */
-  scrollbar-width: none;          /* Firefox */
-}
-
-.image-row::-webkit-scrollbar {
-  display: none;                  /* Chrome, Safari */
-}
-
-.image-box {
-  flex: 0 0 100%;
-  scroll-snap-align: center;
-  text-align: center;
-  box-sizing: border-box;
-  font-family: 'DB Adman X';
-  font-size: 120%;
-}
-
-.row-img {
-  width: 100%;
-  max-width: 500px;
-  margin: 0 auto;
-  display: block;
-  border-radius: 20px;
-}
-
-.carousel-dots {
-  text-align: center;
-
-}
-
-.carousel-dots .dot {
-  display: inline-block;
-  height: 12px;
-  width: 12px;
-  margin: 0 6px;
-  background-color: #bbb;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.carousel-dots .dot.active {
-  background-color: #333;
-}
-
-
-.caption2 {
-  padding: 0.5rem;
-  font-size: clamp(1rem, 4vw, 1.5rem);
-  font-family: 'Gilroy';
-  text-align: center;
-  color: #585858;
-}
-
-  .caption3 {
-    font-size: clamp(1rem, 4vw, 2.5rem);
-    font-family: 'Gilroy';
-    text-align: left;
-    color: #585858;
-}
-
-.image-row.dragging {
-  cursor: grabbing;
-  user-select: none;
-}
 
 /*===============================*/
 /*           SECTION            */
@@ -738,6 +659,10 @@ display: flex
     font-size: 0.7rem;
     max-width: 90vw;
   }
+
+  .homelift {
+  margin-top: 15%;
+}
 
 }
 
