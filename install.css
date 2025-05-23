@@ -1,10 +1,19 @@
+.carousel-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* หรือความสูงที่ต้องการ */
+  overflow: hidden;
+  background: #fff;
+}
+
 .scroll-container {
   position: relative;
+  width: 100%;
+  height: 100%;
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
   scroll-behavior: smooth;
-  padding: 40px 0;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
@@ -13,22 +22,20 @@
 }
 
 .scroll-track {
-  display: flex;
+  display: inline-flex;
   align-items: center;
+  height: 100%;
+  padding: 0 640px; /* เผื่อรูปอยู่ตรงกลาง */
   gap: 40px;
-  padding: 0 640px; /* เผื่อให้รูปอยู่ตรงกลาง */
 }
 
 .scroll-track img {
-  height: 600px;
-  transition: transform 0.4s ease;
-  pointer-events: none;
+  width: 300px;
+  height: auto;
 }
 
-/* ✅ เบลอ overlay ซ้าย */
-.scroll-container::before,
-.scroll-container::after {
-  content: "";
+/* ✅ เบลอ Overlay */
+.blur-overlay {
   position: absolute;
   top: 0;
   width: 640px;
@@ -36,15 +43,13 @@
   z-index: 10;
   pointer-events: none;
   backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.1); /* เพิ่มความชัด */
 }
 
-.scroll-container::before {
+.blur-overlay.left {
   left: 0;
 }
 
-.scroll-container::after {
+.blur-overlay.right {
   right: 0;
 }
-
-backdrop-filter: blur(8px);
-background: rgba(255,255,255,0.05);
