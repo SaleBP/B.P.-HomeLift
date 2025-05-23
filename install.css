@@ -1,31 +1,37 @@
-/* 🎯 พื้นที่ครอบ carousel */
 .scroll-container {
-  width: 100%;
+  position: relative;
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
   scroll-behavior: smooth;
-  position: relative;
-  cursor: grab;
-
-  /* 🔒 ซ่อน scrollbar */
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE 10+ */
+  padding: 40px 0;
+  -ms-overflow-style: none;  /* IE */
+  scrollbar-width: none;     /* Firefox */
 }
 .scroll-container::-webkit-scrollbar {
-  display: none; /* Chrome, Safari */
+  display: none;  /* Chrome, Safari */
+}
+
+.scroll-track {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 0 20vw;  /* ช่องว่างหัวท้ายเพื่อให้ภาพกลางได้ตำแหน่ง */
 }
 
 .scroll-track img {
-  transition: filter 0.3s ease, transform 0.3s ease;
-  filter: blur(4px);
-  transform: scale(0.95);
-  opacity: 0.6;
+  width: 600px;
+  height: auto;
+  transition: filter 0.4s ease, transform 0.4s ease, opacity 0.4s;
+  filter: blur(3px);
+  transform: scale(0.85);
+  opacity: 0.5;
+  pointer-events: none;
 }
 
 .scroll-track img.focused {
   filter: blur(0);
-  transform: scale(1);
+  transform: scale(1.05);
   opacity: 1;
-  z-index: 1;
+  z-index: 2;
 }
