@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Scroll ด้วย wheel
   container.addEventListener('wheel', (e) => {
     e.preventDefault();
-    container.scrollLeft += e.deltaY * 5; // ปรับความเร็วการ scroll
+    container.scrollLeft += e.deltaY * 3; // ปรับความเร็วการ scroll
   });
 
   function updateFocusedImage() {
