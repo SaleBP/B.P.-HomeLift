@@ -1,6 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
   const track = document.getElementById('scroll-track');
-  if (!track) return;
+  if (!track) {
+    console.error("ไม่เจอ scroll-track");
+    return;
+  }
 
   let isDragging = false;
   let startX = 0;
