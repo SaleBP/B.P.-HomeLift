@@ -1,29 +1,22 @@
-<script>
-let index = 0;
-const items = document.querySelectorAll('.carousel-item');
+const track = document.querySelector('.carousel-track');
+const items = Array.from(track.children);
+const nextButton = document.querySelector('.nav-btn.right');
+const prevButton = document.querySelector('.nav-btn.left');
+let currentIndex = 0;
 
 function updateCarousel() {
-  items.forEach((item, i) => {
-    item.classList.remove('active', 'prev', 'next', 'prev-2', 'next-2');
-    let offset = (i - index + items.length) % items.length;
-
-    if (offset === 0) item.classList.add('active');
-    else if (offset === 1) item.classList.add('next');
-    else if (offset === 2) item.classList.add('next-2');
-    else if (offset === items.length - 1) item.classList.add('prev');
-    else if (offset === items.length - 2) item.classList.add('prev-2');
-  });
+  const width = items[0].getBoundingClientRect().width;
+  track.style.transform = `translateX(-${width * currentIndex}px)`;
 }
 
-function moveLeft() {
-  index = (index - 1 + items.length) % items.length;
+nextButton.addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % items.length;
   updateCarousel();
-}
+});
 
-function moveRight() {
-  index = (index + 1) % items.length;
+prevButton.addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + items.length) % items.length;
   updateCarousel();
-}
+});
 
-updateCarousel();
-</script>
+window.addEventListener('resize', updateCarousel);
