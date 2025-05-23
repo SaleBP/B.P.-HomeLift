@@ -444,9 +444,21 @@ section {
 }
 
 .caption2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding-bottom: 35px;
+    padding-top: 15px;
+  }
+
+  .caption2 a {
+font-family: 'Gilroy';
+    color: #666;
     font-size: 2rem;
-    font-family: 'Gilroy';
-    
+    text-decoration: none;
+    transition: all 0.3s ease;
+    white-space: nowrap;
   }
 
 .user::before {
