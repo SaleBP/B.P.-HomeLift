@@ -1,21 +1,23 @@
 .scroll-container {
   width: 100%;
-  max-width: 1920px;
-  overflow-x: auto;
+  overflow-x: scroll;
   overflow-y: hidden;
-  margin: 0 auto;
-  position: relative;
+  white-space: nowrap;
   cursor: grab;
+  scroll-behavior: smooth;
+  padding: 20px 0; /* เพิ่มความห่างจากด้านอื่น */
 }
 
 .scroll-track {
-  display: flex;
-  width: max-content;
-  transition: transform 0.3s ease;
+  display: inline-flex;
+  white-space: nowrap;
 }
 
 .scroll-track img {
+  width: auto;
+  height: 200px; /* ปรับตามขนาดจริงของ SVG */
+  flex-shrink: 0;
+  margin-right: 20px;
   user-select: none;
   pointer-events: none;
-  height: auto;
 }

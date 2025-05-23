@@ -5,11 +5,12 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
+  const container = track.parentElement;
   let isDragging = false;
   let startX = 0;
   let scrollLeft = 0;
 
-  const container = track.parentElement;
+  container.scrollLeft = track.scrollWidth / 2; // เริ่มตรงกลางเพื่อ loop
 
   container.addEventListener('mousedown', (e) => {
     isDragging = true;
