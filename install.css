@@ -1,18 +1,24 @@
 .scroll-container {
   width: 100%;
   max-width: 1920px;
-  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: hidden;
   margin: 0 auto;
   position: relative;
   cursor: grab;
+  border: 2px solid red; /* <-- ชั่วคราวเพื่อทดสอบ */
 }
 
 .scroll-track {
   display: flex;
-  width: fit-content;
+  width: max-content;
   transition: transform 0.3s ease;
+  border: 2px dashed blue; /* <-- ชั่วคราวเพื่อทดสอบ */
 }
+
 .scroll-track img {
   user-select: none;
   pointer-events: none;
+  height: auto;
+  max-width: unset;
 }
