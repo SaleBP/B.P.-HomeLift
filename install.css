@@ -20,8 +20,7 @@
 }
 
 .scroll-track img {
-  width: 200px;
-  height: auto;
+  height: 600px;
   transition: filter 0.4s ease, transform 0.4s ease, opacity 0.4s;
   opacity: 0.4;
   transform: scale(0.85);
