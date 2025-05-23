@@ -16,21 +16,35 @@
   display: flex;
   align-items: center;
   gap: 40px;
-  padding: 0 640px; /* ให้มีที่ว่างหัวท้ายเท่ากับโซนเบลอ */
+  padding: 0 640px; /* เผื่อให้รูปอยู่ตรงกลาง */
 }
 
 .scroll-track img {
   height: 600px;
-  transition: filter 0.4s ease, transform 0.4s ease, opacity 0.4s;
-  opacity: 0.4;
-  transform: scale(0.85);
-  filter: blur(3px);
+  transition: transform 0.4s ease;
   pointer-events: none;
 }
 
-.scroll-track img.focused {
-  opacity: 1;
-  filter: blur(0);
-  transform: scale(1.05);
-  z-index: 2;
+/* ✅ เบลอ overlay ซ้าย */
+.scroll-container::before,
+.scroll-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 640px;
+  height: 100%;
+  z-index: 10;
+  pointer-events: none;
+  backdrop-filter: blur(8px);
 }
+
+.scroll-container::before {
+  left: 0;
+}
+
+.scroll-container::after {
+  right: 0;
+}
+
+backdrop-filter: blur(8px);
+background: rgba(255,255,255,0.05);
