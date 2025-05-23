@@ -3,37 +3,30 @@ document.addEventListener("DOMContentLoaded", () => {
   const track = container.querySelector('.scroll-track');
   const images = track.querySelectorAll('img');
 
-  // 📌 เลื่อนด้วย scroll wheel แนวนอน
+  // Scroll ด้วย wheel
   container.addEventListener('wheel', (e) => {
     e.preventDefault();
-    container.scrollLeft += e.deltaY * 5; // ปรับความเร็วตรงนี้
+    container.scrollLeft += e.deltaY * 0.5; // ปรับความเร็วการ scroll
   });
 
   function updateFocusedImage() {
     const containerRect = container.getBoundingClientRect();
-    const containerCenter = containerRect.left + containerRect.width / 2;
-
-    let minDistance = Infinity;
-    let focusedImage = null;
+    const focusZoneStart = containerRect.left + (containerRect.width - 640) / 2;
+    const focusZoneEnd = containerRect.left + (containerRect.width + 640) / 2;
 
     images.forEach((img) => {
-      const rect = img.getBoundingClientRect();
-      const imgCenter = rect.left + rect.width / 2;
-      const distance = Math.abs(containerCenter - imgCenter);
+      const imgRect = img.getBoundingClientRect();
+      const imgCenter = imgRect.left + imgRect.width / 2;
 
-      if (distance < minDistance) {
-        minDistance = distance;
-        focusedImage = img;
+      if (imgCenter >= focusZoneStart && imgCenter <= focusZoneEnd) {
+        img.classList.add("focused");
+      } else {
+        img.classList.remove("focused");
       }
     });
-
-    images.forEach((img) => img.classList.remove("focused"));
-    if (focusedImage) focusedImage.classList.add("focused");
   }
 
-  container.addEventListener("scroll", () => {
-    updateFocusedImage();
-  });
-
-  updateFocusedImage(); // เรียกครั้งแรกเมื่อโหลด
+  container.addEventListener("scroll", updateFocusedImage);
+  window.addEventListener("resize", updateFocusedImage); // รองรับการ resize จอ
+  updateFocusedImage();
 });
