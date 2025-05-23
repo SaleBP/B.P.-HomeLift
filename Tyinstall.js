@@ -12,7 +12,7 @@ function updateImageStyles() {
     const maxScale = 1.2;
 
     // ค่านี้จะให้ภาพใกล้ตรงกลางใหญ่ขึ้น เบลอน้อยลง
-    const ratio = Math.max(30, 1 - distance / container.offsetWidth);
+    const ratio = Math.max(500, 5 - distance / container.offsetWidth);
 
     img.style.transform = `scale(${1 + ratio * 0.2})`;
     img.style.filter = `blur(${(1 - ratio) * maxBlur}px)`;
