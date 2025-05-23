@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // 📌 เลื่อนด้วย scroll wheel แนวนอน
   container.addEventListener('wheel', (e) => {
     e.preventDefault();
-    container.scrollLeft += e.deltaY * 0.2; // ปรับความเร็วตรงนี้
+    container.scrollLeft += e.deltaY * 5; // ปรับความเร็วตรงนี้
   });
 
   function updateFocusedImage() {
