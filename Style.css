@@ -144,7 +144,7 @@ html {
 
 #logosoftcolor {
   width: 2rem;
-  height: 2.5rem;
+  height: 3.5rem;
   background: url('Logo soft color.png') no-repeat center center;
   background-size: contain;
   flex-shrink: 0;
@@ -175,7 +175,7 @@ html {
   font-family: 'DB Adman X';
   display: flex;
   gap: 3.5rem;
-  font-size: clamp(1rem, 5vw, 1.5rem);
+  font-size: clamp(1rem, 5vw, 1.8rem);
 }
 
 /* displayFlex2 สามารถใช้ได้ต่อ */
