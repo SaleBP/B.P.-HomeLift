@@ -17,27 +17,13 @@
 }
 
 .scroll-track img {
-  transition: filter 0.3s ease, transform 0.3s ease, opacity 0.3s;
-  filter: blur(3px);
-  transform: scale(0.9);
-  opacity: 0.6;
-}
-
-.scroll-track img.focused {
-  filter: blur(0);
-  transform: scale(1);
-  opacity: 1;
-  z-index: 2;
-}
-
-.row-img {
   transition: filter 0.3s ease, transform 0.3s ease;
   filter: blur(4px);
   transform: scale(0.95);
   opacity: 0.6;
 }
 
-.row-img.focused {
+.scroll-track img.focused {
   filter: blur(0);
   transform: scale(1);
   opacity: 1;
