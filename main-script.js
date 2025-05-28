@@ -31,6 +31,16 @@ window.onload = function () {
   }, 16);
 };
 
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const toggle = document.getElementById("quickbar-toggle");
+    const menu = document.getElementById("quickbar-menu");
+
+    toggle.addEventListener("click", function() {
+      menu.classList.toggle("show");
+    });
+  });
+</script>
 
   document.addEventListener("DOMContentLoaded", () => {
     const wrapper = document.querySelector(".nav-contact-wrapper");
@@ -209,13 +219,3 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const toggle = document.getElementById("quickbar-toggle");
-    const menu = document.getElementById("quickbar-menu");
-
-    toggle.addEventListener("click", function() {
-      menu.classList.toggle("show");
-    });
-  });
-</script>
