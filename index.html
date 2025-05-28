@@ -25,16 +25,35 @@
 
  <link rel="preload" href="DB-Adman-X.ttf" as="font" type="font/ttf" crossorigin="anonymous">
  
-
 <!-- Top bar (สำหรับ Desktop) -->
 <div class="top-bar">
   <div class="top-left" id="logosoftcolor"></div>
 
-<!-- Quickbar สำหรับมือถือ -->
-<div class="quickbar">
-  <button id="quickbar-toggle">&#9776;</button> <!-- ปุ่มเปิด -->
+  <div class="top-center">
+    <div class="displayFlex">
+      <a href="#caption2" class="nav-link" data-text="เกี่ยวกับเรา">เกี่ยวกับเรา</a>
+      <a href="#service" class="nav-link" data-text="บริการ">บริการ</a>
+      <a href="#custom" class="nav-link" data-text="ปรับแต่งลิฟต์">ปรับแต่งลิฟต์</a>
 
-  <!-- เมนู Slide -->
+      <!-- ติดต่อเรา + กล่อง dropdown -->
+      <div class="nav-contact-wrapper">
+        <a href="#contact" class="nav-link nav-contact" data-text="ติดต่อเรา">ติดต่อเรา</a>
+        <div class="contact-dropdown">
+          <a href="https://line.me/ti/p/~@bpthai" target="_blank">Line</a>
+          <div>038 387 141</div>
+          <a href="mailto:sales@bpthai.com" target="_blank">E-Mail</a>
+          <a href="https://www.facebook.com/bppowergroup/" target="_blank">Facebook</a>
+          <a href="#contact" class="nav-link nav-contact" data-text="ติดต่อเรา">Map</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Quickbar สำหรับมือถือ (อยู่นอก top-bar) -->
+<div class="quickbar">
+  <button id="quickbar-toggle">&#9776;</button>
+
   <div class="quickbar-panel" id="quickbar-panel">
     <div class="quickbar-close" id="quickbar-close">&times;</div>
 
@@ -56,6 +75,7 @@
     </div>
   </div>
 </div>
+
 
         </div>
       </div>
