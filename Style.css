@@ -450,6 +450,13 @@ section {
     margin-bottom: -0.7%;
   }
 
+  .caption3 {
+  text-align: center;
+  margin-top: 80px; /* ปรับค่าตามความเหมาะสม */
+  font-size: 2rem; /* หรือขนาดที่คุณต้องการ */
+  font-family: 'DB Adman X', bold;
+}
+
 .user::before {
   content: "";
   position: absolute;
