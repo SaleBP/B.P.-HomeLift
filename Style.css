@@ -698,6 +698,12 @@ display: flex
   top: -2%;
   }
 
+    .caption4 {
+  font-size: 2rem;
+  left: 29%;
+  top: -2%;
+  }
+
   .textmap a {
     font-size: 0.7rem;
     max-width: 90vw;
