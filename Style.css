@@ -193,15 +193,6 @@ html {
   font-size: clamp(1rem, 5vw, 1.8rem);
 }
 
-/* displayFlex2 สามารถใช้ได้ต่อ */
-.top-rightdisplayFlex2 {
-    font-family: 'Gilroy';
-    font-size: 0.8rem;
-    display: flex;
-    margin-right: 2%;
-    gap: 0.3rem;
-}
-
 /*------------------------------------*/
 /* CONTACT HOVER EFFECT + DROPDOWN */
 /*------------------------------------*/
