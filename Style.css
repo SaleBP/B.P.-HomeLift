@@ -699,9 +699,9 @@ display: flex
   }
 
     .caption4 {
-  font-size: 2rem;
-  left: 29%;
-  top: -2%;
+  font-size: 1rem;
+  left: 20%;
+  bottom: 2%;
   }
 
   .textmap a {
