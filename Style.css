@@ -476,13 +476,14 @@ section {
 }
 
 .caption4 {
-     position: absolute;
-    left: 40%;
-    font-size: 4rem;
+    position: absolute;
+    left: 46%;
+    font-size: 3rem;
     font-family: 'DB adman X', sans-serif;
-    font-weight: bold;
+    font-weight: normal;
     color: #585858;
     z-index: 10;
+    bottom: 5%;
 }
 
 .user::before {
