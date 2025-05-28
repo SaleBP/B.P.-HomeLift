@@ -463,6 +463,7 @@ section {
   margin-top: 50px; /* ปรับค่าตามความเหมาะสม */
   font-size: 4rem; /* หรือขนาดที่คุณต้องการ */
   font-family: 'DB-Adman-X-Bd';
+  color: #585858;
 }
 
 .user::before {
