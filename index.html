@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="Style.css" />
     <link rel="stylesheet" href="install.css">
+    <link rel="stylesheet" href="quickbar.css">
     
     <title>BPHomelift</title>
 
@@ -25,6 +26,7 @@
  <link rel="preload" href="DB-Adman-X.ttf" as="font" type="font/ttf" crossorigin="anonymous">
  
 
+<!-- Top bar (สำหรับ Desktop) -->
 <div class="top-bar">
   <div class="top-left" id="logosoftcolor"></div>
 
@@ -43,11 +45,29 @@
           <a href="https://mail.google.com/mail/?view=cm&to=sales@bpthai.com" target="_blank">E-Mail</a>
           <a href="https://www.facebook.com/bppowergroup/" target="_blank">Facebook</a>
           <a href="#contact" class="nav-link nav-contact" data-text="ติดต่อเรา">Map</a>
-          
         </div>
       </div>
     </div>
   </div>
+</div>
+
+<!-- Quickbar (สำหรับ Mobile) — อยู่นอก top-bar -->
+<div class="quickbar">
+  <div class="quickbar-header">
+    <div id="logosoftcolor"></div>
+    <button id="quickbar-toggle">&#9776;</button> <!-- hamburger icon -->
+  </div>
+  <div class="quickbar-menu" id="quickbar-menu">
+    <a href="#caption2">เกี่ยวกับเรา</a>
+    <a href="#service">บริการ</a>
+    <a href="#custom">ปรับแต่งลิฟต์</a>
+    <a href="#contact">ติดต่อเรา</a>
+  </div>
+</div>
+
+<!-- JavaScript สำหรับ toggle -->
+<script src="quickbar.js" defer></script>
+
 
   <!-- ✅ ย้ายออกมาไว้นอก .top-center -->
   <div class="top-right displayFlex2">
