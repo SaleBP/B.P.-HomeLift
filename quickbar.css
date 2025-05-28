@@ -4,30 +4,26 @@
 }
 
 @media (max-width: 768px) {
-  .top-bar {
-    display: none;
-  }
-
-  .quickbar {
-    display: block;
-    position: fixed;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    z-index: 1000;
-    font-family: 'DB Adman X';
-  }
+    .quickbar {
+        display: block;
+        position: fixed;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.15);
+        z-index: 1000;
+        font-family: 'DB Adman X';
+    }
+}
 
   .quickbar-header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-  }
+    align-items: center; 
+}
 
   #quickbar-toggle {
     background: none;
