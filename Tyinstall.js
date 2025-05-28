@@ -30,3 +30,4 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("resize", updateFocusedImage); // รองรับการ resize จอ
   updateFocusedImage();
 });
+
