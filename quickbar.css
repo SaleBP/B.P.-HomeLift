@@ -1,9 +1,8 @@
-/* ซ่อน Quickbar บน desktop */
+/* Quickbar สำหรับมือถือ */
 .quickbar {
   display: none;
 }
 
-/* แสดง Quickbar เมื่อหน้าจอแคบ (มือถือ) */
 @media (max-width: 768px) {
   .top-bar {
     display: none;
@@ -41,13 +40,13 @@
     display: none;
     flex-direction: column;
     padding: 0 1rem 1rem;
+    font-size: 1.2rem;
   }
 
   .quickbar-menu a {
     padding: 0.5rem 0;
     text-decoration: none;
     color: #333;
-    font-size: 1.2rem;
   }
 
   .quickbar-menu.show {
