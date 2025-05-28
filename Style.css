@@ -12,8 +12,8 @@
 @font-face {
   font-family: 'DB adman X';
   src: url('DB-Adman-X-Bd.ttf') format('truetype');
-    font-weight: bold;
-  font-style: bold;
+  font-weight: bold;
+  font-style: normal;
   font-display: swap;
 }
 
@@ -458,11 +458,13 @@ section {
     margin-bottom: -0.7%;
   }
 
-  .caption3 {
+
+.caption3 {
   text-align: center;
-  margin-top: 50px; /* ปรับค่าตามความเหมาะสม */
-  font-size: 4rem; /* หรือขนาดที่คุณต้องการ */
-  font-family: 'DB adman X', bold;
+  margin-top: 50px;
+  font-size: 4rem;
+  font-family: 'DB adman X', sans-serif; /* sans-serif เป็น fallback */
+  font-weight: bold;
   color: #585858;
 }
 
