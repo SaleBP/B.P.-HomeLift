@@ -30,21 +30,33 @@
 <div class="top-bar">
   <div class="top-left" id="logosoftcolor"></div>
 
-  <div class="top-center">
-    <div class="displayFlex">
-      <a href="#caption2" class="nav-link" data-text="เกี่ยวกับเรา">เกี่ยวกับเรา</a>
-      <a href="#service" class="nav-link" data-text="บริการ">บริการ</a>
-      <a href="#custom" class="nav-link" data-text="ปรับแต่งลิฟต์">ปรับแต่งลิฟต์</a>
+<!-- Quickbar สำหรับมือถือ -->
+<div class="quickbar">
+  <button id="quickbar-toggle">&#9776;</button> <!-- ปุ่มเปิด -->
 
-      <!-- ติดต่อเรา + กล่อง dropdown -->
-      <div class="nav-contact-wrapper">
-        <a href="#contact" class="nav-link nav-contact" data-text="ติดต่อเรา">ติดต่อเรา</a>
-        <div class="contact-dropdown">
-          <a href="https://line.me/ti/p/~@bpthai" target="_blank">Line</a>
-          <div>038 387 141</div>
-          <a href="https://mail.google.com/mail/?view=cm&to=sales@bpthai.com" target="_blank">E-Mail</a>
-          <a href="https://www.facebook.com/bppowergroup/" target="_blank">Facebook</a>
-          <a href="#contact" class="nav-link nav-contact" data-text="ติดต่อเรา">Map</a>
+  <!-- เมนู Slide -->
+  <div class="quickbar-panel" id="quickbar-panel">
+    <div class="quickbar-close" id="quickbar-close">&times;</div>
+
+    <div class="quickbar-section">
+      <a href="#caption2">เกี่ยวกับเรา</a>
+      <a href="#service">บริการ</a>
+      <a href="#custom">ปรับแต่งลิฟต์</a>
+    </div>
+
+    <div class="quickbar-divider"></div>
+
+    <div class="quickbar-section contact">
+      <a href="#contact">ติดต่อเรา</a>
+      <a href="https://line.me/ti/p/~@bpthai" target="_blank">Line</a>
+      <div>038 387 141</div>
+      <a href="mailto:sales@bpthai.com" target="_blank">E-Mail</a>
+      <a href="https://www.facebook.com/bppowergroup/" target="_blank">Facebook</a>
+      <a href="#contact">Map</a>
+    </div>
+  </div>
+</div>
+
         </div>
       </div>
     </div>
