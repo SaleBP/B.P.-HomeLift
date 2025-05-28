@@ -460,13 +460,13 @@ section {
 
 
 .caption3 {
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: -10px;
+     position: absolute;
+    left: 43%;
     font-size: 4rem;
     font-family: 'DB adman X', sans-serif;
     font-weight: bold;
     color: #585858;
+    z-index: 10;
 }
 
 .user::before {
