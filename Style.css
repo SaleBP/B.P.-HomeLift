@@ -11,9 +11,9 @@
 
 @font-face {
   font-family: 'DB adman X';
-  src: url('DB-Adman-X-Bd.ttf') format('woff2');
+  src: url('DB-Adman-X-Bd.ttf') format('truetype');
     font-weight: bold;
-  font-style: normal;
+  font-style: bold;
   font-display: swap;
 }
 
