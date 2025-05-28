@@ -17,8 +17,10 @@
         z-index: 1000;
         font-family: 'DB Adman X';
     }
-}
 
+.logosoftcolor {
+   height: 2.5rem;
+}
   .quickbar-header {
     display: flex;
     justify-content: space-between;
@@ -28,7 +30,7 @@
   #quickbar-toggle {
     background: none;
     border: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
     cursor: pointer;
   }
 
@@ -48,4 +50,4 @@
   .quickbar-menu.show {
     display: flex;
   }
-}
+
