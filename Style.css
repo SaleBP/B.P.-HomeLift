@@ -604,10 +604,9 @@ font-family: 'DB Adman X', sans-serif;
     min-height: 30px;
   }
 
-  #logosoftcolor {
-    top: 0.6rem;
-    width: 1.5rem;
-  }
+.logosoftcolor {
+   height: 2rem;
+}
 
 .intro {
 width: 80%;

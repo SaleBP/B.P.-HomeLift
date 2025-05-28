@@ -18,9 +18,7 @@
         font-family: 'DB Adman X';
     }
 
-.logosoftcolor {
-   height: 2.5rem;
-}
+
   .quickbar-header {
     display: flex;
     justify-content: space-between;
@@ -32,6 +30,7 @@
     border: none;
     font-size: 1.5rem;
     cursor: pointer;
+    margin-right: 0.7rem;
   }
 
   .quickbar-menu {
@@ -51,3 +50,4 @@
     display: flex;
   }
 
+}
