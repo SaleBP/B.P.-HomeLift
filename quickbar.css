@@ -1,76 +1,53 @@
-/* ซ่อน quickbar บน desktop */
+/* Quickbar สำหรับมือถือ */
 .quickbar {
   display: none;
 }
 
 @media (max-width: 768px) {
-  .top-bar {
-    display: none;
-  }
+    .quickbar {
+        display: block;
+        position: fixed;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.15);
+        z-index: 1000;
+        font-family: 'DB Adman X';
+    }
 
-  .quickbar {
-    display: block;
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    z-index: 1100;
-  }
+
+  .quickbar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
 
   #quickbar-toggle {
-    background: white;
+    background: none;
     border: none;
-    font-size: 2rem;
-    border-radius: 8px;
-    padding: 0.2rem 0.5rem;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-  }
-
-  .quickbar-panel {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 75%;
-    height: 100%;
-    background-color: white;
-    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    padding: 2rem 1.5rem;
-    font-family: 'DB Adman X';
     font-size: 1.3rem;
-    transition: right 0.3s ease-in-out;
-    z-index: 1200;
-  }
-
-  .quickbar-panel.open {
-    right: 0;
-  }
-
-  .quickbar-close {
-    align-self: flex-end;
-    font-size: 2rem;
     cursor: pointer;
-    margin-bottom: 1.5rem;
+    margin-right: 0.7rem;
   }
 
-  .quickbar-section {
-    display: flex;
+  .quickbar-menu {
+    display: none;
     flex-direction: column;
-    gap: 1rem;
+    padding: 0 1rem 1rem;
+    font-size: 1.2rem;
   }
 
-  .quickbar-divider {
-    height: 2rem;
-  }
-
-  .quickbar-section a {
+  .quickbar-menu a {
+    padding: 0.5rem 0;
     text-decoration: none;
     color: #333;
   }
 
-  .quickbar-section.contact div {
-    color: #333;
-    font-size: 1.1rem;
+  .quickbar-menu.show {
+    display: flex;
   }
+
 }
