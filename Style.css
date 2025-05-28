@@ -608,7 +608,6 @@ display: flex
 }
 
 .img1 {
-  margin-top: 7%;
 }
 
   #t1, #t2, #t3, #t4, #t5, #t6, #t7 {
@@ -683,8 +682,9 @@ display: flex
   }
 
   .caption3 {
-    font-size: 0.7rem;
-    text-align: left; /* เปลี่ยนเป็น center ได้ถ้าอยากให้อ่านง่ายบนมือถือ */
+  font-size: 2rem;
+  left: 29%;
+  top: -2%;
   }
 
   .textmap a {
