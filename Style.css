@@ -457,11 +457,18 @@ section {
     margin-top: 2%;
     margin-bottom: -0.7%;
   }
-
+.caption2 {
+    text-align: center;
+    left: 40%;
+    font-size: 4rem;
+    font-family: 'Gilroy', sans-serif;
+    color: #585858;
+    z-index: 10;
+}
 
 .caption3 {
      position: absolute;
-    left: 43%;
+    left: 40%;
     font-size: 4rem;
     font-family: 'DB adman X', sans-serif;
     font-weight: bold;
