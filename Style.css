@@ -460,8 +460,8 @@ section {
 
   .caption3 {
   text-align: center;
-  margin-top: 80px; /* ปรับค่าตามความเหมาะสม */
-  font-size: 2rem; /* หรือขนาดที่คุณต้องการ */
+  margin-top: 50px; /* ปรับค่าตามความเหมาะสม */
+  font-size: 4rem; /* หรือขนาดที่คุณต้องการ */
   font-family: 'DB-Adman-X-Bd';
 }
 
