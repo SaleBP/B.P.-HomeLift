@@ -475,6 +475,16 @@ section {
     z-index: 10;
 }
 
+.caption4 {
+     position: absolute;
+    left: 40%;
+    font-size: 4rem;
+    font-family: 'DB adman X', sans-serif;
+    font-weight: bold;
+    color: #585858;
+    z-index: 10;
+}
+
 .user::before {
   content: "";
   position: absolute;
