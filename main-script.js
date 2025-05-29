@@ -209,3 +209,12 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+const topBar = document.querySelector('.top-bar');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 10) {
+    topBar.classList.add('transparent');
+  } else {
+    topBar.classList.remove('transparent');
+  }
+});

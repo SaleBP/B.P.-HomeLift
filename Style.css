@@ -147,14 +147,13 @@ html {
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05), 
               0 4px 12px rgba(0, 0, 0, 0.1);
   z-index: 1000;
-  transition: background-color 0.3s ease, opacity 0.3s ease, top 0.3s ease;
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease, opacity 0.3s ease, top 0.3s ease;
 }
 
-/* เมื่อ scroll ลงมา */
 .top-bar.transparent {
-  background-color: rgba(255, 255, 255, 0.6); /* โปร่งใส */
-  backdrop-filter: blur(5px); /* เบลอ */
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15); /* เพิ่มความลึก */
+  background-color: rgba(255, 255, 255, 0.5); /* 50% โปร่งใส */
+  backdrop-filter: blur(10px); /* เพิ่มเบลอ */
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
 }
 
 #logosoftcolor {
@@ -474,13 +473,12 @@ position: absolute;
 
 .caption4 {
 position: absolute;
-    left: 31%;
+    left: 10%;
     font-size: 2.5rem;
     font-family: 'DB adman X', sans-serif;
     font-weight: normal;
     color: #585858;
-  
-    bottom: 5%;
+    bottom: 25%;
 }
 
 .user::before {
