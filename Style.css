@@ -464,13 +464,12 @@ section {
 }
 
 .caption3 {
-     position: absolute;
-    left: 40%;
-    font-size: 4rem;
+position: absolute;
+    left: 10%;
+    font-size: 8rem;
     font-family: 'DB adman X', sans-serif;
     font-weight: bold;
     color: #585858;
-    z-index: 10;
 }
 
 .caption4 {
@@ -480,7 +479,7 @@ position: absolute;
     font-family: 'DB adman X', sans-serif;
     font-weight: normal;
     color: #585858;
-    z-index: 10;
+  
     bottom: 5%;
 }
 
