@@ -47,17 +47,18 @@ position: absolute;
 }
 
 .caption-overlay {
-position: absolute;
-    right: 40px;
-    text-align: right;
-    color: #eb660e;
-    line-height: 1.2;
-    font-weight: bold;
-    font-family: 'Gilroy', bold;
-    font-size: 10rem;
+  position: absolute;
+  top: 20%;             /* ปรับตำแหน่งแนวตั้งตามต้องการ */
+  right: 20px;          /* ชิดขอบขวาเว็บไซต์ */
+  text-align: right;
+  color: #eb660e;
+  line-height: 1.2;
+  font-weight: bold;
+  font-family: 'Gilroy', sans-serif;
+  font-size: 10rem;
+  z-index: 10;          /* ให้ลอยอยู่บนรูป */
 }
 
 .caption-overlay p {
   margin: 0;
-  /* คุณปรับขนาดฟอนต์เองได้ตามต้องการ */
 }
