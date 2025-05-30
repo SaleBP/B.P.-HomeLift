@@ -46,17 +46,6 @@ position: absolute;
     height: auto;
 }
 
-.aboutus-crop {
-  position: relative;
-  display: inline-block;
-}
-
-.aboutus1 {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
 .caption-overlay {
   position: absolute;
   top: 20%;             /* ปรับตำแหน่งแนวตั้งตามต้องการ */
