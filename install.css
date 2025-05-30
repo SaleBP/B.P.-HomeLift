@@ -83,6 +83,7 @@
   height: 150px;       /* ขนาดความสูงของพื้นที่ที่ต้องการแสดง */
   overflow: hidden;    /* ซ่อนส่วนที่เกินออกนอกกล่อง */
   position: relative;
+  z-index: 10000;
 }
 
 .crop-box img {
