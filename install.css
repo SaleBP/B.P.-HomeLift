@@ -78,6 +78,22 @@
   mask-image: linear-gradient(to right, transparent 0%, black 100%);
 }
 
+.crop-box {
+  width: 300px;        /* ขนาดความกว้างของพื้นที่ที่ต้องการแสดง */
+  height: 150px;       /* ขนาดความสูงของพื้นที่ที่ต้องการแสดง */
+  overflow: hidden;    /* ซ่อนส่วนที่เกินออกนอกกล่อง */
+  position: relative;
+}
+
+.crop-box img {
+  position: absolute;
+  top: -50px;   /* ขยับรูปขึ้นไป 50px เพื่อครอปด้านบน */
+  left: -30px;  /* ขยับรูปไปทางซ้ายเพื่อครอปด้านซ้าย */
+  width: auto;
+  height: auto;
+}
+
+
 @media (max-width: 768px) {
   .carousel-wrapper1 {
     height: 40vh; /* ลดความสูงลงให้พอดีกับหน้าจอเล็ก */

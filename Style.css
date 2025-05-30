@@ -575,14 +575,14 @@ font-family: 'DB Adman X', sans-serif;
   z-index: 9999;
   transform: translate(-50%, -50%);
   transition: transform 0.15s ease, background-color 0.15s ease;
-   
 
-  
 }
 
 .cursor-ball.hovering {
   background-color: #eb660e; /* ← สีตอน hover */
 }
+
+
 
 /*===============================*/
 /*         RESPONSIVE           */
@@ -679,15 +679,15 @@ display: flex
   }
 
   .caption3 {
-  font-size: 2rem;
-  left: 29%;
-  top: -2%;
+font-size: 3.7rem;
+left: 7%;
+top: -3%;
   }
 
     .caption4 {
-  font-size: 1rem;
-  left: 20%;
-  bottom: 2%;
+font-size: 1.2rem;
+        left: 9%;
+        bottom: 15%;
   }
 
   .textmap a {
