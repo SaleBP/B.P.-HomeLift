@@ -106,8 +106,12 @@
     mask-image: linear-gradient(to right, transparent 0%, black 100%);
   }
 
-    .scroll-container {
-    overflow-x: hidden;
-  }
-  
+.scroll-container {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* iOS smooth scroll */
+  scroll-snap-type: x mandatory;     /* Optional: snap เป็นภาพละภาพ */
+}
+.scroll-track {
+  scroll-snap-align: start;          /* Snap ทีละภาพ */
+}
 }
