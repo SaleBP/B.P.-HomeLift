@@ -47,13 +47,14 @@ position: absolute;
 }
 
 .caption-overlay {
-  position: absolute;
-  top: 30%;                 /* เลื่อนลงจากบนสุด */
-  right: 40px;              /* ชิดขวา แต่เว้นระยะ */
-  text-align: right;
-  color: white;             /* หรือสีอื่นตามภาพ */
-  line-height: 1.2;
-  font-weight: bold;
+position: absolute;
+    right: 40px;
+    text-align: right;
+    color: #eb660e;
+    line-height: 1.2;
+    font-weight: bold;
+    font-family: 'Gilroy', bold;
+    font-size: 10rem;
 }
 
 .caption-overlay p {
