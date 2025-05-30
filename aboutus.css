@@ -82,7 +82,12 @@
 .slide-in-right {
   opacity: 0;
   transform: translateX(100px);
-  animation: slideRightFade 1s ease-out forwards;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.slide-in-right.visible {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 /* คีย์เฟรมของอนิเมชั่น */
