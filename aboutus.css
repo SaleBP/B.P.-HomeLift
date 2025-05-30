@@ -30,14 +30,18 @@
   font-display: swap;
 }
 
-.aboutus1 {
-  position: absolute; /* หรือ relative แล้วแต่บริบท */
-  top: 50px;           /* ปรับตำแหน่งตามต้องการ */
-  left: 100px;
-
-  width: 300px;        /* ขนาดที่คุณต้องการให้แสดง */
+.aboutus-crop {
+  width: 300px;        /* ขนาดกรอบแสดงผล */
   height: 200px;
-  object-fit: cover;   /* ✅ ครอปรูปให้เต็มพื้นที่โดยไม่บีบ */
-  border-radius: 12px; /* ตัวอย่างเพิ่มความโค้งมน */
-  z-index: 10;         /* ถ้ามีซ้อนกับองค์ประกอบอื่น */
+  overflow: hidden;    /* ซ่อนส่วนที่เกิน */
+  position: relative;
+  margin-top: 20px;    /* ระยะห่างจากข้อความด้านบน */
+}
+
+.aboutus1 {
+  position: absolute;
+  right: 50px;         /* ขยับภาพให้แสดงด้านขวา 50px */
+  bottom: 100px;       /* ขยับภาพให้แสดงส่วนล่าง 100px */
+  width: auto;
+  height: auto;
 }
