@@ -46,17 +46,31 @@
     height: auto;
 }
 
-.caption-overlay {
+.slide-in-stagger {
   position: absolute;
-  top: 1%;
-  right: 5%;
+  top: 20%;
+  right: 20px;
   text-align: right;
+  z-index: 10;
   color: #eb660e;
   line-height: 1.2;
   font-weight: bold;
   font-family: 'Gilroy', sans-serif;
   font-size: 10rem;
-  z-index: 10;          /* ให้ลอยอยู่บนรูป */
+}
+
+.slide-line {
+  opacity: 0;
+  transform: translateX(80px);
+  animation: slideInRight 0.6s ease forwards;
+  animation-delay: var(--delay);
+}
+
+@keyframes slideInRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .caption-overlay p {
@@ -79,28 +93,3 @@
   word-break: break-word;      /* บังคับตัดคำถ้ายาวเกิน */
 }
 
-.slide-in-right {
-  opacity: 0;
-  transform: translateX(100px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-.slide-in-right.visible {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-.slide-line {
-  opacity: 0;
-  transform: translateX(80px);
-  animation: slideInRight 0.6s ease forwards;
-  animation-delay: var(--delay);
-}
-
-/* Keyframes */
-@keyframes slideInRight {
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
