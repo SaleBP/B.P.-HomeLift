@@ -78,8 +78,6 @@
   mask-image: linear-gradient(to right, transparent 0%, black 100%);
 }
 
-
-
 @media (max-width: 768px) {
   .carousel-wrapper1 {
     height: 40vh; /* ลดความสูงลงให้พอดีกับหน้าจอเล็ก */
