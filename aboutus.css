@@ -90,8 +90,15 @@
   transform: translateX(0);
 }
 
-/* คีย์เฟรมของอนิเมชั่น */
-@keyframes slideRightFade {
+.slide-line {
+  opacity: 0;
+  transform: translateX(80px);
+  animation: slideInRight 0.6s ease forwards;
+  animation-delay: var(--delay);
+}
+
+/* Keyframes */
+@keyframes slideInRight {
   to {
     opacity: 1;
     transform: translateX(0);
