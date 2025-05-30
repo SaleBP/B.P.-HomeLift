@@ -1,7 +1,3 @@
-const faders = document.querySelectorAll('.fade-in:not(.fade-late)');
-
-
-
 const sliders = document.querySelectorAll('.slide-in-right');
 
 const appearSlideObserver = new IntersectionObserver((entries, observer) => {
@@ -16,3 +12,17 @@ const appearSlideObserver = new IntersectionObserver((entries, observer) => {
 });
 
 sliders.forEach(el => appearSlideObserver.observe(el));
+
+document.addEventListener("DOMContentLoaded", function () {
+  const toggle = document.getElementById("quickbar-toggle");
+  const panel = document.getElementById("quickbar-panel");
+  const close = document.getElementById("quickbar-close");
+
+  toggle.addEventListener("click", () => {
+    panel.classList.add("open");
+  });
+
+  close.addEventListener("click", () => {
+    panel.classList.remove("open");
+  });
+});
