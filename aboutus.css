@@ -31,17 +31,30 @@
 }
 
 .aboutus-crop {
-    width: 1120px;
-    height: 2000px;
-    overflow: hidden;
-    position: relative;
-    margin-top: 20px;
+  position: relative;
+  width: 100%;              /* หรือกำหนดความกว้างเฉพาะก็ได้ เช่น 600px */
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
 }
 
 .aboutus1 {
-position: absolute;
-    right: -776px;
-    bottom: -25px;
-    width: auto;
-    height: auto;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.caption-overlay {
+  position: absolute;
+  top: 30%;                 /* เลื่อนลงจากบนสุด */
+  right: 40px;              /* ชิดขวา แต่เว้นระยะ */
+  text-align: right;
+  color: white;             /* หรือสีอื่นตามภาพ */
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+.caption-overlay p {
+  margin: 0;
+  /* คุณปรับขนาดฟอนต์เองได้ตามต้องการ */
 }
