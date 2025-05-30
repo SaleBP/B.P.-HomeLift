@@ -97,3 +97,31 @@
     transform: translateX(0);
   }
 }
+
+
+@media (max-width: 768px) {
+.aboutus1 {
+    right: -697px;
+    bottom: -774px;
+  }
+
+  .aboutus-crop {
+    width: 550px;
+    height: 750px;
+}
+
+  .caption-overlay {
+  top: 69%;
+  right: 5%;
+  font-size: 3.5rem;
+  color: rgb(255 255 255);
+}
+
+  .caption-overlay {
+    bottom: -55%;
+    right: 4%;
+    width: 69%;
+    font-size: 2rem;
+}
+
+  }
