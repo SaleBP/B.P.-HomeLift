@@ -101,12 +101,12 @@
 
 @media (max-width: 768px) {
 .aboutus1 {
-    right: -697px;
-    bottom: -774px;
+right: -795px;
+bottom: -774px;
   }
 
   .aboutus-crop {
-    width: 550px;
+    width: 100%;
     height: 750px;
 }
 
