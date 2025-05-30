@@ -536,6 +536,7 @@ position: absolute;
   width: 100%;
   height: auto;
   display: block;
+  margin-top: 200px;
 }
 
 .textmap {
