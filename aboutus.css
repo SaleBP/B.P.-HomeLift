@@ -111,14 +111,14 @@ bottom: -774px;
 }
 
   .caption-overlay {
-   top: 72%;
+  top: 69%;
   right: 5%;
   font-size: 3.5rem;
   color: rgb(255 255 255);
 }
 
   .caption-overlay2 {
-    bottom: -55%;
+    top: 104%;
     right: 4%;
     width: 69%;
     font-size: 2rem;
