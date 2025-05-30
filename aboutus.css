@@ -32,16 +32,16 @@
 
 .aboutus-crop {
     width: 1222px;
-    height: 2000px;
+    height: 1350px;
     overflow: hidden;
     position: relative;
     margin-top: 20px;
 }
 
 .aboutus1 {
-position: absolute;
-    right: -776px;
-    bottom: -25px;
+    position: absolute;
+    right: -773px;
+    bottom: -774px;
     width: auto;
     height: auto;
 }
@@ -64,19 +64,14 @@ position: absolute;
 }
 
 .caption-overlay2 {
-  position: absolute;         /* วางซ้อนบนรูปหรือส่วนอื่นได้ */
-  top: 50%;                   /* ปรับตำแหน่งแนวตั้งตามต้องการ */
-  left: 10%;                  /* ปรับตำแหน่งแนวนอนตามต้องการ */
-  width: 40%;                 /* กำหนดความกว้างของกรอบ */
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.2); /* พื้นหลังโปร่งใส */
-  backdrop-filter: blur(5px);                 /* ให้ดูใสแบบกระจก */
-  border-radius: 12px;                        /* มุมโค้ง */
-  color: #222;                                /* สีตัวอักษร */
-  font-size: 1.2rem;
-  line-height: 1.5;
-  z-index: 20;
-  box-shadow: 0 0 20px rgba(0,0,0,0.1);        /* เงาบาง */
+    position: absolute;
+    top: 46%;
+    right: 4%;
+    width: 29%;
+    color: #585858;
+    font-size: 4rem;
+    line-height: 1.2;
+    font-family: 'DB adman X';
 }
 
 .caption-overlay2 p {
