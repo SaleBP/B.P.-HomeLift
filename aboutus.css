@@ -31,11 +31,11 @@
 }
 
 .aboutus-crop {
-  width: 300px;        /* ขนาดกรอบแสดงผล */
-  height: 200px;
-  overflow: hidden;    /* ซ่อนส่วนที่เกิน */
-  position: relative;
-  margin-top: 20px;    /* ระยะห่างจากข้อความด้านบน */
+    width: 1120px;
+    height: 2000px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 20px;
 }
 
 .aboutus1 {
