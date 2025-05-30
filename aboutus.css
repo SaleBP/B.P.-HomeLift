@@ -78,3 +78,17 @@
   margin: 0;
   word-break: break-word;      /* บังคับตัดคำถ้ายาวเกิน */
 }
+
+.slide-in-right {
+  opacity: 0;
+  transform: translateX(100px);
+  animation: slideRightFade 1s ease-out forwards;
+}
+
+/* คีย์เฟรมของอนิเมชั่น */
+@keyframes slideRightFade {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
