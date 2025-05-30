@@ -40,7 +40,7 @@
 }
 
 .scroll-track {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   height: 100%;
 
@@ -105,4 +105,9 @@
     -webkit-mask-image: linear-gradient(to right, transparent 0%, black 100%);
     mask-image: linear-gradient(to right, transparent 0%, black 100%);
   }
+
+    .scroll-container {
+    overflow-x: hidden;
+  }
+  
 }
