@@ -1,0 +1,43 @@
+/*===============================*/
+/*           FONT FACES         */
+/*===============================*/
+@font-face {
+  font-family: 'DB adman X';
+  src: url('DB-Adman-X.ttf') format('woff2');
+    font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DB adman X';
+  src: url('DB-Adman-X-Bd.ttf') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('Gilroy-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('Gilroy-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+.aboutus1 {
+  position: absolute; /* หรือ relative แล้วแต่บริบท */
+  top: 50px;           /* ปรับตำแหน่งตามต้องการ */
+  left: 100px;
+
+  width: 300px;        /* ขนาดที่คุณต้องการให้แสดง */
+  height: 200px;
+  object-fit: cover;   /* ✅ ครอปรูปให้เต็มพื้นที่โดยไม่บีบ */
+  border-radius: 12px; /* ตัวอย่างเพิ่มความโค้งมน */
+  z-index: 10;         /* ถ้ามีซ้อนกับองค์ประกอบอื่น */
+}
