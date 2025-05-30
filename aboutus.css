@@ -48,8 +48,8 @@ position: absolute;
 
 .caption-overlay {
   position: absolute;
-  top: 20%;             /* ปรับตำแหน่งแนวตั้งตามต้องการ */
-  right: 20px;          /* ชิดขอบขวาเว็บไซต์ */
+  top: 1%;
+  right: 5%;
   text-align: right;
   color: #eb660e;
   line-height: 1.2;
