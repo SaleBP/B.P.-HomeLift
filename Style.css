@@ -305,7 +305,7 @@ html {
 /*===============================*/
 /*           IMAGES             */
 /*===============================*/
-.img1, .img4, .img5, .img6, .img7, .intro {
+.img1, .img4, .img6, .intro {
   display: flex;
   margin: 0 auto;
   width: 100%;
@@ -345,10 +345,6 @@ html {
 .fade-in.visible {
   opacity: 1;
   transform: translateY(0);
-}
-
-.img5, .img7 {
-  width: 70%;
 }
 
 /*===============================*/
