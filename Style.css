@@ -602,10 +602,12 @@ display: flex
 
 #logosoftcolor {
    height: 2rem;
+
 }
 
 .lift-img {
 width: 70%;
+margin-bottom: 2rem;
 }
 
   #t1, #t2, #t3, #t4, #t5, #t6, #t7 {
