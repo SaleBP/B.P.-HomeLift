@@ -531,11 +531,10 @@ position: absolute;
 }
 
 .image-wrapper {
+  position: relative;
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
-  position: relative;
-  overflow: hidden;
 }
 
 .map-image {
@@ -718,14 +717,6 @@ Specificity: (0,1,0)
 margin-top: 476px;
 }
 
-  .map-image {
-    width: 180%;
-    height: auto;
-    display: block;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
 }
 
   

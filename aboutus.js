@@ -12,7 +12,7 @@ const appearSlideObserver = new IntersectionObserver((entries, observer) => {
 });
 
 sliders.forEach(el => appearSlideObserver.observe(el));
-
+s
 document.addEventListener("DOMContentLoaded", function () {
   const toggle = document.getElementById("quickbar-toggle");
   const panel = document.getElementById("quickbar-panel");
