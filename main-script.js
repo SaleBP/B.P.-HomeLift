@@ -104,36 +104,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 
-  // ========= Drag-to-Scroll =========
-  let isDown = false;
-  let startX;
-  let scrollLeft;
-
-  imageRow.addEventListener('mousedown', (e) => {
-    isDown = true;
-    imageRow.classList.add('dragging');
-    startX = e.pageX - imageRow.offsetLeft;
-    scrollLeft = imageRow.scrollLeft;
-  });
-
-  imageRow.addEventListener('mouseleave', () => {
-    isDown = false;
-    imageRow.classList.remove('dragging');
-  });
-
-  imageRow.addEventListener('mouseup', () => {
-    isDown = false;
-    imageRow.classList.remove('dragging');
-  });
-
-  imageRow.addEventListener('mousemove', (e) => {
-    if (!isDown) return;
-    e.preventDefault();
-    const x = e.pageX - imageRow.offsetLeft;
-    const walk = (x - startX) * 1.5;
-    imageRow.scrollLeft = scrollLeft - walk;
-  });
-
   // ========= Chatbot =========
   const chatIcon = document.getElementById("chat-icon");
   const chatWindow = document.getElementById("chat-window");
