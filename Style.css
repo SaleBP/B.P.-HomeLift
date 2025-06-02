@@ -116,6 +116,7 @@ body {
 #main-content {
   opacity: 0;
   transition: opacity 0.5s ease;
+  min-height: 100vh;
 }
 
 
