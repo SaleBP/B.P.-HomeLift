@@ -1,7 +1,15 @@
 html, body {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-behavior: auto;
+}
+
+body {
   margin: 0;
   padding: 0;
-  width: 100%;
+  background: #ffffff;
+  font-size: 1rem;
 }
 
 /*===============================*/
@@ -110,19 +118,6 @@ html, body {
   transition: opacity 0.5s ease;
 }
 
-
-
-/*===============================*/
-/*           BASE STYLES        */
-/*===============================*/
-body {
-  margin: 0;
-  padding: 0;
-  background: #ffffff;
-
-  height: auto;
-  font-size: 1rem;
-}
 
 /*===============================*/
 /*           TOP BAR            */
