@@ -1,8 +1,9 @@
 html, body {
-  overflow-x: hidden;
-  width: 100%;
+  margin: 0;
+  padding-right: 0;
+  width: 100vw;
+  overflow-x: clip; /* 💡 clip = ซ่อนโดยไม่ใช้ scroll */
 }
-
 /*===============================*/
 /*           FONT FACES         */
 /*===============================*/
