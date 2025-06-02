@@ -719,11 +719,10 @@ Specificity: (0,1,0)
 }
 
 .map-image {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
   width: 180%;
   height: auto;
+  display: block;
+  margin: 0 auto
 }
 
 }
