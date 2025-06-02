@@ -116,7 +116,7 @@ body {
 #main-content {
   opacity: 0;
   transition: opacity 0.5s ease;
-  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 
@@ -367,7 +367,7 @@ body {
 
 section {
   padding: 100px 20px;
-  min-height: 100vh; /* หรือ auto ถ้าต้องการให้ตามเนื้อหา */
+  min-height: 100dvh; /* หรือ auto ถ้าต้องการให้ตามเนื้อหา */
   height: auto;
 }
 
