@@ -31,7 +31,6 @@
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
-  scroll-behavior: smooth;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
