@@ -103,13 +103,6 @@ document.addEventListener("DOMContentLoaded", () => {
     dots[index].classList.add('active');
   }
 
-  imageRow.addEventListener('scroll', () => {
-    const newIndex = Math.round(imageRow.scrollLeft / imageRow.clientWidth);
-    if (newIndex !== currentIndex) {
-      currentIndex = newIndex % imageBoxes.length;
-      updateDots(currentIndex);
-    }
-  });
 
   // ========= Drag-to-Scroll =========
   let isDown = false;
