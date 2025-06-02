@@ -201,5 +201,24 @@
   </div>
 </div>
 <script src="main-script.js" defer></script>
+
+<!-- Lenis.js CDN -->
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.39/bundled/lenis.min.js"></script>
+
+<!-- Lenis Smooth Scroll Init -->
+<script>
+  const lenis = new Lenis({
+    duration: 1.2, // ระยะเวลา scroll (ยิ่งมากยิ่งนุ่ม)
+    easing: t => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    smooth: true
+  });
+
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+
+  requestAnimationFrame(raf);
+</script>
 </body>
 </html>
