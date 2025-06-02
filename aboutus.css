@@ -39,10 +39,10 @@
 }
 
 .aboutus1 {
-    position: absolute;
-    right: -491px;
+position: absolute;
+    right: -572px;
     bottom: -21px;
-    width: 174%;
+    width: 193%;
 }
 
 .caption-overlay {
@@ -100,13 +100,13 @@
 
 @media (max-width: 768px) {
 .aboutus1 {
-right: -795px;
-bottom: -774px;
+        right: -79px;
+        bottom: -219px;
+        width: 144%;
   }
 
   .aboutus-crop {
-    width: 100%;
-    height: 750px;
+height: 669px;
 }
 
   .caption-overlay {
