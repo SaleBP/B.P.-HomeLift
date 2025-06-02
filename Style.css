@@ -705,17 +705,11 @@ font-size: 1.2rem;
   padding: 0px 0;
 }
 
-.container
-Specificity: (0,1,0)
- {
+  .container {
     padding-top: 0%;
+  }
+
+  .image-wrapper {
+    margin-top: 476px;
+  }
 }
-
-
-.image-wrapper {
-margin-top: 476px;
-}
-
-}
-
-  
