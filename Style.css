@@ -714,14 +714,16 @@ Specificity: (0,1,0)
 
 
 .image-wrapper {
-margin-top: 476px;
+  position: relative;
+  overflow: hidden;
 }
 
 .map-image {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   width: 180%;
   height: auto;
-  display: block;
-  margin: 0 auto
 }
 
 }
