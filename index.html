@@ -22,7 +22,7 @@
   </div>
 </div>
 
-<div id="main-content">
+<div id="main-content" data-scroll-container>
 
  <link rel="preload" href="DB-Adman-X.ttf" as="font" type="font/ttf" crossorigin="anonymous">
  
@@ -201,7 +201,25 @@
   </div>
 </div>
 <script src="main-script.js" defer></script>
-<script src="https://unpkg.com/@studio-freight/lenis@1.0.39/bundled/lenis.min.js"></script>
+</div>
 
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.39/bundled/lenis.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: t => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      smooth: true
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  });
+
+</script>
 </body>
 </html>
