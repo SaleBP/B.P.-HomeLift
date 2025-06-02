@@ -1,9 +1,9 @@
 html, body {
   margin: 0;
-  padding-right: 0;
-  width: 100vw;
-  overflow-x: clip; /* 💡 clip = ซ่อนโดยไม่ใช้ scroll */
+  padding: 0;
+  width: 100%;
 }
+
 /*===============================*/
 /*           FONT FACES         */
 /*===============================*/
@@ -404,7 +404,6 @@ section {
 
 .chat-messages {
   flex: 1;
-  overflow-y: auto;
   max-height: 250px;
   display: flex;
   flex-direction: column;
