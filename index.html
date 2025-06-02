@@ -1,190 +1,176 @@
-<!DOCTYPE html>
-<html lang="th">
-<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>B.P. Homelift</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="install.css" />
-  <link rel="stylesheet" href="quickbar.css" />
-  <link rel="stylesheet" href="aboutus.css" />
-  <link rel="preload" href="DB-Adman-X.ttf" as="font" type="font/ttf" crossorigin="anonymous" />
+  <link rel="stylesheet" href="Style.css" />
+  <link rel="stylesheet" href="install.css">
+  <link rel="stylesheet" href="quickbar.css">
+  <link rel="stylesheet" href="aboutus.css">
+
+  <!-- ✅ preload font ที่นี่ -->
+  <link rel="preload" href="DB-Adman-X.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+
+  <title>BPHomelift</title>
 </head>
+
 <body>
-
-  <!-- ✅ PRELOADER -->
-  <div id="preloader">
-    <div class="slide-bar">
-      <div class="slider-fill" id="slider-fill"></div>
-      <div class="slider-ball" id="slider-ball"></div>
-      <div class="slide-label"></div>
-      <div id="loader-percent">0%</div>
+<div id="preloader">
+  <div class="slide-bar">
+    <div class="slider-fill" id="slider-fill"></div>
+    <div class="slider-ball" id="slider-ball"></div>
+    <div class="slide-label">
     </div>
+    <div id="loader-percent">0%</div>
   </div>
+</div>
 
-  <!-- ✅ QUICKBAR สำหรับมือถือ -->
-  <div class="quickbar">
-    <button id="quickbar-toggle">&#9776;</button>
-    <div class="quickbar-panel" id="quickbar-panel">
-      <div class="quickbar-close" id="quickbar-close">&times;</div>
-      <div class="quickbar-section">
-        <a href="#caption2">เกี่ยวกับเรา</a>
-        <a href="#service">บริการ</a>
-        <a href="#custom">ปรับแต่งลิฟต์</a>
-      </div>
-      <div class="quickbar-divider"></div>
-      <div class="quickbar-section contact">
-        <a href="#contact">ติดต่อเรา</a>
-        <a href="https://line.me/ti/p/~@bpthai" target="_blank">Line</a>
-        <div>038 387 141</div>
-        <a href="mailto:sales@bpthai.com" target="_blank">E-Mail</a>
-        <a href="https://www.facebook.com/bppowergroup/" target="_blank">Facebook</a>
-        <a href="#contact">Map</a>
-      </div>
-    </div>
-  </div>
+<div id="main-content" data-scroll-container>
 
-  <!-- ✅ MAIN CONTENT -->
-  <div id="main-content" data-scroll-container>
+ <link rel="preload" href="DB-Adman-X.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+ 
+<!-- Top bar (สำหรับ Desktop) -->
+<div class="top-bar">
+  <div class="top-left" id="logosoftcolor"></div>
 
-    <!-- TOP BAR -->
-    <div class="top-bar">
-      <div class="top-left" id="logosoftcolor"></div>
-      <div class="top-center">
-        <div class="displayFlex">
-          <a href="#caption2" class="nav-link" data-text="เกี่ยวกับเรา">เกี่ยวกับเรา</a>
-          <a href="#service" class="nav-link" data-text="บริการ">บริการ</a>
-          <a href="#custom" class="nav-link" data-text="ปรับแต่งลิฟต์">ปรับแต่งลิฟต์</a>
-          <div class="nav-contact-wrapper">
-            <a href="#contact" class="nav-link nav-contact" data-text="ติดต่อเรา">ติดต่อเรา</a>
-            <div class="contact-dropdown">
-              <a href="https://line.me/ti/p/~@bpthai" target="_blank">Line</a>
-              <div>038 387 141</div>
-              <a href="mailto:sales@bpthai.com" target="_blank">E-Mail</a>
-              <a href="https://www.facebook.com/bppowergroup/" target="_blank">Facebook</a>
-              <a href="#contact" class="nav-link nav-contact" data-text="ติดต่อเรา">Map</a>
-            </div>
-          </div>
+  <div class="top-center">
+    <div class="displayFlex">
+      <a href="#caption2" class="nav-link" data-text="เกี่ยวกับเรา">เกี่ยวกับเรา</a>
+      <a href="#service" class="nav-link" data-text="บริการ">บริการ</a>
+      <a href="#custom" class="nav-link" data-text="ปรับแต่งลิฟต์">ปรับแต่งลิฟต์</a>
+
+      <!-- ติดต่อเรา + กล่อง dropdown -->
+      <div class="nav-contact-wrapper">
+        <a href="#contact" class="nav-link nav-contact" data-text="ติดต่อเรา">ติดต่อเรา</a>
+        <div class="contact-dropdown">
+          <a href="https://line.me/ti/p/~@bpthai" target="_blank">Line</a>
+          <div>038 387 141</div>
+          <a href="mailto:sales@bpthai.com" target="_blank">E-Mail</a>
+          <a href="https://www.facebook.com/bppowergroup/" target="_blank">Facebook</a>
+          <a href="#contact" class="nav-link nav-contact" data-text="ติดต่อเรา">Map</a>
         </div>
       </div>
     </div>
-
-    <!-- SECTION: HOMELIFT -->
-    <div class="homelift">
-      <img src="homelift.svg" alt="intro" class="lift-img fade-in" />
-    </div>
-
-    <!-- SECTION: IMAGE + VIDEO -->
-    <div class="container">
-      <img src="Rose gold Tiles.png" alt="cover" class="img1" />
-      <div class="Video-Liff">
-        <video autoplay muted loop playsinline class="video">
-          <source src="Lift animetion 3.mp4" type="video/mp4" />
-        </video>
-      </div>
-      <div class="Video-Liff">
-        <video autoplay muted loop playsinline class="video">
-          <source src="Liftopen2.mp4" type="video/mp4" />
-        </video>
-      </div>
-    </div>
-
-    <!-- SECTION: TYPE INSTALL CAROUSEL -->
-    <div class="carousel-wrapper1">
-      <p class="caption3 fade-in" id="caption3">วิธีการติดตั้งลิฟต์</p>
-      <div class="blur-overlay left"></div>
-      <div class="blur-overlay right"></div>
-      <p class="caption4 fade-in" id="caption4">สามารถปรับแต่งตู้ลิฟต์ตามความต้องการของลูกค้าได้</p>
-      <div class="scroll-container">
-        <div class="scroll-track" id="scroll-track">
-          <img src="/Typeinstall/barinstall.svg" alt="Barinstall" />
-          <img src="/Typeinstall/barinstall.svg" alt="Barinstall Duplicate" />
-          <img src="/Typeinstall/barinstall.svg" alt="Barinstall Duplicate" />
-        </div>
-      </div>
-    </div>
-
-    <!-- SECTION: CUSTOM -->
-    <img src="Custom.jpg" id="custom" alt="custom" class="img4" />
-
-    <!-- SECTION: ABOUT US -->
-    <div class="aboutus-wrapper fade-in">
-      <div class="aboutus-crop">
-        <img src="/BP/BP (3).jpg" alt="เกี่ยวกับเรา" class="aboutus1" />
-      </div>
-      <div class="caption-overlay slide-in-right">
-        <p>B.P.POWER</p>
-        <p>ENGINEERING</p>
-        <p>GROUP</p>
-      </div>
-      <div class="caption-overlay2 fade-in">
-        <p>บริษัท บี.พี. เพาเวอร์ เอ็น จิเนียริ่ง จํากัด ก่อตั้งขึ้นในปี 2531 โดยเริ่มจากการเป็นผู้ให้บริการด้านเครื่องจักรและระบบไฮโดรลิก ต่อมาได้ขยายขอบเขตธุรกิจไปสู่การออกแบบและผลิตเครื่องไฮโดรลิก ด้วยการควบคุมคุณภาพอย่างต่อเนื่อง บริษัทได้ส่งมอบผลิตภัณฑ์และบริการที่เป็นเลิศมานานกว่าทศวรรษ</p>
-      </div>
-    </div>
-
-    <!-- SECTION: CONTACT / MAP -->
-    <div class="image-wrapper" id="contact">
-      <img src="contact.png" alt="แผนที่" class="map-image" />
-      <div id="textmap" class="textmap">
-        <a href="https://maps.app.goo.gl/jE4yGLgE4Z4QwNZx8" target="_blank">
-          77 ซอย ไหหลำ 3 หมู่ 5 ถนน สุขุมวิท ตำบล เหมือง อำเภอ เมืองชลบุรี จังหวัด ชลบุรี 20130
-        </a>
-      </div>
-    </div>
-
   </div>
-  <!-- ✅ END MAIN-CONTENT -->
+</div>
 
-  <!-- ✅ CHATBOT / ICON -->
-  <button id="chat-icon" class="chat-icon">💬</button>
-  <div id="chat-window" class="chat-window" style="display: none;">
-    <!-- เนื้อหากล่องแชท -->
+<!-- Quickbar สำหรับมือถือ (อยู่นอก top-bar) -->
+<div class="quickbar">
+  <button id="quickbar-toggle">&#9776;</button>
+
+  <div class="quickbar-panel" id="quickbar-panel">
+    <div class="quickbar-close" id="quickbar-close">&times;</div>
+
+    <div class="quickbar-section">
+      <a href="#caption2">เกี่ยวกับเรา</a>
+      <a href="#service">บริการ</a>
+      <a href="#custom">ปรับแต่งลิฟต์</a>
+    </div>
+
+    <div class="quickbar-divider"></div>
+
+    <div class="quickbar-section contact">
+      <a href="#contact">ติดต่อเรา</a>
+      <a href="https://line.me/ti/p/~@bpthai" target="_blank">Line</a>
+      <div>038 387 141</div>
+      <a href="mailto:sales@bpthai.com" target="_blank">E-Mail</a>
+      <a href="https://www.facebook.com/bppowergroup/" target="_blank">Facebook</a>
+      <a href="#contact">Map</a>
+    </div>
   </div>
+</div>
 
-  <!-- ✅ SCRIPT ZONE -->
-  <script src="main-script.js" defer></script>
 
-  <!-- Lenis.js -->
-  <script src="https://unpkg.com/@studio-freight/lenis@1.0.39/bundled/lenis.min.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const lenis = new Lenis({
-        duration: 1.2,
-        easing: t => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-        smooth: true
-      });
+<!-- JavaScript สำหรับ toggle -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.getElementById("quickbar-toggle");
+    const panel = document.getElementById("quickbar-panel");
+    const closeBtn = document.getElementById("quickbar-close");
 
-      function raf(time) {
-        lenis.raf(time);
-        requestAnimationFrame(raf);
-      }
-
-      requestAnimationFrame(raf);
-
-      // Quickbar toggle
-      const toggle = document.getElementById("quickbar-toggle");
-      const panel = document.getElementById("quickbar-panel");
-      const closeBtn = document.getElementById("quickbar-close");
-
-      toggle.addEventListener("click", () => {
-        panel.classList.add("open");
-      });
-
-      closeBtn.addEventListener("click", () => {
-        panel.classList.remove("open");
-      });
-
-      document.addEventListener("click", (e) => {
-        if (panel.classList.contains("open") && !panel.contains(e.target) && e.target !== toggle) {
-          panel.classList.remove("open");
-        }
-      });
+    toggle.addEventListener("click", () => {
+      panel.classList.add("open");
     });
-  </script>
 
-</body>
-</html>
+    closeBtn.addEventListener("click", () => {
+      panel.classList.remove("open");
+    });
 
+    document.addEventListener("click", (e) => {
+      if (panel.classList.contains("open") && !panel.contains(e.target) && e.target !== toggle) {
+        panel.classList.remove("open");
+      }
+    });
+  });
+</script>
+
+
+
+<div class="homelift">
+  <img src="homelift.svg" alt="intro" class="lift-img fade-in">
+</div>
+
+  <div class="container">
+    <img src="Rose gold Tiles.png" alt="cover" class="img1" >
+     
+    <div class="Video-Liff">
+  <video autoplay muted loop playsinline class="video">
+    <source src="Lift animetion 3.mp4" type="video/mp4" />
+  </video>
+</div>
+
+<div class="Video-Liff">
+  <video autoplay muted loop playsinline class="video">
+    <source src="Liftopen2.mp4" type="video/mp4" />
+  </video>
+</div>
+<!--TYPE INSTALL-->
+
+
+<div class="carousel-wrapper1">
+  <p class="caption3 fade-in" id="caption3" >วิธีการติดตั้งลิฟต์</p>
+  <div class="blur-overlay left"></div>
+  <div class="blur-overlay right"></div>
+<p class="caption4 fade-in" id="caption4" >สามารถปรับแต่งตู้ลิฟต์ตามความต้องการของลูกค้าได้</p>
+
+  <div class="scroll-container">
+    <div class="scroll-track" id="scroll-track">
+      <img src="/Typeinstall/barinstall.svg" alt="Barinstall" />
+      <img src="/Typeinstall/barinstall.svg" alt="Barinstall Duplicate" />
+      <img src="/Typeinstall/barinstall.svg" alt="Barinstall Duplicate" />
+  
+    </div>
+  </div>
+</div>
+
+<img src="Custom.jpg" id="custom" alt="custom" class="img4" />
+
+
+<div class="aboutus-wrapper fade-in">
+  <div class="aboutus-crop">
+    <img src="/BP/BP (3).jpg" alt="เกี่ยวกับเรา" class="aboutus1" />
+  </div>
+
+  <div class="caption-overlay slide-in-right">
+    <p>B.P.POWER</p>
+    <p>ENGINEERING</p>
+    <p>GROUP</p>
+  </div>
+
+    <div class="caption-overlay2 fade-in">
+    <p>บริษัท บี.พี. เพาเวอร์ เอ็น จิเนียริ่ง จํากัด ก่อตั้งขึ้นในปี 2531 โดยเริ่มจาก การเป็บนผู้ให้บริการ 
+      ด้านเครื่องจักรและระบบไฮโดรลิกต่อมา บริษัท ได้ขยายขอบเขตธุรกิจไป สู่การออกแบบและผลิต 
+      เครื่องไฮโดรลิก ด้วยการควบคุมคุณภาพอย่าง ต่อเนื่อง บริษัทได้ส่งมอบผลิตภัณฑ์และบริการที่เป็นเลิศมานานกว่าทศวรรษ</p>
+  </div>
+
+</div>
+
+<div class="image-wrapper" id="contact">
+  <img src="contact.png" alt="แผนที่" class="map-image" />
+  
+  <div id="textmap" class="textmap">
+    <a href="https://maps.app.goo.gl/jE4yGLgE4Z4QwNZx8" target="_blank">
+      77 ซอย ไหหลำ 3 หมู่ 5 ถนน สุขุมวิท ตำบล เหมือง อำเภอ เมืองชลบุรี จังหวัด ชลบุรี 20130
+    </a>
+  </div>
+</div>
 
   <!-- ✅ SCRIPTS -->
   <script src="Tyinstall.js" defer></script>
@@ -212,6 +198,7 @@
   </div>
   </div>
 </div>
+
 </div>
 
   <!-- ✅ LENIS -->
