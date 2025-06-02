@@ -73,4 +73,58 @@
     color: #333;
     font-size: 1.1rem;
   }
+
+  
+}
+
+@keyframes lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.quickbar-panel .quickbar-section a,
+.quickbar-panel .quickbar-section.contact div,
+.quickbar-panel .quickbar-section.contact a {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.quickbar-panel.open .quickbar-section a,
+.quickbar-panel.open .quickbar-section.contact div,
+.quickbar-panel.open .quickbar-section.contact a {
+  animation: lineUp 0.4s ease-out forwards;
+}
+
+.quickbar-panel.open .quickbar-section a:nth-child(1),
+.quickbar-panel.open .quickbar-section.contact a:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.quickbar-panel.open .quickbar-section a:nth-child(2),
+.quickbar-panel.open .quickbar-section.contact a:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.quickbar-panel.open .quickbar-section a:nth-child(3),
+.quickbar-panel.open .quickbar-section.contact a:nth-child(3) {
+  animation-delay: 0.3s;
+}
+/* และต่อไปเรื่อย ๆ */
+.quickbar-panel.open .quickbar-section.contact div {
+  animation: lineUp 0.4s ease-out forwards;
+  animation-delay: 0.4s;
+}
+.quickbar-panel.open .quickbar-section.contact a:nth-child(4) {
+  animation-delay: 0.5s;
+}
+.quickbar-panel.open .quickbar-section.contact a:nth-child(5) {
+  animation-delay: 0.6s;
+}
+.quickbar-panel.open .quickbar-section.contact a:nth-child(6) {
+  animation-delay: 0.7s;
 }
