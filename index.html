@@ -9,6 +9,17 @@
   <link rel="preload" href="DB-Adman-X.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
   <title>BPHomelift</title>
+
+  <!-- GSAP Core -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+<!-- ScrollTrigger Plugin -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+<!-- ScrollSmoother Plugin -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollSmoother.min.js"></script>
+
+
 </head>
 
 <body>
@@ -22,8 +33,8 @@
   </div>
 </div>
 
-<body data-lenis-scroll>
-  <div class="container" data-lenis-scroll>
+<div id="smooth-wrapper">
+    <div id="smooth-content">
 
  <link rel="preload" href="DB-Adman-X.ttf" as="font" type="font/ttf" crossorigin="anonymous">
  
@@ -50,6 +61,7 @@
       </div>
     </div>
   </div>
+</div>
 </div>
 
 <!-- Quickbar สำหรับมือถือ (อยู่นอก top-bar) -->
@@ -201,24 +213,5 @@
 </div>
 
 </div>
-
-  <!-- ✅ LENIS -->
-  <script src="https://unpkg.com/@studio-freight/lenis@1.0.39/bundled/lenis.min.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const lenis = new Lenis({
-        duration: 1.2,
-        easing: t => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-        smooth: true
-      });
-
-      function raf(time) {
-        lenis.raf(time);
-        requestAnimationFrame(raf);
-      }
-
-      requestAnimationFrame(raf);
-    });
-  </script>
 </body>
 </html>
