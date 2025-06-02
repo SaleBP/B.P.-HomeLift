@@ -1,8 +1,17 @@
 html, body {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-behavior: auto;
+}
+
+body {
   margin: 0;
   padding: 0;
-  width: 100%;
+  background: #ffffff;
+  font-size: 1rem;
 }
+
 
 /*===============================*/
 /*           FONT FACES         */
@@ -106,23 +115,13 @@ html, body {
 
 /* ซ่อนเนื้อหาเว็บตอนโหลด */
 #main-content {
-  opacity: 0;
-  transition: opacity 0.5s ease;
+  height: 100%;
+  overflow: auto;
 }
 
 
 
-/*===============================*/
-/*           BASE STYLES        */
-/*===============================*/
-body {
-  margin: 0;
-  padding: 0;
-  background: #ffffff;
 
-  height: auto;
-  font-size: 1rem;
-}
 
 /*===============================*/
 /*           TOP BAR            */
