@@ -32,7 +32,6 @@ html, body {
 /*           PRELOADER           */
 /*===============================*/
 #preloader {
-  position: fixed;
   inset: 0;
   background: white;
   z-index: 9999;
