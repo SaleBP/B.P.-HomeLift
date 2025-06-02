@@ -1,3 +1,16 @@
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="Style.css" />
+  <link rel="stylesheet" href="install.css">
+  <link rel="stylesheet" href="quickbar.css">
+  <link rel="stylesheet" href="aboutus.css">
+
+  <!-- ✅ preload font ที่นี่ -->
+  <link rel="preload" href="DB-Adman-X.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+
+  <title>BPHomelift</title>
+</head>
+
 <!DOCTYPE html>
 <html lang="th">
 <head>
@@ -179,5 +192,55 @@
     });
   </script>
 
+</body>
+</html>
+
+
+  <!-- ✅ SCRIPTS -->
+  <script src="Tyinstall.js" defer></script>
+  <script src="aboutus.js" defer></script>
+  <script src="main-script.js" defer></script>
+
+<!-- ปุ่มเปิดแชท -->
+<button id="chat-icon" class="chat-icon">💬</button>
+
+<!-- กล่องแชท -->
+<div id="chat-window" class="chat-window" style="display: none;">
+  <div class="chat-header">
+    B.P. Homelift Chatbot
+    <button id="close-chat" style="background: none; border: none; font-size: 1.2rem; cursor: pointer;">×</button>
+  </div>
+
+  <div id="chat-messages" class="chat-messages">
+    <div class="chat-message bot">สวัสดี! ต้องการสอบถามเรื่องใด?</div>
+  </div>
+
+  <div class="options">
+    <button onclick="handleOption('บริการ')">บริการ</button>
+    <button onclick="handleOption('ปรับแต่งลิฟต์')">ปรับแต่งลิฟต์</button>
+    <button onclick="handleOption('ติดต่อ')">ติดต่อ</button>
+  </div>
+  </div>
+</div>
+</div>
+
+  <!-- ✅ LENIS -->
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.39/bundled/lenis.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const lenis = new Lenis({
+        duration: 1.2,
+        easing: t => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+        smooth: true
+      });
+
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
+
+      requestAnimationFrame(raf);
+    });
+  </script>
 </body>
 </html>
