@@ -3,7 +3,6 @@ html, body {
   padding-right: 0;
   width: 100vw;
   overflow-x: clip; /* 💡 clip = ซ่อนโดยไม่ใช้ scroll */
-  scroll-behavior: smooth;
 }
 /*===============================*/
 /*           FONT FACES         */
