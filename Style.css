@@ -54,7 +54,7 @@ html, body {
   border-radius: 50px;
   background-color: white;
   box-shadow: inset 0 2px 4px rgba(0,0,0,0.1), 0 4px 10px rgba(0,0,0,0.1);
-  overflow: hidden;
+
   
 }
 
@@ -119,7 +119,7 @@ body {
   margin: 0;
   padding: 0;
   background: #ffffff;
-  overflow-x: hidden;
+
   height: auto;
   font-size: 1rem;
 }
@@ -658,7 +658,7 @@ width: 70%;
   .contact-icons .icon-text4 {
     font-size: 0.5rem; /* ปรับตามขนาดที่ต้องการ */
     white-space: nowrap;       /* ห้ามขึ้นบรรทัดใหม่ */
-    overflow: hidden;
+ 
     text-overflow: ellipsis;   /* ถ้าเกินให้เป็น ... */
   }
   
