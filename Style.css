@@ -17,14 +17,22 @@ body {
 body::-webkit-scrollbar {
   display: none;                /* Chrome, Safari */
 }
+
 #smooth-wrapper {
+  height: 100%;
   overflow: hidden;
+  position: relative;
 }
 
 #smooth-content {
   will-change: transform;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
+#smooth-content::-webkit-scrollbar {
+  display: none;
+}
 /*===============================*/
 /*           FONT FACES         */
 /*===============================*/
