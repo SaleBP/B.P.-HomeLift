@@ -196,3 +196,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   fadeUps.forEach(el => observer.observe(el));
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+
+  ScrollSmoother.create({
+    wrapper: '#smooth-wrapper',
+    content: '#smooth-content',
+    smooth: 1.2,       // ความลื่น (ค่าประมาณ 1–2 กำลังดี)
+    effects: true      // เปิดให้ใช้ parallax หรือ effect กับ child ได้
+  });
+});
