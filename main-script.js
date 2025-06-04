@@ -168,7 +168,11 @@ window.onload = function () {
 
       setTimeout(() => {
         preloader.classList.add("fade-out");
-        mainContent.style.opacity = 1;
+        const mainContent = document.getElementById("main-content");
+
+if (mainContent) {
+  mainContent.style.opacity = 1;
+}
       }, 500);
     }
 
@@ -196,3 +200,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
   fadeUps.forEach(el => observer.observe(el));
 });
+mainContent.style
