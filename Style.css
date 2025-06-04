@@ -540,18 +540,16 @@ position: absolute;
 }
 
 .map-crop {
-    width: 1222px;
-    height: 1350px;
+    width: 1920px;
     overflow: hidden;
     position: relative;
-    margin-top: 20px;
 }
 
 .map-image {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin-top: 200px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 273px;
 }
 
 .textmap {
