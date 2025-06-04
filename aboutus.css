@@ -99,14 +99,17 @@ position: absolute;
 
 
 @media (max-width: 768px) {
-.aboutus1 {
-        right: -79px;
-        bottom: -219px;
-        width: 144%;
-  }
+  
+.aboutus-crop {
+  position: relative;
+  overflow: hidden;
+}
 
-  .aboutus-crop {
-height: 669px;
+.aboutus1 {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
 }
 
   .caption-overlay {
