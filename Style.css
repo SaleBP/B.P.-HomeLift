@@ -1,8 +1,8 @@
 html, body {
   height: 100%;
-  overflow: auto;
-  overflow-y: auto;
-  scroll-behavior: auto;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* สำคัญ! */
 }
 
 body {
@@ -10,6 +10,15 @@ body {
   padding: 0;
   background: #ffffff;
   font-size: 1rem;
+}
+
+#smooth-wrapper {
+  height: 100%;
+  overflow: hidden;
+}
+
+#smooth-content {
+  will-change: transform;
 }
 
 /*===============================*/
