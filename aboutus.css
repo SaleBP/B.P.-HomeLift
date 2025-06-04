@@ -99,28 +99,43 @@ position: absolute;
 
 
 @media (max-width: 768px) {
-.aboutus1 {
-        right: -79px;
-        bottom: -219px;
-        width: 144%;
+  .aboutus-wrapper {
+    position: relative;
   }
 
   .aboutus-crop {
-height: 669px;
-}
+    position: relative;
+    width: 100vw;
+    height: 669px;
+    overflow: hidden; /* ✅ ครอปส่วนที่เกินออก */
+  }
+
+  .aboutus1 {
+    position: absolute;
+    width: 144%;
+    right: -79px;
+    bottom: -219px;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .caption-overlay,
+  .caption-overlay2 {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding: 1rem;
+    z-index: 2;
+    text-align: center;
+  }
 
   .caption-overlay {
-  top: 69%;
-  right: 5%;
-  font-size: 3.5rem;
-  color: rgb(255 255 255);
-}
+    top: 10%;
+  }
 
   .caption-overlay2 {
-    top: 104%;
-    right: 4%;
-    width: 69%;
-    font-size: 2rem;
-}
-
+    bottom: 5%;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 12px;
   }
+}
