@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="quickbar.css" />
   <link rel="stylesheet" href="aboutus.css" />
 
-  <link rel="preload" href="DB-Adman-X.ttf" as="font" type="font/ttf" crossorigin="anonymous" />
+<link rel="preload" href="DB-Adman-X.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 
   <!-- GSAP Core -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
@@ -26,6 +26,19 @@
 
 
 <body>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+
+    ScrollSmoother.create({
+      wrapper: '#smooth-wrapper',
+      content: '#smooth-content',
+      smooth: 1.2,
+      effects: true
+    });
+  });
+</script>
 
   <!-- ✅ Preloader -->
   <div id="preloader">

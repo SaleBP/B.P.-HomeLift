@@ -196,14 +196,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
   fadeUps.forEach(el => observer.observe(el));
 });
-
-document.addEventListener("DOMContentLoaded", () => {
-  gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
-
-  ScrollSmoother.create({
-    wrapper: '#smooth-wrapper',
-    content: '#smooth-content',
-    smooth: 1.2,
-    effects: true
-  });
-});
