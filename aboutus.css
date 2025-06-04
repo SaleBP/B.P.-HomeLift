@@ -105,10 +105,10 @@ position: absolute;
   }
 
   .aboutus-crop {
-    position: relative;
-    width: 100vw;
-    height: 669px;
-    overflow: hidden; /* ✅ ครอปส่วนที่เกินออก */
+        position: relative;
+        width: 100vw;
+        height: 560px;
+        overflow: hidden;
   }
 
   .aboutus1 {
@@ -124,7 +124,7 @@ position: absolute;
   top: 69%;
   right: 5%;
   font-size: 3.5rem;
-  color: rgb(255 255 255);
+  color: rgb(58, 58, 58);
 }
 
   .caption-overlay2 {
