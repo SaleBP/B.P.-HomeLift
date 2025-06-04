@@ -203,7 +203,7 @@ document.addEventListener("DOMContentLoaded", () => {
   ScrollSmoother.create({
     wrapper: '#smooth-wrapper',
     content: '#smooth-content',
-    smooth: 1.2,       // ความลื่น (ค่าประมาณ 1–2 กำลังดี)
-    effects: true      // เปิดให้ใช้ parallax หรือ effect กับ child ได้
+    smooth: 1.2,
+    effects: true
   });
 });

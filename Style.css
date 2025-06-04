@@ -1,25 +1,14 @@
 html, body {
   height: 100%;
-  overflow: auto;
-  overflow-y: auto;
-  scroll-behavior: auto;
-}
-
-body {
   margin: 0;
   padding: 0;
-  background: #ffffff;
+  overflow: hidden; /* ปิด scrollbar ปกติ เพื่อให้ ScrollSmoother ทำงาน */
   font-size: 1rem;
-  overflow: scroll;
-  scrollbar-width: none;        /* Firefox */
-  -ms-overflow-style: none;     /* IE 10+ */
-}
-
-body::-webkit-scrollbar {
-  display: none;                /* Chrome, Safari */
+  background: #ffffff;
 }
 
 #smooth-wrapper {
+  height: 100%;
   overflow: hidden;
 }
 
@@ -27,6 +16,15 @@ body::-webkit-scrollbar {
   will-change: transform;
 }
 
+/* ✅ ซ่อน scrollbar เฉพาะ #smooth-content (ยัง scroll ได้ตามปกติผ่าน ScrollSmoother) */
+#smooth-content {
+  scrollbar-width: none;        /* Firefox */
+  -ms-overflow-style: none;     /* IE 10+ */
+}
+
+#smooth-content::-webkit-scrollbar {
+  display: none;                /* Chrome, Safari */
+}
 /*===============================*/
 /*           FONT FACES         */
 /*===============================*/
