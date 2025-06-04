@@ -1,72 +1,78 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // ========= Top Bar Scroll Effect =========
-  const topBar = document.querySelector('.top-bar');
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 10) {
-      topBar.classList.add('transparent');
-    } else {
-      topBar.classList.remove('transparent');
+  // ✅ Register GSAP Plugin
+  gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+
+  // ✅ ScrollSmoother Setup
+  ScrollSmoother.create({
+    wrapper: '#smooth-wrapper',
+    content: '#smooth-content',
+    smooth: 1.5,
+    effects: true
+  });
+
+  // ✅ Animate Caption Overlay ทีละบรรทัด
+  gsap.from(".caption-overlay p", {
+    x: 100,
+    opacity: 0,
+    duration: 1,
+    stagger: 0.3,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: ".caption-overlay",
+      start: "top 80%",
     }
   });
 
-  // ========= ติดต่อเรา Hover Dropdown =========
+  // ✅ Top Bar Scroll Effect
+  const topBar = document.querySelector('.top-bar');
+  window.addEventListener('scroll', () => {
+    topBar.classList.toggle('transparent', window.scrollY > 10);
+  });
+
+  // ✅ Hover Dropdown
   const wrapper = document.querySelector(".nav-contact-wrapper");
   let timeout;
-
   wrapper.addEventListener("mouseenter", () => {
     clearTimeout(timeout);
     wrapper.classList.add("show");
   });
-
   wrapper.addEventListener("mouseleave", () => {
-    timeout = setTimeout(() => {
-      wrapper.classList.remove("show");
-    }, 1000);
+    timeout = setTimeout(() => wrapper.classList.remove("show"), 1000);
   });
 
-  // ========= Fade-in Animation =========
+  // ✅ IntersectionObserver Fade-in
   const faders = document.querySelectorAll('.fade-in:not(.fade-late)');
   const delayedFaders = document.querySelectorAll('.fade-in.fade-late');
-
   const appearOnScroll = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
-      if (!entry.isIntersecting) return;
-      entry.target.classList.add('visible');
-      observer.unobserve(entry.target);
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
     });
-  }, {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-  });
-
+  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
   const delayedObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
-      if (!entry.isIntersecting) return;
-      entry.target.classList.add('visible');
-      observer.unobserve(entry.target);
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
     });
-  }, {
-    threshold: 0.1,
-    rootMargin: '0px 0px -200px 0px'
-  });
+  }, { threshold: 0.1, rootMargin: '0px 0px -200px 0px' });
 
   faders.forEach(el => appearOnScroll.observe(el));
   delayedFaders.forEach(el => delayedObserver.observe(el));
 
-  // ========= Cursor Ball =========
+  // ✅ Cursor Ball
   const ball = document.createElement("div");
   ball.classList.add("cursor-ball");
   document.body.appendChild(ball);
-
   let hovering = false;
-
   document.addEventListener("mousemove", (e) => {
     const scale = hovering ? 1.8 : 1;
     ball.style.transform = `translate(${e.clientX}px, ${e.clientY}px) scale(${scale})`;
   });
-
-  const hoverTargets = document.querySelectorAll("a, button, .clickable");
-  hoverTargets.forEach((el) => {
+  document.querySelectorAll("a, button, .clickable").forEach((el) => {
     el.addEventListener("mouseenter", () => {
       hovering = true;
       ball.classList.add("hovering");
@@ -77,12 +83,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // ========= Carousel Dots =========
+  // ✅ Carousel Dots
   const imageRow = document.querySelector('.image-row');
   const imageBoxes = document.querySelectorAll('.image-box');
   const dotContainer = document.querySelector('.carousel-dots');
   let currentIndex = 0;
-
   imageBoxes.forEach((_, i) => {
     const dot = document.createElement('span');
     dot.classList.add('dot');
@@ -103,21 +108,20 @@ document.addEventListener("DOMContentLoaded", () => {
     dots[index].classList.add('active');
   }
 
-
-  // ========= Chatbot =========
+  // ✅ Chatbot
   const chatIcon = document.getElementById("chat-icon");
   const chatWindow = document.getElementById("chat-window");
   const closeChat = document.getElementById("close-chat");
   const chatMessages = document.getElementById("chat-messages");
 
-  chatIcon.addEventListener("click", function () {
+  chatIcon.addEventListener("click", () => {
     chatWindow.style.display =
       chatWindow.style.display === "none" || chatWindow.style.display === ""
         ? "flex"
         : "none";
   });
 
-  closeChat.addEventListener("click", function () {
+  closeChat.addEventListener("click", () => {
     chatWindow.style.display = "none";
   });
 
@@ -146,71 +150,3 @@ document.addEventListener("DOMContentLoaded", () => {
     scrollToLatestMessage();
   };
 });
-
-// ========= Preloader =========
-window.onload = function () {
-  let progress = 0;
-  const sliderBall = document.getElementById("slider-ball");
-  const fill = document.getElementById("slider-fill");
-  const percentText = document.getElementById("loader-percent");
-  const preloader = document.getElementById("preloader");
-  const mainContent = document.getElementById("main-content");
-
-  const maxSlide = 205;
-
-  const interval = setInterval(() => {
-    progress += Math.random() * 2.5;
-    if (progress >= 100) {
-      progress = 100;
-      clearInterval(interval);
-      sliderBall.style.left = maxSlide + "px";
-      fill.style.width = "100%";
-
-      setTimeout(() => {
-        preloader.classList.add("fade-out");
-        mainContent.style.opacity = 1;
-      }, 500);
-    }
-
-    percentText.textContent = Math.floor(progress) + "%";
-    sliderBall.style.left = (progress / 100) * maxSlide + "px";
-    fill.style.width = progress + "%";
-  }, 16);
-};
-
-document.addEventListener("DOMContentLoaded", () => {
-  gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
-
-  ScrollSmoother.create({
-    wrapper: '#smooth-wrapper',
-    content: '#smooth-content',
-    smooth: 1.5,         // ปรับความลื่น (1 = พื้นฐาน, มากกว่านี้จะลื่นกว่า)
-    effects: true        // ให้ ScrollTrigger ใช้ effect เช่น parallax ได้
-  });
-});
-
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
-
-    ScrollSmoother.create({
-      wrapper: '#smooth-wrapper',
-      content: '#smooth-content',
-      smooth: 1.5,
-      effects: true
-    });
-
-    // ✅ Animate ทีละบรรทัด
-    gsap.from(".caption-overlay p", {
-      x: 100,            // slide-in from right
-      opacity: 0,
-      duration: 1,
-      stagger: 0.3,      // ดีเลย์ระหว่างแต่ละคำ
-      ease: "power2.out",
-      scrollTrigger: {
-        trigger: ".caption-overlay",
-        start: "top 80%", // เมื่อ .caption-overlay เข้า viewport
-      }
-    });
-  });
-</script>
