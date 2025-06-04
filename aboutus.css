@@ -99,18 +99,21 @@ position: absolute;
 
 
 @media (max-width: 768px) {
-  
-.aboutus-crop {
-  position: relative;
-  overflow: hidden;
-}
 
-.aboutus1 {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  display: block;
-}
+  .aboutus-crop {
+    position: relative;
+    width: 100vw;           /* ความกว้างเท่าหน้าจอมือถือ */
+    height: auto;
+    overflow: hidden;
+  }
+
+  .aboutus1 {
+    width: 100vw;
+    height: auto;
+    object-fit: cover;      /* ตัดภาพให้พอดีกับกรอบโดยไม่บีบ */
+    object-position: center center; /* ปรับตำแหน่งได้ เช่น left top / right bottom */
+    display: block;
+  }
 
   .caption-overlay {
   top: 69%;
