@@ -57,33 +57,6 @@
 </div>
 
 
-
-
-<!-- JavaScript สำหรับ toggle -->
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const toggle = document.getElementById("quickbar-toggle");
-    const panel = document.getElementById("quickbar-panel");
-    const closeBtn = document.getElementById("quickbar-close");
-
-    toggle.addEventListener("click", () => {
-      panel.classList.add("open");
-    });
-
-    closeBtn.addEventListener("click", () => {
-      panel.classList.remove("open");
-    });
-
-    document.addEventListener("click", (e) => {
-      if (panel.classList.contains("open") && !panel.contains(e.target) && e.target !== toggle) {
-        panel.classList.remove("open");
-      }
-    });
-  });
-</script>
-
-
-
 <div class="homelift">
   <img src="homelift.svg" alt="intro" class="lift-img fade-in">
 </div>
@@ -155,7 +128,7 @@
 
    </div>
   </div>
-  
+
 <!-- Quickbar สำหรับมือถือ (อยู่นอก top-bar) -->
 <div class="quickbar">
   <button id="quickbar-toggle">&#9776;</button>
@@ -181,6 +154,30 @@
     </div>
   </div>
 </div>
+
+<!-- JavaScript สำหรับ toggle -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.getElementById("quickbar-toggle");
+    const panel = document.getElementById("quickbar-panel");
+    const closeBtn = document.getElementById("quickbar-close");
+
+    toggle.addEventListener("click", () => {
+      panel.classList.add("open");
+    });
+
+    closeBtn.addEventListener("click", () => {
+      panel.classList.remove("open");
+    });
+
+    document.addEventListener("click", (e) => {
+      if (panel.classList.contains("open") && !panel.contains(e.target) && e.target !== toggle) {
+        panel.classList.remove("open");
+      }
+    });
+  });
+</script>
+
   <!-- ✅ SCRIPTS -->
   <script src="Tyinstall.js" defer></script>
   <script src="aboutus.js" defer></script>
