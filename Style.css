@@ -707,6 +707,19 @@ font-size: 1.2rem;
         bottom: 15%;
   }
 
+  .map-crop {
+    width: 1920px;
+    overflow: hidden;
+    position: relative;
+}
+
+.map-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 273px;
+}
+
   .textmap a {
     font-size: 0.7rem;
     max-width: 90vw;
