@@ -1,45 +1,41 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="Style.css" />
-  <link rel="stylesheet" href="install.css">
-  <link rel="stylesheet" href="quickbar.css">
-  <link rel="stylesheet" href="aboutus.css">
-
-  <!-- ✅ preload font ที่นี่ -->
-  <link rel="preload" href="DB-Adman-X.ttf" as="font" type="font/ttf" crossorigin="anonymous">
-
   <title>BPHomelift</title>
 
-  <!-- GSAP Core -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <!-- ✅ CSS -->
+  <link rel="stylesheet" href="Style.css" />
+  <link rel="stylesheet" href="install.css" />
+  <link rel="stylesheet" href="quickbar.css" />
+  <link rel="stylesheet" href="aboutus.css" />
+  <link rel="preload" href="DB-Adman-X.ttf" as="font" type="font/ttf" crossorigin="anonymous" />
 
-<!-- ScrollTrigger Plugin -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-
-<!-- ScrollSmoother Plugin -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollSmoother.min.js"></script>
-
-
+  <!-- ✅ GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollSmoother.min.js"></script>
 </head>
- <div id="smooth-wrapper">
-    <div id="smooth-content">
-
 <body>
-<div id="preloader">
-  <div class="slide-bar">
-    <div class="slider-fill" id="slider-fill"></div>
-    <div class="slider-ball" id="slider-ball"></div>
-    <div class="slide-label">
-    </div>
-    <div id="loader-percent">0%</div>
-  </div>
-</div>
 
-<div id="smooth-wrapper">
+  <!-- ✅ Preloader -->
+  <div id="preloader">
+    <div class="slide-bar">
+      <div class="slider-fill" id="slider-fill"></div>
+      <div class="slider-ball" id="slider-ball"></div>
+      <div class="slide-label"></div>
+      <div id="loader-percent">0%</div>
+    </div>
+  </div>
+
+  <!-- ✅ Smooth Scroll Container -->
+  <div id="smooth-wrapper">
     <div id="smooth-content">
 
- <link rel="preload" href="DB-Adman-X.ttf" as="font" type="font/ttf" crossorigin="anonymous">
- 
+      <!-- ✅ Main HTML เริ่ม -->
+      <div id="main-content">
+
 <!-- Top bar (สำหรับ Desktop) -->
 <div class="top-bar">
   <div class="top-left" id="logosoftcolor"></div>
@@ -187,13 +183,43 @@
   </div>
 </div>
 
-   </div>
-  </div>
-  
-  <!-- ✅ SCRIPTS -->
+        </div> <!-- end #main-content -->
+
+    </div> <!-- end #smooth-content -->
+  </div> <!-- end #smooth-wrapper -->
+
+  <!-- ✅ Script Files -->
   <script src="Tyinstall.js" defer></script>
   <script src="aboutus.js" defer></script>
   <script src="main-script.js" defer></script>
+
+    <!-- ✅ ScrollSmoother Init -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+
+      ScrollSmoother.create({
+        wrapper: "#smooth-wrapper",
+        content: "#smooth-content",
+        smooth: 1.5,
+        effects: true
+      });
+
+      // ✅ Animate บรรทัดข้อความแบบ stagger
+      gsap.from(".caption-overlay p", {
+        x: 100,
+        opacity: 0,
+        duration: 1,
+        stagger: 0.3,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".caption-overlay",
+          start: "top 80%",
+        }
+      });
+    });
+  </script>
+
 
 <!-- ปุ่มเปิดแชท -->
 <button id="chat-icon" class="chat-icon">💬</button>
