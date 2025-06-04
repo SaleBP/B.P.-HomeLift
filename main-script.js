@@ -177,3 +177,10 @@ window.onload = function () {
     fill.style.width = progress + "%";
   }, 16);
 };
+
+  ScrollSmoother.create({
+    wrapper: '#smooth-wrapper',
+    content: '#smooth-content',
+    smooth: 1.5,         // ปรับความลื่น (1 = พื้นฐาน, มากกว่านี้จะลื่นกว่า)
+    effects: true        // ให้ ScrollTrigger ใช้ effect เช่น parallax ได้
+  });
