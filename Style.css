@@ -1,26 +1,20 @@
 html, body {
+  height: 100%;
+  overflow: auto;
+  overflow-y: auto;
+  scroll-behavior: auto;
+}
+
+body {
   margin: 0;
   padding: 0;
-  height: 100%;
-  overflow: hidden; /* 🚫 ปิด scroll ปกติ */
-  font-size: 1rem;
   background: #ffffff;
-}
-
-#smooth-wrapper {
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-}
-
-#smooth-content {
-  will-change: transform;
-  min-height: 100vh;
+  font-size: 1rem;
+  overflow: scroll;
   scrollbar-width: none;        /* Firefox */
   -ms-overflow-style: none;     /* IE 10+ */
 }
-
-#smooth-content::-webkit-scrollbar {
+body::-webkit-scrollbar {
   display: none;                /* Chrome, Safari */
 }
 
@@ -545,7 +539,7 @@ position: absolute;
 
 .map-crop {
     width: 1920px;
- 
+    overflow: hidden;
     position: relative;
 }
 
