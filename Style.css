@@ -707,18 +707,21 @@ font-size: 1.2rem;
         bottom: 15%;
   }
 
-  .map-crop {
-    width: 1920px;
-    overflow: hidden;
-    position: relative;
-}
+    .map-crop {
+        position: relative;
+        width: 100vw;
+        height: 299px;
+        overflow: hidden;
+    }
 
-.map-image {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin-top: 273px;
-}
+    .map-image {
+        position: absolute;
+        width: 167%;
+        right: -148px;
+        bottom: -6px;
+        height: auto;
+        object-fit: cover;
+    }
 
   .textmap a {
     font-size: 0.7rem;
