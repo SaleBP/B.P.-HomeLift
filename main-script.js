@@ -188,3 +188,29 @@ document.addEventListener("DOMContentLoaded", () => {
     effects: true        // ให้ ScrollTrigger ใช้ effect เช่น parallax ได้
   });
 });
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+
+    ScrollSmoother.create({
+      wrapper: '#smooth-wrapper',
+      content: '#smooth-content',
+      smooth: 1.5,
+      effects: true
+    });
+
+    // ✅ Animate ทีละบรรทัด
+    gsap.from(".caption-overlay p", {
+      x: 100,            // slide-in from right
+      opacity: 0,
+      duration: 1,
+      stagger: 0.3,      // ดีเลย์ระหว่างแต่ละคำ
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: ".caption-overlay",
+        start: "top 80%", // เมื่อ .caption-overlay เข้า viewport
+      }
+    });
+  });
+</script>
