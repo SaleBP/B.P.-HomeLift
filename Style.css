@@ -1,25 +1,24 @@
 html, body {
   height: 100%;
+  overflow: auto;
+  overflow-y: auto;
+  scroll-behavior: auto;
+}
+
+body {
   margin: 0;
   padding: 0;
-  overflow: hidden; /* ปิด scrollbar ปกติ เพื่อให้ ScrollSmoother ทำงาน */
-  font-size: 1rem;
   background: #ffffff;
+  font-size: 1rem;
+  
 }
 
 #smooth-wrapper {
-  height: 100%;
   overflow: hidden;
 }
 
 #smooth-content {
   will-change: transform;
-  scrollbar-width: none;        /* Firefox */
-  -ms-overflow-style: none;     /* IE 10+ */
-}
-
-#smooth-content::-webkit-scrollbar {
-  display: none;                /* Chrome, Safari */
 }
 
 /*===============================*/
