@@ -99,28 +99,45 @@ position: absolute;
 
 
 @media (max-width: 768px) {
-.aboutus1 {
-        right: -79px;
-        bottom: -219px;
-        width: 144%;
+  .aboutus-wrapper {
+    position: relative;
+    overflow: hidden;
   }
 
   .aboutus-crop {
-height: 669px;
-}
+    width: 100vw;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .aboutus1 {
+    width: 100vw;
+    height: auto;
+    object-fit: cover;
+    object-position: center center;
+    display: block;
+  }
+
+  .caption-overlay,
+  .caption-overlay2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    z-index: 2;
+    color: #333;
+  }
 
   .caption-overlay {
-  top: 69%;
-  right: 5%;
-  font-size: 3.5rem;
-  color: rgb(255 255 255);
-}
+    top: 10%;
+    text-align: center;
+  }
 
   .caption-overlay2 {
-    top: 104%;
-    right: 4%;
-    width: 69%;
-    font-size: 2rem;
-}
-
+    bottom: 5%;
+    text-align: center;
+    background: rgba(255,255,255,0.8);
+    border-radius: 12px;
   }
+}
