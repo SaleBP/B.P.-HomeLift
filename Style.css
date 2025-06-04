@@ -2,26 +2,24 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow: hidden; /* ปิด scrollbar จริง */
+  overflow: hidden; /* ปิด scrollbar ปกติ เพื่อให้ ScrollSmoother ทำงาน */
   font-size: 1rem;
   background: #ffffff;
 }
 
 #smooth-wrapper {
   height: 100%;
-  overflow: auto; /* ✅ ให้ scroll ได้ภายใน GSAP */
-  position: relative;
+  overflow: hidden;
 }
 
 #smooth-content {
   will-change: transform;
-  /* ✅ ซ่อน scrollbar เฉพาะภายใน */
-  scrollbar-width: none;          /* Firefox */
-  -ms-overflow-style: none;       /* IE 10+ */
+  scrollbar-width: none;        /* Firefox */
+  -ms-overflow-style: none;     /* IE 10+ */
 }
 
 #smooth-content::-webkit-scrollbar {
-  display: none;                  /* Chrome, Safari */
+  display: none;                /* Chrome, Safari */
 }
 
 /*===============================*/
