@@ -111,20 +111,20 @@ position: absolute;
         overflow: hidden;
   }
 
-  .aboutus1 {
-    position: absolute;
-    width: 144%;
-    right: -79px;
-    bottom: -219px;
-    height: auto;
-    object-fit: cover;
-  }
+    .aboutus1 {
+        position: absolute;
+        width: 258%;
+        right: -403px;
+        bottom: -6px;
+        height: auto;
+        object-fit: cover;
+    }
 
   .caption-overlay {
   top: 69%;
   right: 5%;
   font-size: 3.5rem;
-  color: rgb(58, 58, 58);
+  color: rgb(255, 255, 255);
 }
 
   .caption-overlay2 {
