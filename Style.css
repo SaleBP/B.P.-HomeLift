@@ -1,21 +1,10 @@
 html, body {
-  height: 100%;
-  overflow: auto;
-  overflow-y: auto;
-  scroll-behavior: auto;
-}
-
-body {
   margin: 0;
   padding: 0;
-  background: #ffffff;
+  height: 100%;
+  overflow: hidden; /* 🚫 ปิด scroll ปกติ */
   font-size: 1rem;
-  overflow: scroll;
-  scrollbar-width: none;        /* Firefox */
-  -ms-overflow-style: none;     /* IE 10+ */
-}
-body::-webkit-scrollbar {
-  display: none;                /* Chrome, Safari */
+  background: #ffffff;
 }
 
 #smooth-wrapper {
@@ -26,13 +15,15 @@ body::-webkit-scrollbar {
 
 #smooth-content {
   will-change: transform;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+  min-height: 100vh;
+  scrollbar-width: none;        /* Firefox */
+  -ms-overflow-style: none;     /* IE 10+ */
 }
 
 #smooth-content::-webkit-scrollbar {
-  display: none;
+  display: none;                /* Chrome, Safari */
 }
+
 /*===============================*/
 /*           FONT FACES         */
 /*===============================*/
