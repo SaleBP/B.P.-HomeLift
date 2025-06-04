@@ -539,6 +539,14 @@ position: absolute;
   margin: 0 auto;
 }
 
+.map-crop {
+    width: 1222px;
+    height: 1350px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 20px;
+}
+
 .map-image {
   width: 100%;
   height: auto;
