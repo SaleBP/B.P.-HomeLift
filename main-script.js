@@ -200,4 +200,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
   fadeUps.forEach(el => observer.observe(el));
 });
-mainContent.style
