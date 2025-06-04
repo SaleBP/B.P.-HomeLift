@@ -545,7 +545,7 @@ position: absolute;
 
 .map-crop {
     width: 1920px;
-    overflow: hidden;
+ 
     position: relative;
 }
 
