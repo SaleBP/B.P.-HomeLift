@@ -201,23 +201,3 @@ document.addEventListener("DOMContentLoaded", () => {
   fadeUps.forEach(el => observer.observe(el));
 });
 
-import gsap from './node_modules/gsap/index.js';
-import ScrollTrigger from './node_modules/gsap/ScrollTrigger.js';
-
-gsap.registerPlugin(ScrollTrigger);
-
-window.addEventListener("DOMContentLoaded", () => {
-  gsap.to(".float", {
-    y: 0,
-    opacity: 1,
-    duration: 1,
-    stagger: 0.03,
-    ease: "back.inOut(2)",
-    scrollTrigger: {
-      trigger: ".float-group",
-      start: "center bottom+=50%",
-      end: "bottom bottom-=40%",
-      toggleActions: "play none none reverse"
-    }
-  });
-});

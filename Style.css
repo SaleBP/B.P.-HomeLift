@@ -273,10 +273,7 @@ body::-webkit-scrollbar {
 /*         NAVIGATION TEXTS     */
 /*===============================*/
 
-.float {
-  opacity: 100%;
-  transform: translateY(50px);
-}
+
 
 #t1, #t2, #t3, #t4, #t5, #t6, #t7 {
   font-family: 'DB Adman X';
