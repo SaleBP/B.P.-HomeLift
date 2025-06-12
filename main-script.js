@@ -147,7 +147,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 });
 
-<script>
+
   window.addEventListener("DOMContentLoaded", () => {
     const spans = document.querySelectorAll("#textflow span");
 
@@ -158,7 +158,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }, i * 100); // ✅ หน่วงทีละตัว
     });
   });
-</script>
+
 
 // ========= Preloader =========
 window.onload = function () {
