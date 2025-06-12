@@ -274,7 +274,7 @@ body::-webkit-scrollbar {
 /*===============================*/
 
 .float {
-  opacity: 0;
+  opacity: 100%;
   transform: translateY(50px);
 }
 
