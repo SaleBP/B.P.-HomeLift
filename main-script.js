@@ -147,6 +147,19 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 });
 
+<script>
+  window.addEventListener("DOMContentLoaded", () => {
+    const spans = document.querySelectorAll("#textflow span");
+
+    spans.forEach((span, i) => {
+      setTimeout(() => {
+        span.style.opacity = 1;
+        span.style.transform = "translateY(0)";
+      }, i * 100); // ✅ หน่วงทีละตัว
+    });
+  });
+</script>
+
 // ========= Preloader =========
 window.onload = function () {
   let progress = 0;
@@ -201,15 +214,3 @@ document.addEventListener("DOMContentLoaded", () => {
   fadeUps.forEach(el => observer.observe(el));
 });
 
-<script>
-  window.addEventListener("DOMContentLoaded", () => {
-    const spans = document.querySelectorAll("#textflow span");
-
-    spans.forEach((span, i) => {
-      setTimeout(() => {
-        span.style.opacity = 1;
-        span.style.transform = "translateY(0)";
-      }, i * 100); // ✅ หน่วงทีละตัว
-    });
-  });
-</script>
