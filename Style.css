@@ -273,40 +273,13 @@ body::-webkit-scrollbar {
 /*         NAVIGATION TEXTS     */
 /*===============================*/
 
-.homelift {
+.textflow {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100vh; /* หรือความสูงที่ต้องการ */
   overflow: hidden;
+  background: #fff;
 }
-
-.lift-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* ✅ ตัวอักษรซ้อนทับ */
-.textflow {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  gap: 0.3rem;
-  font-size: 3rem;
-  font-family: sans-serif;
-  color: #000;
-  z-index: 2;
-}
-
-.textflow span {
-  opacity: 0;
-  transform: translateY(30px);
-  display: inline-block;
-  transition: all 0.5s ease;
-}
-
 
 #t1, #t2, #t3, #t4, #t5, #t6, #t7 {
   font-family: 'DB Adman X';
