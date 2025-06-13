@@ -301,18 +301,7 @@ body::-webkit-scrollbar {
   transition: transform 0.3s ease-out;
 }
 
-/* 👇 เมื่อเลื่อนถึง: เล่น animation */
-.textintro.visible {
-  animation: fadeUp 1s ease-out forwards;
-  animation-delay: 0.3s;
-}
 
-@keyframes fadeUp {
-  to {
-    opacity: 1;
-    transform: translateX(-50%) translateY(0);
-  }
-}
 
 #t1, #t2, #t3, #t4, #t5, #t6, #t7 {
   font-family: 'DB Adman X';
