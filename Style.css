@@ -23,7 +23,7 @@ body::-webkit-scrollbar {
 /*===============================*/
 @font-face {
   font-family: 'inter';
-  src: url('fonts/inter.ttf') format('ttf'); /* เปลี่ยน path ให้ตรงกับที่คุณวางไฟล์ */
+  src: url('inter.ttf') format('ttf'); /* เปลี่ยน path ให้ตรงกับที่คุณวางไฟล์ */
   font-weight: normal;
   font-style: normal;
   font-display: swap;
