@@ -287,10 +287,9 @@ body::-webkit-scrollbar {
   left: 50%;
   transform: translateX(-50%);
   color: white; /* หรือสีที่ตัดกับพื้นหลังภาพ */
-  font-family: 'inter'
-  font-size: 250px; /* คุณสามารถปรับเองได้ */
+  font-family: 'inter';
+  font-size: 5rem;
   font-weight: bold;
-
 }
 
 .textflow {
