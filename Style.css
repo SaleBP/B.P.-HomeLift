@@ -281,6 +281,17 @@ body::-webkit-scrollbar {
 /*         NAVIGATION TEXTS     */
 /*===============================*/
 
+.textintro {
+    position: absolute;
+    top: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-family: 'gilroy';
+    font-size: 29rem;
+    font-weight: bold;
+}
+
 .textintro span {
   display: inline-block;
   opacity: 0;
