@@ -290,16 +290,15 @@ body::-webkit-scrollbar {
 
 .textintro {
   position: absolute;
-  top: 36px;
+  bottom: -123px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(30px); /* เริ่มต่ำ */
   color: white;
   font-family: 'gilroy';
   font-size: 29.5rem;
   font-weight: bold;
-
-  opacity: 0;
-  transform: translateX(-50%) translateY(30px);
+  opacity: 1;
+  transition: transform 0.3s ease-out;
 }
 
 /* 👇 เมื่อเลื่อนถึง: เล่น animation */
