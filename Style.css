@@ -289,7 +289,6 @@ body::-webkit-scrollbar {
 }
 
 .textintro {
-  /* ของคุณเดิม */
   position: absolute;
   top: 36px;
   left: 50%;
@@ -299,17 +298,14 @@ body::-webkit-scrollbar {
   font-size: 29.5rem;
   font-weight: bold;
 
-  /* 👇 เพิ่ม animation */
   opacity: 0;
   transform: translateX(-50%) translateY(30px);
-  animation: fadeUp 1s ease-out forwards;
-  animation-delay: 0.3s;
 }
 
-/* 👇 เมื่อเข้าสู่ viewport */
+/* 👇 เมื่อเลื่อนถึง: เล่น animation */
 .textintro.visible {
-  opacity: 1;
-  transform: translateX(-50%) translateY(0);
+  animation: fadeUp 1s ease-out forwards;
+  animation-delay: 0.3s;
 }
 
 @keyframes fadeUp {
@@ -318,7 +314,6 @@ body::-webkit-scrollbar {
     transform: translateX(-50%) translateY(0);
   }
 }
-
 
 #t1, #t2, #t3, #t4, #t5, #t6, #t7 {
   font-family: 'DB Adman X';
