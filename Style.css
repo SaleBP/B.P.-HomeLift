@@ -306,6 +306,12 @@ body::-webkit-scrollbar {
   animation-delay: 0.3s;
 }
 
+/* 👇 เมื่อเข้าสู่ viewport */
+.textintro.visible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
 @keyframes fadeUp {
   to {
     opacity: 1;
