@@ -290,12 +290,12 @@ body::-webkit-scrollbar {
 
 .textintro {
     position: absolute;
-    top: 32px;
+    top: 36px;
     left: 50%;
     transform: translateX(-50%);
     color: white;
     font-family: 'gilroy';
-    font-size: 29rem;
+    font-size: 29.5rem;
     font-weight: bold;
 }
 
