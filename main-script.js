@@ -150,12 +150,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+// ========= Preloader =========
 window.onload = function () {
   let progress = 0;
   const sliderBall = document.getElementById("slider-ball");
   const fill = document.getElementById("slider-fill");
   const percentText = document.getElementById("loader-percent");
   const preloader = document.getElementById("preloader");
+  const mainContent = document.getElementById("main-content");
+
   const maxSlide = 205;
 
   const interval = setInterval(() => {
@@ -168,27 +171,12 @@ window.onload = function () {
 
       setTimeout(() => {
         preloader.classList.add("fade-out");
-
         const mainContent = document.getElementById("main-content");
-        if (mainContent) mainContent.style.opacity = 1;
 
-        // ✅ เริ่มตรวจ fade-up หลัง preloader หายไปแล้ว
-        const fadeUps = document.querySelectorAll(".fade-up");
-
-        const observer = new IntersectionObserver((entries, obs) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add("visible");
-              obs.unobserve(entry.target);
-            }
-          });
-        }, {
-          threshold: 0.1,
-          rootMargin: "0px 0px -50px 0px"
-        });
-
-        fadeUps.forEach(el => observer.observe(el));
-      }, 500); // ต้องตรงกับเวลาที่ใช้ fade-out
+if (mainContent) {
+  mainContent.style.opacity = 1;
+}
+      }, 500);
     }
 
     percentText.textContent = Math.floor(progress) + "%";
@@ -196,3 +184,23 @@ window.onload = function () {
     fill.style.width = progress + "%";
   }, 16);
 };
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const fadeUps = document.querySelectorAll(".fade-up");
+
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        obs.unobserve(entry.target); // แสดงแค่ครั้งเดียว
+      }
+    });
+  }, {
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px"
+  });
+
+  fadeUps.forEach(el => observer.observe(el));
+});
+
