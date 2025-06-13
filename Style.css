@@ -290,17 +290,17 @@ body::-webkit-scrollbar {
 
 .textintro {
   position: absolute;
-  bottom: -123px;
+  top: 36px;
   left: 50%;
-  transform: translateX(-50%) translateY(30px); /* เริ่มต่ำ */
+  transform: translateX(-50%);
   color: white;
   font-family: 'gilroy';
   font-size: 29.5rem;
   font-weight: bold;
-  opacity: 1;
-  transition: transform 0.3s ease-out;
-}
 
+  opacity: 0;
+  transform: translateX(-50%) translateY(30px);
+}
 
 
 #t1, #t2, #t3, #t4, #t5, #t6, #t7 {
