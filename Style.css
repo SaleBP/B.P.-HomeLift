@@ -282,14 +282,14 @@ body::-webkit-scrollbar {
 /*===============================*/
 
 .textintro {
-  position: absolute;
-  bottom: 10px; /* ระยะห่างจากขอบล่างของภาพ */
-  left: 50%;
-  transform: translateX(-50%);
-  color: white; /* หรือสีที่ตัดกับพื้นหลังภาพ */
-  font-family: 'inter';
-  font-size: 5rem;
-  font-weight: bold;
+    position: absolute;
+    top: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-family: 'gilroy';
+    font-size: 29rem;
+    font-weight: bold;
 }
 
 .textflow {
