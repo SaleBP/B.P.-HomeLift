@@ -3,10 +3,10 @@ document.addEventListener('scroll', () => {
   const hero = document.querySelector('.hero');
   const heroRect = hero.getBoundingClientRect();
 
-  // scrollRatio: 0 (ยังไม่ถึง), 1 (ถึงท้าย hero)
+  // คำนวณสัดส่วน scroll ภายใน hero
   const scrollRatio = Math.min(Math.max(1 - heroRect.bottom / heroRect.height, 0), 1);
 
-  // ยิ่ง scroll มาก ยิ่งลด translateY (เริ่มที่ 30 → ไปถึง 0)
+  // ปรับ Y: เริ่มที่ 30 → จบที่ 0
   const translateY = 30 - scrollRatio * 30;
 
   text.style.transform = `translateX(-50%) translateY(${translateY}px)`;
