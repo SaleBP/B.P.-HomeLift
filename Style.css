@@ -22,6 +22,14 @@ body::-webkit-scrollbar {
 /*           FONT FACES         */
 /*===============================*/
 @font-face {
+  font-family: 'inter';
+  src: url('fonts/inter.ttf') format('ttf'); /* เปลี่ยน path ให้ตรงกับที่คุณวางไฟล์ */
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: 'DB Adman X';
   src: url('fonts/DBAdmanX.woff2') format('woff2'); /* เปลี่ยน path ให้ตรงกับที่คุณวางไฟล์ */
   font-weight: normal;
