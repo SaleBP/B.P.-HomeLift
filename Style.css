@@ -281,6 +281,13 @@ body::-webkit-scrollbar {
 /*         NAVIGATION TEXTS     */
 /*===============================*/
 
+.hero {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden; /* ป้องกัน scrollbar */
+}
+
 .textintro {
     position: absolute;
     top: 32px;
