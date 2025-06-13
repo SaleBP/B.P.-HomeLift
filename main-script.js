@@ -204,3 +204,16 @@ document.addEventListener("DOMContentLoaded", () => {
   fadeUps.forEach(el => observer.observe(el));
 });
 
+
+  window.addEventListener('scroll', () => {
+    const text = document.querySelector('.textintro');
+    const scrollY = window.scrollY;
+
+    // เพิ่ม class เมื่อ scroll ลงมากกว่า 100px
+    if (scrollY > 100) {
+      text.classList.add('scroll-effect');
+    } else {
+      text.classList.remove('scroll-effect');
+    }
+  });
+

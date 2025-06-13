@@ -281,16 +281,43 @@ body::-webkit-scrollbar {
 /*         NAVIGATION TEXTS     */
 /*===============================*/
 
-.textintro {
-    position: absolute;
-    top: 32px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    font-family: 'gilroy';
-    font-size: 29rem;
-    font-weight: bold;
+.textintro span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 0.6s ease forwards;
 }
+
+/* Fade up ทีละตัวตอนโหลด */
+.textintro span:nth-child(1) { animation-delay: 0s; }
+.textintro span:nth-child(2) { animation-delay: 0.1s; }
+.textintro span:nth-child(3) { animation-delay: 0.2s; }
+.textintro span:nth-child(4) { animation-delay: 0.3s; }
+.textintro span:nth-child(5) { animation-delay: 0.4s; }
+.textintro span:nth-child(6) { animation-delay: 0.5s; }
+.textintro span:nth-child(7) { animation-delay: 0.6s; }
+.textintro span:nth-child(8) { animation-delay: 0.7s; }
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* เมื่อ scroll ลงมาแล้วให้ลอยขึ้นอีก (แบบขั้นบันได) */
+.textintro.scroll-effect span {
+  transition: transform 1s ease, opacity 1s ease;
+}
+.textintro.scroll-effect span:nth-child(1) { transition-delay: 0s; transform: translateY(-10px); }
+.textintro.scroll-effect span:nth-child(2) { transition-delay: 0.05s; transform: translateY(-15px); }
+.textintro.scroll-effect span:nth-child(3) { transition-delay: 0.1s; transform: translateY(-20px); }
+.textintro.scroll-effect span:nth-child(4) { transition-delay: 0.15s; transform: translateY(-10px); }
+.textintro.scroll-effect span:nth-child(5) { transition-delay: 0.2s; transform: translateY(-25px); }
+.textintro.scroll-effect span:nth-child(6) { transition-delay: 0.25s; transform: translateY(-15px); }
+.textintro.scroll-effect span:nth-child(7) { transition-delay: 0.3s; transform: translateY(-20px); }
+.textintro.scroll-effect span:nth-child(8) { transition-delay: 0.35s; transform: translateY(-10px); }
+
 
 .textflow {
   position: relative;
