@@ -281,6 +281,18 @@ body::-webkit-scrollbar {
 /*         NAVIGATION TEXTS     */
 /*===============================*/
 
+.textintro {
+  position: absolute;
+  bottom: 10px; /* ระยะห่างจากขอบล่างของภาพ */
+  left: 50%;
+  transform: translateX(-50%);
+  color: white; /* หรือสีที่ตัดกับพื้นหลังภาพ */
+  font-family: 'inter'
+  font-size: 250px; /* คุณสามารถปรับเองได้ */
+  font-weight: bold;
+
+}
+
 .textflow {
   position: relative;
   width: 100%;
