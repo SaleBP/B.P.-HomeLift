@@ -303,7 +303,7 @@ body::-webkit-scrollbar {
   opacity: 0;
   transform: translateY(30px);
   display: inline-block;
-  animation: floatIn 4.6s forwards;
+  animation: animation: 340.397ms ease 0s 1 normal forwards running floatIn;
 }
 
 @keyframes floatIn {
