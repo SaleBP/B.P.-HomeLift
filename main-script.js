@@ -182,7 +182,7 @@ setTimeout(() => {
     }
   }, 1000); // ดีเลย์ 1 วินาที
 }, 500);
-};
+
 
     percentText.textContent = Math.floor(progress) + "%";
     sliderBall.style.left = (progress / 100) * maxSlide + "px";
