@@ -151,7 +151,6 @@ body::-webkit-scrollbar {
   transform: translateX(-50%);
   width: 90%;
   max-width: 1728px;
-  background-color: white;
   border-radius: 50px;
   display: flex;
   align-items: center;
@@ -315,7 +314,7 @@ body::-webkit-scrollbar {
 
 .nav-link {
   text-decoration: none;
-  color: #585858;
+  color: #ffffff;
   transition: opacity 0.5s ease;
 }
 
