@@ -296,6 +296,7 @@ body::-webkit-scrollbar {
     font-family: 'gilroy';
     font-size: 29.5rem;
     font-weight: bold;
+     white-space: nowrap;
 }
 
 .textintro span {
