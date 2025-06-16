@@ -356,10 +356,6 @@ body::-webkit-scrollbar {
   height: auto;         /* รักษาสัดส่วน */
 }
 
-.img1 {
-  border-radius: 15px;
-  width: 90%;
-}
 
 .img4 {
   margin-top: 1rem;
