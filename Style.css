@@ -289,7 +289,7 @@ body::-webkit-scrollbar {
 
 .textintro {
   position: absolute;
-  top: 489px;
+  top: 440px;
   left: 50%;
   transform: translateX(-50%);
   color: white;
