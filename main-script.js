@@ -1,5 +1,5 @@
+// ========= Top Bar Scroll Effect =========
 document.addEventListener("DOMContentLoaded", () => {
-  // ========= Top Bar Scroll Effect =========
   const topBar = document.querySelector('.top-bar');
   window.addEventListener('scroll', () => {
     if (window.scrollY > 10) {
@@ -103,7 +103,6 @@ document.addEventListener("DOMContentLoaded", () => {
     dots[index].classList.add('active');
   }
 
-
   // ========= Chatbot =========
   const chatIcon = document.getElementById("chat-icon");
   const chatWindow = document.getElementById("chat-window");
@@ -148,8 +147,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-
-
 // ========= Preloader =========
 window.onload = function () {
   let progress = 0;
@@ -171,11 +168,10 @@ window.onload = function () {
 
       setTimeout(() => {
         preloader.classList.add("fade-out");
-        const mainContent = document.getElementById("main-content");
-
-if (mainContent) {
-  mainContent.style.opacity = 1;
-}
+        if (mainContent) {
+          mainContent.style.opacity = 1;
+        }
+        animateHomeliftText();
       }, 500);
     }
 
@@ -185,7 +181,22 @@ if (mainContent) {
   }, 16);
 };
 
+// ========= Animate homelift text =========
+function animateHomeliftText() {
+  const textElement = document.querySelector('#textintro p');
+  if (!textElement) return;
+  const text = textElement.textContent;
+  const parent = textElement.parentElement;
+  textElement.remove();
+  text.split('').forEach((char, index) => {
+    const span = document.createElement('span');
+    span.textContent = char;
+    span.style.animationDelay = `${index * 0.1}s`;
+    parent.appendChild(span);
+  });
+}
 
+// ========= Fade-up Observer =========
 document.addEventListener("DOMContentLoaded", () => {
   const fadeUps = document.querySelectorAll(".fade-up");
 
@@ -193,7 +204,7 @@ document.addEventListener("DOMContentLoaded", () => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add("visible");
-        obs.unobserve(entry.target); // แสดงแค่ครั้งเดียว
+        obs.unobserve(entry.target);
       }
     });
   }, {
@@ -203,4 +214,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
   fadeUps.forEach(el => observer.observe(el));
 });
-
