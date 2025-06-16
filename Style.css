@@ -347,8 +347,6 @@ body::-webkit-scrollbar {
 
 .homelift {
   text-align: center;   /* จัดแนวรูปใน container */
-  padding: 20px 0;      /* เว้นขอบบนล่าง */
-  margin-top: 6%;
 }
 
 .lift-img {
