@@ -303,7 +303,18 @@ body::-webkit-scrollbar {
   opacity: 0;
   transform: translateY(30px);
   display: inline-block;
-  animation: animation: 340.397ms ease 0s 1 normal forwards running floatIn;
+  animation: floatIn 4.6s forwards;
+}
+
+#headline {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+#headline.animate {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @keyframes floatIn {

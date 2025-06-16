@@ -166,14 +166,23 @@ window.onload = function () {
       sliderBall.style.left = maxSlide + "px";
       fill.style.width = "100%";
 
-      setTimeout(() => {
-        preloader.classList.add("fade-out");
-        if (mainContent) {
-          mainContent.style.opacity = 1;
-        }
-        animateHomeliftText();
-      }, 500);
+setTimeout(() => {
+  preloader.classList.add("fade-out");
+  const mainContent = document.getElementById("main-content");
+
+  if (mainContent) {
+    mainContent.style.opacity = 1;
+  }
+
+  // ✅ แสดงข้อความ homelift หลังจากโหลดเสร็จ 1 วินาที
+  setTimeout(() => {
+    const headline = document.getElementById("headline");
+    if (headline) {
+      headline.classList.add("animate");
     }
+  }, 1000); // ดีเลย์ 1 วินาที
+}, 500);
+};
 
     percentText.textContent = Math.floor(progress) + "%";
     sliderBall.style.left = (progress / 100) * maxSlide + "px";
