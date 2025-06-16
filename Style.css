@@ -284,38 +284,36 @@ body::-webkit-scrollbar {
   position: relative;
   width: 100%;
   max-width: 100%;
-  overflow: hidden; /* ป้องกัน scrollbar */
+  overflow: hidden;
 }
 
 .textintro {
-    position: absolute;
-    top: 489px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    font-family: 'gilroy';
-    font-size: 29.5rem;
-    font-weight: bold;
-     white-space: nowrap;
+  position: absolute;
+  top: 489px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-family: 'gilroy';
+  font-size: 29.5rem;
+  font-weight: bold;
+  white-space: nowrap;
 }
 
 .textintro span {
   opacity: 0;
-  transform: translateY(30px);
+  transform: translateY(60px);
   display: inline-block;
-  animation: floatIn 0.6s forwards;
+  animation: floatIn 1s forwards;
 }
 
-#headline {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-#headline.animate {
-  opacity: 1;
-  transform: translateY(0);
-}
+.textintro.animate span:nth-child(1) { animation-delay: 0s; }
+.textintro.animate span:nth-child(2) { animation-delay: 0.05s; }
+.textintro.animate span:nth-child(3) { animation-delay: 0.10s; }
+.textintro.animate span:nth-child(4) { animation-delay: 0.15s; }
+.textintro.animate span:nth-child(5) { animation-delay: 0.20s; }
+.textintro.animate span:nth-child(6) { animation-delay: 0.25s; }
+.textintro.animate span:nth-child(7) { animation-delay: 0.30s; }
+.textintro.animate span:nth-child(8) { animation-delay: 0.35s; }
 
 @keyframes floatIn {
   to {
@@ -323,6 +321,7 @@ body::-webkit-scrollbar {
     transform: translateY(0);
   }
 }
+
 
 
 #t1, #t2, #t3, #t4, #t5, #t6, #t7 {
