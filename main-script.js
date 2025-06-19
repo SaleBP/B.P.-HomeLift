@@ -147,50 +147,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-// ========= Preloader =========
-window.onload = function () {
-  let progress = 0;
-  const sliderBall = document.getElementById("slider-ball");
-  const fill = document.getElementById("slider-fill");
-  const percentText = document.getElementById("loader-percent");
-  const preloader = document.getElementById("preloader");
-  const mainContent = document.getElementById("main-content");
-  const maxSlide = 205;
-
-  const interval = setInterval(() => {
-    progress += Math.random() * 3.5;
-
-    if (progress >= 100) {
-      progress = 100;
-      clearInterval(interval);
-
-      sliderBall.style.left = maxSlide + "px";
-      fill.style.width = "100%";
-
-      // ✅ เมื่อโหลดเสร็จแล้ว รอ 1.2 วิ ค่อย fade out preloader
-      setTimeout(() => {
-        preloader.classList.add("fade-out");
-
-        if (mainContent) {
-          mainContent.style.opacity = 1;
-        }
-
-        // ✅ หลัง fade out แล้ว 0.3 วิ ให้ homelift ลอยขึ้นทีละตัว
-        setTimeout(() => {
-          const headline = document.getElementById("headline");
-          if (headline) {
-            headline.classList.add("animate");
-          }
-        }, 1200); // ปรับเป็น 300ms หลัง preloader fade-out
-      }, 1200); // รอ 1.2 วิ ก่อนเริ่ม fade-out
-    }
-
-    // ระหว่างโหลด: อัปเดตแถบโหลดและเปอร์เซ็นต์
-    percentText.textContent = Math.floor(progress) + "%";
-    sliderBall.style.left = (progress / 100) * maxSlide + "px";
-    fill.style.width = progress + "%";
-  }, 16);
-};
 
 // ========= แปลงตัวอักษร homelift เป็น span ทีละตัว =========
 document.addEventListener("DOMContentLoaded", () => {
