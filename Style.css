@@ -315,7 +315,42 @@ body::-webkit-scrollbar {
   }
 }
 
+.center-message {
+    font-family: 'DB Adman X';
+    text-align: center;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    padding: 0 1rem;
+}
 
+.center-message h1 {
+  font-size: 4.5rem;
+  
+  color: #585858;
+  margin-bottom: -1.5rem;
+}
+
+.center-message p {
+  font-size: 3rem;
+  color: #585858;
+}
+
+/* Animation Fade Up */
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 #t1, #t2, #t3, #t4, #t5, #t6, #t7 {
   font-family: 'DB Adman X';
