@@ -126,13 +126,6 @@ body::-webkit-scrollbar {
   z-index: 3;
 }
 
-/* ซ่อนเนื้อหาเว็บตอนโหลด */
-#main-content {
-  opacity: 0;
-  transition: opacity 0.5s ease;
-  min-height: 100dvh;
-}
-
 
 /*===============================*/
 /*           TOP BAR            */
