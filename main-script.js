@@ -211,3 +211,20 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+
+    window.addEventListener('DOMContentLoaded', () => {
+    const image = document.querySelector('.liftimg1');
+
+    const onScroll = () => {
+      const rect = image.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+
+      if (rect.top <= windowHeight - 100) {
+        image.classList.add('visible');
+        window.removeEventListener('scroll', onScroll); // ทำแค่ครั้งเดียว
+      }
+    };
+
+    window.addEventListener('scroll', onScroll);
+    onScroll(); // เช็กเผื่อโหลดมาหน้ากลางจอเลย
+  });

@@ -405,6 +405,31 @@ body::-webkit-scrollbar {
 /*===============================*/
 /*           IMAGES             */
 /*===============================*/
+
+.liftimg1 {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+  height: auto;
+  
+  opacity: 0;
+  transform: translateY(40px); /* เลื่อนลงตอนเริ่ม */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.liftimg1.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.liftimg1.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 .img4, .img6, .intro {
   display: flex;
   margin: 0 auto;
