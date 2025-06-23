@@ -83,19 +83,21 @@ document.addEventListener("DOMContentLoaded", () => {
   const dotContainer = document.querySelector('.carousel-dots');
   let currentIndex = 0;
 
-  imageBoxes.forEach((_, i) => {
-    const dot = document.createElement('span');
-    dot.classList.add('dot');
-    if (i === 0) dot.classList.add('active');
-    dot.addEventListener('click', () => {
-      imageRow.scrollTo({
-        left: i * imageRow.clientWidth,
-        behavior: 'smooth',
+  if (imageRow && dotContainer && imageBoxes.length > 0) {
+    imageBoxes.forEach((_, i) => {
+      const dot = document.createElement('span');
+      dot.classList.add('dot');
+      if (i === 0) dot.classList.add('active');
+      dot.addEventListener('click', () => {
+        imageRow.scrollTo({
+          left: i * imageRow.clientWidth,
+          behavior: 'smooth',
+        });
+        updateDots(i);
       });
-      updateDots(i);
+      dotContainer.appendChild(dot);
     });
-    dotContainer.appendChild(dot);
-  });
+  }
 
   function updateDots(index) {
     const dots = dotContainer.querySelectorAll('.dot');
@@ -109,16 +111,18 @@ document.addEventListener("DOMContentLoaded", () => {
   const closeChat = document.getElementById("close-chat");
   const chatMessages = document.getElementById("chat-messages");
 
-  chatIcon.addEventListener("click", function () {
-    chatWindow.style.display =
-      chatWindow.style.display === "none" || chatWindow.style.display === ""
-        ? "flex"
-        : "none";
-  });
+  if (chatIcon && chatWindow && closeChat && chatMessages) {
+    chatIcon.addEventListener("click", function () {
+      chatWindow.style.display =
+        chatWindow.style.display === "none" || chatWindow.style.display === ""
+          ? "flex"
+          : "none";
+    });
 
-  closeChat.addEventListener("click", function () {
-    chatWindow.style.display = "none";
-  });
+    closeChat.addEventListener("click", function () {
+      chatWindow.style.display = "none";
+    });
+  }
 
   function scrollToLatestMessage() {
     chatMessages.scrollTop = chatMessages.scrollHeight;
@@ -144,34 +148,23 @@ document.addEventListener("DOMContentLoaded", () => {
     chatMessages.appendChild(botReply);
     scrollToLatestMessage();
   };
-});
 
-
-
-// ========= แปลงตัวอักษร homelift เป็น span ทีละตัว =========
-document.addEventListener("DOMContentLoaded", () => {
+  // ========= แปลงตัวอักษร homelift เป็น span ทีละตัว =========
   const headline = document.getElementById("headline");
   if (headline) {
     const text = headline.textContent.trim();
-    headline.innerHTML = ""; // ล้างข้อความเดิมออกก่อน
-
+    headline.innerHTML = "";
     [...text].forEach((char, index) => {
       const span = document.createElement("span");
       span.textContent = char;
-      span.style.animationDelay = `${index * 0.3}s`; // ดีเลย์ทีละตัว
+      span.style.animationDelay = `${index * 0.3}s`;
       headline.appendChild(span);
     });
   }
-});
 
-
-
-
-// ========= Fade-up Observer =========
-document.addEventListener("DOMContentLoaded", () => {
+  // ========= Fade-up Observer =========
   const fadeUps = document.querySelectorAll(".fade-up");
-
-  const observer = new IntersectionObserver((entries, obs) => {
+  const fadeUpObserver = new IntersectionObserver((entries, obs) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add("visible");
@@ -183,20 +176,20 @@ document.addEventListener("DOMContentLoaded", () => {
     rootMargin: "0px 0px -50px 0px"
   });
 
-  fadeUps.forEach(el => observer.observe(el));
-});
+  fadeUps.forEach(el => fadeUpObserver.observe(el));
 
-  window.addEventListener('DOMContentLoaded', () => {
-    setTimeout(() => {
-      document.querySelector('.top-bar').classList.add('show');
-    }, 4500); // 4 วินาที = 4000 มิลลิวินาที
-  });
+  // ========= Top Bar Fade-in After Delay =========
+  setTimeout(() => {
+    const topBar = document.querySelector('.top-bar');
+    if (topBar) topBar.classList.add('show');
+  }, 4500);
 
-    document.addEventListener("DOMContentLoaded", function () {
-    const toggle = document.getElementById("quickbar-toggle");
-    const panel = document.getElementById("quickbar-panel");
-    const closeBtn = document.getElementById("quickbar-close");
+  // ========= Quickbar Panel Toggle =========
+  const toggle = document.getElementById("quickbar-toggle");
+  const panel = document.getElementById("quickbar-panel");
+  const closeBtn = document.getElementById("quickbar-close");
 
+  if (toggle && panel && closeBtn) {
     toggle.addEventListener("click", () => {
       panel.classList.add("open");
     });
@@ -210,21 +203,29 @@ document.addEventListener("DOMContentLoaded", () => {
         panel.classList.remove("open");
       }
     });
-  });
+  }
 
-    window.addEventListener('DOMContentLoaded', () => {
-    const image = document.querySelector('.liftimg1');
+  // ========= ย่อข้อความ homelift เมื่อ scroll =========
+  const textIntro = document.querySelector('.textintro');
+  if (textIntro) {
+    const start = 50;
+    const end = 300;
+    const minScale = 0.85;
 
-    const onScroll = () => {
-      const rect = image.getBoundingClientRect();
-      const windowHeight = window.innerHeight;
-
-      if (rect.top <= windowHeight - 100) {
-        image.classList.add('visible');
-        window.removeEventListener('scroll', onScroll); // ทำแค่ครั้งเดียว
+    const updateScale = () => {
+      const scrollY = window.scrollY;
+      if (scrollY < start) {
+        textIntro.style.transform = 'translateX(-50%) scale(1)';
+      } else if (scrollY >= start && scrollY <= end) {
+        const progress = (scrollY - start) / (end - start);
+        const scale = 1 - (1 - minScale) * progress;
+        textIntro.style.transform = `translateX(-50%) scale(${scale})`;
+      } else {
+        textIntro.style.transform = `translateX(-50%) scale(${minScale})`;
       }
     };
 
-    window.addEventListener('scroll', onScroll);
-    onScroll(); // เช็กเผื่อโหลดมาหน้ากลางจอเลย
-  });
+    window.addEventListener('scroll', updateScale);
+    updateScale(); // เช็กทันทีตอนโหลด
+  }
+});
