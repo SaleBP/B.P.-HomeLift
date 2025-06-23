@@ -204,4 +204,28 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
+
+  // ========= ย่อข้อความ homelift เมื่อ scroll =========
+  const textIntro = document.querySelector('.textintro');
+  if (textIntro) {
+    const start = 50;
+    const end = 300;
+    const minScale = 0.85;
+
+    const updateScale = () => {
+      const scrollY = window.scrollY;
+      if (scrollY < start) {
+        textIntro.style.transform = 'translateX(-50%) scale(1)';
+      } else if (scrollY >= start && scrollY <= end) {
+        const progress = (scrollY - start) / (end - start);
+        const scale = 1 - (1 - minScale) * progress;
+        textIntro.style.transform = `translateX(-50%) scale(${scale})`;
+      } else {
+        textIntro.style.transform = `translateX(-50%) scale(${minScale})`;
+      }
+    };
+
+    window.addEventListener('scroll', updateScale);
+    updateScale(); // เช็กทันทีตอนโหลด
+  }
 });
