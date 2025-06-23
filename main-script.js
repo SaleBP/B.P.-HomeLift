@@ -186,11 +186,13 @@ document.addEventListener("DOMContentLoaded", () => {
   fadeUps.forEach(el => observer.observe(el));
 });
 
-  window.addEventListener('DOMContentLoaded', () => {
-    setTimeout(() => {
-      document.querySelector('.top-bar').classList.add('show');
-    }, 4500); // 4 วินาที = 4000 มิลลิวินาที
-  });
+window.addEventListener('DOMContentLoaded', () => {
+  setTimeout(() => {
+    document.querySelector('.top-bar')?.classList.add('show');
+    document.querySelector('#logosoftcolor')?.classList.add('show');
+    document.querySelector('#chat-icon')?.classList.add('show'); // ✅ เพิ่มตรงนี้
+  }, 4500);
+});
 
     document.addEventListener("DOMContentLoaded", function () {
     const toggle = document.getElementById("quickbar-toggle");
@@ -211,3 +213,31 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+
+  let inactivityTimeout;
+
+function showTopbarAndLogo() {
+  document.querySelector('.top-bar')?.classList.remove('hidden');
+  document.querySelector('#logosoftcolor')?.classList.remove('hidden');
+}
+
+function hideTopbarAndLogo() {
+  document.querySelector('.top-bar')?.classList.add('hidden');
+  document.querySelector('#logosoftcolor')?.classList.add('hidden');
+}
+
+function resetInactivityTimer() {
+  showTopbarAndLogo(); // แสดงก่อนเสมอเวลาเริ่มเคลื่อนไหว
+  clearTimeout(inactivityTimeout);
+  inactivityTimeout = setTimeout(() => {
+    hideTopbarAndLogo();
+  }, 500); // 0.5 วินาทีไม่มีการเคลื่อนไหวจะซ่อน
+}
+
+// ตรวจจับการเคลื่อนไหวของเมาส์ / scroll / touch
+['mousemove', 'scroll', 'touchstart'].forEach(event => {
+  window.addEventListener(event, resetInactivityTimer, { passive: true });
+});
+
+// เริ่ม timer ครั้งแรกเมื่อหน้าโหลดเสร็จ
+resetInactivityTimer();

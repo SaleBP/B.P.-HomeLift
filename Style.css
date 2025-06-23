@@ -139,6 +139,7 @@ body::-webkit-scrollbar {
 
 .top-bar {
   position: fixed;
+  height: 50px;
   top: 10px;
   left: 50%;
   transform: translate(-50%, 20px); /* ✅ รวม X และ Y */
@@ -168,15 +169,33 @@ body::-webkit-scrollbar {
   transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
 }
 
+.top-bar.hidden,
+#logosoftcolor.hidden {
+  opacity: 0;
+  pointer-events: none; /* ป้องกัน hover คลิกซ้ำ */
+}
 
 #logosoftcolor {
-  width: 2rem;
+  position: fixed;
+  top: 10px;
+  left: 1.6rem;
+  width: 3rem;
   height: 3.5rem;
   background: url('Logo soft color.png') no-repeat center center;
   background-size: contain;
-  flex-shrink: 0;
-  margin-left: 1.7rem;
+  z-index: 1001;
+
+  /* ✅ เพิ่มบรรทัดนี้เพื่อซ่อนก่อน */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
 }
+
+#logosoftcolor.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 .top-left {
   flex: 0 0 auto;
@@ -403,31 +422,50 @@ body::-webkit-scrollbar {
 }
 
 /*===============================*/
-/*           IMAGES             */
+/*           IMAGES LIFT4             */
 /*===============================*/
 
-.liftimg1 {
-  display: flex;
-  margin: 0 auto;
+.image-container {
+  position: relative;
   width: 100%;
   max-width: 1920px;
-  height: auto;
-  
-  opacity: 0;
-  transform: translateY(40px); /* เลื่อนลงตอนเริ่ม */
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  margin: 0 auto;
+  overflow: hidden; /* ป้องกันข้อความล้นออก */
 }
 
-.liftimg1.fade-up {
+.liftimg1 {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 18%;
+    left: 78%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    width: 30%;
+    color: #585858;
+    text-align: right;
+    padding: 1.5rem;
+}
+
+/* Animation Fade-up */
+.fade-up {
   opacity: 0;
   transform: translateY(40px);
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
-.liftimg1.fade-up.visible {
+.fade-up.visible {
   opacity: 1;
   transform: translateY(0);
 }
+
+/*===============================*/
+/*           IMAGES             */
+/*===============================*/
 
 
 .img4, .img6, .intro {
@@ -549,7 +587,10 @@ section {
   flex-direction: column;
   padding: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
 }
+
+
 
 .chat-header {
     display: flex;
@@ -677,12 +718,18 @@ position: absolute;
   font-size: 1.4rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   cursor: pointer;
-  transition: box-shadow 0.3s ease, transform 0.2s ease;
+
+  /* ✅ เพิ่ม 2 บรรทัดนี้เพื่อซ่อนตอนเริ่ม */
+  opacity: 0;
+  transform: translateY(20px);
+
+  /* ✅ ใส่ transition ให้กับ opacity ด้วย */
+  transition: opacity 0.6s ease, transform 0.6s ease, box-shadow 0.3s ease;
 }
 
-.chat-icon:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  transform: scale(1.05);
+#chat-icon.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .image-wrapper {
@@ -780,8 +827,9 @@ display: flex
 }
 
 #logosoftcolor {
-   height: 2rem;
-
+height: 2rem;
+top: 20px;
+left: 19px;
 }
 
 .lift-img {
@@ -908,7 +956,6 @@ font-size: 1.2rem;
   }
 
   .homelift {
-  margin-top: 10%;
   padding: 0px 0;
 }
 
