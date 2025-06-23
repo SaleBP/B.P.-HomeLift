@@ -6,7 +6,6 @@ html, body {
   overflow-x: hidden;       /* ❗ ปิดการเลื่อนซ้าย-ขวา */
   overflow-y: auto;
   scroll-behavior: smooth;  /* ถ้าอยากให้ scroll ลื่น */
-  
 }
 
 body {
@@ -291,6 +290,7 @@ body::-webkit-scrollbar {
   position: absolute;
   top: 440px;
   left: 50%;
+  transform: translateX(-50%);
   color: white;
   font-family: 'gilroy';
   font-size: 29.5rem;
