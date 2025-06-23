@@ -440,17 +440,32 @@ body::-webkit-scrollbar {
 }
 
 .text-overlay {
-    position: absolute;
-    top: 18%;
-    left: 78%;
-    transform: translate(-50%, -50%);
-    font-size: 2rem;
-    width: 30%;
-    color: #585858;
-    text-align: right;
-    padding: 1.5rem;
+  position: absolute;
+  top: 18%;
+  left: 78%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  text-align: right;
+  padding: 1.5rem;
 }
 
+/* สไตล์สำหรับ <h2> */
+.text-overlay h2 {
+  font-family: 'Gilroy';   /* เปลี่ยนเป็นฟอนต์ที่คุณต้องการ */
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #eb660e;
+  margin-bottom: 0.5rem;
+}
+
+/* สไตล์สำหรับ <p> */
+.text-overlay p {
+  font-family: 'Sarabun', sans-serif;  /* อีกฟอนต์หนึ่ง */
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #555;
+  margin: 0;
+}
 /* Animation Fade-up */
 .fade-up {
   opacity: 0;
