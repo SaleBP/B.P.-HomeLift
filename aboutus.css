@@ -31,47 +31,54 @@
 }
 
 .aboutus-crop {
-    width: 1222px;
-    height: 1350px;
+width: 1920px;
+    height: 607px;
     overflow: hidden;
     position: relative;
-    margin-top: 20px;
+    margin-top: 67px;
 }
+
 
 .aboutus1 {
 position: absolute;
-    right: -572px;
-    bottom: -21px;
-    width: 193%;
+    right: 0px;
+    bottom: -85px;
+    width: 100%;
 }
 
 .caption-overlay {
-  position: absolute;
-  top: 1%;
-  right: 5%;
-  text-align: right;
-  color: #eb660e;
-  line-height: 1.2;
-  font-weight: bold;
-  font-family: 'Gilroy', sans-serif;
-  font-size: 10rem;
-  z-index: 10;          /* ให้ลอยอยู่บนรูป */
+    position: absolute;
+    top: 5%;
+    right: 71%;
+    text-align: left;
+    color: #ffffff;
+    line-height: 0.2;
+    font-weight: bold;
+    font-family: 'Gilroy', sans-serif;
+    font-size: 2rem;
+    z-index: 10;
 }
 
 .caption-overlay p {
   margin: 0;
 }
 
+.caption-overlay h5 {
+ font-size: 1.5rem;
+}
+
 .caption-overlay2 {
     position: absolute;
-    top: 46%;
-    right: 4%;
-    width: 29%;
+    top: 106%;
+    right: 13%;
+    width: 77%;
     color: #585858;
-    font-size: 4rem;
+    font-size: 1.7rem;
     line-height: 1.2;
     font-family: 'DB adman X';
+    text-align: center;
 }
+
 
 .caption-overlay2 p {
   margin: 0;

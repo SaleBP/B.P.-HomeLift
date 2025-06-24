@@ -791,6 +791,7 @@ position: absolute;
     width: 1920px;
     overflow: hidden;
     position: relative;
+    margin-top: 250px;
 }
 
 .fade-up {
@@ -806,10 +807,9 @@ position: absolute;
 }
 
 .map-image {
-    width: 100%;
+width: 100%;
     height: auto;
     display: block;
-    margin-top: 273px;
 }
 
 .textmap {
