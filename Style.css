@@ -498,17 +498,18 @@ text-align: center;
 }
 
 .center-message2 h1 {
-  font-family: 'Gilroy';
-  font-size: 4.5rem;
-  color: #585858;
-  margin-bottom: -1.5rem;
+font-family: 'Gilroy';
+    font-weight: normal;
+    font-size: 3.5rem;
+    color: #585858;
+    margin-bottom: -1.5rem;
 }
 
 .center-message2 p {
-  font-family: 'DB Adman X';
-  font-weight: bold;
-  font-size: 5rem;
-  color: #585858;
+font-family: 'DB Adman X';
+    font-weight: normal;
+    font-size: 2.5rem;
+    color: #585858;
 }
 
 /* Animation Fade Up */
@@ -625,8 +626,8 @@ text-align: center;
 /*===============================*/
 
 section {
-  padding: 100px 20px;
-  height: auto;
+height: auto;
+padding-top: 5rem;
 }
 
 /*===============================*/
@@ -718,7 +719,7 @@ section {
 
 .caption4 {
 position: absolute;
-    left: 10%;
+    left: 34%;
     font-size: 2.5rem;
     font-family: 'DB adman X', sans-serif;
     font-weight: normal;
