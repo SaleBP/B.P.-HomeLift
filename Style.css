@@ -247,7 +247,7 @@ body::-webkit-scrollbar {
   top: 150%;
   left: 50%;
   transform: translate(-50%, -10px);
-  background-color: rgba(255, 255, 255, 0.96);
+  background-color: rgba(255, 255, 255, 0);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
   padding: 1rem;
@@ -269,7 +269,7 @@ body::-webkit-scrollbar {
 .contact-dropdown div {
   display: block;
   margin-bottom: 1rem;
-  color: #585858;
+  color: #ffffff;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -441,36 +441,84 @@ body::-webkit-scrollbar {
 
 .text-overlay {
   position: absolute;
-  top: 18%;
-  left: 78%;
+  top: 47%;
+  left: 75%;
   transform: translate(-50%, -50%);
-  width: 30%;
-  text-align: right;
+  width: 38%;
   padding: 1.5rem;
 }
 
 /* สไตล์สำหรับ <h2> */
+
+.text-overlay h3 {
+font-family: 'Gilroy';
+    font-size: 0.9rem;
+    color: #585858;
+    margin-bottom: -1.4rem;
+    text-align: left;
+}
+
 .text-overlay h2 {
-  font-family: 'Gilroy';   /* เปลี่ยนเป็นฟอนต์ที่คุณต้องการ */
-  font-size: 3.5rem;
-  font-weight: 600;
-  color: #eb660e;
-  margin-bottom: 0.5rem;
+    font-family: 'Gilroy';
+    font-size: 2.2rem;
+    color: #eb660e;
+    margin-bottom: 0.5rem;
+    text-align: left;
 }
 
 /* สไตล์สำหรับ <p> */
 .text-overlay p {
-  font-family: 'Sarabun', sans-serif;  /* อีกฟอนต์หนึ่ง */
-  font-size: 1.2rem;
-  font-weight: 300;
-  color: #555;
-  margin: 0;
+font-family: 'DB Adman X';
+    font-size: 1.4rem;
+    color: #555;
+    margin: 0;
+    text-align: left;
+    width: 42rem;
+    line-height: 1.1;
 }
 /* Animation Fade-up */
 .fade-up {
   opacity: 0;
   transform: translateY(40px);
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.center-message2 {
+    text-align: center;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    padding: 0 1rem;
+}
+
+.center-message2 h1 {
+  font-family: 'Gilroy';
+  font-size: 4.5rem;
+  color: #585858;
+  margin-bottom: -1.5rem;
+}
+
+.center-message2 p {
+  font-family: 'DB Adman X';
+  font-weight: bold;
+  font-size: 5rem;
+  color: #585858;
+}
+
+/* Animation Fade Up */
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .fade-up.visible {
