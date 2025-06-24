@@ -719,12 +719,12 @@ padding-top: 5rem;
 
 .caption4 {
 position: absolute;
-    left: 34%;
-    font-size: 2.5rem;
+    left: 38%;
+    font-size: 2rem;
     font-family: 'DB adman X', sans-serif;
     font-weight: normal;
     color: #585858;
-    bottom: 25%;
+    bottom: 30%;
 }
 
 .user::before {
