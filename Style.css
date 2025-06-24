@@ -489,15 +489,12 @@ font-family: 'DB Adman X';
 }
 
 .center-message2 {
-    text-align: center;
+text-align: center;
     position: relative;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     background: #fff;
-    padding: 0 1rem;
 }
 
 .center-message2 h1 {
@@ -629,7 +626,6 @@ font-family: 'DB Adman X';
 
 section {
   padding: 100px 20px;
-  min-height: 100dvh; /* หรือ auto ถ้าต้องการให้ตามเนื้อหา */
   height: auto;
 }
 
@@ -718,14 +714,7 @@ section {
     margin-bottom: -0.7%;
   }
 
-.caption3 {
-position: absolute;
-    left: 10%;
-    font-size: 8rem;
-    font-family: 'DB adman X', sans-serif;
-    font-weight: bold;
-    color: #585858;
-}
+
 
 .caption4 {
 position: absolute;
@@ -985,12 +974,7 @@ margin-bottom: 2rem;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
   }
 
-  .caption3 {
-font-size: 3.7rem;
-left: 7%;
-top: -3%;
-  }
-
+  
     .caption4 {
 font-size: 1.2rem;
         left: 9%;
