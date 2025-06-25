@@ -100,3 +100,24 @@ font-family: 'DB Adman X';
   opacity: 1;
   transform: translateY(0);
 }
+
+
+.image-wrapper-parallax {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  height: 250px; /* ปรับได้ */
+  margin-bottom: 2rem;
+}
+
+.parallax-image {
+  width: auto;
+  max-width: 80vw;
+  max-height: 250px;
+  object-fit: contain;
+  transform: translateY(0px);
+  transition: transform 0.1s ease-out;
+  will-change: transform;
+}
