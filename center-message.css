@@ -89,13 +89,21 @@ font-family: 'DB Adman X';
     color: #585858;
 }
 
+.static-image1 {
+max-width: 400px;
+    width: 11%;
+    height: auto;
+    margin-bottom: -23rem;
+    margin-left: -72rem;
+    display: block;
+}
 
 .static-image5 {
-  max-width: 400px;     /* ขนาดรูปไม่เกิน 400px */
-  width: 100%;          /* responsive */
-  height: auto;
-  margin-bottom: 2rem;  /* ระยะห่างจากข้อความด้านล่าง */
-  display: block;
+max-width: 400px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+    display: block;
 }
 
 /* Animation Fade Up */
