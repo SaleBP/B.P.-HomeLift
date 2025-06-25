@@ -1,0 +1,102 @@
+.hero {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.textintro {
+  position: absolute;
+  top: 440px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-family: 'gilroy';
+  font-size: 29.5rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.textintro span {
+  color: #585858;
+  opacity: 0;
+  transform: translateY(60px);
+  display: inline-block;
+  animation: floatIn 1s forwards, fadeToWhite 2s forwards; /* ตัวอย่างใช้เวลา fade สี 2s */
+}
+
+.textintro.animate span:nth-child(1) { animation-delay: 0s; }
+.textintro.animate span:nth-child(2) { animation-delay: 0.05s; }
+.textintro.animate span:nth-child(3) { animation-delay: 0.10s; }
+.textintro.animate span:nth-child(4) { animation-delay: 0.15s; }
+.textintro.animate span:nth-child(5) { animation-delay: 0.20s; }
+.textintro.animate span:nth-child(6) { animation-delay: 0.25s; }
+.textintro.animate span:nth-child(7) { animation-delay: 0.30s; }
+.textintro.animate span:nth-child(8) { animation-delay: 0.35s; }
+
+@keyframes floatIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeToWhite {
+  from {
+    color: #585858;
+  }
+  to {
+    color: #ffffff;
+  }
+}
+
+.center-message {
+    text-align: center;
+    position: relative;
+    min-height: 150vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    padding: 0 1rem;
+}
+
+.center-message h1 {
+font-family: 'Gilroy';
+    font-size: 4rem;
+    color: #eb660e;
+    margin-bottom: -2.2rem;
+}
+
+.center-message p {
+font-family: 'Gilroy';
+    font-size: 2rem;
+    color: #585858;
+    margin-bottom: 10px;
+}
+
+.center-message h2 {
+    font-family: 'DB Adman X';
+    font-size: 2.5rem;
+    color: #585858;
+    margin-bottom: -0.5rem;
+}
+
+.center-message p2 {
+font-family: 'DB Adman X';
+    font-size: 1.6rem;
+    color: #585858;
+}
+
+/* Animation Fade Up */
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
