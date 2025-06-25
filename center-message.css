@@ -106,6 +106,15 @@ max-width: 400px;
     display: block;
 }
 
+.static-image4 {
+max-width: 400px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+    display: block;
+}
+
+
 /* Animation Fade Up */
 .fade-up {
   opacity: 0;
