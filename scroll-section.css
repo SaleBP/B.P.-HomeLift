@@ -1,0 +1,90 @@
+/*===============================*/
+/*           FONT FACES         */
+/*===============================*/
+@font-face {
+  font-family: 'DB adman X';
+  src: url('DB-Adman-X.ttf') format('woff2');
+    font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DB adman X';
+  src: url('DB-Adman-X-Bd.ttf') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('Gilroy-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('Gilroy-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+.scroll-section {
+  position: relative;
+  height: auto; /* ✅ ต้องปล่อยความสูงอัตโนมัติ */
+}
+
+.pin-wrapper {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+  background: #fff;
+  z-index: 1;
+}
+
+.scroll-frame {
+  position: relative;
+  width: 100%;
+  height: calc(100vh * 7); /* ✅ ความสูงของชุดทั้งหมด */
+}
+
+.scroll-item {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.scroll-item.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scroll-item h2 {
+  font-family: 'DB Adman X', sans-serif;
+  font-size: 2rem;
+  color: #585858;
+  margin-bottom: 0.5rem;
+}
+
+.scroll-item h1 {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 4rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.scroll-item p {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 700px;
+}
