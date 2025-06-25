@@ -179,12 +179,12 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }, {
-    threshold: 0.1,
-    rootMargin: "0px 0px -50px 0px"
+    threshold: 0.2,                     // ✅ ความลึกของการเห็นก่อนแสดง (0.0–1.0)
+    rootMargin: "0px 0px -30% 0px"      // ✅ ดันให้แสดงเมื่อ element อยู่ "กลางจอ" มากขึ้น
   });
 
   fadeUps.forEach(el => observer.observe(el));
-});
+})
 
 window.addEventListener('DOMContentLoaded', () => {
   setTimeout(() => {
