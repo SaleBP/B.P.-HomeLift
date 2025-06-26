@@ -1,0 +1,15 @@
+.custom-crop {
+width: 1920px;
+    height: 60rem;
+    overflow: hidden;
+    position: relative;
+    margin-top: 3rem;
+}
+
+
+.custom-crop1 {
+position: absolute;
+    right: 43rem;
+    bottom: 0px;
+    width: 65%;
+}
