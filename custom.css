@@ -1,15 +1,198 @@
-.custom-crop {
-width: 1920px;
-    height: 60rem;
-    overflow: hidden;
+
+.custom-text {
+text-align: center;
     position: relative;
-    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+}
+
+.custom-text h1 {
+font-family: 'Gilroy';
+    font-weight: bold;
+    font-size: 3.5rem;
+    color: #eb660e;
+    margin-bottom: -1.5rem;
+    margin-left: -35rem;
+}
+
+.custom-text p {
+font-family: 'DB Adman X';
+    font-weight: normal;
+    font-size: 2rem;
+    color: #585858;
+    margin-left: -60rem;
 }
 
 
-.custom-crop1 {
+.custom-text-main {
+text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+}
+
+.custom-text-main h1 {
+font-family: 'Gilroy';
+font-weight: bold;
+    font-size: 3.5rem;
+    color: #eb660e;
+    margin-bottom: -1.5rem;
+}
+
+/* ====== โครงสร้างหลัก ====== */
+.option-list {
+  padding: 5rem 2rem;
+  font-family: 'Gilroy', sans-serif;
+}
+
+.option-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  max-width: 1400px;
+  margin: auto;
+  position: relative;
+}
+
+/* ====== ฝั่งซ้าย: รูปภาพคำอธิบาย ====== */
+.option-left {
+  flex: 1;
+  min-width: 220px;
+  position: relative;
+  height: 250px;
+}
+
+.option-detail-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+/* ให้แสดงเฉพาะภาพที่ active */
+.option-detail-image.active {
+  opacity: 1;
+}
+
+/* ====== กลาง: ข้อความตัวเลือก ====== */
+.option-items {
+  flex: 2;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.option-items li {
+  font-size: 1.6rem;
+  color: #666;
+  margin-bottom: 1.2rem;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.option-items li {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #c4c4c4;
+  margin-bottom: 1.2rem;
+  cursor: pointer;
+  position: relative;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* เมื่อถูก observe แล้วเท่านั้น ค่อยเล่น animation ทีละตัว */
+.option-items.visible li {
+  animation: fadeUpItem 0.6s ease forwards;
+}
+
+.option-items.visible li:nth-child(1) { animation-delay: 0.1s; }
+.option-items.visible li:nth-child(2) { animation-delay: 0.25s; }
+.option-items.visible li:nth-child(3) { animation-delay: 0.4s; }
+.option-items.visible li:nth-child(4) { animation-delay: 0.55s; }
+.option-items.visible li:nth-child(5) { animation-delay: 0.7s; }
+.option-items.visible li:nth-child(6) { animation-delay: 0.85s; }
+.option-items.visible li:nth-child(7) { animation-delay: 1s; }
+
+@keyframes fadeUpItem {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.option-items li:hover {
+  color: #585858;
+  transform: translateX(60px);
+}
+
+.option-detail-inline {
 position: absolute;
-    right: 43rem;
-    bottom: 0px;
-    width: 65%;
+    left: -180px;
+    top: 50%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    color: #585858;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-family: 'DB Adman X';
+    font-weight: normal;
+    font-size: 1.5rem;
+    pointer-events: none;
 }
+
+.option-items li:hover .option-detail-inline {
+  opacity: 1;
+}
+
+
+/* ====== ขวา: ภาพ preview ====== */
+.option-right {
+  flex: 1;
+  text-align: right;
+  min-width: 250px;
+  height: 250px;
+  position: relative;
+}
+
+.option-preview-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.option-preview-image.active {
+  opacity: 1;
+}
+
+/* ====== Fade-up Animation ====== */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+

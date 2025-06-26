@@ -489,7 +489,7 @@ font-family: 'DB Adman X';
 }
 
 .homelift {
-  text-align: center;   /* จัดแนวรูปใน container */
+  text-align: left;   /* จัดแนวรูปใน container */
 }
 
 .lift-img {

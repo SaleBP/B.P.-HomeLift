@@ -169,7 +169,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // ========= Fade-up Observer =========
 document.addEventListener("DOMContentLoaded", () => {
-  const fadeUps = document.querySelectorAll(".fade-up");
+  const fadeUps = document.querySelectorAll(".fade-up-trigger, .fade-up, .option-items");
+
 
   const observer = new IntersectionObserver((entries, obs) => {
     entries.forEach(entry => {
