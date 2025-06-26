@@ -97,6 +97,14 @@ width: 10%;
     display: block;
 }
 
+.static-image2 {
+width: 14%;
+    height: auto;
+    margin-bottom: -10rem;
+    margin-left: 77rem;
+    display: block;
+}
+
 
 .static-image4 {
 width: 20%;
@@ -133,6 +141,15 @@ max-width: 400px;
   50%  { transform: translate(-32px, 22px) rotate(-5deg); }
   75%  { transform: translate(23px, -28px) rotate(0.7deg); }
   100% { transform: translate(10px, 20px) rotate(0deg); }
+}
+
+@keyframes floatY {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+.floaty-y {
+  animation: floatY 3.5s ease-in-out infinite;
 }
 
 .floaty-xy-rotate {
