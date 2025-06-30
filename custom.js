@@ -21,30 +21,35 @@ document.addEventListener("DOMContentLoaded", () => {
     item.addEventListener("mouseenter", () => {
       detailText.textContent = `ภาษาไทย ${index + 1}`;
       previewImg.src = item.dataset.img;
+      });
     });
   });
 
-  // ✅ 3. Hover (แบบใช้หลายภาพ overlay แยกซ้ายขวา)
+const previews = document.querySelectorAll(".option-preview-image");
+
+document.addEventListener("DOMContentLoaded", () => {
+  const items = document.querySelectorAll(".option-items li");
   const previews = document.querySelectorAll(".option-preview-image");
-  const detailImages = document.querySelectorAll(".option-detail-image");
+  const allDetailImages = document.querySelectorAll("[data-group]");
 
   items.forEach((item, index) => {
     item.addEventListener("mouseenter", () => {
       // ซ่อนทั้งหมดก่อน
       previews.forEach(p => p.classList.remove("active"));
-      detailImages.forEach(d => d.classList.remove("active"));
+      allDetailImages.forEach(img => img.classList.remove("active"));
 
-      // แสดงเฉพาะภาพที่ตรงกับ index
+      // ✅ แสดงเฉพาะกลุ่มที่มี data-group เท่ากับ index
+      const groupImages = document.querySelectorAll(`[data-group="${index}"]`);
+      groupImages.forEach(img => img.classList.add("active"));
+
+      // ถ้ามีภาพ preview ทางขวา (เลือกได้)
       const preview = document.getElementById(`preview-${index}`);
-      const detail = document.getElementById(`detail-${index}`);
       if (preview) preview.classList.add("active");
-      if (detail) detail.classList.add("active");
     });
 
     item.addEventListener("mouseleave", () => {
       previews.forEach(p => p.classList.remove("active"));
-      detailImages.forEach(d => d.classList.remove("active"));
+      allDetailImages.forEach(img => img.classList.remove("active"));
     });
   });
 });
-

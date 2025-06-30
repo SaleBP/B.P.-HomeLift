@@ -66,12 +66,90 @@ font-weight: bold;
   position: relative;
   height: 250px;
 }
+/*==================================================================*/
 
-.option-detail-image {
+[data-group].active {
+  opacity: 1;
+}
+
+/*==================================================================*/
+
+.option-detail-image1-1,
+.option-detail-image1-2,
+.option-detail-image1-3,
+.option-detail-image1-4{
+position: absolute;
+    width: 63%;
+    border-radius: 20px;
+    height: auto;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.option-detail-image1-1 { top: -8rem; left: -11rem; }
+.option-detail-image1-2 { top: 13rem; left: -3rem; }
+.option-detail-image1-3 { top: -13rem; left:8rem; }
+.option-detail-image1-4 { top: 5rem; left: 16rem; }
+
+/*==================================================================*/
+
+.option-detail-image2-1,
+.option-detail-image2-2,
+.option-detail-image2-3,
+.option-detail-image2-4,
+.option-detail-image2-5{
+position: absolute;
+    top: -7rem;
+    left: 0;
+    width: 107%;
+    height: auto;
+    opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.option-detail-image2-1 { top: -8rem; left: -11rem; }
+.option-detail-image2-2 { top: 13rem; left: -3rem; }
+.option-detail-image2-3 { top: -13rem; left:8rem; }
+.option-detail-image2-4 { top: 5rem; left: 16rem; }
+.option-detail-image2-5 { top: 5rem; left: 16rem; }
+
+/*==================================================================*/
+
+.option-detail-image3-1,
+.option-detail-image3-2,
+.option-detail-image3-3,
+.option-detail-image3-5{
+position: absolute;
+    top: -7rem;
+    left: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.option-detail-image3-1 { top: -8rem; left: -11rem; }
+.option-detail-image3-2 { top: 13rem; left: -3rem; }
+.option-detail-image3-3 { top: -13rem; left:8rem; }
+.option-detail-image3-5 { top: 5rem; left: 16rem; }
+
+/*==================================================================*/
+
+.option-detail-image4-1,
+.option-detail-image4-2,
+.option-detail-image4-3,
+.option-detail-image4-4,
+.option-detail-image4-5,
+.option-detail-image4-6,
+.option-detail-image4-7,
+.option-detail-image4-8{
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 69%;
   max-width: 100%;
   height: auto;
   opacity: 0;
@@ -79,10 +157,99 @@ font-weight: bold;
   pointer-events: none;
 }
 
-/* ให้แสดงเฉพาะภาพที่ active */
-.option-detail-image.active {
-  opacity: 1;
+.option-detail-image4-1 { top: 4rem; left: -11rem; }
+.option-detail-image4-2 { top: 9rem; left: 2rem; }
+.option-detail-image4-3 { top: 19rem; left: 28rem; }
+.option-detail-image4-4 { top: 14rem; left: 15rem; }
+.option-detail-image4-5 { top: -4rem; left: -1rem; }
+.option-detail-image4-6 { top: 17rem; left: -8rem; }
+.option-detail-image4-7 { top: 22rem; left: 5rem; }
+.option-detail-image4-8 { top: 25rem; left: -18rem; }
+
+/*==================================================================*/
+
+.option-detail-image5-1,
+.option-detail-image5-2,
+.option-detail-image5-3,
+.option-detail-image5-4,
+.option-detail-image5-5,
+.option-detail-image5-6 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+  max-width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
 }
+
+.option-detail-image5-1 { top: -8rem; left: -11rem; }
+.option-detail-image5-2 { top: 13rem; left: -3rem; }
+.option-detail-image5-3 { top: -13rem; left:8rem; }
+.option-detail-image5-4 { top: 5rem; left: 16rem; }
+.option-detail-image5-5 { top: 5rem; left: 16rem; }
+.option-detail-image5-6 { top: -8rem; left: -11rem; }
+
+/*==================================================================*/
+
+
+.option-detail-image6-1,
+.option-detail-image6-2,
+.option-detail-image6-3,
+.option-detail-image6-4,
+.option-detail-image6-5,
+.option-detail-image6-6,
+.option-detail-image6-7,
+.option-detail-image6-8,
+.option-detail-image6-9,
+.option-detail-image6-10
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.option-detail-image6-1 { top: -8rem; left: -11rem; }
+.option-detail-image6-2 { top: 13rem; left: -3rem; }
+.option-detail-image6-3 { top: -13rem; left:8rem; }
+.option-detail-image6-4 { top: 5rem; left: 16rem; }
+.option-detail-image6-5 { top: 5rem; left: 16rem; }
+.option-detail-image6-6 { top: -8rem; left: -11rem; }
+.option-detail-image6-7 { top: -8rem; left: -11rem; }
+.option-detail-image6-8 { top: -8rem; left: -11rem; }
+.option-detail-image6-9 { top: -8rem; left: -11rem; }
+.option-detail-image6-10 { top: -8rem; left: -11rem; }
+
+/*==================================================================*/
+
+.option-detail-image7-1,
+.option-detail-image7-2,
+.option-detail-image7-3
+ {
+    position: absolute;
+    top: -6rem;
+    left: 0;
+    width: 91%;
+    max-width: 100%;
+    height: auto;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.option-detail-image7-1 { top: -8rem; left: -11rem; }
+.option-detail-image7-2 { top: 13rem; left: -3rem; }
+.option-detail-image7-3 { top: -13rem; left:8rem; }
+
+/*==================================================================*/
+
 
 /* ====== ข้อความตัวเลือก ====== */
 .option-items {
@@ -154,6 +321,21 @@ font-weight: bold;
   transform: translateY(-50%) translateX(5px); /* เพิ่มความเนียนขณะ fade-in */
 }
 
+[data-group].active {
+  opacity: 1;
+  animation: slideUpFade 0.5s ease forwards;
+}
+
+@keyframes slideUpFade {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 /* ====== ขวา: ภาพ preview ====== */
 .option-right {
