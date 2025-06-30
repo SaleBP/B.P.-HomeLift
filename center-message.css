@@ -53,7 +53,7 @@
 .center-message {
     text-align: center;
     position: relative;
-    min-height: 150vh;
+    min-height: 110vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
