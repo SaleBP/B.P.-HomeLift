@@ -1,0 +1,71 @@
+
+
+
+.stand-img {
+position: absolute;
+    top: 75%;
+    left: 13%;
+    transform: translate(-50%, -50%);
+    width: 25%;
+    height: auto;
+    z-index: 0;
+}
+
+.stand-text {
+text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+}
+
+.stand-text h1 {
+    font-family: 'Gilroy';
+    font-weight: bold;
+    font-size: 7.5rem;
+    color: #eb660e;
+    margin-bottom: -3.5rem;
+    left: 20rem;
+}
+
+.stand-text p {
+font-family: 'DB Adman X';
+    font-weight: normal;
+    font-size: 3rem;
+    color: #585858;
+    left: 37rem;
+}
+
+.stand-text h1,
+.stand-text p {
+    position: relative;
+    z-index: 1; /* 🔺 ทำให้ข้อความอยู่ด้านหน้า */
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(10rem);
+}
+
+.fade-up.animate {
+  animation: slideUpFade 1.2s ease-out forwards;
+}
+
+@keyframes fadeUpItem {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUpFade {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
