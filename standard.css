@@ -3,10 +3,10 @@
 
 .stand-img {
 position: absolute;
-    top: 75%;
-    left: 13%;
-    transform: translate(-50%, -50%);
-    width: 25%;
+    position: absolute;
+    top: 51%;
+    left: 11%;
+    width: 27%;
     height: auto;
     z-index: 0;
 }
@@ -43,22 +43,59 @@ font-family: 'DB Adman X';
     z-index: 1; /* 🔺 ทำให้ข้อความอยู่ด้านหน้า */
 }
 
-.fade-up {
+
+
+/* รายการ spec */
+.spec-list li {
+  position: relative;
+  list-style: none !important;
+  font-family: 'Gilroy';
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 1.5rem 0;
+  height: 2.5rem;
+  width: 103rem;
+  overflow: visible;
+}
+
+.spec-list .label,
+.spec-list .value {
+  position: absolute;
+  top: 0;
+  right: 0;
+  white-space: nowrap;
+  transition: all 0.4s ease;
+}
+
+/* ✅ ปกติข้อความหลักแสดง */
+.spec-list .label {
+  color: #585858;
+  z-index: 2;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ✅ ข้อความซ่อนยังไม่แสดง */
+.spec-list .value {
+  color: #eb660e;
   opacity: 0;
-  transform: translateY(10rem);
+  transform: translateX(100%);
+  z-index: 1;
 }
 
-.fade-up.animate {
-  animation: slideUpFade 1.2s ease-out forwards;
+/* ✅ เมื่อ hover: label หาย + ขยับซ้าย */
+.spec-list li:hover .label {
+  opacity: 0;
+  transform: translateX(-150%);
 }
 
-@keyframes fadeUpItem {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* ✅ เมื่อ hover: value เข้ามา */
+.spec-list li:hover .value {
+  opacity: 1;
+  transform: translateX(0);
 }
 
+/* เอฟเฟกต์ fade-up */
 @keyframes slideUpFade {
   0% {
     opacity: 0;
@@ -68,4 +105,13 @@ font-family: 'DB Adman X';
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(10rem);
+}
+
+.fade-up.animate {
+  animation: slideUpFade 1s ease forwards;
 }
