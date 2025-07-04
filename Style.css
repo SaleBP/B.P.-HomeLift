@@ -729,13 +729,13 @@ width: 100%;
     transform: translateX(-50%);
     text-align: center;
     padding-bottom: 35px;
-    padding-top: 15px;
+    padding-top: 30rem;
 }
 
 .textmap a {
-font-family: 'DB Adman X', sans-serif;
+font-family: 'Gilroy';
     color: #666;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-decoration: none;
     transition: all 0.3s ease;
     white-space: nowrap;
