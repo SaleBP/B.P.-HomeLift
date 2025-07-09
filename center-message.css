@@ -161,3 +161,69 @@ max-width: 400px;
   margin-bottom: 2rem;
 }
 
+
+  
+@media (max-width: 768px) {
+
+  .center-message {
+    text-align: left;
+    padding: 0 2rem;
+    align-items: flex-start;
+}
+
+
+  
+.textintro { 
+  font-size: 7.5rem;
+top: 47rem;
+left: 50%;
+    }
+
+.center-message h1 {
+    font-size: 2rem;
+    margin-bottom: -0.2rem;
+}
+
+.center-message h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.center-message p {
+    font-size: 1.4rem;
+    color: #585858;
+    margin-bottom: 1rem;
+}
+
+.center-message p2 {
+    font-size: 1.6rem;
+    color: #585858;
+}
+
+.static-image1 {
+    width: 27%;
+    margin-bottom: -2rem;
+    margin-left: 8rem;
+
+}
+
+.static-image2 {
+    width: 36%;
+    margin-bottom: -2rem;
+    margin-left: 8rem;
+}
+
+.static-image4 {
+    width: 41%;
+    margin-bottom: -2rem;
+    margin-left: 8rem;
+}
+
+
+.static-image5 {
+    width: 71%;
+    margin-bottom: -1rem;
+    margin-left: 3rem;
+}
+
+  }

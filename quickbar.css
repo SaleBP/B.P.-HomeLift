@@ -29,13 +29,13 @@
   }
 
   #quickbar-toggle {
-    background: white;
-    border: none;
-    font-size: 2rem;
-    border-radius: 8px;
-    padding: 0.2rem 0.5rem;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
+background: #ffffff00;
+        border: none;
+        font-size: 2rem;
+        border-radius: 8px;
+        padding: 0.2rem 0.5rem;
+        cursor: pointer;
+        color: white;
   }
 
   .quickbar-panel {
