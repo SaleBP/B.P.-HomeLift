@@ -890,7 +890,7 @@ margin-bottom: 2rem;
   
     .caption4 {
 font-size: 1.2rem;
-        left: 9%;
+        left: 19%;
         bottom: 15%;
   }
 
@@ -955,9 +955,21 @@ font-size: 1.2rem;
 .text-overlay p {
     font-size: 1.2rem;
     margin: 0;
-    width: 23rem;
+    width: 21rem;
     line-height: 1.1;
 }
+
+.center-message2 h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    line-height: 4rem;
+}
+
+.center-message2 p {
+    font-size: 2rem;
+}
+
+
 
 }
 
