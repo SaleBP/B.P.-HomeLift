@@ -379,7 +379,7 @@ position: absolute;
     margin-bottom: 2.2rem;
 }
 
-detail-image1-2, .option-detail-image1-4 {
+.detail-image1-2, .option-detail-image1-4 {
     width: 81%;
 
 }
@@ -399,5 +399,31 @@ detail-image1-2, .option-detail-image1-4 {
     left: -10rem;
 }
 
+.option-detail-image2-1,
+.option-detail-image2-2,
+.option-detail-image2-3,
+.option-detail-image2-5 {
+    width: 74%;
+}
+
+.option-detail-image2-1 {
+    top: -7rem;
+    left: 0rem;
+}
+
+.option-detail-image2-2 {
+    top: 7rem;
+    left: 0rem;
+}
+
+.option-detail-image2-3 {
+    top: -21rem;
+    left: 0rem;
+}
+
+.option-detail-image2-5 {
+    top: 21rem;
+    left: 0rem;
+}
 
 }
