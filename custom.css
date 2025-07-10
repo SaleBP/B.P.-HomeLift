@@ -379,25 +379,28 @@ position: absolute;
     margin-bottom: 2.2rem;
 }
 
-.detail-image1-2, .option-detail-image1-4 {
+.option-detail-image1-1,
+.option-detail-image1-2,
+.option-detail-image1-4 {
     width: 81%;
 
 }
 
-.option-detail-image1-2 {
-    top: 15rem;
-    left: -7rem;
-}
+    .option-detail-image1-2 {
+        top: 14rem;
+        left: -2rem;
+    }
 
-.option-detail-image1-4 {
-    top: 3rem;
-    left: -4rem;
-}
 
-.option-detail-image1-1 {
-    top: -9rem;
-    left: -10rem;
-}
+    .option-detail-image1-4 {
+        top: -2rem;
+        left: -2rem;
+    }
+
+    .option-detail-image1-1 {
+        top: -18rem;
+        left: -2rem;
+    }
 
 .option-detail-image2-1,
 .option-detail-image2-2,
