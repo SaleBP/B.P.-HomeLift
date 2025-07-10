@@ -363,3 +363,23 @@ position: absolute;
 }
 
 
+
+@media (max-width: 768px) {
+
+.custom-text h1
+ {
+    font-size: 2.5rem;
+    margin-bottom: -5.5rem;
+    margin-left: 0rem;
+}
+
+.option-items li {
+    font-size: 1.3rem;
+    width: 13rem;
+    margin-bottom: 2.2rem;
+
+}
+
+
+
+}
