@@ -377,9 +377,27 @@ position: absolute;
     font-size: 1.3rem;
     width: 13rem;
     margin-bottom: 2.2rem;
+}
+
+detail-image1-2, .option-detail-image1-4 {
+    width: 81%;
 
 }
 
+.option-detail-image1-2 {
+    top: 15rem;
+    left: -7rem;
+}
+
+.option-detail-image1-4 {
+    top: 3rem;
+    left: -4rem;
+}
+
+.option-detail-image1-1 {
+    top: -9rem;
+    left: -10rem;
+}
 
 
 }
