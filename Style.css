@@ -381,11 +381,10 @@ font-family: 'Gilroy';
 .textmap h6 {
     font-family: 'Gilroy';
     font-weight: normal;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     color: #eb660e;
     margin: 0;
     text-align: left;
-    width: 42rem;
     line-height: 2.1;
 }
 
@@ -747,7 +746,7 @@ width: 100%;
 .textmap a {
 font-family: 'Gilroy';
     color: #666;
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     text-decoration: none;
     transition: all 0.3s ease;
     white-space: nowrap;

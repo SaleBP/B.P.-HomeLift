@@ -129,11 +129,11 @@ position: absolute;
   pointer-events: none;
 }
 
-.option-detail-image3-1 { top: 1rem; left: 0rem; }
-.option-detail-image3-2 { top: 8rem; left: 0rem; }
-.option-detail-image3-3 { top: 15rem; left: 0rem; }
-.option-detail-image3-4 { top: 22rem; left: 0rem; }
-.option-detail-image3-5 { top: 29rem; left: 0rem; }
+.option-detail-image3-1 { top: -9rem; left: 0rem; }
+.option-detail-image3-2 { top: 1rem; left: 0rem; }
+.option-detail-image3-3 { top: 11rem; left: 0rem; }
+.option-detail-image3-4 { top: 21rem; left: 0rem; }
+.option-detail-image3-5 { top: 31rem; left: 0rem; }
 
 /*==================================================================*/
 
