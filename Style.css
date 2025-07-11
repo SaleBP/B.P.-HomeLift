@@ -728,8 +728,8 @@ width: 100%;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    padding-bottom: 35px;
-    
+    padding-top: 23rem;
+    padding-bottom: 7rem;
 }
 
 .textmap a {
@@ -910,10 +910,11 @@ font-size: 1.2rem;
         object-fit: cover;
     }
 
-  .textmap a {
-    font-size: 1.3rem;
-    white-space: normal;
-  }
+    .textmap a {
+        font-size: 1rem;
+        white-space: normal;
+        line-height: 1.5;
+    }
 
   .homelift {
   padding: 0px 0;
@@ -971,7 +972,7 @@ font-size: 1.2rem;
 
 .textmap {
     padding-bottom: 35px;
-    margin-top: 3rem;
+    margin-top: -10rem;
     width: 20rem;
 }
 
