@@ -50,7 +50,7 @@ font-family: 'DB Adman X';
 position: relative;
     list-style: none !important;
     font-family: 'Gilroy';
-    font-weight: bold;
+    font-weight: normal;
     font-size: 2.5rem;
     margin: 1.5rem 0;
     height: 5rem;
@@ -141,15 +141,15 @@ color: #eb660e;
     width: 64%;
 }
 
-.spec-list li {
-
-    font-size: 1.5rem;
-    margin: 1.5rem 0;
-    height: 3rem;
-    width: 36rem;
-    left: -8rem;
-    top: -26rem;
-}
+    .spec-list li {
+        font-size: 1.5rem;
+        margin: 0.5rem;
+        height: 3rem;
+        width: 36rem;
+        left: -8rem;
+        top: -23rem;
+        font-weight: normal;
+    }
 
 
 }

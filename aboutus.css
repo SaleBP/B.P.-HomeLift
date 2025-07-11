@@ -136,13 +136,13 @@ position: absolute;
         top: 19rem;
     }
 
-  .caption-overlay2 {
-    top: 104%;
-    right: 4%;
-    width: 69%;
-    font-size: 2rem;
-    text-align: right;
-}
+    .caption-overlay2 {
+        top: 105%;
+        right: 7%;
+        width: 85%;
+        font-size: 1.2rem;
+        text-align: left;
+    }
 
 .aboutus-crop {
     margin-top: 20rem;

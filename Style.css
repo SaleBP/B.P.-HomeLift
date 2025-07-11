@@ -727,7 +727,7 @@ width: 100%;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    text-align: center;
+    text-align: left;
     padding-top: 23rem;
     padding-bottom: 7rem;
 }
@@ -928,13 +928,13 @@ font-size: 1.2rem;
     margin-top: 476px;
   }
 
-.text-overlay {
-    position: absolute;
-    top: -33%;
-    left: 27%;
-    width: 39%;
-    padding: 1.5rem;
-}
+    .text-overlay {
+        position: absolute;
+        top: -26%;
+        left: 43%;
+        width: 70%;
+        padding: 1.5rem;
+    }
 
 .liftimg1 {
     width: 214%;
@@ -956,18 +956,20 @@ font-size: 1.2rem;
 .text-overlay p {
     font-size: 1.2rem;
     margin: 0;
-    width: 21rem;
+    width: 19rem;
     line-height: 1.1;
 }
 
-.center-message2 h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-    line-height: 4rem;
-}
+    .center-message2 h1 {
+        font-size: 2.5rem;
+        margin-bottom: -0.2rem;
+        line-height: 4rem;
+        text-align: left;
+    }
 
 .center-message2 p {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    text-align: left;
 }
 
 .textmap {
@@ -975,6 +977,18 @@ font-size: 1.2rem;
     margin-top: -10rem;
     width: 20rem;
 }
+
+.center-message2 {
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    padding-top: 40rem;
+    bottom: -3rem;
+}
+
 
 }
 
