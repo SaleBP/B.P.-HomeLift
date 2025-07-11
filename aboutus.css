@@ -127,18 +127,24 @@ position: absolute;
         object-fit: cover;
     }
 
-  .caption-overlay {
-  top: 62%;
-  right: 5%;
-  font-size: 3.5rem;
-  color: rgb(255, 255, 255);
-}
+    .caption-overlay {
+        top: 62%;
+        right: 5%;
+        font-size: 2.5rem;
+        left: 2rem;
+        line-height: 1;
+        top: 19rem;
+    }
 
   .caption-overlay2 {
     top: 104%;
     right: 4%;
     width: 69%;
     font-size: 2rem;
+}
+
+.aboutus-crop {
+    margin-top: 20rem;
 }
 
   }
