@@ -9,12 +9,14 @@ text-align: center;
 }
 
 .custom-text h1 {
-font-family: 'Gilroy';
+    font-family: 'Gilroy';
     font-weight: bold;
-    font-size: 3.5rem;
+    font-size: 6.5rem;
     color: #eb660e;
-    margin-bottom: -1.5rem;
-    margin-left: -35rem;
+    margin-bottom: 1.5rem;
+    margin-left: -44.5rem;
+    width: 40rem;
+    text-align: left;
 }
 
 .custom-text p {
