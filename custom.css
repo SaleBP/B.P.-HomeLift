@@ -594,4 +594,11 @@ position: absolute;
     left: -2rem;
 }
 
+.option-detail-inline {
+ 
+    left: -0.4rem;
+    top: -0.8rem;
+    font-size: 1.2rem;
+}
+
 }
