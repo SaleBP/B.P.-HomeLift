@@ -393,18 +393,18 @@ position: absolute;
 
      .option-detail-image1-2 {
         top: 17rem;
-        left: -3rem;
+        left: -6rem;
     }
 
 
     .option-detail-image1-4 {
         top: 0rem;
-        left: -3rem;
+        left: -6rem;
     }
 
     .option-detail-image1-1 {
         top: -17rem;
-        left: -3rem;
+        left: -6rem;
     }
 
 .option-detail-image2-1,
@@ -416,22 +416,22 @@ position: absolute;
 
 .option-detail-image2-1 {
     top: -7rem;
-    left: -1.4rem;
+    left: -3.4rem;
 }
 
 .option-detail-image2-2 {
     top: 7rem;
-    left: -1.4rem;
+    left: -3.4rem;
 }
 
 .option-detail-image2-3 {
     top: -21rem;
-    left: -1.4rem;
+    left: -3.4rem;
 }
 
 .option-detail-image2-5 {
     top: 21rem;
-    left: -1.4rem;
+    left: -3.4rem;
 }
 
 .option-detail-image3-1 {
@@ -441,22 +441,22 @@ position: absolute;
 
 .option-detail-image3-2 {
     top: 8rem;
-    left: -2rem;
+    left: -4rem;
 }
 
 .option-detail-image3-3 {
     top: 15rem;
-    left: -2rem;
+    left: -4rem;
 }
 
 .option-detail-image3-4 {
     top: 22rem;
-    left: -2rem;
+    left: -4rem;
 }
 
 .option-detail-image3-5 {
     top: 29rem;
-    left: -2rem;
+    left: -4rem;
 }
 
 .option-detail-image4-1,
@@ -471,102 +471,105 @@ position: absolute;
     width: 70%;
 }
 
-.option-detail-image4-1 {
-    top: -1rem;
-    left: 2rem;
-}
+    .option-detail-image4-1 {
+        top: -1rem;
+        left: 0rem;
+    }
 
-.option-detail-image4-2 {
-    top: 4rem;
-    left: -3rem;
-}
 
-.option-detail-image4-3 {
-    top: -4rem;
-    left: -5rem;
-}
+    .option-detail-image4-2 {
+        top: 4rem;
+        left: -6rem;
+    }
 
-.option-detail-image4-4 {
-    top: 8rem;
-    left: 4rem;
-}
+    .option-detail-image4-3 {
+        top: -4rem;
+        left: -7rem;
+    }
 
-.option-detail-image4-5 {
-    top: 13rem;
-    left: -2rem;
-}
+    .option-detail-image4-4 {
+        top: 8rem;
+        left: 0rem;
+    }
 
-.option-detail-image4-6 {
-    top: 17rem;
-    left: 5rem;
-}
+    .option-detail-image4-5 {
+        top: 13rem;
+        left: -5rem;
+    }
 
-.option-detail-image4-7 {
-    top: 22rem;
-    left: -1rem;
-}
+    .option-detail-image4-6 {
+        top: 17rem;
+        left: 1rem;
+    }
 
-.option-detail-image4-8 {
-    top: 27rem;
-    left: -7rem;
-}
+    .option-detail-image4-7 {
+        top: 22rem;
+        left: -5rem;
+    }
 
-.option-detail-image5-1 {
-    top: -8rem;
-    left: -1rem;
-}
+    .option-detail-image4-8 {
+        top: 27rem;
+        left: -11rem;
+    }
 
-.option-detail-image5-2 {
-    top: -2rem;
-    left: 4rem;
-}
 
-.option-detail-image5-3 {
-    top: 6rem;
-    left: -1rem;
-}
+    .option-detail-image5-1 {
+        top: -8rem;
+        left: -3rem;
+    }
 
-.option-detail-image5-4 {
-    top: 13rem;
-    left: 4rem;
-}
 
-.option-detail-image5-5 {
-    top: 22rem;
-    left: -1rem;
-}
+    .option-detail-image5-2 {
+        top: -2rem;
+        left: 2rem;
+    }
 
-.option-detail-image5-6 {
-    top: 28.5rem;
-    left: 4rem;
-}
+    .option-detail-image5-3 {
+        top: 6rem;
+        left: -3rem;
+    }
+
+    .option-detail-image5-4 {
+        top: 13rem;
+        left: 2rem;
+    }
+
+    .option-detail-image5-5 {
+        top: 22rem;
+        left: -3rem;
+    }
+
+    .option-detail-image5-6 {
+        top: 28.5rem;
+        left: 2rem;
+    }
 
 .option-detail-image6-1,
  .option-detail-image6-2,
   .option-detail-image6-3,
    .option-detail-image6-4 {
-    width: 121%;
+    width: 125%;
 
 }
 
 .option-detail-image6-4 {
     top: -3rem;
-    left: -4rem;
+    left: -7rem;
 }
 
 .option-detail-image6-3 {
     top: -3rem;
-    left: -4rem;
+    left: -7rem;
 }
 
 .option-detail-image6-2 {
     top: -2rem;
-    left: -4rem;
+    left: -7rem;
 }
 
 .option-detail-image6-1 {
     top: -1rem;
-    left: -4rem;
+    left: -7rem;
 }
 
 .option-detail-image7-1,
@@ -578,17 +581,17 @@ position: absolute;
 
 .option-detail-image7-1 {
     top: -6rem;
-    left: 0rem;
+    left: -2rem;
 }
 
 .option-detail-image7-2 {
     top: 7rem;
-    left: 0rem;
+    left: -2rem;
 }
 
 .option-detail-image7-3 {
     top: 21rem;
-    left: 0rem;
+    left: -2rem;
 }
 
 }
