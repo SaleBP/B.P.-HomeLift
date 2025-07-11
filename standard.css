@@ -119,3 +119,37 @@ color: #eb660e;
 .fade-up.animate {
   animation: slideUpFade 1s ease forwards;
 }
+
+
+@media (max-width: 768px) {
+  
+.stand-text {
+    text-align: right;
+
+}
+
+.stand-text h1 {
+    font-size: 3.5rem;
+    margin-bottom: 15.5rem;
+    left: -1.3rem;
+}
+
+.stand-img {
+
+    top: 41%;
+    left: -8%;
+    width: 64%;
+}
+
+.spec-list li {
+
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+    height: 3rem;
+    width: 36rem;
+    left: -8rem;
+    top: -26rem;
+}
+
+
+}
