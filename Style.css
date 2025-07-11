@@ -378,6 +378,18 @@ font-family: 'Gilroy';
 }
 
 /* สไตล์สำหรับ <p> */
+.textmap h6 {
+    font-family: 'Gilroy';
+    font-weight: normal;
+    font-size: 1.4rem;
+    color: #eb660e;
+    margin: 0;
+    text-align: left;
+    width: 42rem;
+    line-height: 2.1;
+}
+
+/* สไตล์สำหรับ <p> */
 .text-overlay p {
 font-family: 'DB Adman X';
     font-size: 1.4rem;
@@ -989,6 +1001,16 @@ font-size: 1.2rem;
     bottom: -3rem;
 }
 
+.textmap h6 {
+    font-family: 'Gilroy';
+    font-weight: normal;
+    font-size: 1.4rem;
+    color: #eb660e;
+    margin: 0;
+    text-align: left;
+    width: 42rem;
+    line-height: 2.1;
+}
 
 }
 
