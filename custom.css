@@ -140,13 +140,7 @@ position: absolute;
 /*==================================================================*/
 
 .option-detail-image4-1,
-.option-detail-image4-2,
-.option-detail-image4-3,
-.option-detail-image4-4,
-.option-detail-image4-5,
-.option-detail-image4-6,
-.option-detail-image4-7,
-.option-detail-image4-8{
+.{
   position: absolute;
   top: 0;
   left: 0;
@@ -159,13 +153,7 @@ position: absolute;
 }
 
 .option-detail-image4-1 { top: 4rem; left: -11rem; }
-.option-detail-image4-2 { top: 9rem; left: 2rem; }
-.option-detail-image4-3 { top: 19rem; left: 28rem; }
-.option-detail-image4-4 { top: 14rem; left: 15rem; }
-.option-detail-image4-5 { top: -4rem; left: -1rem; }
-.option-detail-image4-6 { top: 17rem; left: -8rem; }
-.option-detail-image4-7 { top: 22rem; left: 5rem; }
-.option-detail-image4-8 { top: 25rem; left: -18rem; }
+
 
 /*==================================================================*/
 
