@@ -139,12 +139,11 @@ position: absolute;
 
 /*==================================================================*/
 
-.option-detail-image4-1,
-.{
+.option-detail-image4-1{
   position: absolute;
   top: 0;
   left: 0;
-  width: 69%;
+  width: 100%;
   max-width: 100%;
   height: auto;
   opacity: 0;
@@ -152,7 +151,7 @@ position: absolute;
   pointer-events: none;
 }
 
-.option-detail-image4-1 { top: 4rem; left: -11rem; }
+.option-detail-image4-1 { top: -14rem; left: -11rem; }
 
 
 /*==================================================================*/
