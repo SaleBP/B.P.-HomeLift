@@ -38,24 +38,30 @@ line-height: 0.5;
     font-weight: normal;
     font-size: 2rem;
     color: #585858;
-    margin-left: 0.5rem;
     line-height: 1;
 }
 
 .drive3 {
     font-family: 'Gilroy';
     font-weight: normal;
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: #585858;
-    margin-left: 0.5rem;
     line-height: 1;
 }
 
 .drive4 {
     font-family: 'DB Adman X';
     font-weight: normal;
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: #585858;
-    margin-left: 0.5rem;
     line-height: 1;
+}
+
+.lift-hhf {
+    position: relative;
+    top: -26rem;
+    left: 75rem;
+    width: 30rem;
+    height: auto;
+    z-index: 9999;
 }
