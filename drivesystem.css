@@ -57,6 +57,24 @@ line-height: 0.5;
     line-height: 1;
 }
 
+.drive5 {
+    font-family: 'Gilroy';
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: #585858;
+    line-height: 1;
+    margin-top: 4rem;
+}
+
+.drive6 {
+    font-family: 'Gilroy';
+    font-weight: normal;
+    font-size: 1.5rem;
+    color: #585858;
+    line-height: 2;
+    margin-top: 4rem;
+}
+
 .lift-hhf {
     position: relative;
     top: -26rem;
