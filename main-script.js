@@ -242,3 +242,15 @@ function resetInactivityTimer() {
 
 // เริ่ม timer ครั้งแรกเมื่อหน้าโหลดเสร็จ
 resetInactivityTimer();
+
+
+document.querySelectorAll('.nav-link').forEach(link => {
+  link.addEventListener('click', function(e) {
+    const href = link.getAttribute('href');
+    if (href.startsWith('#')) {
+      e.preventDefault();
+      document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' });
+    }
+    // ถ้าเป็น .html ก็ให้ไปหน้าใหม่ตามปกติ
+  });
+});
