@@ -1,0 +1,24 @@
+
+.safety-text {
+text-align: center;
+line-height: 0.5;
+}
+
+.safety-header h8{
+    font-family: 'Gilroy';
+    font-weight: bold;
+    font-size: 7.5rem;
+    color: #eb660e;
+    margin-bottom: -3.5rem;
+    left: 20rem;
+    text-align: center;
+}
+
+.safety-header p {
+    font-family: 'DB Adman X';
+    font-weight: normal;
+    font-size: 3rem;
+    color: #585858;
+    left: 37rem;
+    text-align: center;
+}
