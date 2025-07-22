@@ -22,6 +22,8 @@
   height: 63vh; /* หรือความสูงที่ต้องการ */
   overflow: hidden;
   background: #fff;
+  top: -14rem;
+  margin-bottom: 24rem;
 }
 
 .scroll-container {

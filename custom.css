@@ -49,6 +49,7 @@ font-weight: bold;
 .option-list {
   padding: 5rem 2rem;
   font-family: 'Gilroy', sans-serif;
+  margin-bottom: 30rem;
 }
 
 .option-wrapper {

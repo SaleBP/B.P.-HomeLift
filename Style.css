@@ -417,6 +417,7 @@ text-align: center;
     flex-direction: column;
     align-items: center;
     background: #fff;
+    top: -14rem;
 }
 
 .center-message2 h1 {
@@ -544,7 +545,6 @@ font-family: 'DB Adman X';
 
 section {
 height: auto;
-padding-top: 40rem;
 }
 
 /*===============================*/

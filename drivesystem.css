@@ -1,7 +1,8 @@
 
 .safety-text {
-text-align: center;
-line-height: 0.5;
+    text-align: center;
+    line-height: 0.5;
+    margin-top: 36rem;
 }
 
 .safety-header h8 {
@@ -22,7 +23,7 @@ line-height: 0.5;
 
 .drive-header {
     line-height: 0.2;
-    margin-top: -10rem;
+    margin-top: 22rem;
     margin-left: 4.5rem;
 }
 
@@ -107,11 +108,10 @@ line-height: 0.5;
 
 .drive-header1 {
     line-height: 0.2;
-    margin-top: -10rem;
+    margin-top: 20rem;
     text-align: right;
-    margin-right: 4.5rem;
+    margin-right: 6.5rem;
 }
-
 .drive10 {
     font-family: 'Gilroy';
     font-weight: bold;
