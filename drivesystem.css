@@ -9,7 +9,7 @@ line-height: 0.5;
     font-weight: bold;
     font-size: 6.5rem;
     color: #eb660e;
-    margin-left: 70rem;
+    margin-left: 66rem;
 }
 
 .safety-header p {
@@ -17,12 +17,13 @@ line-height: 0.5;
     font-weight: normal;
     font-size: 2.7rem;
     color: #585858;
-    margin-left: 79.8rem;
+    margin-left: 76rem;
 }
 
 .drive-header {
     line-height: 0.2;
     margin-top: -10rem;
+    margin-left: 4.5rem;
 }
 
 .drive1 {
@@ -30,7 +31,6 @@ line-height: 0.5;
     font-weight: bold;
     font-size: 4.5rem;
     color: #eb660e;
-    margin-left: 8.5rem;
 }
 
 .drive2 {
@@ -104,10 +104,109 @@ line-height: 0.5;
     margin-left: 16rem;
 }
 
+
+.drive-header1 {
+    line-height: 0.2;
+    margin-top: -10rem;
+    text-align: right;
+    margin-right: 4.5rem;
+}
+
+.drive10 {
+    font-family: 'Gilroy';
+    font-weight: bold;
+    font-size: 4.5rem;
+    color: #eb660e;
+    margin-left: 8.5rem;
+}
+
+.drive11 {
+    font-family: 'DB Adman X';
+    font-weight: normal;
+    font-size: 2rem;
+    color: #585858;
+    line-height: 1;
+}
+
+.drive12 {
+    font-family: 'Gilroy';
+    font-weight: normal;
+    font-size: 1.6rem;
+    color: #585858;
+    line-height: 1;
+}
+
+.drive13 {
+    font-family: 'DB Adman X';
+    font-weight: normal;
+    font-size: 1.6rem;
+    color: #585858;
+    line-height: 1;
+}
+
+.drive14{
+    font-family: 'Gilroy';
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: #585858;
+    line-height: 1;
+    margin-top: 4rem;
+}
+
+.drive15 {
+    font-family: 'Gilroy';
+    font-weight: normal;
+    font-size: 1.5rem;
+    color: #585858;
+    line-height: 2;
+    margin-top: 3rem;
+    margin-right: 10rem;
+}
+
+.drive16 {
+    font-family: 'Gilroy';
+    font-weight: normal;
+    font-size: 1.5rem;
+    color: #eb660e;
+    line-height: 2;
+    margin-top: -13.5rem;
+    margin-right: -10rem;
+}
+
+.drive17 {
+    font-family: 'Gilroy';
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: #585858;
+    line-height: 1;
+    margin-top: 4rem;
+    margin-right: 10rem;
+}
+
+.drive18 {
+    font-family: 'Gilroy';
+    font-weight: normal;
+    font-size: 1.8rem;
+    color: #eb660e;
+    line-height: 1;
+    margin-top: -3.6rem;
+    margin-right: -20rem;
+}
+
+
 .lift-hhf {
     position: relative;
-    top: -51rem;
+    top: -112rem;
     left: 75rem;
+    width: 30rem;
+    height: auto;
+    z-index: 9999;
+}
+
+.lift-thf {
+    position: relative;
+    top: -48rem;
+    left: -16rem;
     width: 30rem;
     height: auto;
     z-index: 9999;
