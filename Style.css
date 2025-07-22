@@ -269,7 +269,7 @@ font-family: 'Gilroy';
 .contact-dropdown div {
   display: block;
   margin-bottom: 1rem;
-  color: #ffffff;
+  color: #585858;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -314,7 +314,7 @@ font-family: 'Gilroy';
 
 .nav-link {
   text-decoration: none;
-  color: #ffffff;
+  color: #585858;
   transition: opacity 0.5s ease;
 }
 

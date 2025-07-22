@@ -54,9 +54,10 @@ position: relative;
     font-size: 2.5rem;
     margin: 1.5rem 0;
     height: 5rem;
-width: 37rem;
-left: 31.3rem;
+    width: 37rem;
+    left: 31.3rem;
     overflow: visible;
+    top: 3rem;
 }
 
 .spec-list .label,
