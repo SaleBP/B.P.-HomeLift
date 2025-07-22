@@ -212,3 +212,102 @@
     height: auto;
     z-index: 9999;
 }
+
+
+
+@media (max-width: 768px) {
+  .safety-text {
+    margin-top: 20rem; /* ลดระยะห่างบน */
+  }
+
+  .safety-header h8 {
+    font-size: 3rem;
+    margin-left: 0rem;
+  }
+
+  .safety-header p {
+font-size: 1.5rem;
+   margin-left: 0rem;
+  }
+
+  .drive-header {
+   margin-top: 8rem;
+   margin-left: 1.5rem;
+  }
+
+  .drive1, .drive10 {
+    font-size: 3rem; /* ลดขนาดตัวอักษร */
+  }
+
+  .drive3, .drive12 {
+  font-size: 2rem;
+  width: 19rem;
+  }
+
+   
+  .drive12 {
+
+        font-size: 2rem;
+        width: 19rem;
+        margin-left: -4.5rem;
+    }
+  
+
+
+   .drive6, .drive15 {
+  font-size: 1.3rem;
+margin-bottom: 25rem;
+  }
+
+   .drive7 {
+  font-size: 1.3rem;
+        width: 6rem;
+        margin-left: 12rem;
+  margin-top: -11.9rem;
+  }
+
+   .drive8 {
+  font-size: 1.3rem;
+
+  }
+
+  .drive9 {
+  font-size: 1.3rem;
+        width: 11rem;
+        margin-left: 12rem;
+        margin-top: -2.8rem;
+  }
+
+  .drive2, .drive4, .drive5, .drive13, .drive14 {
+    font-size: 1.5rem; /* ลดขนาดตัวอักษร */
+  }
+
+    .drive11 {
+  font-size: 1.3rem;
+
+  }
+    .drive16 {
+    font-size: 1.3rem;
+    margin-top: -11.5rem;
+}
+
+    .drive17 {
+  font-size: 1.3rem;
+
+  }
+
+    .drive18 {
+        font-size: 1.3rem;
+        margin-top: -2.5rem;
+        margin-right: -19rem;
+  }
+
+.drive-header1 {
+        margin-right: 1.5rem;
+}
+
+  .lift-hhf, .lift-thf {
+width: 0;
+  }
+
+}
