@@ -108,10 +108,11 @@
 
 .drive-header1 {
     line-height: 0.2;
-    margin-top: 20rem;
+    margin-top: 30rem;
     text-align: right;
     margin-right: 6.5rem;
 }
+
 .drive10 {
     font-family: 'Gilroy';
     font-weight: bold;
@@ -196,7 +197,7 @@
 
 .lift-hhf {
     position: relative;
-    top: -112rem;
+    top: -123rem;
     left: 75rem;
     width: 30rem;
     height: auto;

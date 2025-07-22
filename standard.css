@@ -23,18 +23,18 @@ text-align: center;
 .stand-text h1 {
     font-family: 'Gilroy';
     font-weight: bold;
-    font-size: 7.5rem;
+    font-size: 5.5rem;
     color: #eb660e;
     margin-bottom: -3.5rem;
-    left: 20rem;
+    left: 27rem;
 }
-
 .stand-text p {
-font-family: 'DB Adman X';
+    font-family: 'DB Adman X';
     font-weight: normal;
-    font-size: 3rem;
+    font-size: 2rem;
     color: #585858;
-    left: 37rem;
+    left: 40.5rem;
+    top: 1.5rem;
 }
 
 .stand-text h1,
@@ -55,7 +55,7 @@ position: relative;
     margin: 1.5rem 0;
     height: 5rem;
 width: 37rem;
-    left: 33rem;
+left: 31.3rem;
     overflow: visible;
 }
 
