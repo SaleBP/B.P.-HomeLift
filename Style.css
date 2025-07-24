@@ -464,7 +464,7 @@ font-family: 'DB Adman X';
 position: relative;
     width: 100%;
     overflow: hidden;
-    top: -34rem;
+    top: -38rem;
 }
 
 .img-wrapper {
@@ -791,12 +791,12 @@ font-family: 'Gilroy';
   }
 
 .hero1 {
-position: relative;
-    width: 100%;
-    overflow: hidden;
-    top: 0rem;
-    height: 47rem;
-    left: -4rem;
+        position: relative;
+        width: 150%;
+        overflow: hidden;
+        top: 0rem;
+        left: -11rem;
+        height: 56rem;
 }
 
 

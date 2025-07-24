@@ -7,7 +7,7 @@
 
 .textintro {
   position: absolute;
-  top: 61rem;
+  top: 65rem;
   left: 50%;
   transform: translateX(-50%);
   color: white;
@@ -15,6 +15,7 @@
   font-size: 29.5rem;
   font-weight: bold;
   white-space: nowrap;
+
 }
 
 .textintro span {
@@ -73,7 +74,7 @@ font-family: 'Gilroy';
 font-family: 'Gilroy';
     font-size: 2rem;
     color: #585858;
-    margin-bottom: 0.625rem;
+    margin-bottom: 1.625rem;
 }
 
 .center-message h2 {
@@ -175,8 +176,8 @@ max-width: 25rem;
   
 .textintro { 
         font-size: 6rem;
-        top: 6rem;
-        left: 50%;
+        top: 38rem;
+        left: 62%;
     }
 
 .center-message h1 {
