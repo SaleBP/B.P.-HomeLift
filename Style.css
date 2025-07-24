@@ -791,14 +791,14 @@ font-family: 'Gilroy';
     min-height: 30px;
   }
 
-.hero1 {
+    .hero1 {
         position: relative;
-        width: 150%;
+        width: 138%;
         overflow: hidden;
-        top: 0rem;
+        top: -10rem;
         left: -11rem;
-        height: 56rem;
-}
+        height: 62rem;
+    }
 
 
 
@@ -965,22 +965,22 @@ font-size: 1.2rem;
 }
 
 .text-overlay h2 {
-    font-size: 1.2rem;
-    margin-bottom: 0.7rem;
-    text-align: left;
+font-size: 3.2rem;
+        margin-bottom: 1.5rem;
+        text-align: left;
 }
 
 .text-overlay h3 {
-    font-size: 0.9rem;
-    margin-bottom: 0.6rem;
-    text-align: left;
+font-size: 3.9rem;
+        margin-bottom: 0.6rem;
+        text-align: left;
 }
 
 .text-overlay p {
-    font-size: 1.2rem;
-    margin: 0;
-    width: 19rem;
-    line-height: 1.1;
+font-size: 1.8rem;
+        margin: 0;
+        width: 50rem;
+        line-height: 1;
 }
 
     .center-message2 h1 {

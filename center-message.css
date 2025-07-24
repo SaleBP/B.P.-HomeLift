@@ -229,3 +229,70 @@ margin-left: 7rem;
 }
 
   }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  .center-message {
+text-align: left;
+        padding: 10rem 5rem;
+        align-items: flex-start;
+}
+
+
+  
+    .textintro {
+        font-size: 12rem;
+        top: 46rem;
+        left: 47%;
+    }
+
+
+.center-message h1 {
+font-size: 3.5rem;
+margin-bottom: 1.8rem;
+}
+
+.center-message h2 {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.center-message p {
+    font-size: 2.4rem;
+    color: #585858;
+    margin-bottom: 1rem;
+}
+
+.center-message p2 {
+    font-size: 2.6rem;
+    color: #585858;
+}
+
+.static-image1 {
+
+width: 26%;
+margin-bottom: -16rem;
+margin-left: 31rem;
+
+}
+
+.static-image2 {
+width: 36%;
+        margin-bottom: -15rem;
+        margin-left: 33rem;
+    }
+
+.static-image4 {
+width: 38%;
+        margin-bottom: -25rem;
+        margin-left: 35rem;
+}
+
+
+.static-image5 {
+width: 74%;
+        margin-bottom: -17rem;
+        margin-left: 36rem;
+}
+
+  }
