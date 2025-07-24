@@ -790,6 +790,16 @@ font-family: 'Gilroy';
     min-height: 30px;
   }
 
+.hero1 {
+position: relative;
+    width: 100%;
+    overflow: hidden;
+    top: 0rem;
+    height: 47rem;
+    left: -4rem;
+}
+
+
 
  .img1 {
     width: 100%;
