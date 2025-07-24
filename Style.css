@@ -784,7 +784,8 @@ font-family: 'Gilroy';
 /*===============================*/
 /*         RESPONSIVE           */
 /*===============================*/
-@media (max-width: 768px) {
+@media (min-width: 992px) and (max-width: 1199px)
+ {
   .top-bar {
     height: 1rem;
     min-height: 30px;
@@ -1024,3 +1025,242 @@ font-size: 1.2rem;
 
 }
 
+@media (max-width: 768px) {
+  .top-bar {
+    height: 1rem;
+    min-height: 30px;
+  }
+
+.hero1 {
+        position: relative;
+        width: 150%;
+        overflow: hidden;
+        top: 0rem;
+        left: -11rem;
+        height: 56rem;
+}
+
+
+
+ .img1 {
+    width: 100%;
+    height: 100%;   
+}
+
+.intro {
+width: 80%;
+margin-top: 25px;
+display: flex
+;
+}
+
+#logosoftcolor {
+height: 2rem;
+top: 20px;
+left: 19px;
+}
+
+.lift-img {
+width: 70%;
+margin-bottom: 2rem;
+}
+
+  #t1, #t2, #t3, #t4, #t5, #t6, #t7 {
+    font-size: 1rem;
+  }
+
+.displayFlex {
+    font-family: 'DB Adman X';
+
+    gap: 1.5rem;
+    font-size: clamp(0.6rem, 5vw, 0.8rem);
+}
+
+.displayFlex2 {
+  font-family: 'Gilroy';
+  font-size: 0.5rem;
+  display: flex;
+  margin-right: 2%;
+  gap: 0.3rem;
+}
+
+  .textintro {
+    top: 200px; /* ปรับให้ต่ำลงหรือสูงขึ้นตามความเหมาะสม */
+    font-size: 8rem; /* ✅ ปรับขนาดตัวอักษรให้เหมาะกับจอมือถือ */
+    text-align: center;
+    padding: 0 16px; /* เพิ่ม padding ป้องกันติดขอบจอ */
+  }
+
+  .textintro span {
+    transform: translateY(80px); /* ปรับระยะลอยตอนเริ่ม */
+    animation: floatIn 1s forwards;
+  }
+
+.textintro {
+  font-size: clamp(7.4em, 10vw, 29.5rem); /* ปรับอัตโนมัติตามขนาดหน้าจอ */
+}
+  .row-img {
+    width: 60%;
+    border-radius: 10px;
+  }
+
+  .caption {
+    font-size: 1rem;
+    font-family: 'DB Adman X';
+    margin-top: 2%;
+    margin-bottom: -0.7%;
+  }
+
+  .contact-icons {
+    bottom: 16%;
+    left: 0.7rem;
+    gap: 0.3rem;
+    width: 29%;
+
+  }
+
+  .contact-icons .icon-text,
+  .contact-icons .icon-text2,
+  .contact-icons .icon-text3,
+  .contact-icons .icon-text4 {
+    font-size: 0.5rem; /* ปรับตามขนาดที่ต้องการ */
+    white-space: nowrap;       /* ห้ามขึ้นบรรทัดใหม่ */
+ 
+    text-overflow: ellipsis;   /* ถ้าเกินให้เป็น ... */
+  }
+  
+
+  .imgicon1, .imgicon2, .imgicon3, .imgicon4 {
+    width: 10%;
+    max-width: 20%;
+  }
+
+  .carousel-dots .dot  {
+    height: 9px;
+    width: 9px;
+    margin: 0 4px;
+}
+
+.chat-icon {
+    padding: 0.3rem 0.6rem;
+    font-size: 1.2rem;
+    bottom: 15px;
+    right: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  }
+
+  
+    .caption4 {
+font-size: 1.2rem;
+        left: 19%;
+        bottom: 15%;
+  }
+
+    .map-crop {
+        position: relative;
+        width: 100vw;
+        height: 299px;
+        overflow: hidden;
+    }
+
+    .map-image {
+        position: absolute;
+        width: 167%;
+        right: -148px;
+        bottom: -6px;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .textmap a {
+        font-size: 1rem;
+        white-space: normal;
+        line-height: 1.5;
+    }
+
+  .homelift {
+  padding: 0px 0;
+}
+
+  .container {
+    padding-top: 0%;
+  }
+
+  .image-wrapper {
+    margin-top: 476px;
+  }
+
+    .text-overlay {
+        position: absolute;
+        top: -26%;
+        left: 43%;
+        width: 70%;
+        padding: 1.5rem;
+    }
+
+.liftimg1 {
+    width: 214%;
+    margin-top: 37rem;
+}
+
+.text-overlay h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.7rem;
+    text-align: left;
+}
+
+.text-overlay h3 {
+    font-size: 0.9rem;
+    margin-bottom: 0.6rem;
+    text-align: left;
+}
+
+.text-overlay p {
+    font-size: 1.2rem;
+    margin: 0;
+    width: 19rem;
+    line-height: 1.1;
+}
+
+    .center-message2 h1 {
+        font-size: 2.5rem;
+        margin-bottom: -0.2rem;
+        line-height: 4rem;
+        text-align: left;
+    }
+
+.center-message2 p {
+    font-size: 2.5rem;
+    text-align: left;
+}
+
+.textmap {
+    padding-bottom: 35px;
+    margin-top: -10rem;
+    width: 20rem;
+}
+
+.center-message2 {
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    padding-top: 40rem;
+    bottom: -3rem;
+}
+
+.textmap h6 {
+    font-family: 'Gilroy';
+    font-weight: normal;
+    font-size: 1.4rem;
+    color: #eb660e;
+    margin: 0;
+    text-align: left;
+    width: 42rem;
+    line-height: 2.1;
+}
+
+}
