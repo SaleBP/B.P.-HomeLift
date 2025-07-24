@@ -121,8 +121,8 @@ width: 1920px;
     .aboutus1 {
         position: absolute;
         width: 258%;
-        right: -403px;
-        bottom: -6px;
+        right: -10rem;
+        bottom: 1rem;
         height: auto;
         object-fit: cover;
     }
