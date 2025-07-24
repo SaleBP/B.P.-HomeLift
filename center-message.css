@@ -7,7 +7,7 @@
 
 .textintro {
   position: absolute;
-  top: 440px;
+  top: 28rem;
   left: 50%;
   transform: translateX(-50%);
   color: white;
@@ -73,7 +73,7 @@ font-family: 'Gilroy';
 font-family: 'Gilroy';
     font-size: 2rem;
     color: #585858;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 .center-message h2 {
@@ -115,7 +115,7 @@ width: 14%;
 }
 
 .static-image5 {
-max-width: 400px;
+max-width: 25rem;
     width: 100%;
     height: auto;
     margin-bottom: -2rem;
@@ -174,9 +174,9 @@ max-width: 400px;
 
   
 .textintro { 
-font-size: 7rem;
-top: 42rem;
-left: 50%;
+        font-size: 6rem;
+        top: 6rem;
+        left: 50%;
     }
 
 .center-message h1 {
