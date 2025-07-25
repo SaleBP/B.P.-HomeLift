@@ -116,7 +116,7 @@ width: 14%;
 }
 
 .static-image5 {
-max-width: 25rem;
+max-width: 35rem;
     width: 100%;
     height: auto;
     margin-bottom: -2rem;
@@ -162,7 +162,72 @@ max-width: 25rem;
   margin-bottom: 2rem;
 }
 
+@media (min-width: 1200px) and (max-width: 1599px) {
 
+  .center-message {
+text-align: left;
+        padding: 10rem 5rem;
+        align-items: flex-start;
+}
+
+
+  
+    .textintro {
+font-size: 14rem;
+        top: 46rem;
+        left: 52%;
+    }
+
+
+.center-message h1 {
+font-size: 3.5rem;
+margin-bottom: 1.8rem;
+}
+
+.center-message h2 {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.center-message p {
+    font-size: 2.4rem;
+    color: #585858;
+    margin-bottom: 1rem;
+}
+
+.center-message p2 {
+    font-size: 2.6rem;
+    color: #585858;
+}
+
+.static-image1 {
+
+width: 23%;
+margin-bottom: -16rem;
+margin-left: 31rem;
+
+}
+
+.static-image2 {
+width: 31%;
+        margin-bottom: -15rem;
+        margin-left: 33rem;
+    }
+
+.static-image4 {
+width: 30%;
+        margin-bottom: -25rem;
+        margin-left: 38rem;
+}
+
+
+.static-image5 {
+width: 70%;
+        margin-bottom: -17rem;
+        margin-left: 36rem;
+}
+
+  }
   
 @media (max-width: 768px) {
 

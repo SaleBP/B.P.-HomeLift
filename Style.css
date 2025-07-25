@@ -784,7 +784,8 @@ font-family: 'Gilroy';
 /*===============================*/
 /*         RESPONSIVE           */
 /*===============================*/
-@media (min-width: 992px) and (max-width: 1199px)
+
+@media (min-width: 1200px) and (max-width: 1599px)
  {
 
     .top-bar {
@@ -794,10 +795,8 @@ font-family: 'Gilroy';
     }
 
     .hero1 {
-        position: relative;
-        width: 138%;
-        overflow: hidden;
-        top: -10rem;
+        width: 118%;
+           top: -14rem;
         left: -11rem;
         height: 62rem;
     }
@@ -860,9 +859,236 @@ margin-bottom: 2rem;
     animation: floatIn 1s forwards;
   }
 
-.textintro {
-  font-size: clamp(7.4em, 10vw, 29.5rem); /* ปรับอัตโนมัติตามขนาดหน้าจอ */
+
+  .row-img {
+    width: 60%;
+    border-radius: 10px;
+  }
+
+  .caption {
+    font-size: 1rem;
+    font-family: 'DB Adman X';
+    margin-top: 2%;
+    margin-bottom: -0.7%;
+  }
+
+  .contact-icons {
+    bottom: 16%;
+    left: 0.7rem;
+    gap: 0.3rem;
+    width: 29%;
+
+  }
+
+  .contact-icons .icon-text,
+  .contact-icons .icon-text2,
+  .contact-icons .icon-text3,
+  .contact-icons .icon-text4 {
+    font-size: 0.5rem; /* ปรับตามขนาดที่ต้องการ */
+    white-space: nowrap;       /* ห้ามขึ้นบรรทัดใหม่ */
+ 
+    text-overflow: ellipsis;   /* ถ้าเกินให้เป็น ... */
+  }
+  
+
+  .imgicon1, .imgicon2, .imgicon3, .imgicon4 {
+    width: 10%;
+    max-width: 20%;
+  }
+
+  .carousel-dots .dot  {
+    height: 9px;
+    width: 9px;
+    margin: 0 4px;
 }
+
+.chat-icon {
+    padding: 0.3rem 0.6rem;
+    font-size: 1.2rem;
+    bottom: 15px;
+    right: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  }
+
+  
+    .caption4 {
+font-size: 2.5rem;
+        left: 30%;
+bottom: -9%;
+  }
+
+    .map-crop {
+        position: relative;
+        width: 100vw;
+        height: 299px;
+        overflow: hidden;
+    }
+
+    .map-image {
+        position: absolute;
+        width: 167%;
+        right: -148px;
+        bottom: -6px;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .textmap a {
+font-size: 1.5rem;
+        white-space: normal;
+        line-height: 1.5;
+    }
+
+  .homelift {
+  padding: 0px 0;
+}
+
+  .container {
+    padding-top: 0%;
+  }
+
+  .image-wrapper {
+    margin-top: 476px;
+  }
+
+    .text-overlay {
+        top: -26%;
+        left: 43%;
+        width: 70%;
+        padding: 1.5rem;
+    }
+
+.liftimg1 {
+    width: 214%;
+    margin-top: 37rem;
+}
+
+.text-overlay h2 {
+font-size: 3rem;
+        margin-bottom: 2.5rem;
+        text-align: left;
+}
+
+.text-overlay h3 {
+font-size: 4.9rem;
+        margin-bottom: 0.6rem;
+        text-align: left;
+}
+
+.text-overlay p {
+font-size: 2.4rem;
+        margin: 0;
+        width: 56rem;
+        line-height: 1;
+}
+
+    .center-message2 h1 {
+        font-size: 3rem;
+        margin-bottom: -0.2rem;
+        line-height: 4rem;
+        text-align: left;
+    }
+
+.center-message2 p {
+font-size: 3rem;
+        text-align: center;
+        margin-top: 1rem;
+}
+
+.textmap {
+padding-bottom: 5rem;
+        margin-top: -23rem;
+        width: 54rem;
+        left: 45%;
+}
+
+.center-message2 {
+margin-top: -1rem;
+}
+
+.textmap h6 {
+
+        font-size: 2.4rem;
+        width: 42rem;
+        line-height: 2.1;
+}
+
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px)
+ {
+
+    .top-bar {
+        height: 3.2rem;
+        width: 65%;
+        top: 15px;
+    }
+
+    .hero1 {
+        position: relative;
+        width: 138%;
+        overflow: hidden;
+        top: -10rem;
+        left: -11rem;
+        height: 62rem;
+    }
+
+
+
+ .img1 {
+    width: 100%;
+    height: 100%;   
+}
+
+.intro {
+width: 80%;
+margin-top: 25px;
+display: flex
+;
+}
+
+#logosoftcolor {
+
+height: 3.5rem;
+        top: 1rem;
+        left: 4rem;
+        width: 4rem;
+}
+
+.lift-img {
+width: 70%;
+margin-bottom: 2rem;
+}
+
+  #t1, #t2, #t3, #t4, #t5, #t6, #t7 {
+    font-size: 1rem;
+  }
+
+.displayFlex {
+        font-family: 'Gilroy';
+        gap: 5.5rem;
+        font-size: clamp(0.6rem, 5vw, 1.5rem);
+ 
+}
+
+.displayFlex2 {
+  font-family: 'Gilroy';
+  font-size: 0.5rem;
+  display: flex;
+  margin-right: 2%;
+  gap: 0.3rem;
+}
+
+
+
+  .textintro span {
+    transform: translateY(80px); /* ปรับระยะลอยตอนเริ่ม */
+    animation: floatIn 1s forwards;
+  }
+
+
   .row-img {
     width: 60%;
     border-radius: 10px;
