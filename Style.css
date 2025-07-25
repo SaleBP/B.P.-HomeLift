@@ -786,10 +786,12 @@ font-family: 'Gilroy';
 /*===============================*/
 @media (min-width: 992px) and (max-width: 1199px)
  {
-  .top-bar {
-    height: 1rem;
-    min-height: 30px;
-  }
+
+    .top-bar {
+        height: 3.2rem;
+        width: 65%;
+        top: 15px;
+    }
 
     .hero1 {
         position: relative;
@@ -815,9 +817,11 @@ display: flex
 }
 
 #logosoftcolor {
-height: 2rem;
-top: 20px;
-left: 19px;
+  
+height: 3.5rem;
+        top: 1rem;
+        left: 4rem;
+        width: 4rem;
 }
 
 .lift-img {
@@ -830,10 +834,10 @@ margin-bottom: 2rem;
   }
 
 .displayFlex {
-    font-family: 'DB Adman X';
-
-    gap: 1.5rem;
-    font-size: clamp(0.6rem, 5vw, 0.8rem);
+        font-family: 'Gilroy';
+        gap: 5.5rem;
+        font-size: clamp(0.6rem, 5vw, 1.5rem);
+ 
 }
 
 .displayFlex2 {
@@ -912,9 +916,9 @@ margin-bottom: 2rem;
 
   
     .caption4 {
-font-size: 1.2rem;
-        left: 19%;
-        bottom: 15%;
+font-size: 2rem;
+        left: 29%;
+        bottom: 6%;
   }
 
     .map-crop {
@@ -934,7 +938,7 @@ font-size: 1.2rem;
     }
 
     .textmap a {
-        font-size: 1rem;
+font-size: 1.5rem;
         white-space: normal;
         line-height: 1.5;
     }
@@ -991,14 +995,16 @@ font-size: 1.8rem;
     }
 
 .center-message2 p {
-    font-size: 2.5rem;
-    text-align: left;
+font-size: 2.5rem;
+        text-align: center;
+        margin-top: 1rem;
 }
 
 .textmap {
-    padding-bottom: 35px;
-    margin-top: -10rem;
-    width: 20rem;
+padding-bottom: 5rem;
+        margin-top: -23rem;
+        width: 54rem;
+        left: 45%;
 }
 
 .center-message2 {
@@ -1013,14 +1019,10 @@ font-size: 1.8rem;
 }
 
 .textmap h6 {
-    font-family: 'Gilroy';
-    font-weight: normal;
-    font-size: 1.4rem;
-    color: #eb660e;
-    margin: 0;
-    text-align: left;
-    width: 42rem;
-    line-height: 2.1;
+
+        font-size: 2.4rem;
+        width: 42rem;
+        line-height: 2.1;
 }
 
 }
