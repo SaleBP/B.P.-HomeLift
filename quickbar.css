@@ -31,11 +31,11 @@
   #quickbar-toggle {
 background: #ffffff00;
         border: none;
-        font-size: 2rem;
+        font-size: 1.5rem;
         border-radius: 8px;
         padding: 0.2rem 0.5rem;
         cursor: pointer;
-        color: white;
+        color: #585858;
   }
 
   .quickbar-panel {

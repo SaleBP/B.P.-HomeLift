@@ -243,16 +243,15 @@ font-size: 1.5rem;
   }
 
   .drive3, .drive12 {
-  font-size: 2rem;
+  font-size: 1.4rem;
   width: 19rem;
   }
 
    
   .drive12 {
-
-        font-size: 2rem;
+        font-size: 1.4rem;
         width: 19rem;
-        margin-left: -4.5rem;
+        margin-left: -1.8rem;
     }
   
 
@@ -287,6 +286,8 @@ margin-bottom: 25rem;
 
     .drive11 {
   font-size: 1.3rem;
+  width: 17rem;
+  margin-left: -2.8rem;
 
   }
     .drive16 {

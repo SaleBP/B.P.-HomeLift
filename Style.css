@@ -1421,7 +1421,7 @@ font-size: 1.2rem;
 
     .text-overlay {
         position: absolute;
-        top: -26%;
+        top: 126%;
         left: 43%;
         width: 70%;
         padding: 1.5rem;
@@ -1429,7 +1429,7 @@ font-size: 1.2rem;
 
 .liftimg1 {
     width: 214%;
-    margin-top: 37rem;
+    margin-top: 7rem;
 }
 
 .text-overlay h2 {
@@ -1459,14 +1459,14 @@ font-size: 1.2rem;
     }
 
 .center-message2 p {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     text-align: left;
 }
 
 .textmap {
-    padding-bottom: 35px;
-    margin-top: -10rem;
-    width: 20rem;
+padding-bottom: 6rem;
+        margin-top: -28rem;
+        width: 20rem;
 }
 
 .center-message2 {
