@@ -1475,8 +1475,8 @@ padding-bottom: 6rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem;
-    padding-top: 40rem;
+    padding: 0px 2rem;
+    padding-top: 16rem;
     bottom: -3rem;
 }
 

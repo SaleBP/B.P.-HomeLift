@@ -280,7 +280,12 @@ margin-bottom: 25rem;
         margin-top: -2.8rem;
   }
 
-  .drive2, .drive4, .drive5, .drive13, .drive14 {
+   .drive2 {
+    font-size: 1.3rem; /* ลดขนาดตัวอักษร */
+    margin-top: -1rem;
+  }
+
+  .drive4, .drive5, .drive13, .drive14 {
     font-size: 1.5rem; /* ลดขนาดตัวอักษร */
   }
 
@@ -288,6 +293,7 @@ margin-bottom: 25rem;
   font-size: 1.3rem;
   width: 17rem;
   margin-left: -2.8rem;
+  margin-top: -1rem;
 
   }
     .drive16 {
