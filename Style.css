@@ -912,9 +912,9 @@ margin-bottom: 2rem;
 
   
     .caption4 {
-font-size: 2.5rem;
-        left: 30%;
-bottom: -9%;
+        font-size: 1.8rem;
+        left: 34%;
+        bottom: 0%;
   }
 
     .map-crop {
@@ -934,7 +934,7 @@ bottom: -9%;
     }
 
     .textmap a {
-font-size: 2.2rem;
+font-size: 1.7rem;
         line-height: 1.5;
     }
 
@@ -953,33 +953,33 @@ font-size: 2.2rem;
   }
 
     .text-overlay {
-        top: -26%;
-        left: 43%;
-        width: 70%;
+        top: 30%;
+        left: 71%;
+        width: 38%;
         padding: 1.5rem;
     }
 
 .liftimg1 {
-    width: 214%;
-    margin-top: 37rem;
+width: 100%;
+        margin-top: 37rem;
 }
 
 .text-overlay h2 {
-font-size: 3rem;
+font-size: 2rem;
         margin-bottom: 2.5rem;
         text-align: left;
 }
 
 .text-overlay h3 {
-font-size: 4.9rem;
+font-size: 3.9rem;
         margin-bottom: 0.6rem;
         text-align: left;
 }
 
 .text-overlay p {
-font-size: 2.4rem;
+font-size: 2rem;
         margin: 0;
-        width: 56rem;
+        width: 33rem;
         line-height: 1;
 }
 
@@ -997,8 +997,8 @@ font-size: 3rem;
 }
 
 .textmap {
-        padding-bottom: 5rem;
-        margin-top: -23rem;
+padding-bottom: 5rem;
+        margin-top: -2rem;
         width: 54rem;
         left: 44%;
     }

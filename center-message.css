@@ -174,14 +174,14 @@ text-align: left;
   
     .textintro {
 font-size: 14rem;
-        top: 38rem;
-        left: 52%;
+top: 37.5rem;
+left: 52%;
     }
 
 
 .center-message h1 {
 font-size: 3.5rem;
-margin-bottom: 1.8rem;
+margin-bottom: -2.2rem;
 }
 
 .center-message h2 {
@@ -190,41 +190,40 @@ margin-bottom: 1.8rem;
 }
 
 .center-message p {
-    font-size: 2.4rem;
-    color: #585858;
-    margin-bottom: 1rem;
+font-size: 2rem;
+margin-top: 5rem;
 }
 
 .center-message p2 {
-    font-size: 2.6rem;
-    color: #585858;
+    font-size: 1.8rem;
+margin-top: -1rem;
 }
 
 .static-image1 {
 
-width: 23%;
-margin-bottom: -16rem;
-margin-left: 31rem;
+        width: 18%;
+        margin-bottom: -16rem;
+        margin-left: 36rem;
 
 }
 
 .static-image2 {
-width: 31%;
-        margin-bottom: -15rem;
-        margin-left: 33rem;
+width: 24%;
+        margin-bottom: -17rem;
+        margin-left: 44rem;
     }
 
 .static-image4 {
-width: 30%;
+width: 23%;
         margin-bottom: -25rem;
-        margin-left: 38rem;
+        margin-left: 40rem;
 }
 
 
 .static-image5 {
-width: 70%;
+width: 43%;
         margin-bottom: -17rem;
-        margin-left: 36rem;
+        margin-left: 39rem;
 }
 
   }

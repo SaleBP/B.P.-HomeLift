@@ -124,3 +124,10 @@
     margin-bottom: 24rem;
 }
 }
+
+@media (min-width: 1200px) and (max-width: 1599px) {
+.scroll-track img {
+    height: 396px;
+    margin-top: -2rem;
+}
+}
