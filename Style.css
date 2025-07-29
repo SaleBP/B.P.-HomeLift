@@ -1447,7 +1447,7 @@ font-size: 1.2rem;
 .text-overlay p {
     font-size: 1.2rem;
     margin: 0;
-    width: 19rem;
+    width: 20rem;
     line-height: 1.1;
 }
 
@@ -1459,8 +1459,8 @@ font-size: 1.2rem;
     }
 
 .center-message2 p {
-    font-size: 1.8rem;
-    text-align: left;
+font-size: 1.8rem;
+        text-align: left;
 }
 
 .textmap {

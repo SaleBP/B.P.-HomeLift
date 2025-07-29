@@ -361,12 +361,25 @@ position: absolute;
     left: 2rem;
 }
 
+.custom-text p {
+font-size: 1.5rem;
+        margin-left: -5.3rem;
+        margin-top: 9rem;
+}
+
     .custom-text h1 {
         font-size: 3rem;
         margin-bottom: -8.5rem;
         margin-left: -5rem;
         width: 22rem;
     }
+
+.option-list {
+    padding: 3rem 2rem;
+    font-family: 'Gilroy', sans-serif;
+    margin-bottom: 30rem;
+}
+
 
 .option-items li {
     font-size: 1.3rem;
