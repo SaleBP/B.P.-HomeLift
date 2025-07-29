@@ -848,10 +848,9 @@ margin-bottom: 2rem;
 }
 
   .textintro {
-    top: 200px; /* ปรับให้ต่ำลงหรือสูงขึ้นตามความเหมาะสม */
-    font-size: 8rem; /* ✅ ปรับขนาดตัวอักษรให้เหมาะกับจอมือถือ */
-    text-align: center;
-    padding: 0 16px; /* เพิ่ม padding ป้องกันติดขอบจอ */
+ font-size: 14rem;
+        top: 47rem;
+        left: 51%;
   }
 
   .textintro span {
@@ -948,7 +947,9 @@ font-size: 2.2rem;
   }
 
   .image-wrapper {
-    margin-top: 476px;
+  width: 98%;
+    height: 111%;
+  
   }
 
     .text-overlay {
