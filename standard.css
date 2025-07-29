@@ -185,3 +185,40 @@ font-size: 3.5rem;
     }  
 
 }
+
+@media (min-width: 1200px) and (max-width: 1599px) {
+  
+.stand-text {
+    text-align: right;
+padding-right: 2rem;
+}
+
+.stand-text h1 {
+font-size: 6rem;
+        margin-bottom: 19.5rem;
+        left: 12.7rem;
+}
+
+.stand-text p {
+font-size: 3rem;
+        left: 12.5rem;
+        top: -19.5rem;
+}
+
+.stand-img {
+        top: 9%;
+        left: -4%;
+        width: 36%;
+}
+
+    .spec-list li {
+font-size: 3rem;
+        margin: 3.5rem;
+        height: 5rem;
+        width: 91rem;
+        left: -8rem;
+        top: -20rem;
+        font-weight: normal;
+    }  
+
+}

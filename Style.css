@@ -935,8 +935,7 @@ bottom: -9%;
     }
 
     .textmap a {
-font-size: 1.5rem;
-        white-space: normal;
+font-size: 2.2rem;
         line-height: 1.5;
     }
 
@@ -997,11 +996,11 @@ font-size: 3rem;
 }
 
 .textmap {
-padding-bottom: 5rem;
+        padding-bottom: 5rem;
         margin-top: -23rem;
         width: 54rem;
-        left: 45%;
-}
+        left: 44%;
+    }
 
 .center-message2 {
 margin-top: -1rem;
@@ -1009,7 +1008,7 @@ margin-top: -1rem;
 
 .textmap h6 {
 
-        font-size: 2.4rem;
+font-size: 3.4rem;
         width: 42rem;
         line-height: 2.1;
 }

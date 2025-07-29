@@ -39,7 +39,6 @@
     font-weight: normal;
     font-size: 2rem;
     color: #585858;
-    line-height: 1;
 }
 
 .drive3 {
@@ -48,6 +47,7 @@
     font-size: 1.6rem;
     color: #585858;
     line-height: 1;
+    margin-top: 4rem;
 }
 
 .drive4 {
@@ -125,8 +125,7 @@
     font-family: 'DB Adman X';
     font-weight: normal;
     font-size: 2rem;
-    color: #585858;
-    line-height: 1;
+    color: #585858; 
 }
 
 .drive12 {
@@ -135,6 +134,7 @@
     font-size: 1.6rem;
     color: #585858;
     line-height: 1;
+    margin-top: 4rem;
 }
 
 .drive13 {
@@ -347,6 +347,7 @@ margin-top: 11rem;
   .drive3, .drive12 {
   font-size: 3rem;
    width: 57rem;
+   margin-top: 5rem;
   }
 
    
@@ -384,7 +385,7 @@ font-size: 2rem;
 
   .drive2, .drive4, .drive5, .drive13, .drive14 {
   font-size: 2.2rem;
-        margin-top: -1rem;
+        margin-top: 3rem;
   }
 
     .drive11 {
@@ -432,9 +433,10 @@ text-align: right;
   }
 
   .safety-header p {
-        font-size: 2.5rem;
+font-size: 3rem;
         margin-left: 0rem;
         margin-top: 1rem;
+        padding-right: 0.4rem;
   }
 
   .drive-header {
@@ -449,6 +451,7 @@ margin-top: 11rem;
   .drive3, .drive12 {
   font-size: 3rem;
    width: 57rem;
+   margin-top: 6rem;
   }
 
    
@@ -486,7 +489,7 @@ font-size: 2rem;
 
   .drive2, .drive4, .drive5, .drive13, .drive14 {
   font-size: 2.5rem;
-        margin-top: -1rem;
+        margin-top: 3rem;
   }
 
     .drive11 {
@@ -517,7 +520,7 @@ font-size: 2.5rem;
 width: 31rem;
   }
  .lift-hhf {
-        top: -167rem;
+        top: -176rem;
         left: 54rem;
     }
 
