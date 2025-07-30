@@ -228,72 +228,6 @@ width: 43%;
 
   }
   
-@media (max-width: 768px) {
-
-  .center-message {
-    text-align: left;
-    padding: 0 2rem;
-    align-items: flex-start;
-}
-
-
-  
-.textintro { 
-font-size: 6rem;
-        top: 42rem;
-transform: translateX(-32%);
-      }
-
-.center-message h1 {
-    font-size: 2rem;
-    margin-bottom: -0.2rem;
-}
-
-.center-message h2 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.center-message p {
-    font-size: 1.4rem;
-    color: #585858;
-    margin-bottom: 1rem;
-}
-
-.center-message p2 {
-    font-size: 1.6rem;
-    color: #585858;
-}
-
-.static-image1 {
-
-width: 30%;
-margin-bottom: 0rem;
-margin-left: 7rem;
-
-}
-
-.static-image2 {
-    width: 36%;
-    margin-bottom: -2rem;
-    margin-left: 8rem;
-}
-
-.static-image4 {
-    width: 41%;
-    margin-bottom: -2rem;
-    margin-left: 8rem;
-}
-
-
-.static-image5 {
-    width: 71%;
-    margin-bottom: -1rem;
-    margin-left: 3rem;
-}
-
-  }
-
 @media (min-width: 992px) and (max-width: 1199px) {
 
   .center-message {
@@ -360,3 +294,137 @@ width: 74%;
 }
 
   }
+
+@media (min-width: 769px) and (max-width: 991px)  {
+
+  .center-message {
+text-align: left;
+        padding: 10rem 5rem;
+        align-items: flex-start;
+}
+
+    .textintro {
+font-size: 10rem;
+        top: 39rem;
+        transform: translateX(-48%);
+    }
+
+
+.center-message h1 {
+font-size: 3rem;
+margin-bottom: -0.2rem;
+}
+
+.center-message h2 {
+font-size: 1.8rem;
+margin-bottom: 0.5rem;
+}
+
+.center-message p {
+font-size: 1.9rem;
+color: #585858;
+margin-bottom: 1rem;
+}
+
+.center-message p2 {
+font-size: 1.6rem;
+color: #585858;
+}
+
+.static-image1 {
+width: 20%;
+        margin-bottom: -17rem;
+        margin-left: 25rem;
+
+}
+
+.static-image2 {
+        width: 25%;
+        margin-bottom: -15rem;
+        margin-left: 28rem;
+    }
+
+.static-image4 {
+        width: 27%;
+        margin-bottom: -25rem;
+        margin-left: 32rem;
+}
+
+
+.static-image5 {
+        width: 44%;
+        margin-bottom: -9rem;
+        margin-left: 26rem;
+}
+
+  }
+
+@media (max-width: 768px) {
+
+  .center-message {
+    text-align: left;
+    padding: 0 2rem;
+    align-items: flex-start;
+}
+
+
+  
+.textintro { 
+font-size: 6rem;
+        top: 42rem;
+transform: translateX(-32%);
+      }
+
+.center-message h1 {
+    font-size: 2rem;
+    margin-bottom: -0.2rem;
+}
+
+.center-message h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.center-message p {
+    font-size: 1.4rem;
+    color: #585858;
+    margin-bottom: 1rem;
+}
+
+.center-message p2 {
+    font-size: 1.6rem;
+    color: #585858;
+}
+
+.static-image1 {
+
+width: 30%;
+margin-bottom: 0rem;
+margin-left: 7rem;
+
+}
+
+.static-image2 {
+    width: 36%;
+    margin-bottom: -2rem;
+    margin-left: 8rem;
+}
+
+.static-image4 {
+    width: 41%;
+    margin-bottom: -2rem;
+    margin-left: 8rem;
+}
+
+
+.static-image5 {
+    width: 71%;
+    margin-bottom: -1rem;
+    margin-left: 3rem;
+}
+
+  }
+
+
+
+

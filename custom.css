@@ -600,6 +600,224 @@ top: 18rem;
 
 }
 
+@media (min-width: 769px) and (max-width: 991px)  {
+  .custom-text {
+text-align: left;
+        left: 2rem;
+        top: -18rem;
+}
+
+    .custom-text h1 {
+font-size: 4rem;
+        margin-bottom: -8.5rem;
+        margin-left: -18rem;
+        width: 29rem;
+    }
+
+.custom-text p {
+font-size: 2rem;
+        margin-left: -18rem;
+        margin-top: 10rem;
+}
+
+.option-list {
+padding: 5rem 4rem;
+        margin-top: -20rem;
+}
+
+.option-items li {
+font-size: 1.8rem;
+        width: 30rem;
+        margin-bottom: 3rem;
+}
+
+.option-detail-image1-1,
+.option-detail-image1-2,
+.option-detail-image1-4 {
+    width: 66%;
+
+}
+
+    .option-detail-image1-2 {
+    top: 5rem;
+        left: -4rem;
+    }
+
+
+    .option-detail-image1-4 {
+    top: -4rem;
+        left: 5.5rem;
+    }
+
+    .option-detail-image1-1 {
+   top: -9rem;
+        left: -4rem;
+    }
+
+.option-detail-image2-1,
+.option-detail-image2-2,
+.option-detail-image2-3,
+.option-detail-image2-5 {
+    width: 74%;
+}
+
+.option-detail-image2-1 {
+        top: -9rem;
+        left: 2.6rem;
+}
+
+.option-detail-image2-2 {
+top: 7rem;
+        left: -6.4rem;
+}
+
+.option-detail-image2-3 {
+top: -7rem;
+        left: -6.4rem;
+}
+
+.option-detail-image2-5 {
+        top: 5rem;
+        left: 2.6rem;
+}
+
+.option-detail-image3-1 {
+top: 1rem;
+        left: -1rem;
+}
+
+.option-detail-image3-2 {
+top: 6rem;
+        left: -1rem;
+}
+
+.option-detail-image3-3 {
+top: 11rem;
+        left: -1rem;
+}
+
+.option-detail-image3-4 {
+top: 16rem;
+        left: -1rem;
+}
+
+.option-detail-image3-5 {
+top: 21rem;
+        left: -1rem;
+}
+
+.option-detail-image4-1 {
+
+width: 123%;
+max-width: 150%;
+}
+
+    .option-detail-image4-1 {
+top: -3rem;
+left: -5rem;
+
+}
+
+
+
+    .option-detail-image5-1 {
+top: -3rem;
+        left: -6rem;
+    }
+
+
+    .option-detail-image5-2 {
+        top: 2rem;
+        left: 3rem;
+    }
+
+    .option-detail-image5-3 {
+top: -3rem;
+        left: 12rem;
+    }
+
+    .option-detail-image5-4 {
+        top: 19rem;
+        left: -6rem;
+    }
+
+    .option-detail-image5-5 {
+top: 26rem;
+        left: 3rem;
+    }
+
+    .option-detail-image5-6 {
+top: 22.5rem;
+        left: 12rem;
+    }
+
+.option-detail-image5-1,
+.option-detail-image5-2,
+.option-detail-image5-3,
+.option-detail-image5-4,
+.option-detail-image5-5,
+.option-detail-image5-6 {
+    width: 35%;
+}
+
+
+.option-detail-image6-1,
+ .option-detail-image6-2,
+  .option-detail-image6-3,
+   .option-detail-image6-4 {
+    width: 53%;
+
+}
+
+.option-detail-image6-4 {
+top: 2rem;
+        left: -12rem;
+}
+
+.option-detail-image6-3 {
+        top: 9rem;
+        left: 0rem;
+}
+
+.option-detail-image6-2 {
+top: 19rem;
+        left: -12rem;
+}
+
+.option-detail-image6-1 {
+top: 27rem;
+        left: 0rem;
+}
+
+.option-detail-image7-1,
+ .option-detail-image7-2,
+  .option-detail-image7-3 {
+    width: 63%;
+
+}
+
+.option-detail-image7-1 {
+top: 20rem;    
+        left: -14rem;
+}
+
+.option-detail-image7-2 {
+top: 10rem;
+        left: -3rem;
+}
+
+.option-detail-image7-3 {
+top: 31rem;
+        left: -3rem;
+}
+
+.option-detail-inline {
+ 
+    left: -0.4rem;
+    top: -0.8rem;
+    font-size: 1.2rem;
+}
+}
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .custom-text {
