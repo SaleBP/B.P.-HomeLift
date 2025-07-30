@@ -610,13 +610,13 @@ text-align: left;
     .custom-text h1 {
 font-size: 4rem;
         margin-bottom: -8.5rem;
-        margin-left: -18rem;
+        margin-left: -21rem;
         width: 29rem;
     }
 
 .custom-text p {
 font-size: 2rem;
-        margin-left: -18rem;
+        margin-left: -22rem;
         margin-top: 10rem;
 }
 
@@ -721,34 +721,34 @@ left: -5rem;
 
 
     .option-detail-image5-1 {
-top: -3rem;
+top: 8rem;
         left: -6rem;
     }
 
 
     .option-detail-image5-2 {
-        top: 2rem;
-        left: 3rem;
+            top: 8rem;
+        left: 0rem;
     }
 
     .option-detail-image5-3 {
-top: -3rem;
-        left: 12rem;
+top: 5rem;
+        left: 6rem;
     }
 
     .option-detail-image5-4 {
-        top: 19rem;
+top: 24rem;
         left: -6rem;
     }
 
     .option-detail-image5-5 {
-top: 26rem;
-        left: 3rem;
+        top: 25rem;
+        left: 0rem;
     }
 
     .option-detail-image5-6 {
-top: 22.5rem;
-        left: 12rem;
+top: 23.5rem;
+        left: 6rem;
     }
 
 .option-detail-image5-1,
@@ -765,27 +765,27 @@ top: 22.5rem;
  .option-detail-image6-2,
   .option-detail-image6-3,
    .option-detail-image6-4 {
-    width: 53%;
+    width: 65%;
 
 }
 
 .option-detail-image6-4 {
-top: 6rem;
+        top: 8rem;
         left: -8rem;
 }
 
 .option-detail-image6-3 {
-top: 10rem;
+top: 12rem;
         left: 2rem;
 }
 
 .option-detail-image6-2 {
-        top: 19rem;
+top: 22rem;
         left: -8rem;
 }
 
 .option-detail-image6-1 {
-top: 23rem;
+top: 26rem;
         left: 2rem;
 }
 
