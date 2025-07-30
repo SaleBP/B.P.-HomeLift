@@ -172,6 +172,34 @@ width: 1920px;
 
     }
 
+@media (min-width: 769px) and (max-width: 991px) {
+  .aboutus-crop {
+  margin-top: 7rem;
+}
+
+.aboutus1 {
+    position: absolute;
+    right: 45rem;
+    bottom: -22rem;
+    width: 100%;
+}
+
+
+    .caption-overlay {
+    top: 5%;
+    right: 5%;
+    line-height: 1;
+    font-size: 3rem;
+    width: 46rem;
+}
+
+.caption-overlay2 {
+        right: 5%;
+        font-size: 1.5rem;
+        width: 90%;
+}
+
+    }    
 
 @media (min-width: 1200px) and (max-width: 1599px){
   .aboutus-crop {

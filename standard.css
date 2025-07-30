@@ -155,6 +155,44 @@ color: #eb660e;
 
 }
 
+@media (min-width: 769px) and (max-width: 991px) {
+  
+.stand-text {
+    text-align: right;
+
+}
+
+.stand-text h1 {
+font-size: 3.5rem;
+margin-bottom: 19.5rem;
+left: 6.7rem;
+}
+
+.stand-text p {
+    font-size: 2rem;
+    left: 6.5rem;
+    top: -19.5rem;
+}
+
+.stand-img {
+        top: 9%;
+        left: -4%;
+        width: 36%;
+}
+
+    .spec-list li {
+        font-size: 2rem;
+        margin: 2.5rem;
+        height: 2.5rem;
+        width: 51rem;
+        left: -4.7rem;
+        top: -23rem;
+
+    }  
+
+}
+
+
 @media (min-width: 992px) and (max-width: 1199px) {
   
 .stand-text {

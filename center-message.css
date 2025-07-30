@@ -305,7 +305,7 @@ text-align: left;
 
     .textintro {
 font-size: 10rem;
-        top: 39rem;
+        top: 31rem;
         transform: translateX(-48%);
     }
 
@@ -321,9 +321,9 @@ margin-bottom: 0.5rem;
 }
 
 .center-message p {
-font-size: 1.9rem;
-color: #585858;
-margin-bottom: 1rem;
+font-size: 1.5rem;
+        color: #585858;
+        margin-bottom: 1rem;
 }
 
 .center-message p2 {
