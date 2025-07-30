@@ -239,9 +239,9 @@ width: 43%;
 
   
 .textintro { 
-        font-size: 6rem;
-        top: 41rem;
-        left: 62%;
+font-size: 6rem;
+        top: 42rem;
+transform: translateX(-32%);
       }
 
 .center-message h1 {
@@ -307,7 +307,7 @@ text-align: left;
     .textintro {
         font-size: 12rem;
         top: 46rem;
-        left: 47%;
+        transform: translateX(-55%);
     }
 
 
