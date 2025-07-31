@@ -452,7 +452,8 @@ margin-top: 10rem;
   }
 
   .drive1, .drive10 {
-    font-size: 4rem; /* ลดขนาดตัวอักษร */
+          font-size: 4rem;
+        margin-right: -2.5rem;
   }
 
   .drive3, .drive12 {
@@ -466,7 +467,7 @@ margin-top: 10rem;
   .drive12 {
         font-size: 1.4rem;
         width: 37rem;
-        margin-left: 8.6rem;
+        margin-left: -0.4rem;
     }
   
 
