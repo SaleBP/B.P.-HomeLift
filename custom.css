@@ -1049,9 +1049,9 @@ font-size: 5rem;
     }
 
 .custom-text p {
-font-size: 3rem;
+font-size: 2rem;
         width: 43rem;
-        margin-top: 10.2rem;
+        margin-top: 9.2rem;
         margin-left: -36rem;
 }
 
@@ -1060,44 +1060,44 @@ padding: 5rem 5rem;
 }
 
 .option-items li {
-font-size: 2.5rem;
+font-size: 2rem;
         width: 35rem;
-        margin-bottom: 5.2rem;
+        margin-bottom: 4.2rem;
 }
 
 .option-detail-image1-1,
 .option-detail-image1-2,
 .option-detail-image1-4 {
-    width: 74%;
+    width: 60%;
 
 }
 
     .option-detail-image1-2 {
-top: 10rem;
-        left: -10rem;
+top: -4rem;
+        left: 13rem;
     }
 
 
     .option-detail-image1-4 {
-top: 0rem;
-        left: 10rem;
+top: -4rem;
+        left: -3rem;
     }
 
     .option-detail-image1-1 {
-top: -17rem;
-        left: -10rem;
+        top: -4rem;
+        left: -19rem;
     }
 
 .option-detail-image2-1,
 .option-detail-image2-2,
 .option-detail-image2-3,
 .option-detail-image2-5 {
-    width: 74%;
+    width: 66%;
 }
 
 .option-detail-image2-1 {
 top: -14rem;
-        left: 10.6rem;
+        left: 0.6rem;
 }
 
 .option-detail-image2-2 {
@@ -1106,82 +1106,83 @@ top: 6rem;
 }
 
 .option-detail-image2-3 {
-top: -20rem;
-        left: -7.4rem;
+        top: -14rem;
+        left: -16.4rem;
 }
 
 .option-detail-image2-5 {
-top: 12rem;
+top: 6rem;
         left: 10.6rem;
 }
 
 .option-detail-image3-1 {
-    top: 1rem;
-    left: 0rem;
+top: 1rem;
+        left: -15rem;
 }
 
 .option-detail-image3-2 {
-    top: 8rem;
-    left: 0rem;
+top: 8rem;
+        left: -6rem;
 }
 
 .option-detail-image3-3 {
-    top: 15rem;
-    left: 0rem;
+top: 15rem;
+        left: 4rem;
 }
 
 .option-detail-image3-4 {
-    top: 22rem;
-    left: 0rem;
+top: 22rem;
+        left: 3rem;
 }
 
 .option-detail-image3-5 {
-    top: 29rem;
-    left: 0rem;
+top: 29rem;
+        left: -3rem;
 }
 
 .option-detail-image4-1 {
 
-width: 123%;
+width: 114%;
 max-width: 150%;
 }
 
     .option-detail-image4-1 {
-top: -6rem;
-left: -7rem;
+        top: -7rem;
+        left: -11rem;
+        rotate: 40deg;
     }
 
 
 
     .option-detail-image5-1 {
-top: -3rem;
-        left: -6rem;
+top: 19rem;
+        left: -23rem;
     }
 
 
     .option-detail-image5-2 {
-        top: 2rem;
-        left: 4rem;
+top: 15rem;
+        left: -15rem;
     }
 
     .option-detail-image5-3 {
-top: -3rem;
-        left: 14rem;
+top: 17rem;
+        left: -7rem;
     }
 
     .option-detail-image5-4 {
-top: 25rem;
-        left: -6rem;
+top: 19rem;
+        left: 1rem;
     }
 
     .option-detail-image5-5 {
-top: 32rem;
-        left: 4rem;
+top: 21rem;
+        left: 9rem;
     }
 
     .option-detail-image5-6 {
-top: 28.5rem;
-        left: 14rem;
+top: 24.5rem;
+        left: 17rem;
     }
 
 .option-detail-image5-1,
@@ -1190,7 +1191,7 @@ top: 28.5rem;
 .option-detail-image5-4,
 .option-detail-image5-5,
 .option-detail-image5-6 {
-    width: 35%;
+    width: 29%;
 }
 
 
@@ -1198,56 +1199,55 @@ top: 28.5rem;
  .option-detail-image6-2,
   .option-detail-image6-3,
    .option-detail-image6-4 {
-    width: 66%;
+    width: 58%;
 
 }
 
 .option-detail-image6-4 {
-top: 4rem;
-        left: -10rem;
+top: 27rem;
+        left: -32rem;
 }
 
 .option-detail-image6-3 {
-top: 9rem;
-        left: 9rem;
+        top: 27rem;
+        left: -16rem;
 }
 
 .option-detail-image6-2 {
-top: 28rem;
-        left: -10rem;
+        top: 27rem;
+        left: 0rem;
 }
 
 .option-detail-image6-1 {
-top: 33rem;
-        left: 9rem;
+        top: 27rem;
+        left: 16rem;
 }
 
 .option-detail-image7-1,
  .option-detail-image7-2,
   .option-detail-image7-3 {
-    width: 63%;
+    width: 67%;
 
 }
 
 .option-detail-image7-1 {
-top: 12rem;
-        left: -16rem;
+        top: 22rem;
+        left: -25rem;
 }
 
 .option-detail-image7-2 {
-top: 21rem;
-        left: -2rem;
+        top: 22rem;
+        left: -8rem;
 }
 
 .option-detail-image7-3 {
-top: 30rem;
-        left: 13rem;
+        top: 22rem;
+        left: 10rem;
 }
 
 .option-detail-inline {
- 
-    left: -0.4rem;
-    top: -0.8rem;
-    font-size: 2.2rem;
+left: -0.4rem;
+        top: -0.8rem;
+        font-size: 1.7rem;
 }
 }

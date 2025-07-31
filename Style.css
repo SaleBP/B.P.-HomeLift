@@ -138,10 +138,10 @@ body::-webkit-scrollbar {
 
 
 .top-bar {
-  position: fixed;
-  height: 50px;
-  top: 10px;
-  left: 50%;
+position: fixed;
+    height: 50px;
+    top: 10px;
+    left: 84%;
   transform: translate(-50%, 20px); /* ✅ รวม X และ Y */
   width: 90%;
   max-width: 1728px;
@@ -218,7 +218,7 @@ body::-webkit-scrollbar {
 .displayFlex {
 font-family: 'Gilroy';
     display: flex;
-    gap: 10.5rem;
+    gap: 4.5rem;
     font-size: clamp(1rem, 5vw, 1.2rem);
 }
 
@@ -787,9 +787,10 @@ font-family: 'Gilroy';
  {
 
     .top-bar {
-        height: 3.2rem;
+height: 3.2rem;
         width: 65%;
         top: 15px;
+        left: 78%;
     }
 
     .hero1 {
@@ -830,9 +831,9 @@ margin-bottom: 2rem;
   }
 
 .displayFlex {
-        font-family: 'Gilroy';
-        gap: 5.5rem;
-        font-size: clamp(0.6rem, 5vw, 1.5rem);
+font-family: 'Gilroy';
+        gap: 4.5rem;
+        font-size: clamp(0.6rem, 5vw, 1.2rem);
  
 }
 
@@ -950,7 +951,7 @@ font-size: 1.7rem;
   }
 
     .text-overlay {
-        top: 30%;
+top: 45%;
         left: 71%;
         width: 38%;
         padding: 1.5rem;
@@ -968,16 +969,16 @@ font-size: 2rem;
 }
 
 .text-overlay h3 {
-font-size: 3.9rem;
+font-size: 1.9rem;
         margin-bottom: 0.6rem;
         text-align: left;
 }
 
 .text-overlay p {
-font-size: 2rem;
+font-size: 1.6rem;
         margin: 0;
-        width: 33rem;
-        line-height: 1;
+        width: 29rem;
+        line-height: 1.2;
 }
 
     .center-message2 h1 {
@@ -1001,7 +1002,7 @@ padding-bottom: 5rem;
     }
 
 .center-message2 {
-margin-top: -1rem;
+margin-top: -25rem;
 }
 
 .textmap h6 {

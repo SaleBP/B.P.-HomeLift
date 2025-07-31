@@ -555,12 +555,12 @@ text-align: right;
 }
 
   .safety-header h8 {
-        font-size: 7rem;
+        font-size: 5rem;
         margin-left: 0rem;
   }
 
   .safety-header p {
-font-size: 3rem;
+font-size: 2rem;
         margin-left: 0rem;
         margin-top: 1rem;
         padding-right: 0.4rem;
@@ -575,69 +575,76 @@ margin-top: 11rem;
     font-size: 5rem; /* ลดขนาดตัวอักษร */
   }
 
-  .drive3, .drive12 {
-  font-size: 3rem;
-   width: 57rem;
-   margin-top: 6rem;
+  .drive3{
+font-size: 1.7rem;
+        width: 43rem;
+        margin-top: 6rem;
   }
 
    
   .drive12 {
-        font-size: 2.5rem;
-        width: 63rem;
-        margin-left: 9.7rem;
+font-size: 1.7rem;
+        width: 44rem;
+        margin-left: 28.7rem;
     }
   
 
 
    .drive6, .drive15 {
-font-size: 2rem;
+font-size: 1.5rem;
         margin-bottom: 25rem;
   }
 
    .drive7 {
-font-size: 2rem;
+font-size: 1.5rem;
         width: 11rem;
         margin-left: 28rem;
-        margin-top: -17.9rem;
+        margin-top: -13.5rem;
   }
 
    .drive8 {
-   font-size: 2.5rem;
+   font-size: 1.7rem;
 
   }
 
   .drive9 {
- font-size: 2.5rem;
+font-size: 1.7rem;
         width: 19rem;
         margin-left: 28rem;
-        margin-top: -4.8rem;
+        margin-top: -3.4rem;
   }
 
-  .drive2, .drive4, .drive5, .drive13, .drive14 {
-  font-size: 2.5rem;
-        margin-top: 3rem;
+  .drive2{
+  font-size: 2rem;
+        margin-top: -1.5rem;
+  }
+
+  .drive4, .drive5, .drive13, .drive14 {
+font-size: 1.7rem;
+        margin-top: 2.5rem;
   }
 
     .drive11 {
-  font-size: 2.6rem;
+font-size: 2rem;
+        margin-top: -1rem;
 
   }
     .drive16 {
-font-size: 2rem;
-        margin-top: -18rem;
+        font-size: 1.5rem;
+        margin-top: -13.rem;
 }
 
     .drive17 {
-font-size: 2.5rem;
+font-size: 1.7rem;
 
   }
 
     .drive18 {
-        font-size: 2.5rem;
-        margin-top: -5rem;
+font-size: 1.7rem;
+        margin-top: -3.4rem;
         margin-right: -20rem;
-  }
+    }
+  
 
 .drive-header1 {
         margin-right: 2rem;
@@ -647,12 +654,12 @@ font-size: 2.5rem;
 width: 31rem;
   }
  .lift-hhf {
-        top: -189rem;
-        left: 54rem;
+top: -156rem;
+        left: 47rem;
     }
 
      .lift-thf {
-top: -82rem;
-left: -35rem;
-    }
+    top: -77rem;
+    left: -29rem;
+}
 }

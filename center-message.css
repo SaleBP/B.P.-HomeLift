@@ -90,6 +90,13 @@ font-family: 'DB Adman X';
     color: #585858;
 }
 
+.center-message .p2 {
+font-family: 'DB Adman X';
+    font-size: 1.6rem;
+    margin-top: -1rem;
+
+}
+
 .static-image1 {
 width: 10%;
     height: auto;
@@ -181,40 +188,42 @@ left: 52%;
 
 .center-message h1 {
 font-size: 3.5rem;
-margin-bottom: -2.2rem;
+        margin-bottom: -1.8rem;
+        width: 32rem;
 }
 
 .center-message h2 {
-    font-size: 3.5rem;
-    margin-bottom: 0.5rem;
+font-size: 2rem;
+        margin-bottom: 0.5rem;
 }
 
 .center-message p {
-font-size: 2rem;
-margin-top: 5rem;
+font-size: 1.8rem;
+        margin-top: 5rem;
+        width: 38rem;
 }
 
 .center-message p2 {
-    font-size: 1.8rem;
-margin-top: -1rem;
+font-size: 1.8rem;
+        margin-top: 1rem;
+        width: 37rem;
 }
 
 .static-image1 {
-
-        width: 18%;
+width: 14%;
         margin-bottom: -16rem;
         margin-left: 36rem;
 
 }
 
 .static-image2 {
-width: 24%;
-        margin-bottom: -17rem;
+width: 18%;
+        margin-bottom: -14rem;
         margin-left: 44rem;
     }
 
 .static-image4 {
-width: 23%;
+width: 18%;
         margin-bottom: -25rem;
         margin-left: 40rem;
 }
