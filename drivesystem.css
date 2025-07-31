@@ -436,7 +436,7 @@ text-align: right;
 }
 
   .safety-header h8 {
-        font-size: 5rem;
+        font-size: 4rem;
         margin-left: 0rem;
   }
 
@@ -456,17 +456,17 @@ margin-top: 10rem;
   }
 
   .drive3, .drive12 {
-  font-size: 1.7rem;
-        width: 32rem;
+        font-size: 1.4rem;
+        width: 29rem;
         margin-top: 4rem;
         line-height: normal;
   }
 
    
   .drive12 {
-font-size: 1.7rem;
-        width: 36rem;
-        margin-left: 6.4rem;
+        font-size: 1.4rem;
+        width: 37rem;
+        margin-left: 8.6rem;
     }
   
 
@@ -495,24 +495,30 @@ font-size: 1.7rem;
         margin-top: -3.4rem;
   }
 
-  .drive2, .drive4, .drive5 {
-font-size: 1.7rem;
-        margin-top: 3rem;
+    .drive2 {
+        font-size: 1.7rem;
+        margin-top: -1rem;
         width: 43rem;
+    }
+
+.drive4, .drive5 {
+        font-size: 1.4rem;
+        margin-top: 3rem;
+        width: 30rem;
   }
 
 .drive13 {
-        font-size: 1.7rem;
+        font-size: 1.4rem;
         margin-top: 3rem;
-        width: 43rem;
-        margin-left: -7rem;
+        width: 26rem;
+        margin-left: 11rem;
   }
 
 .drive14 {
         font-size: 1.7rem;
         margin-top: 3rem;
         width: 43rem;
-        margin-left: 0rem;
+        margin-left: -17rem;
   }
 
     .drive11 {
@@ -539,9 +545,18 @@ font-size: 2.5rem;
         margin-right: 1.5rem;
 }
 
-  .lift-hhf, .lift-thf {
-width: 0;
+  .lift-hhf {
+        width: 41%;
+        left: 32rem;
+        top: -151rem;
   }
+
+ .lift-thf {
+        width: 44%;
+        left: -25rem;
+        top: -71rem;
+  }
+
 
 }
 

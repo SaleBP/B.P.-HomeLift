@@ -186,11 +186,11 @@ width: 1920px;
 
 
     .caption-overlay {
-    top: 5%;
-    right: 5%;
-    line-height: 1;
-    font-size: 3rem;
-    width: 46rem;
+        top: 1%;
+        right: 15%;
+        line-height: 1;
+        font-size: 3rem;
+        width: 46rem;
 }
 
 .caption-overlay2 {
