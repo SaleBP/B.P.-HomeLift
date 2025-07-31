@@ -232,29 +232,29 @@ padding-right: 2rem;
 }
 
 .stand-text h1 {
-font-size: 6rem;
-        margin-bottom: 19.5rem;
-        left: 12.7rem;
+        font-size: 4rem;
+        margin-bottom: 18.5rem;
+        left: 15.7rem;
 }
 
 .stand-text p {
-font-size: 3rem;
-        left: 12.5rem;
-        top: -19.5rem;
+        font-size: 2rem;
+        left: 15.5rem;
+        top: -18.5rem;
 }
 
 .stand-img {
-        top: 9%;
-        left: -4%;
-        width: 36%;
+top: 2%;
+        left: 10%;
+        width: 31%;
 }
 
     .spec-list li {
-font-size: 3rem;
-        margin: 3.5rem;
-        height: 5rem;
+        font-size: 2rem;
+        margin: 1.5rem;
+        height: 4rem;
         width: 91rem;
-        left: -8rem;
+        left: -13.5rem;
         top: -20rem;
         font-weight: normal;
     }  
