@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>PSV Simple</title>
+<style>
+  body, html { margin: 0; height: 100%; }
+  #viewer { width: 100%; height: 100vh; background: black; }
+</style>
+</head>
+<body>
+<div id="viewer"></div>
+
+<script src="https://unpkg.com/three@0.128.0/build/three.min.js"></script>
+<script src="https://unpkg.com/photo-sphere-viewer@4.5.0/dist/photo-sphere-viewer.js"></script>
+
+<script>
+  new PhotoSphereViewer({
+    container: document.getElementById('viewer'),
+    panorama: 'https://photo-sphere-viewer.js.org/assets/sphere.jpg',
+  });
+</script>
+
+</body>
+</html>
