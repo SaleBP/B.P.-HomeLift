@@ -139,9 +139,9 @@ body::-webkit-scrollbar {
 
 .top-bar {
 position: fixed;
-  height: 50px;
-  top: 10px;
-  left: 15%;
+    height: 50px;
+    top: 10px;
+    left: 84%;
   transform: translate(-50%, 20px); /* ✅ รวม X และ Y */
   width: 90%;
   max-width: 1728px;
@@ -172,7 +172,7 @@ position: fixed;
 #logosoftcolor {
   position: fixed;
   top: 5px;
-  right: 1%;
+  left: 1.6rem;
   width: 3rem;
   height: 3.5rem;
   background: url('Logo soft color.png') no-repeat center center;
@@ -454,7 +454,69 @@ font-family: 'DB Adman X';
   height: auto;
 }
 
+.hero1 {
+position: relative;
+    width: 100%;
+    overflow: hidden;
+    top: -38rem;
+}
 
+.img-wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.img1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  clip-path: inset(0% 100% 100% 0%);
+  animation: revealBox 1.2s linear 3.2s forwards; /* ⏱ เพิ่มเวลาเล็กน้อยด้วย */
+  will-change: clip-path;
+  margin-bottom: -10rem;
+}
+
+@keyframes revealBox {
+  0% {
+    clip-path: inset(10% 100% 100% 10%);
+  }
+  60% {
+    clip-path: inset(5% 30% 30% 5%);
+  }
+  80% {
+    clip-path: inset(2% 12% 12% 2%);
+  }
+  92% {
+    clip-path: inset(1% 4% 4% 1%);
+  }
+  100% {
+    clip-path: inset(0% 0% 0% 0%);
+  }
+}
+
+.homelift {
+  text-align: left;   /* จัดแนวรูปใน container */
+}
+
+.lift-img {
+  width: 40%;           /* ขนาดรูป 40% */
+  height: auto;         /* รักษาสัดส่วน */
+}
+
+
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px); /* เลื่อนลงก่อน */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  will-change: opacity, transform;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 /*===============================*/
 /*         VIDEO SECTION        */
@@ -729,9 +791,9 @@ height: 3.2rem;
 
     .hero1 {
         width: 113%;
-        top: -15rem;
-        left: 0rem;
-        height: 55rem;
+        top: -14rem;
+        left: -11rem;
+        height: 53rem;
     }
 
 
@@ -790,7 +852,6 @@ font-family: 'Gilroy';
     animation: floatIn 1s forwards;
   }
 
-  
 
   .row-img {
     width: 60%;
@@ -1425,9 +1486,12 @@ font-size: 2.5rem;
   }
 
 .hero1 {
-top: -2rem;
-        left: 0rem;
-        height: 40rem;
+        position: relative;
+        width: 150%;
+        overflow: hidden;
+        top: 0rem;
+        left: -11rem;
+        height: 56rem;
 }
 
 
