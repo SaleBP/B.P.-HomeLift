@@ -1,14 +1,3 @@
-# รันใหม่หลังจากรีเซ็ต เพื่อสร้างไฟล์ JavaScript อีกครั้ง
-combined_js_code = """
-// ========== หน้าโหลด (Preloader) ==========
-window.onload = function () {
-  const preloader = document.getElementById('preloader');
-  if (preloader) {
-    preloader.classList.add('fade-out');
-    setTimeout(() => {
-      preloader.style.display = 'none';
-    }, 800);
-  }
 
   // ========== แชทบอท ==========
   const chatIcon = document.getElementById("chat-icon");
@@ -154,12 +143,3 @@ window.onload = function () {
       topBar.classList.remove('transparent');
     }
   });
-};
-"""
-
-# เขียนไฟล์ใหม่
-output_path = "/mnt/data/main-script.js"
-with open(output_path, "w", encoding="utf-8") as f:
-    f.write(combined_js_code)
-
-output_path
