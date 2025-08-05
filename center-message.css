@@ -331,11 +331,11 @@ margin-bottom: 0.5rem;
 }
 
 .homeliftimg {
-    position: relative;
-    top: 49rem;
-    left: 3rem;
-    width: 75%;
-    z-index: 9999;
+        position: relative;
+        top: 49rem;
+        left: 2rem;
+        width: 85%;
+        z-index: 9999;
 }
   
 
