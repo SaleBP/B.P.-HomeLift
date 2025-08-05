@@ -1,9 +1,9 @@
 .homeliftimg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-z-index: 9999;
+    position: absolute;
+    top: 7%;
+    left: 8%;
+    width: 70%;
+    z-index: 9999;
 }
 
 

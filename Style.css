@@ -141,7 +141,7 @@ body::-webkit-scrollbar {
 position: fixed;
     height: 50px;
     top: 10px;
-    left: 84%;
+  right: -5%;
   transform: translate(-50%, 20px); /* ✅ รวม X และ Y */
   width: 90%;
   max-width: 1728px;
