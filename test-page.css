@@ -1,7 +1,0 @@
-
-/* ปรับขนาดและลักษณะของตัว viewer ตามที่ต้องการ */
-#viewer360 {
-  width: 100%;
-  height: 500px;
-  background: #000; /* optional */
-}
