@@ -787,10 +787,10 @@ font-family: 'Gilroy';
  {
 
     .top-bar {
-height: 3.2rem;
+        height: 3.2rem;
         width: 65%;
         top: 15px;
-        left: 78%;
+        left: 22%;
     }
 
     .hero1 {
@@ -810,14 +810,13 @@ height: 3.2rem;
 .intro {
 width: 80%;
 margin-top: 25px;
-display: flex
-;
+display: flex;
 }
 
 #logosoftcolor {
-height: 2rem;
+        height: 2rem;
         top: 1rem;
-        left: 1rem;
+        right: 1rem;
         width: 4rem;
 }
 
