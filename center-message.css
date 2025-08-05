@@ -1,21 +1,76 @@
-.hero {
-  position: relative;
+.hero1 {
+position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.img-wrapper {
   width: 100%;
-  max-width: 100%;
+  height: 100%;
   overflow: hidden;
 }
 
-.textintro {
-  position: absolute;
-  top: 65rem;
-  left: 50%;
-  transform: translateX(-50%);
-  color: white;
-  font-family: 'gilroy';
-  font-size: 29.5rem;
-  font-weight: bold;
-  white-space: nowrap;
+.img1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  clip-path: inset(0% 100% 100% 0%);
+  animation: revealBox 1.2s linear 4.5s forwards; /* ⏱ เพิ่มเวลาเล็กน้อยด้วย */
+  will-change: clip-path;
+  margin-bottom: -10rem;
+}
 
+@keyframes revealBox {
+  0% {
+    clip-path: inset(10% 100% 100% 10%);
+  }
+  60% {
+    clip-path: inset(5% 30% 30% 5%);
+  }
+  80% {
+    clip-path: inset(2% 12% 12% 2%);
+  }
+  92% {
+    clip-path: inset(1% 4% 4% 1%);
+  }
+  100% {
+    clip-path: inset(0% 0% 0% 0%);
+  }
+}
+
+.homelift {
+  text-align: left;   /* จัดแนวรูปใน container */
+}
+
+.lift-img {
+  width: 40%;           /* ขนาดรูป 40% */
+  height: auto;         /* รักษาสัดส่วน */
+}
+
+
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px); /* เลื่อนลงก่อน */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  will-change: opacity, transform;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.textintro {
+    position: absolute;
+    top: 70%;
+    left: 43%;
+    transform: translateX(-50%);
+    color: white;
+    font-family: 'gilroy';
+    font-size: 22.5rem;
+    font-weight: bold;
+    white-space: nowrap;
 }
 
 .textintro span {
@@ -23,7 +78,7 @@
   opacity: 0;
   transform: translateY(60px);
   display: inline-block;
-  animation: floatIn 1s forwards, fadeToWhite 2s forwards; /* ตัวอย่างใช้เวลา fade สี 2s */
+  animation: floatIn 1s forwards, fadeToWhite 3s forwards; /* ตัวอย่างใช้เวลา fade สี 2s */
 }
 
 .textintro.animate span:nth-child(1) { animation-delay: 0s; }
@@ -44,12 +99,14 @@
 
 @keyframes fadeToWhite {
   from {
-    color: #585858;
-  }
-  to {
     color: #ffffff;
   }
+  to {
+    color: #E58424;
+  }
+
 }
+
 
 .center-message {
     text-align: center;
@@ -180,9 +237,9 @@ text-align: left;
 
   
     .textintro {
-font-size: 14rem;
-top: 37.5rem;
-left: 52%;
+        font-size: 14rem;
+        top: 68%;
+        left: 46%;
     }
 
 
@@ -382,9 +439,9 @@ margin-bottom: 0.5rem;
 
   
 .textintro { 
-font-size: 6rem;
-        top: 42rem;
-transform: translateX(-32%);
+        font-size: 5rem;
+        top: 28rem;
+        transform: translateX(-41%);
       }
 
 .center-message h1 {
