@@ -472,7 +472,7 @@ position: relative;
   height: 100%;
   object-fit: cover;
   clip-path: inset(0% 100% 100% 0%);
-  animation: revealBox 1.2s linear 3.2s forwards; /* ⏱ เพิ่มเวลาเล็กน้อยด้วย */
+  animation: revealBox 1.2s linear 0.5s forwards; /* ⏱ เพิ่มเวลาเล็กน้อยด้วย */
   will-change: clip-path;
   margin-bottom: -10rem;
 }

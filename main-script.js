@@ -192,7 +192,7 @@ window.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.top-bar')?.classList.add('show');
     document.querySelector('#logosoftcolor')?.classList.add('show');
     document.querySelector('#chat-icon')?.classList.add('show'); // ✅ เพิ่มตรงนี้
-  }, 4500);
+  }, 1800);
 });
 
     document.addEventListener("DOMContentLoaded", function () {

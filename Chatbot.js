@@ -1,5 +1,3 @@
-# รันใหม่หลังจากรีเซ็ต เพื่อสร้างไฟล์ JavaScript อีกครั้ง
-combined_js_code = """
 // ========== หน้าโหลด (Preloader) ==========
 window.onload = function () {
   const preloader = document.getElementById('preloader');
@@ -144,22 +142,4 @@ window.onload = function () {
     const walk = (x - startX) * 1.5;
     imageRow.scrollLeft = scrollLeft - walk;
   });
-
-  // ========== Top Bar Transparency on Scroll ==========
-  const topBar = document.querySelector('.top-bar');
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 10) {
-      topBar.classList.add('transparent');
-    } else {
-      topBar.classList.remove('transparent');
-    }
-  });
-};
-"""
-
-# เขียนไฟล์ใหม่
-output_path = "/mnt/data/main-script.js"
-with open(output_path, "w", encoding="utf-8") as f:
-    f.write(combined_js_code)
-
-output_path
+}
