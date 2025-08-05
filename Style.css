@@ -841,17 +841,6 @@ font-family: 'Gilroy';
   gap: 0.3rem;
 }
 
-  .textintro {
- font-size: 14rem;
-        top: 47rem;
-        left: 51%;
-  }
-
-  .textintro span {
-    transform: translateY(80px); /* ปรับระยะลอยตอนเริ่ม */
-    animation: floatIn 1s forwards;
-  }
-
 
   .row-img {
     width: 60%;
@@ -1077,13 +1066,6 @@ margin-bottom: 2rem;
   margin-right: 2%;
   gap: 0.3rem;
 }
-
-
-
-  .textintro span {
-    transform: translateY(80px); /* ปรับระยะลอยตอนเริ่ม */
-    animation: floatIn 1s forwards;
-  }
 
 
   .row-img {
@@ -1317,10 +1299,6 @@ margin-bottom: 2rem;
 
 
 
-  .textintro span {
-    transform: translateY(80px); /* ปรับระยะลอยตอนเริ่ม */
-    animation: floatIn 1s forwards;
-  }
 
 
   .row-img {
@@ -1538,21 +1516,7 @@ margin-bottom: 2rem;
   gap: 0.3rem;
 }
 
-  .textintro {
-    top: 200px; /* ปรับให้ต่ำลงหรือสูงขึ้นตามความเหมาะสม */
-    font-size: 8rem; /* ✅ ปรับขนาดตัวอักษรให้เหมาะกับจอมือถือ */
-    text-align: center;
-    padding: 0 16px; /* เพิ่ม padding ป้องกันติดขอบจอ */
-  }
 
-  .textintro span {
-    transform: translateY(80px); /* ปรับระยะลอยตอนเริ่ม */
-    animation: floatIn 1s forwards;
-  }
-
-.textintro {
-  font-size: clamp(7.4em, 10vw, 29.5rem); /* ปรับอัตโนมัติตามขนาดหน้าจอ */
-}
   .row-img {
     width: 60%;
     border-radius: 10px;

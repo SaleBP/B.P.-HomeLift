@@ -1,55 +1,12 @@
-.hero {
-  position: relative;
-  width: 100%;
-  max-width: 100%;
-  overflow: hidden;
-}
-
-.textintro {
+.homeliftimg {
   position: absolute;
-  top: 65rem;
-  left: 50%;
-  transform: translateX(-50%);
-  color: white;
-  font-family: 'gilroy';
-  font-size: 29.5rem;
-  font-weight: bold;
-  white-space: nowrap;
-
+  top: 0;
+  left: 0;
+  width: 100%;
+z-index: 9999;
 }
 
-.textintro span {
-  color: #585858;
-  opacity: 0;
-  transform: translateY(60px);
-  display: inline-block;
-  animation: floatIn 1s forwards, fadeToWhite 2s forwards; /* ตัวอย่างใช้เวลา fade สี 2s */
-}
 
-.textintro.animate span:nth-child(1) { animation-delay: 0s; }
-.textintro.animate span:nth-child(2) { animation-delay: 0.05s; }
-.textintro.animate span:nth-child(3) { animation-delay: 0.10s; }
-.textintro.animate span:nth-child(4) { animation-delay: 0.15s; }
-.textintro.animate span:nth-child(5) { animation-delay: 0.20s; }
-.textintro.animate span:nth-child(6) { animation-delay: 0.25s; }
-.textintro.animate span:nth-child(7) { animation-delay: 0.30s; }
-.textintro.animate span:nth-child(8) { animation-delay: 0.35s; }
-
-@keyframes floatIn {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeToWhite {
-  from {
-    color: #585858;
-  }
-  to {
-    color: #ffffff;
-  }
-}
 
 .center-message {
     text-align: center;
@@ -179,11 +136,7 @@ text-align: left;
 
 
   
-    .textintro {
-font-size: 14rem;
-top: 37.5rem;
-left: 52%;
-    }
+
 
 
 .center-message h1 {
@@ -247,11 +200,7 @@ text-align: left;
 
 
   
-    .textintro {
-        font-size: 12rem;
-        top: 46rem;
-        transform: translateX(-55%);
-    }
+
 
 
 .center-message h1 {
@@ -312,11 +261,7 @@ text-align: left;
         align-items: flex-start;
 }
 
-    .textintro {
-        font-size: 10rem;
-        top: 33rem;
-        transform: translateX(-48%);
-    }
+
 
 
 .center-message h1 {
@@ -381,11 +326,6 @@ margin-bottom: 0.5rem;
 
 
   
-.textintro { 
-font-size: 6rem;
-        top: 42rem;
-transform: translateX(-32%);
-      }
 
 .center-message h1 {
     font-size: 2rem;
