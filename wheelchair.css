@@ -1,10 +1,13 @@
+/*================= Wheelchair-head ================= */
+
 .Wheelchair-head {
     display: flex;
     flex-direction: column;
-    align-items: left;
     padding: 10%;
+    margin-top: 50rem;
 
 }
+
 .Wheelchair-head h1 {
     font-family: 'Gilroy';
     font-weight: bold;
@@ -29,9 +32,195 @@
     margin-top: 1.5rem;
 }
 
+
+/*================= wheelchair-text ================= */
+
 .wheelchair-text {
     display: flex;
     flex-direction: column;
-    align-items: left;
-    padding: 10%;
+    padding: 0 10%;
+    margin-top: -10rem;
 }
+
+.wheelchair-text h1 {
+    font-family: 'Gilroy';
+    font-weight: normal;
+    font-size: 2.2rem;
+    color: #585858;
+    margin-bottom: 1.5rem;
+    width: 35rem;
+}
+
+.wheelchair-text h2 {
+    font-family: 'Gilroy';
+    font-weight: normal;
+    font-size: 2.2rem;
+    color: #585858;
+    margin-bottom: -5.5rem;
+    width: 35rem;
+}
+
+.wheelchair-text p {
+    font-family: 'DB Adman X';
+    font-weight: normal;
+    font-size: 2rem;
+    color: #585858;
+    margin-top: 8.5rem;
+    width: 35rem;
+}
+
+
+/*================= wheelchair-Picture ================= */
+
+.wheelchair1 {
+    width: 59%;
+    height: auto;
+    position: relative;
+    top: -57rem;
+    left: 65rem;
+}
+
+.wheelchair2 {
+    width: 46%;
+    height: auto;
+    position: relative;
+    top: -93rem;
+    left: 35rem;
+}
+
+@media (min-width: 1200px) and (max-width: 1599px) {
+
+.Wheelchair-head {
+    display: flex;
+    flex-direction: column;
+    padding: 10% 5%;
+    margin-top: 50rem;
+}
+
+.Wheelchair-head h1 {
+        font-size: 2rem;
+        margin-bottom: -3.5rem;
+}
+
+.Wheelchair-head h2 {
+        font-size: 3.7rem;
+        margin-bottom: -0.5rem;
+}
+
+.Wheelchair-head p {
+        font-size: 1.7rem;
+        margin-top: 1.5rem;
+}
+
+
+/*================= wheelchair-text ================= */
+
+.wheelchair-text {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5%;
+    margin-top: -10rem;
+}
+
+.wheelchair-text h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+        width: 29rem;
+}
+
+.wheelchair-text h2 {
+        font-size: 1.5rem;
+        margin-bottom: -5.5rem;
+        width: 28rem;
+}
+
+.wheelchair-text p {
+        font-size: 1.5rem;
+        margin-top: 8.5rem;
+        width: 29rem;
+}
+
+
+/*================= wheelchair-Picture ================= */
+
+.wheelchair1 {
+        width: 64%;
+        top: -35rem;
+        left: 47rem;
+}
+
+.wheelchair2 {
+        width: 48%;
+        top: -64rem;
+        left: 24rem;
+}
+
+}
+
+
+@media (max-width: 768px) {
+
+.Wheelchair-head {
+    display: flex;
+    flex-direction: column;
+    padding: 10% 5%;
+    margin-top: 50rem;
+}
+
+.Wheelchair-head h1 {
+        font-size: 2rem;
+        margin-bottom: -2.5rem;
+}
+
+.Wheelchair-head h2 {
+        font-size: 2.7rem;
+        margin-bottom: -0.5rem;
+}
+
+.Wheelchair-head p {
+        font-size: 1.7rem;
+        margin-top: 1.5rem;
+}
+
+
+/*================= wheelchair-text ================= */
+
+.wheelchair-text {
+        padding: 0 5%;
+        margin-top: -4rem;
+}
+
+.wheelchair-text h1 {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+        width: 20rem;
+}
+
+.wheelchair-text h2 {
+        font-size: 1.2rem;
+        margin-bottom: -5.5rem;
+        width: 20rem;
+}
+
+.wheelchair-text p {
+        font-size: 1.1rem;
+        margin-top: 8.5rem;
+        width: 10rem;
+}
+
+
+/*================= wheelchair-Picture ================= */
+
+.wheelchair1 {
+        width: 156%;
+        top: 3rem;
+        left: -2rem;
+}
+
+.wheelchair2 {
+        width: 83%;
+        top: -46rem;
+        left: 7rem;
+}
+
+}    
