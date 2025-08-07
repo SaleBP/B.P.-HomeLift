@@ -1,0 +1,237 @@
+
+/*================= warranty-head ================= */
+
+.warranty {
+    margin-bottom: 10rem;
+}
+.warranty-head {
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+    margin-top: -59rem;
+    align-items: center;
+}
+
+.warranty-head h1 {
+    font-family: 'Gilroy';
+    font-weight: bold;
+    font-size: 4.5rem;
+    color: #eb660e;
+    padding: 4rem;
+}
+
+.warranty-head h2 {
+    font-family: 'Gilroy';
+    font-weight: bold;
+    font-size: 5.5rem;
+    color: #eb660e;
+    margin-bottom: -0.5rem;
+}
+
+
+.warranty-head p {
+    font-family: 'DB Adman X';
+    font-weight: normal;
+    font-size: 2rem;
+    color: #585858;
+    margin-top: -7.5rem;
+}
+
+
+/*================= warranty-text ================= */
+
+.warranty-text {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10%;
+    margin-top: -12rem;
+    margin-bottom: 29rem;
+    align-items: center;
+}
+
+.warranty-text h1 {
+    font-family: 'Gilroy';
+    font-weight: bold;
+    font-size: 4.5rem;
+    color: #eb660e;
+    margin-bottom: 2.5rem;
+    padding: 5rem;
+}
+
+.warranty-text h2 {
+    font-family: 'DB Adman X';
+    font-weight: bold;
+    font-size: 3.2rem;
+    color: #eb660e;
+    margin-bottom: 5.5rem;
+}
+
+.warranty-text p {
+    font-family: 'Gilroy';
+    font-weight: normal;
+    font-size: 1.5rem;
+    color: #585858;
+    width: 61rem;
+    text-align: center;
+    line-height: 1.2;
+    margin-bottom: 6rem;
+}
+
+.warranty-text h3 {
+    font-family: 'DB Adman X';
+    font-weight: normal;
+    font-size: 1.5rem;
+    color: #585858;
+    margin-top: -3.5rem;
+    width: 47rem;
+    text-align: center;
+}
+
+
+/*================= warranty-Picture ================= */
+
+.warranty1 {
+    width: 53%;
+    height: auto;
+    position: relative;
+    top: -73rem;
+    left: 53rem;
+}
+
+
+@media (min-width: 1200px) and (max-width: 1599px) {
+
+.warranty-head {
+    display: flex;
+    flex-direction: column;
+    padding: 10% 5%;
+    margin-top: 50rem;
+}
+
+.warranty-head h1 {
+        font-size: 2rem;
+        margin-bottom: -3.5rem;
+}
+
+.warranty-head h2 {
+        font-size: 3.7rem;
+        margin-bottom: -0.5rem;
+}
+
+.warranty-head p {
+        font-size: 1.7rem;
+        margin-top: 1.5rem;
+}
+
+
+/*================= warranty-text ================= */
+
+.warranty-text {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5%;
+    margin-top: -10rem;
+}
+
+.warranty-text h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+        width: 29rem;
+}
+
+.warranty-text h2 {
+        font-size: 1.5rem;
+        margin-bottom: -5.5rem;
+        width: 28rem;
+}
+
+.warranty-text p {
+        font-size: 1.5rem;
+        margin-top: 8.5rem;
+        width: 29rem;
+}
+
+
+/*================= warranty-Picture ================= */
+
+.warranty1 {
+        width: 64%;
+        top: -35rem;
+        left: 47rem;
+}
+
+.warranty2 {
+        width: 48%;
+        top: -64rem;
+        left: 24rem;
+}
+
+}
+
+
+@media (max-width: 768px) {
+
+.warranty-head {
+        display: flex;
+        flex-direction: column;
+        padding: 10% 5%;
+        margin-top: 30rem;
+}
+
+.warranty-head h1 {
+        font-size: 2rem;
+        margin-bottom: -2.5rem;
+}
+
+.warranty-head h2 {
+        font-size: 2.7rem;
+        margin-bottom: -0.5rem;
+}
+
+.warranty-head p {
+        font-size: 1.7rem;
+        margin-top: 1.5rem;
+}
+
+
+/*================= warranty-text ================= */
+
+.warranty-text {
+        padding: 0 5%;
+        margin-top: -4rem;
+}
+
+.warranty-text h1 {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+        width: 20rem;
+}
+
+.warranty-text h2 {
+        font-size: 1.2rem;
+        margin-bottom: -5.5rem;
+        width: 20rem;
+}
+
+.warranty-text p {
+        font-size: 1.1rem;
+        margin-top: 8.5rem;
+        width: 10rem;
+}
+
+
+/*================= warranty-Picture ================= */
+
+.warranty1 {
+        width: 156%;
+        top: 3rem;
+        left: -2rem;
+}
+
+.warranty2 {
+        width: 83%;
+        top: -46rem;
+        left: 7rem;
+}
+
+}
