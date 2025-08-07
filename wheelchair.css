@@ -1,0 +1,37 @@
+.Wheelchair-head {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 10%;
+
+}
+.Wheelchair-head h1 {
+    font-family: 'Gilroy';
+    font-weight: bold;
+    font-size: 3.5rem;
+    color: #585858;
+    margin-bottom: -5.5rem;
+}
+
+.Wheelchair-head h2 {
+    font-family: 'Gilroy';
+    font-weight: bold;
+    font-size: 5.5rem;
+    color: #eb660e;
+    margin-bottom: -0.5rem;
+}
+
+.Wheelchair-head p {
+    font-family: 'DB Adman X';
+    font-weight: normal;
+    font-size: 2rem;
+    color: #585858;
+    margin-top: 1.5rem;
+}
+
+.wheelchair-text {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 10%;
+}
