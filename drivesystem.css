@@ -201,21 +201,19 @@
 .lift-hhf {
     position: relative;
     top: -123rem;
-    left: 68rem;
-    width: 48rem;
+    left: 67rem;
+    width: 57rem;
     height: auto;
     z-index: 9999;
-    border-radius: 15px;
 }
 
 .lift-thf {
     position: relative;
-    top: -45rem;
-    left: -43rem;
-    width: 44rem;
+    top: -47rem;
+    left: -62rem;
+    width: 51rem;
     height: auto;
     z-index: 9999;
-    border-radius: 15px;
 }
 
 
