@@ -301,7 +301,7 @@ font-family: 'Gilroy';
 
 .nav-link {
   text-decoration: none;
-  color: #ffffff;
+  color: #585858;
   transition: opacity 0.5s ease;
 }
 
@@ -462,7 +462,35 @@ position: relative;
     top: -34rem;
 }
 
+.img1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    clip-path: inset(0% 100% 100% 0%);
+    animation: revealBox 1.2s linear 0.5s forwards;
+    will-change: clip-path;
+    margin-bottom: -20rem;
+    top: -24rem;
+}
 
+@keyframes revealBox {
+  0% {
+    clip-path: inset(10% 100% 100% 10%);
+  }
+  60% {
+    clip-path: inset(5% 30% 30% 5%);
+  }
+  80% {
+    clip-path: inset(2% 12% 12% 2%);
+  }
+  92% {
+    clip-path: inset(1% 4% 4% 1%);
+  }
+  100% {
+    clip-path: inset(0% 0% 0% 0%);
+  }
+}
 
 .homelift {
   text-align: left;   /* จัดแนวรูปใน container */
@@ -474,14 +502,6 @@ position: relative;
 }
 
 
-.video1 {
-    position: relative;
-    top: -4rem;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 .fade-in {
   opacity: 0;

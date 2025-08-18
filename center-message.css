@@ -1,5 +1,13 @@
 
 
+.homeliftimg {
+    position: relative;
+    top: 42rem;
+    left: 5rem;
+    width: 49%;
+    z-index: 9999;
+}
+
 
 
 .center-message {
@@ -11,8 +19,7 @@
     justify-content: center;
     align-items: center;
     background: #fff;
-    padding: 0px 1rem;
-    top: 5rem;
+    padding: 0 1rem;
 }
 
 .center-message h1 {
@@ -324,7 +331,14 @@ margin-bottom: 0.5rem;
     align-items: flex-start;
 }
 
-
+.homeliftimg {
+        position: relative;
+        top: 49rem;
+        left: 2rem;
+        width: 85%;
+        z-index: 9999;
+}
+  
 
 .center-message h1 {
     font-size: 2rem;
@@ -379,7 +393,13 @@ margin-left: 7rem;
 
 @media (min-width: 1200px) and (max-width: 1599px)
  {
-
+.homeliftimg {
+        position: relative;
+        top: 28rem;
+        left: 6rem;
+        width: 50%;
+        z-index: 9999;
+}
 
 .img-wrapper {
         position: relative;
