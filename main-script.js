@@ -60,23 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let hovering = false;
 
-  document.addEventListener("mousemove", (e) => {
-    const scale = hovering ? 1.8 : 1;
-    ball.style.transform = `translate(${e.clientX}px, ${e.clientY}px) scale(${scale})`;
-  });
-
-  const hoverTargets = document.querySelectorAll("a, button, .clickable");
-  hoverTargets.forEach((el) => {
-    el.addEventListener("mouseenter", () => {
-      hovering = true;
-      ball.classList.add("hovering");
-    });
-    el.addEventListener("mouseleave", () => {
-      hovering = false;
-      ball.classList.remove("hovering");
-    });
-  });
-
+  
   // ========= Carousel Dots =========
   const imageRow = document.querySelector('.image-row');
   const imageBoxes = document.querySelectorAll('.image-box');

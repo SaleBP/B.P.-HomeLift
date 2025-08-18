@@ -39,20 +39,19 @@ background: #ffffff00;
   }
 
   .quickbar-panel {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 30%;
-    height: 100%;
-    background-color: white;
-    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    padding: 2rem 1.5rem;
-    font-family: 'DB Adman X';
-    font-size: 1.3rem;
-    transition: right 0.3s ease-in-out;
-    z-index: 1200;
+        position: fixed;
+        top: 0;
+        width: 30%;
+        right: -100%;
+        height: 100%;
+        background-color: white;
+        box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 1.5rem;
+        font-size: 1.3rem;
+        transition: right 0.3s ease-in-out;
+        z-index: 1200;
   }
 
   .quickbar-panel.open {
@@ -67,9 +66,11 @@ background: #ffffff00;
   }
 
   .quickbar-section {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        font-family: 'Gilroy';
+        font-size: 1.2rem;
   }
 
   .quickbar-divider {
@@ -112,6 +113,7 @@ background: #ffffff00;
 .quickbar-panel.open .quickbar-section.contact a:nth-of-type(1) {
   animation: lineUp 0.4s ease-out forwards;
   animation-delay: 0.4s;
+  margin-bottom: 1rem;
 }
 .quickbar-panel.open .quickbar-section.contact a:nth-of-type(2) {
   animation: lineUp 0.4s ease-out forwards;
