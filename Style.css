@@ -138,7 +138,7 @@ body::-webkit-scrollbar {
 
 
 .top-bar {
-position: fixed;
+position: relative;
   height: 50px;
   top: 10px;
   left: -29%;
@@ -154,17 +154,12 @@ position: fixed;
 
 .top-bar.fade-up.animate {
   animation: slideUpFade 1.3s ease forwards;
-  animation-delay: 1.5s; 
+  animation-delay: 1.5s;
   /* แก้ปัญหากระตุกด้วย fill-mode */
   animation-fill-mode: both;
 }
 
-/* fade-up animate สำหรับภาพนี้ */
-.homeliftimg.fade-up.animate {
-  animation: slideUpFade 1.3s ease forwards;
-  animation-delay: 2s;       /* เริ่มช้ากว่า top-bar */
-  animation-fill-mode: both; /* ป้องกันกระตุก */
-}
+
 
 
 

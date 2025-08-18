@@ -14,6 +14,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 1000);
   });
 
+
+
   // ========= Fade-in Animation =========
   const faders = document.querySelectorAll('.fade-in:not(.fade-late)');
   const delayedFaders = document.querySelectorAll('.fade-in.fade-late');
@@ -71,7 +73,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const imageRow = document.querySelector('.image-row');
   const imageBoxes = document.querySelectorAll('.image-box');
   const dotContainer = document.querySelector('.carousel-dots');
-  let currentIndex = 0;
 
   imageBoxes.forEach((_, i) => {
     const dot = document.createElement('span');
@@ -156,10 +157,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-
 // ========= Fade-up Observer =========
 document.addEventListener("DOMContentLoaded", () => {
-  const fadeUps = document.querySelectorAll(".fade-up-trigger, .fade-up, .option-items");
+const fadeUps = document.querySelectorAll(".fade-up:not(.top-bar), .fade-up-trigger, .option-items");
+
 
 
   const observer = new IntersectionObserver((entries, obs) => {
