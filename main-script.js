@@ -1,14 +1,4 @@
-// ========= Top Bar Scroll Effect =========
 document.addEventListener("DOMContentLoaded", () => {
-  const topBar = document.querySelector('.top-bar');
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 10) {
-      topBar.classList.add('transparent');
-    } else {
-      topBar.classList.remove('transparent');
-    }
-  });
-
   // ========= ติดต่อเรา Hover Dropdown =========
   const wrapper = document.querySelector(".nav-contact-wrapper");
   let timeout;
@@ -187,13 +177,6 @@ document.addEventListener("DOMContentLoaded", () => {
   fadeUps.forEach(el => observer.observe(el));
 })
 
-window.addEventListener('DOMContentLoaded', () => {
-  setTimeout(() => {
-    document.querySelector('.top-bar')?.classList.add('show');
-    document.querySelector('#logosoftcolor')?.classList.add('show');
-    document.querySelector('#chat-icon')?.classList.add('show'); // ✅ เพิ่มตรงนี้
-  }, 1800);
-});
 
     document.addEventListener("DOMContentLoaded", function () {
     const toggle = document.getElementById("quickbar-toggle");
@@ -215,35 +198,6 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  let inactivityTimeout;
-
-function showTopbarAndLogo() {
-  document.querySelector('.top-bar')?.classList.remove('hidden');
-  document.querySelector('#logosoftcolor')?.classList.remove('hidden');
-}
-
-function hideTopbarAndLogo() {
-  document.querySelector('.top-bar')?.classList.add('hidden');
-  document.querySelector('#logosoftcolor')?.classList.add('hidden');
-}
-
-function resetInactivityTimer() {
-  showTopbarAndLogo(); // แสดงก่อนเสมอเวลาเริ่มเคลื่อนไหว
-  clearTimeout(inactivityTimeout);
-  inactivityTimeout = setTimeout(() => {
-    hideTopbarAndLogo();
-  }, 500); // 0.5 วินาทีไม่มีการเคลื่อนไหวจะซ่อน
-}
-
-// ตรวจจับการเคลื่อนไหวของเมาส์ / scroll / touch
-['mousemove', 'scroll', 'touchstart'].forEach(event => {
-  window.addEventListener(event, resetInactivityTimer, { passive: true });
-});
-
-// เริ่ม timer ครั้งแรกเมื่อหน้าโหลดเสร็จ
-resetInactivityTimer();
-
-
 document.querySelectorAll('.nav-link').forEach(link => {
   link.addEventListener('click', function(e) {
     const href = link.getAttribute('href');
@@ -253,4 +207,5 @@ document.querySelectorAll('.nav-link').forEach(link => {
     }
     // ถ้าเป็น .html ก็ให้ไปหน้าใหม่ตามปกติ
   });
+
 });

@@ -139,9 +139,9 @@ body::-webkit-scrollbar {
 
 .top-bar {
 position: fixed;
-    height: 50px;
-    top: 10px;
-  left: 15%;
+  height: 50px;
+  top: 10px;
+  left: -29%;
   transform: translate(-50%, 20px); /* ✅ รวม X และ Y */
   width: 90%;
   max-width: 1728px;
@@ -150,21 +150,20 @@ position: fixed;
   align-items: center;
   justify-content: space-between;
   z-index: 1000;
-  transition: background-color 0.3s ease, backdrop-filter 0.3s ease, opacity 0.3s ease, top 0.3s ease;
-  opacity: 0;
-  transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-.top-bar.show {
-  opacity: 1;
-  transform: translate(-50%, 0); /* ✅ กลับมาอยู่ตรงกลางและไม่มี Y */
+.top-bar.fade-up.animate {
+  animation: slideUpFade 1.3s ease forwards;
+  animation-delay: 1.5s; 
+  /* แก้ปัญหากระตุกด้วย fill-mode */
+  animation-fill-mode: both;
 }
 
-.top-bar.transparent {
-  background-color: rgba(255, 255, 255, 0.5); /* โปร่งใส 50% */
-  backdrop-filter: blur(10px);               /* เบลอฉากหลัง */
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15); /* เงาเพิ่มความลอย */
-  transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+/* fade-up animate สำหรับภาพนี้ */
+.homeliftimg.fade-up.animate {
+  animation: slideUpFade 1.3s ease forwards;
+  animation-delay: 2s;       /* เริ่มช้ากว่า top-bar */
+  animation-fill-mode: both; /* ป้องกันกระตุก */
 }
 
 
