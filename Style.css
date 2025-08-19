@@ -138,18 +138,15 @@ body::-webkit-scrollbar {
 
 
 .top-bar {
-position: relative;
-  height: 50px;
-  top: 10px;
-  left: -29%;
-  transform: translate(-50%, 20px); /* ✅ รวม X และ Y */
-  width: 90%;
-  max-width: 1728px;
-  border-radius: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 1000;
+    position: relative;
+    height: 50px;
+    top: 10px;
+    left: -29%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
 }
 
 .top-bar.fade-up.animate {
@@ -456,22 +453,22 @@ position: relative;
 
 .img-wrapper {
     position: relative;
-    width: 100%;
+    width: 95%;
     height: 100%;
     overflow: hidden;
-    top: -34rem;
+    top: -13rem;
+    left: 39rem;
+    border-radius: 20px;
 }
 
 .img1 {
     position: relative;
-    width: 100%;
+    width: 71%;
     height: 100%;
-    object-fit: cover;
-    clip-path: inset(0% 100% 100% 0%);
     animation: revealBox 1.2s linear 0.5s forwards;
     will-change: clip-path;
     margin-bottom: -20rem;
-    top: -24rem;
+    top: -3rem;
 }
 
 @keyframes revealBox {
@@ -783,7 +780,7 @@ font-family: 'Gilroy';
         height: 3.2rem;
         width: 65%;
         top: 15px;
-        left: 22%;
+        left: -14.5%;
     }
 
     .hero1 {
@@ -823,10 +820,9 @@ margin-bottom: 2rem;
   }
 
 .displayFlex {
-font-family: 'Gilroy';
-        gap: 4.5rem;
+        font-family: 'Gilroy';
+        gap: 2.5rem;
         font-size: clamp(0.6rem, 5vw, 1.2rem);
- 
 }
 
 .displayFlex2 {

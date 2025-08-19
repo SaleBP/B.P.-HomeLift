@@ -602,9 +602,9 @@ font-size: 1.7rem;
 
    
   .drive12 {
-font-size: 1.7rem;
-        width: 44rem;
-        margin-left: 28.7rem;
+        font-size: 1.7rem;
+        width: 40rem;
+        margin-left: 32.7rem;
     }
   
 
@@ -673,12 +673,16 @@ font-size: 1.7rem;
 width: 31rem;
   }
  .lift-hhf {
-top: -156rem;
-        left: 47rem;
+        top: -141rem;
+        left: 51rem;
+        width: 52%;
+        border-radius: 20px;
     }
 
      .lift-thf {
-    top: -77rem;
-    left: -29rem;
+        top: -66rem;
+        left: -45rem;
+        border-radius: 20px;
+        width: 46%;
 }
 }
