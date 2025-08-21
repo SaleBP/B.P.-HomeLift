@@ -1,20 +1,6 @@
 /*===============================*/
 /*           FONT FACES         */
 /*===============================*/
-@font-face {
-  font-family: 'DB adman X';
-  src: url('DB-Adman-X.ttf') format('woff2');
-    font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url('Gilroy-Regular.ttf') format('truetype');
-}
-
-
 
 .carousel-wrapper1 {
   position: relative;

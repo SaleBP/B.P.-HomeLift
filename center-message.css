@@ -322,7 +322,9 @@ margin-bottom: 0.5rem;
 @media (max-width: 768px) {
 
 .img-wrapper {
-        top: -11rem;
+        top: -10rem;
+        left: 0rem;
+        border-radius: 0px;
 }
 
   .center-message {
@@ -333,7 +335,7 @@ margin-bottom: 0.5rem;
 
 .homeliftimg {
         position: relative;
-        top: 49rem;
+        top: 55rem;
         left: 2rem;
         width: 85%;
         z-index: 9999;

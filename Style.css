@@ -1466,18 +1466,17 @@ font-size: 2.5rem;
 
 
 .img-wrapper {
-    position: relative;
-    width: 114%;
-    height: 100%;
-    overflow: hidden;
-    top: -6rem;
+        position: relative;
+        width: 112%;
+        height: 100%;
+        overflow: hidden;
 }
 
  .img1 {
-        width: 301%;
+        width: 282%;
         height: 100%;
-        left: -41rem;
-        top: -12rem;
+        left: -37.5rem;
+        top: -4rem;
 }
 
 .intro {
