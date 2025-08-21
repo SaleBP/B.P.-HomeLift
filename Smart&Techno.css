@@ -1,0 +1,37 @@
+.center-message2  {
+    position: relative;
+}
+
+.SmartTech {
+    padding: clamp(80px, 10vw, 160px) 0 0 0;
+}
+
+.c--md {
+    max-width: 1240px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.SmartTechno1 {
+    font-size: 4rem;
+    line-height: 4.2rem;
+    text-align: center;
+    width: 85%;
+    margin: 0 auto .4em auto;
+    margin-bottom: .75em;
+    font-family: 'Gilroy';
+    color: #eb660e;
+}
+
+.SmartTechno2 {
+    font-size: 2rem;
+    line-height: 4.2rem;
+    text-align: center;
+    width: 85%;
+    margin: 0 auto .4em auto;
+    margin-bottom: .75em;
+    font-family: 'DB Adman X';
+    color: #585858;
+}
+
