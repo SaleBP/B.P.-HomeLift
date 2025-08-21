@@ -37,6 +37,16 @@
   height: 435px;
 }
 
+.scroll-container {
+  cursor: grab;
+}
+
+.scroll-container.active {
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+}
+
+
 .blur-overlay {
   position: absolute;
   top: 0;

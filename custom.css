@@ -14,9 +14,10 @@ text-align: center;
     font-size: 6.5rem;
     color: #eb660e;
     margin-bottom: 1.5rem;
-    margin-left: -44.5rem;
     width: 40rem;
     text-align: left;
+    position: relative;
+    left: -30rem;
 }
 
 .custom-text p {
@@ -24,7 +25,8 @@ font-family: 'DB Adman X';
     font-weight: normal;
     font-size: 2rem;
     color: #585858;
-    margin-left: -60rem;
+    position: relative;
+    left: -35rem;
 }
 
 
@@ -53,13 +55,9 @@ font-weight: bold;
 }
 
 .option-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 2rem;
-  max-width: 1400px;
-  margin: auto;
-  position: relative;
+    position: relative;
+    left: 56%;
+    transform: translateX(-50%);
 }
 
 /* ====== ฝั่งซ้าย: รูปภาพคำอธิบาย ====== */
@@ -80,18 +78,18 @@ font-weight: bold;
 .option-detail-image1-1,
 .option-detail-image1-2,
 .option-detail-image1-4{
-position: absolute;
-    width: 73%;
+    position: relative;
+    width: 16%;
     border-radius: 20px;
     height: auto;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
 }
 
-.option-detail-image1-1 { top: 2rem; left: -13rem; }
-.option-detail-image1-2 { top: 2rem; left: 31rem; }
-.option-detail-image1-4 { top: 2rem; left: 9rem; }
+.option-detail-image1-1 { top: 2rem; left: 2rem; }
+.option-detail-image1-2 { top: 2rem; left: 3rem; }
+.option-detail-image1-4 { top: 2rem; left: 4rem; }
 
 /*==================================================================*/
 
@@ -100,20 +98,18 @@ position: absolute;
 .option-detail-image2-3,
 .option-detail-image2-5
 {
-position: absolute;
-    top: -7rem;
-    left: 0;
-    width: 90%;
+    position: absolute;
+    width: 20%;
     height: auto;
     opacity: 0;
-  transition: opacity 0.3s ease;
-  pointer-events: none;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
 }
 
-.option-detail-image2-1 { top: -7rem; left: -15rem; }
-.option-detail-image2-2 { top: 3rem; left: -1rem; }
-.option-detail-image2-3 { top: -16rem; left: 9rem; }
-.option-detail-image2-5 { top: -3rem; left: 24rem; }
+.option-detail-image2-1 { top: -2rem; left: 0rem; }
+.option-detail-image2-2 { top: -2rem; left: 21rem; }
+.option-detail-image2-3 { top: -2rem; left: 42rem; }
+.option-detail-image2-5 { top: -2rem; left: 63rem; }
 
 /*==================================================================*/
 
@@ -122,21 +118,19 @@ position: absolute;
 .option-detail-image3-3,
 .option-detail-image3-4,
 .option-detail-image3-5{
-position: absolute;
-    top: -7rem;
-    left: 0;
-    width: 80%;
+    position: absolute;
+    width: 15%;
     height: auto;
     opacity: 0;
-  transition: opacity 0.3s ease;
-  pointer-events: none;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
 }
 
-.option-detail-image3-1 { top: -9rem; left: 0rem; }
-.option-detail-image3-2 { top: 1rem; left: 0rem; }
-.option-detail-image3-3 { top: 11rem; left: 0rem; }
-.option-detail-image3-4 { top: 21rem; left: 0rem; }
-.option-detail-image3-5 { top: 31rem; left: 0rem; }
+.option-detail-image3-1 { top: 7rem; left: 3rem; }
+.option-detail-image3-2 { top: 7rem; left: 23rem; }
+.option-detail-image3-3 { top: 7rem; left: 43rem; }
+.option-detail-image3-4 { top: 7rem; left: 63rem; }
+.option-detail-image3-5 { top: 7rem; left: 83rem; }
 
 /*==================================================================*/
 
@@ -163,23 +157,23 @@ position: absolute;
 .option-detail-image5-4,
 .option-detail-image5-5,
 .option-detail-image5-6 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 30%;
-  max-width: 100%;
-  height: auto;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  pointer-events: none;
+
+    position: absolute;
+    width: 7%;
+    max-width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+
 }
 
-.option-detail-image5-1 { top: 8rem; left: 17rem; }
-.option-detail-image5-2 { top: 10rem; left: -10rem; }
-.option-detail-image5-3 { top: 5rem; left: -1rem; }
-.option-detail-image5-4 { top: 9rem; left: 8rem; }
-.option-detail-image5-5 { top: 13rem; left: 27rem; }
-.option-detail-image5-6 { top: 15rem; left: 37rem; }
+.option-detail-image5-1 { top: 2rem; left: 2rem; }
+.option-detail-image5-2 { top: 2rem; left: 13rem; }
+.option-detail-image5-3 { top: 2rem; left: 24rem; }
+.option-detail-image5-4 { top: 2rem; left: 35rem; }
+.option-detail-image5-5 { top: 2rem; left: 46rem; }
+.option-detail-image5-6 { top: 2rem; left: 57rem; }
 
 /*==================================================================*/
 
@@ -189,20 +183,18 @@ position: absolute;
 .option-detail-image6-3,
 .option-detail-image6-4
 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 60%;
-  height: auto;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  pointer-events: none;
+    position: absolute;
+    width: 18%;
+    height: auto;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
 }
 
-.option-detail-image6-1 { top: 10rem; left: 31rem; }
-.option-detail-image6-2 { top: 10rem; left: 13rem; }
-.option-detail-image6-3 { top: 10rem; left: -5rem; }
-.option-detail-image6-4 { top: 10rem; left: -23rem; }
+.option-detail-image6-1 { top: 2rem; left: 2rem; }
+.option-detail-image6-2 { top: 2rem; left: 28rem; }
+.option-detail-image6-3 { top: 2rem; left: 54rem; }
+.option-detail-image6-4 { top: 2rem; left: 80rem; }
 
 
 /*==================================================================*/
@@ -212,42 +204,39 @@ position: absolute;
 .option-detail-image7-3
  {
     position: absolute;
-    top: -6rem;
-    left: 0;
-    width: 75%;
+    width: 18%;
     max-width: 100%;
     height: auto;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
 }
 
-.option-detail-image7-1 { top: 0rem; left: -16rem; }
-.option-detail-image7-2 { top: 0rem; left: 3rem; }
-.option-detail-image7-3 { top: 0rem; left: 23rem; }
+.option-detail-image7-1 { top: 0rem; left: 0rem; }
+.option-detail-image7-2 { top: 0rem; left: 25rem; }
+.option-detail-image7-3 { top: 0rem; left: 50rem; }
 
 /*==================================================================*/
 
 
 /* ====== ข้อความตัวเลือก ====== */
 .option-items {
-  flex: 2;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 3rem;
 }
 
 .option-items li {
-  font-size: 3rem;
-  font-weight: bold;
-  color: #c4c4c4;
-  margin-bottom: 1.2rem;
-  cursor: pointer;
-  position: relative;
-
-  opacity: 0;
-  transform: translateY(30px);
-  transition: color 0.3s ease, margin-left 0.3s ease;
+    font-size: 1.2rem;
+    display: inline-block;
+    font-weight: bold;
+    color: #c4c4c4;
+    margin-bottom: 1.2rem;
+    cursor: pointer;
+    position: relative;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: color 0.3s ease, margin-left 0.3s ease;
 }
 
 /* เมื่อถูก observe แล้วค่อย fade-up ทีละตัว */
@@ -279,8 +268,8 @@ position: absolute;
 
 .option-detail-inline {
   position: absolute;
-  left: -180px;
-  top: 50%;
+  left: -2%;
+  top: -49%;
   transform: translateY(-50%);
   white-space: nowrap;
   color: #585858;
