@@ -108,6 +108,9 @@
 }
 }
 
+.carousel-wrapper1 {
+    margin-bottom: 1rem;
+}
 
 @media (min-width: 992px) and (max-width: 1199px) {
 .carousel-wrapper1 {
