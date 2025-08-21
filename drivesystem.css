@@ -321,9 +321,17 @@ margin-bottom: 25rem;
         margin-right: 1.5rem;
 }
 
-  .lift-hhf, .lift-thf {
-width: 0;
-  }
+    .lift-hhf {
+        width: 85%;
+        left: 2rem;
+        top: -102rem;
+    }
+
+        .lift-thf {
+        width: 85%;
+        left: 2rem;
+        top: -41rem;
+    }
 
 }
 
