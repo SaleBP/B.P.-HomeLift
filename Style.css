@@ -31,7 +31,7 @@ body::-webkit-scrollbar {
 
 @font-face {
   font-family: 'DB Adman X';
-  src: url('fonts/DB-Adman-X.ttf') format('woff2'); /* เปลี่ยน path ให้ตรงกับที่คุณวางไฟล์ */
+  src: url('fonts/DBAdmanX.woff2') format('woff2'); /* เปลี่ยน path ให้ตรงกับที่คุณวางไฟล์ */
   font-weight: normal;
   font-style: normal;
   font-display: swap;
