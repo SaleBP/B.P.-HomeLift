@@ -328,11 +328,6 @@ font-family: 'Gilroy';
   overflow: hidden; /* ป้องกันข้อความล้นออก */
 }
 
-.liftimg1 {
-  width: 100%;
-  height: auto;
-  display: block;
-}
 
 .text-overlay {
   position: absolute;
@@ -933,10 +928,7 @@ top: 45%;
         padding: 1.5rem;
     }
 
-.liftimg1 {
-width: 100%;
-        margin-top: 37rem;
-}
+
 
 .text-overlay h2 {
 font-size: 2rem;
@@ -1159,10 +1151,6 @@ font-size: 1.5rem;
         padding: 1.5rem;
     }
 
-.liftimg1 {
-    width: 214%;
-    margin-top: 37rem;
-}
 
 .text-overlay h2 {
 font-size: 3.2rem;
@@ -1389,10 +1377,7 @@ position: absolute;
         padding: 1.5rem;
     }
 
-.liftimg1 {
-        width: 100%;
-        margin-top: 23rem;
-}
+
 
 .text-overlay h2 {
 font-size: 1.5rem;
@@ -1616,10 +1601,7 @@ font-size: 1.2rem;
         padding: 1.5rem;
     }
 
-.liftimg1 {
-    width: 214%;
-    margin-top: 7rem;
-}
+
 
 .text-overlay h2 {
     font-size: 1.2rem;
