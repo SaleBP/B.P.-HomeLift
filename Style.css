@@ -728,8 +728,7 @@ width: 100%;
     left: 50%;
     transform: translateX(-50%);
     text-align: left;
-    padding-top: 23rem;
-    padding-bottom: 7rem;
+    top: 30rem;
 }
 
 .textmap a {

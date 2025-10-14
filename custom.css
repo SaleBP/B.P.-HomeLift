@@ -117,7 +117,8 @@ font-weight: bold;
 .option-detail-image3-2,
 .option-detail-image3-3,
 .option-detail-image3-4,
-.option-detail-image3-5{
+.option-detail-image3-5
+.option-detail-image3-6 {
     position: absolute;
     width: 15%;
     height: auto;
@@ -131,6 +132,7 @@ font-weight: bold;
 .option-detail-image3-3 { top: 7rem; left: 43rem; }
 .option-detail-image3-4 { top: 7rem; left: 63rem; }
 .option-detail-image3-5 { top: 7rem; left: 83rem; }
+.option-detail-image3-6 { top: 7rem; left: 103rem; }
 
 /*==================================================================*/
 
