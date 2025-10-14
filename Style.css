@@ -160,13 +160,13 @@ body::-webkit-scrollbar {
 
 
 
-#logosoftcolor {
+#Logolift {
   position: fixed;
   top: 5px;
   right: 1%;
   width: 3rem;
   height: 3.5rem;
-  background: url('Logo soft color.png') no-repeat center center;
+  background: url('Logolift.png') no-repeat center center;
   background-size: contain;
   z-index: 1001;
 
@@ -176,7 +176,7 @@ body::-webkit-scrollbar {
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-#logosoftcolor.show {
+#Logolift.show {
   opacity: 1;
   transform: translateY(0);
 }
@@ -803,7 +803,7 @@ margin-top: 25px;
 display: flex;
 }
 
-#logosoftcolor {
+#Logolift {
         height: 2rem;
         top: 1rem;
         right: 1rem;
@@ -1027,7 +1027,7 @@ display: flex
 ;
 }
 
-#logosoftcolor {
+#Logolift {
 
 height: 3.5rem;
         top: 1rem;
@@ -1258,7 +1258,7 @@ display: flex
 ;
 }
 
-#logosoftcolor {
+#Logolift {
 height: 4.5rem;
         top: -0.5rem;
         left: 1rem;
@@ -1486,7 +1486,7 @@ display: flex
 ;
 }
 
-#logosoftcolor {
+#Logolift {
 height: 2rem;
 top: 20px;
 left: 19px;
