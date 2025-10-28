@@ -1040,10 +1040,10 @@ top: 31rem;
     }
 
 .custom-text p {
-        font-size: 1.3rem;
-        width: 8rem;
+        font-size: 2.3rem;
+        top: 7rem;
         margin-bottom: 4.2rem;
-        left: -5rem;
+        left: -24rem;
 }
 
 .option-list {
@@ -1051,32 +1051,35 @@ padding: 5rem 5rem;
 }
 
 .option-items li {
-font-size: 2rem;
-        width: 35rem;
+        font-size: 1.1rem;
         margin-bottom: 4.2rem;
+        left: -7rem;
 }
 
 .option-detail-image1-1,
 .option-detail-image1-2,
 .option-detail-image1-4 {
-    width: 60%;
+    width: 24%;
 
 }
 
     .option-detail-image1-2 {
-top: -4rem;
-        left: 13rem;
+        top: -2rem;
+        left: 1rem;
+        width: 18rem;
     }
 
 
     .option-detail-image1-4 {
-top: -4rem;
-        left: -3rem;
+        top: -2rem;
+        left: 4rem;
+        width: 18rem;
     }
 
     .option-detail-image1-1 {
-        top: -4rem;
-        left: -19rem;
+        top: -2rem;
+        left: 7rem;
+        width: 18rem;
     }
 
 .option-detail-image2-1,
@@ -1237,8 +1240,8 @@ top: 27rem;
 }
 
 .option-detail-inline {
-left: -0.4rem;
+        left: -0.3rem;
         top: -0.8rem;
-        font-size: 1.7rem;
+        font-size: 1.2rem;
 }
 }
