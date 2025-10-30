@@ -117,10 +117,10 @@ font-weight: bold;
 .option-detail-image3-2,
 .option-detail-image3-3,
 .option-detail-image3-4,
-.option-detail-image3-5
+.option-detail-image3-5,
 .option-detail-image3-6 {
     position: absolute;
-    width: 15%;
+    width: 25%;
     height: auto;
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -449,7 +449,7 @@ font-size: 1.5rem;
 .option-detail-image3-2,
 .option-detail-image3-3,
 .option-detail-image3-5,
-.option-detail-image3-1 {
+.option-detail-image3-6 {
         width: 32%;
         border-radius: 10px;
 }
@@ -1110,30 +1110,34 @@ padding: 5rem 5rem;
 }
 
 .option-detail-image3-1 {
-top: 1rem;
-        left: -15rem;
+        top: 1rem;
+        left: -5rem;
 }
 
 .option-detail-image3-2 {
-top: 8rem;
-        left: -6rem;
+        top: -1rem;
+        left: 23rem;
 }
 
 .option-detail-image3-3 {
-top: 15rem;
-        left: 4rem;
+        top: -1rem;
+        left: 52rem;
 }
 
 .option-detail-image3-4 {
-top: 22rem;
-        left: 3rem;
+        top: 11rem;
+        left: -5rem;
 }
 
 .option-detail-image3-5 {
-top: 29rem;
-        left: -3rem;
+        top: 11rem;
+        left: 23rem;
 }
 
+.option-detail-image3-6 {
+        top: 10rem;
+        left: 52rem;
+}
 .option-detail-image4-1 {
 
 width: 114%;
