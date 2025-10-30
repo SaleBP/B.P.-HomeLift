@@ -136,11 +136,18 @@ font-weight: bold;
 
 /*==================================================================*/
 
-.option-detail-image4-1{
+.option-detail-image4-1,
+.option-detail-image4-2,
+.option-detail-image4-3,
+.option-detail-image4-4,
+.option-detail-image4-5,
+.option-detail-image4-6,
+.option-detail-image4-7,
+.option-detail-image4-8 {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 22%;
   max-width: 100%;
   height: auto;
   opacity: 0;
@@ -149,7 +156,13 @@ font-weight: bold;
 }
 
 .option-detail-image4-1 { top: -10rem; left: -11rem; }
-
+.option-detail-image4-2 { top: -10rem; left: -11rem; }
+.option-detail-image4-3 { top: -10rem; left: -11rem; }
+.option-detail-image4-4 { top: -10rem; left: -11rem; }
+.option-detail-image4-5 { top: -10rem; left: -11rem; }
+.option-detail-image4-6 { top: -10rem; left: -11rem; }
+.option-detail-image4-7 { top: -10rem; left: -11rem; }
+.option-detail-image4-8 { top: -10rem; left: -11rem; }
 
 /*==================================================================*/
 
@@ -1138,17 +1151,58 @@ padding: 5rem 5rem;
         top: 10rem;
         left: 52rem;
 }
-.option-detail-image4-1 {
+.option-detail-image4-1,
+.option-detail-image4-2,
+.option-detail-image4-3,
+.option-detail-image4-4,
+.option-detail-image4-5,
+.option-detail-image4-6,
+.option-detail-image4-7,
+.option-detail-image4-8 {
 
-width: 114%;
+width: 22%;
 max-width: 150%;
 }
 
-    .option-detail-image4-1 {
-        top: -7rem;
-        left: -11rem;
-        rotate: 40deg;
-    }
+.option-detail-image4-1 {
+        top: -1rem;
+        left: -5rem;
+}
+
+.option-detail-image4-2 {
+        top: -1rem;
+        left: 15rem;
+}
+
+.option-detail-image4-3 {
+        top: -1rem;
+        left: 35rem;
+}
+
+.option-detail-image4-4 {
+        top: -1rem;
+        left: 55rem;
+}
+
+.option-detail-image4-5 {
+        top: 11rem;
+        left: -5rem;
+}
+
+.option-detail-image4-6 {
+        top: 11rem;
+        left: 15rem;
+}
+
+.option-detail-image4-7 {
+        top: 11rem;
+        left: 35rem;
+}
+
+.option-detail-image4-8 {
+        top: 11rem;
+        left: 55rem;
+}
 
 
 
@@ -1197,28 +1251,28 @@ top: 24.5rem;
  .option-detail-image6-2,
   .option-detail-image6-3,
    .option-detail-image6-4 {
-    width: 58%;
+    width: 22%;
 
 }
 
 .option-detail-image6-4 {
-top: 27rem;
-        left: -32rem;
+        top: -2rem;
+        left: -5rem;
 }
 
 .option-detail-image6-3 {
-        top: 27rem;
-        left: -16rem;
+        top: -2rem;
+        left: 15rem;
 }
 
 .option-detail-image6-2 {
-        top: 27rem;
-        left: 0rem;
+        top: -2rem;
+        left: 35rem;
 }
 
 .option-detail-image6-1 {
-        top: 27rem;
-        left: 16rem;
+        top: -2rem;
+        left: 55rem;
 }
 
 .option-detail-image7-1,
