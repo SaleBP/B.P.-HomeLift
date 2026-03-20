@@ -1,0 +1,99 @@
+/* --- Desktop (Baseline 1920x1080) --- */
+body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* ช่วยให้คำนวณขนาด Padding ได้แม่นยำขึ้น */
+    font-family: 'Inter', sans-serif; /* หรือฟอนต์ที่คุณชอบ */
+}
+
+/* ตั้งค่า Hero Section เป็นพื้นหลัง */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), 
+                url('Lift/mainlift.png'); /* ใส่ชื่อไฟล์รูปของคุณตรงนี้ */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* ให้ข้อความอยู่ด้านล่างตามแบบ */
+    padding: 5% 10%; /* เว้นระยะจากขอบจอ */
+    color: white;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 10%;
+    z-index: 10;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: lowercase; /* ตามแบบในรูป */
+    font-size: 1.1rem;
+    opacity: 0.8;
+}
+
+.hero-content h1 {
+    font-size: 8rem; /* ขนาดใหญ่พิเศษสำหรับจอ 1920 */
+    font-weight: bold;
+    line-height: 0.9;
+    margin-bottom: 5px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+/* --- Responsive Adjustments --- */
+
+/* สำหรับ Tablet (จอขนาดกลาง เช่น iPad) */
+@media (max-width: 1024px) {
+    .hero-content h1 {
+        font-size: 6rem;
+    }
+    header {
+        padding: 30px 5%;
+    }
+    .hero {
+        padding: 5% 5%;
+    }
+}
+
+/* สำหรับ Mobile (มือถือทั่วไป) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* โลโก้อยู่บน เมนูอยู่ล่าง */
+        gap: 20px;
+    }
+    
+    nav ul {
+        gap: 15px;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem;
+    }
+
+    .hero-content h1 {
+        font-size: 4rem; /* ลดขนาดตัวอักษรลงเพื่อให้พอดีจอแคบ */
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+}
